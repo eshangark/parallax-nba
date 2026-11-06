@@ -34,8 +34,8 @@
     },
     "metrics_all_issued": {
       "games": 123,
-      "log_loss": 0.6462001700217028,
-      "brier_score": 0.22802725106843963,
+      "log_loss": 0.6462333453239154,
+      "brier_score": 0.22803755112162086,
       "winner_accuracy": 0.6097560975609756,
       "tie_policy": "pick home when probability equals 0.5",
       "calibration": [
@@ -50,42 +50,42 @@
           "lower": 0.2,
           "upper": 0.3,
           "games": 12,
-          "mean_probability": 0.23834321345285006,
+          "mean_probability": 0.23826944607810974,
           "observed_home_win_rate": 0.3333333333333333
         },
         {
           "lower": 0.3,
           "upper": 0.4,
           "games": 17,
-          "mean_probability": 0.3639274399561671,
+          "mean_probability": 0.36392334125261233,
           "observed_home_win_rate": 0.4117647058823529
         },
         {
           "lower": 0.4,
           "upper": 0.5,
           "games": 19,
-          "mean_probability": 0.4501230436311537,
+          "mean_probability": 0.4501230436504323,
           "observed_home_win_rate": 0.47368421052631576
         },
         {
           "lower": 0.5,
           "upper": 0.6,
           "games": 20,
-          "mean_probability": 0.540455890650522,
+          "mean_probability": 0.5404558372452403,
           "observed_home_win_rate": 0.55
         },
         {
           "lower": 0.6,
           "upper": 0.7,
           "games": 25,
-          "mean_probability": 0.6599738938716895,
+          "mean_probability": 0.6599710807032203,
           "observed_home_win_rate": 0.52
         },
         {
           "lower": 0.7,
           "upper": 0.8,
           "games": 17,
-          "mean_probability": 0.7455179123609085,
+          "mean_probability": 0.7455177450606576,
           "observed_home_win_rate": 0.7058823529411765
         },
         {
@@ -102,210 +102,210 @@
       {
         "team_id": "25",
         "team": "Oklahoma City Thunder",
-        "elo": 1665.074150979507,
+        "elo": 1665.0762996585509,
         "games": 8,
         "wins": 6
       },
       {
         "team_id": "8",
         "team": "Detroit Pistons",
-        "elo": 1662.026589218505,
+        "elo": 1662.0243222895042,
         "games": 8,
         "wins": 6
       },
       {
         "team_id": "24",
         "team": "San Antonio Spurs",
-        "elo": 1651.4103616982004,
+        "elo": 1651.4125103772442,
         "games": 8,
         "wins": 6
       },
       {
         "team_id": "10",
         "team": "Houston Rockets",
-        "elo": 1645.2171580163047,
+        "elo": 1645.2193066953485,
         "games": 9,
         "wins": 7
       },
       {
         "team_id": "2",
         "team": "Boston Celtics",
-        "elo": 1631.8626665470779,
+        "elo": 1631.8648152261217,
         "games": 8,
         "wins": 6
       },
       {
         "team_id": "16",
         "team": "Minnesota Timberwolves",
-        "elo": 1623.3012024244097,
+        "elo": 1623.3033511034535,
         "games": 9,
         "wins": 6
       },
       {
         "team_id": "13",
         "team": "Los Angeles Lakers",
-        "elo": 1619.9146195835044,
+        "elo": 1619.9167682625482,
         "games": 9,
         "wins": 7
       },
       {
         "team_id": "20",
         "team": "Philadelphia 76ers",
-        "elo": 1606.5519860489717,
+        "elo": 1606.5507469976963,
         "games": 9,
         "wins": 8
       },
       {
         "team_id": "7",
         "team": "Denver Nuggets",
-        "elo": 1592.5185719344381,
+        "elo": 1592.520720613482,
         "games": 7,
         "wins": 4
       },
       {
         "team_id": "22",
         "team": "Portland Trail Blazers",
-        "elo": 1591.0886402985886,
+        "elo": 1591.0907889776324,
         "games": 7,
         "wins": 6
       },
       {
         "team_id": "18",
         "team": "New York Knicks",
-        "elo": 1562.7235715923364,
+        "elo": 1562.7257180134297,
         "games": 8,
         "wins": 4
       },
       {
         "team_id": "1",
         "team": "Atlanta Hawks",
-        "elo": 1558.9833128302516,
+        "elo": 1558.9854608863227,
         "games": 9,
         "wins": 5
       },
       {
         "team_id": "5",
         "team": "Cleveland Cavaliers",
-        "elo": 1554.2812791315462,
+        "elo": 1554.2833979567756,
         "games": 8,
         "wins": 4
       },
       {
         "team_id": "9",
         "team": "Golden State Warriors",
-        "elo": 1526.0462425887142,
+        "elo": 1526.048391267758,
         "games": 9,
         "wins": 6
       },
       {
         "team_id": "28",
         "team": "Toronto Raptors",
-        "elo": 1525.1122372914654,
+        "elo": 1525.1143859705091,
         "games": 8,
         "wins": 4
       },
       {
         "team_id": "30",
         "team": "Charlotte Hornets",
-        "elo": 1495.621123584905,
+        "elo": 1495.5700765124689,
         "games": 9,
         "wins": 3
       },
       {
         "team_id": "14",
         "team": "Miami Heat",
-        "elo": 1483.9617104117135,
+        "elo": 1483.9638590907573,
         "games": 9,
         "wins": 3
       },
       {
         "team_id": "21",
         "team": "Phoenix Suns",
-        "elo": 1478.5427269843474,
+        "elo": 1478.544875647793,
         "games": 7,
         "wins": 2
       },
       {
         "team_id": "19",
         "team": "Orlando Magic",
-        "elo": 1478.1422168679865,
+        "elo": 1478.1443651837153,
         "games": 8,
         "wins": 2
       },
       {
         "team_id": "12",
         "team": "LA Clippers",
-        "elo": 1453.4880417459124,
+        "elo": 1453.4901904249562,
         "games": 8,
         "wins": 1
       },
       {
         "team_id": "6",
         "team": "Dallas Mavericks",
-        "elo": 1438.1719022444631,
+        "elo": 1438.174050923507,
         "games": 8,
         "wins": 4
       },
       {
         "team_id": "3",
         "team": "New Orleans Pelicans",
-        "elo": 1429.6216291917883,
+        "elo": 1429.623777870832,
         "games": 8,
         "wins": 4
       },
       {
         "team_id": "29",
         "team": "Memphis Grizzlies",
-        "elo": 1427.053974235056,
+        "elo": 1427.0561229141,
         "games": 8,
         "wins": 6
       },
       {
         "team_id": "27",
         "team": "Washington Wizards",
-        "elo": 1346.9878837221788,
+        "elo": 1346.9900221203795,
         "games": 8,
         "wins": 4
       },
       {
         "team_id": "15",
         "team": "Milwaukee Bucks",
-        "elo": 1346.2515350356732,
+        "elo": 1346.253683714717,
         "games": 8,
         "wins": 1
       },
       {
         "team_id": "11",
         "team": "Indiana Pacers",
-        "elo": 1340.7844125820181,
+        "elo": 1340.786561261062,
         "games": 9,
         "wins": 3
       },
       {
         "team_id": "4",
         "team": "Chicago Bulls",
-        "elo": 1338.3589857218137,
+        "elo": 1338.36107301689,
         "games": 8,
         "wins": 1
       },
       {
         "team_id": "23",
         "team": "Sacramento Kings",
-        "elo": 1332.7296972783834,
+        "elo": 1332.7318459574271,
         "games": 8,
         "wins": 1
       },
       {
         "team_id": "17",
         "team": "Brooklyn Nets",
-        "elo": 1325.0059389859393,
+        "elo": 1325.004731161971,
         "games": 8,
         "wins": 2
       },
       {
         "team_id": "26",
         "team": "Utah Jazz",
-        "elo": 1269.165631224,
+        "elo": 1269.1677799030438,
         "games": 8,
         "wins": 1
       }
@@ -3522,8 +3522,8 @@
         "home_win": 1,
         "home_score": 95,
         "away_score": 79,
-        "home_rating_after": 1340.610111969415,
-        "away_rating_after": 1548.4827227497804
+        "home_rating_after": 1340.612833444297,
+        "away_rating_after": 1548.4034054720996
       },
       {
         "game_id": "401909278",
@@ -3559,8 +3559,8 @@
         "home_win": 1,
         "home_score": 125,
         "away_score": 111,
-        "home_rating_after": 1628.6938429459983,
-        "away_rating_after": 1364.994390501602
+        "home_rating_after": 1628.6965785103841,
+        "away_rating_after": 1364.997126065988
       },
       {
         "game_id": "401909279",
@@ -3596,8 +3596,8 @@
         "home_win": 0,
         "home_score": 94,
         "away_score": 110,
-        "home_rating_after": 1282.1667649597127,
-        "away_rating_after": 1666.6108150923878
+        "home_rating_after": 1282.1695005240983,
+        "away_rating_after": 1666.6135506567734
       },
       {
         "game_id": "401909280",
@@ -3633,8 +3633,8 @@
         "home_win": 1,
         "home_score": 98,
         "away_score": 93,
-        "home_rating_after": 1566.8991849788836,
-        "away_rating_after": 1562.1554367510892
+        "home_rating_after": 1566.9019205432692,
+        "away_rating_after": 1562.1581723154748
       },
       {
         "game_id": "401909281",
@@ -3670,8 +3670,8 @@
         "home_win": 0,
         "home_score": 114,
         "away_score": 121,
-        "home_rating_after": 1536.6324440957765,
-        "away_rating_after": 1529.5133272457088
+        "home_rating_after": 1536.6351796601623,
+        "away_rating_after": 1529.5160628100946
       },
       {
         "game_id": "401909282",
@@ -3717,8 +3717,8 @@
         "home_win": 1,
         "home_score": 145,
         "away_score": 125,
-        "home_rating_after": 1504.4698496597503,
-        "away_rating_after": 1348.3044006466275
+        "home_rating_after": 1504.4725852241359,
+        "away_rating_after": 1348.3071362110131
       },
       {
         "game_id": "401909283",
@@ -3764,8 +3764,8 @@
         "home_win": 1,
         "home_score": 116,
         "away_score": 111,
-        "home_rating_after": 1477.2011376442372,
-        "away_rating_after": 1622.2800015628566
+        "home_rating_after": 1477.2038732086228,
+        "away_rating_after": 1622.2827371272422
       },
       {
         "game_id": "401909284",
@@ -3811,8 +3811,8 @@
         "home_win": 1,
         "home_score": 127,
         "away_score": 101,
-        "home_rating_after": 1597.753359067681,
-        "away_rating_after": 1491.0232429341534
+        "home_rating_after": 1597.7560946320666,
+        "away_rating_after": 1491.025978498539
       },
       {
         "game_id": "401909285",
@@ -3858,8 +3858,8 @@
         "home_win": 1,
         "home_score": 112,
         "away_score": 95,
-        "home_rating_after": 1492.672721070484,
-        "away_rating_after": 1596.5652930953784
+        "home_rating_after": 1492.6754566348695,
+        "away_rating_after": 1596.568028659764
       },
       {
         "game_id": "401909286",
@@ -3905,16 +3905,16 @@
         "home_win": 0,
         "home_score": 120,
         "away_score": 127,
-        "home_rating_after": 1486.9899344092687,
-        "away_rating_after": 1599.1592044093268
+        "home_rating_after": 1486.9926699736543,
+        "away_rating_after": 1599.1619399737124
       },
       {
         "game_id": "401909896",
         "start": "2026-10-31T19:00Z",
         "home": "Utah Jazz",
         "away": "Portland Trail Blazers",
-        "home_rating": 1298.7502245810635,
-        "away_rating": 1545.7571123967514,
+        "home_rating": 1298.7529601454492,
+        "away_rating": 1545.759847961137,
         "home_probability": 0.3768485147646352,
         "away_probability": 0.6231514852353648,
         "home_context": {
@@ -3952,18 +3952,18 @@
         "home_win": 0,
         "home_score": 90,
         "away_score": 112,
-        "home_rating_after": 1291.5943229432428,
-        "away_rating_after": 1560.4592793826
+        "home_rating_after": 1291.5970585076284,
+        "away_rating_after": 1560.4620149469856
       },
       {
         "game_id": "401909897",
         "start": "2026-10-31T22:00Z",
         "home": "Charlotte Hornets",
         "away": "Philadelphia 76ers",
-        "home_rating": 1545.4322378859379,
-        "away_rating": 1564.293810946152,
-        "home_probability": 0.685861346828743,
-        "away_probability": 0.314138653171257,
+        "home_rating": 1545.3529206082571,
+        "away_rating": 1564.2965465105376,
+        "home_probability": 0.6857910050378799,
+        "away_probability": 0.31420899496212007,
         "home_context": {
           "rest": 0,
           "travel": 529.4633798782836,
@@ -3979,8 +3979,8 @@
         "home_sos": 0.6517857142857143,
         "away_sos": 0.4871031746031746,
         "model_version": "0.3.0",
-        "base_home_probability": 0.5263023036961751,
-        "base_away_probability": 0.47369769630382486,
+        "base_home_probability": 0.5262075964964915,
+        "base_away_probability": 0.4737924035035085,
         "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
         "injury_coverage": {
           "home": "submitted",
@@ -3999,16 +3999,16 @@
         "home_win": 0,
         "home_score": 104,
         "away_score": 109,
-        "home_rating_after": 1537.225556743479,
-        "away_rating_after": 1583.0515612843349
+        "home_rating_after": 1537.1535907597608,
+        "away_rating_after": 1583.050668684005
       },
       {
         "game_id": "401909898",
         "start": "2026-10-31T23:00Z",
         "home": "New Orleans Pelicans",
         "away": "Atlanta Hawks",
-        "home_rating": 1383.1391903359583,
-        "away_rating": 1564.8932018946496,
+        "home_rating": 1383.141925900344,
+        "away_rating": 1564.8959374590352,
         "home_probability": 0.3162208707760689,
         "away_probability": 0.683779129223931,
         "home_context": {
@@ -4046,16 +4046,16 @@
         "home_win": 1,
         "home_score": 121,
         "away_score": 99,
-        "home_rating_after": 1413.9264433347773,
-        "away_rating_after": 1545.0130250047316
+        "home_rating_after": 1413.9290459302613,
+        "away_rating_after": 1545.0156276002156
       },
       {
         "game_id": "401909899",
         "start": "2026-11-01T00:00Z",
         "home": "Memphis Grizzlies",
         "away": "Sacramento Kings",
-        "home_rating": 1446.770456849065,
-        "away_rating": 1317.7059705648585,
+        "home_rating": 1446.7731924134507,
+        "away_rating": 1317.708706129244,
         "home_probability": 0.6784906663298138,
         "away_probability": 0.3215093336701862,
         "home_context": {
@@ -4093,16 +4093,16 @@
         "home_win": 1,
         "home_score": 136,
         "away_score": 105,
-        "home_rating_after": 1461.672044706747,
-        "away_rating_after": 1308.8740414319263
+        "home_rating_after": 1461.674647302231,
+        "away_rating_after": 1308.8766440274103
       },
       {
         "game_id": "401909900",
         "start": "2026-11-01T00:00Z",
         "home": "Milwaukee Bucks",
         "away": "Cleveland Cavaliers",
-        "home_rating": 1375.7966976818927,
-        "away_rating": 1561.5428372436381,
+        "home_rating": 1375.7994332462783,
+        "away_rating": 1561.5455728080237,
         "home_probability": 0.18348178617762645,
         "away_probability": 0.8165182138223736,
         "home_context": {
@@ -4140,16 +4140,16 @@
         "home_win": 0,
         "home_score": 111,
         "away_score": 136,
-        "home_rating_after": 1366.5419345088228,
-        "away_rating_after": 1578.1147220413998
+        "home_rating_after": 1366.5445371043068,
+        "away_rating_after": 1578.1173246368837
       },
       {
         "game_id": "401909901",
         "start": "2026-11-01T00:00Z",
         "home": "San Antonio Spurs",
         "away": "Minnesota Timberwolves",
-        "home_rating": 1636.310317824792,
-        "away_rating": 1595.7463974104885,
+        "home_rating": 1636.3130533891776,
+        "away_rating": 1595.749132974874,
         "home_probability": 0.7437282088151131,
         "away_probability": 0.25627179118488685,
         "home_context": {
@@ -4187,16 +4187,16 @@
         "home_win": 1,
         "home_score": 121,
         "away_score": 111,
-        "home_rating_after": 1651.9049608457972,
-        "away_rating_after": 1586.635740940109
+        "home_rating_after": 1651.9075634412811,
+        "away_rating_after": 1586.6383435355929
       },
       {
         "game_id": "401909902",
         "start": "2026-11-01T00:30Z",
         "home": "Houston Rockets",
         "away": "Oklahoma City Thunder",
-        "home_rating": 1621.0618645956145,
-        "away_rating": 1660.3440121674043,
+        "home_rating": 1621.06460016,
+        "away_rating": 1660.34674773179,
         "home_probability": 0.4152258482171912,
         "away_probability": 0.5847741517828088,
         "home_context": {
@@ -4234,16 +4234,16 @@
         "home_win": 1,
         "home_score": 119,
         "away_score": 98,
-        "home_rating_after": 1651.5908582842762,
-        "away_rating_after": 1646.152705362866
+        "home_rating_after": 1651.5934608797602,
+        "away_rating_after": 1646.15530795835
       },
       {
         "game_id": "401909903",
         "start": "2026-11-01T20:30Z",
         "home": "Orlando Magic",
         "away": "Boston Celtics",
-        "home_rating": 1524.7111054778231,
-        "away_rating": 1623.421931132272,
+        "home_rating": 1524.713708073307,
+        "away_rating": 1623.424533727756,
         "home_probability": 0.4292355242405852,
         "away_probability": 0.5707644757594148,
         "home_context": {
@@ -4281,16 +4281,16 @@
         "home_win": 0,
         "home_score": 97,
         "away_score": 108,
-        "home_rating_after": 1515.3679544332902,
-        "away_rating_after": 1643.5888427118396
+        "home_rating_after": 1515.3705570287743,
+        "away_rating_after": 1643.5914453073237
       },
       {
         "game_id": "401909904",
         "start": "2026-11-01T22:00Z",
         "home": "Indiana Pacers",
         "away": "Brooklyn Nets",
-        "home_rating": 1344.0186185867065,
-        "away_rating": 1276.4861804325985,
+        "home_rating": 1344.0212211821904,
+        "away_rating": 1276.4887830280825,
         "home_probability": 0.34773323059881106,
         "away_probability": 0.652266769401189,
         "home_context": {
@@ -4328,16 +4328,16 @@
         "home_win": 0,
         "home_score": 90,
         "away_score": 98,
-        "home_rating_after": 1326.3516873291326,
-        "away_rating_after": 1302.7485039571186
+        "home_rating_after": 1326.3542899246165,
+        "away_rating_after": 1302.7511065526026
       },
       {
         "game_id": "401909905",
         "start": "2026-11-02T01:30Z",
         "home": "Golden State Warriors",
         "away": "LA Clippers",
-        "home_rating": 1489.515709412021,
-        "away_rating": 1486.128779095213,
+        "home_rating": 1489.518312007505,
+        "away_rating": 1486.1313816906973,
         "home_probability": 0.4855439078101636,
         "away_probability": 0.5144560921898365,
         "home_context": {
@@ -4375,16 +4375,16 @@
         "home_win": 1,
         "home_score": 124,
         "away_score": 112,
-        "home_rating_after": 1504.7871261710072,
-        "away_rating_after": 1477.820696404132
+        "home_rating_after": 1504.7897287664912,
+        "away_rating_after": 1477.8232989996159
       },
       {
         "game_id": "401909906",
         "start": "2026-11-02T02:00Z",
         "home": "Los Angeles Lakers",
         "away": "Toronto Raptors",
-        "home_rating": 1593.4082814369153,
-        "away_rating": 1531.4436594516394,
+        "home_rating": 1593.4108840323995,
+        "away_rating": 1531.4462620471236,
         "home_probability": 0.675891978857088,
         "away_probability": 0.32410802114291204,
         "home_context": {
@@ -4422,16 +4422,16 @@
         "home_win": 1,
         "home_score": 131,
         "away_score": 125,
-        "home_rating_after": 1602.179788917979,
-        "away_rating_after": 1526.4126640548207
+        "home_rating_after": 1602.182391513463,
+        "away_rating_after": 1526.4152666503046
       },
       {
         "game_id": "401909907",
         "start": "2026-11-03T00:00Z",
         "home": "Cleveland Cavaliers",
         "away": "Oklahoma City Thunder",
-        "home_rating": 1575.5970720021342,
-        "away_rating": 1644.9820030775134,
+        "home_rating": 1575.599674597618,
+        "away_rating": 1644.9846056729973,
         "home_probability": 0.5128762473741294,
         "away_probability": 0.4871237526258706,
         "home_context": {
@@ -4469,18 +4469,18 @@
         "home_win": 0,
         "home_score": 112,
         "away_score": 117,
-        "home_rating_after": 1568.4882795431513,
-        "away_rating_after": 1662.0047996932522
+        "home_rating_after": 1568.4908821386352,
+        "away_rating_after": 1662.007402288736
       },
       {
         "game_id": "401909908",
         "start": "2026-11-03T00:30Z",
         "home": "Charlotte Hornets",
         "away": "Detroit Pistons",
-        "home_rating": 1533.9499897293856,
-        "away_rating": 1659.759528279921,
-        "home_probability": 0.37697863234157386,
-        "away_probability": 0.6230213676584262,
+        "home_rating": 1533.8780237456674,
+        "away_rating": 1659.7621308754049,
+        "home_probability": 0.37690895438114286,
+        "away_probability": 0.6230910456188572,
         "home_context": {
           "rest": 1,
           "travel": 0.0,
@@ -4496,8 +4496,8 @@
         "home_sos": 0.6651234567901234,
         "away_sos": 0.46759259259259256,
         "model_version": "0.3.0",
-        "base_home_probability": 0.3662673923749612,
-        "base_away_probability": 0.6337326076250388,
+        "base_home_probability": 0.36618726357964276,
+        "base_away_probability": 0.6338127364203572,
         "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
         "injury_coverage": {
           "home": "submitted",
@@ -4516,16 +4516,16 @@
         "home_win": 0,
         "home_score": 91,
         "away_score": 124,
-        "home_rating_after": 1524.2018719613425,
-        "away_rating_after": 1678.372438826281
+        "home_rating_after": 1524.1367786647077,
+        "away_rating_after": 1678.3705234202614
       },
       {
         "game_id": "401909909",
         "start": "2026-11-03T00:30Z",
         "home": "Indiana Pacers",
         "away": "Atlanta Hawks",
-        "home_rating": 1325.902137849297,
-        "away_rating": 1542.174538141204,
+        "home_rating": 1325.904740444781,
+        "away_rating": 1542.177140736688,
         "home_probability": 0.10833457494649394,
         "away_probability": 0.8916654250535061,
         "home_context": {
@@ -4563,16 +4563,16 @@
         "home_win": 0,
         "home_score": 104,
         "away_score": 108,
-        "home_rating_after": 1320.4991810455615,
-        "away_rating_after": 1549.3258198447961
+        "home_rating_after": 1320.5017835542512,
+        "away_rating_after": 1549.3284223534858
       },
       {
         "game_id": "401909910",
         "start": "2026-11-03T00:30Z",
         "home": "New York Knicks",
         "away": "Brooklyn Nets",
-        "home_rating": 1555.6089116507933,
-        "away_rating": 1302.2989544772831,
+        "home_rating": 1555.6115142462772,
+        "away_rating": 1302.301557072767,
         "home_probability": 0.7932434398598128,
         "away_probability": 0.20675656014018717,
         "home_context": {
@@ -4610,18 +4610,18 @@
         "home_win": 1,
         "home_score": 103,
         "away_score": 90,
-        "home_rating_after": 1560.3117950523763,
-        "away_rating_after": 1297.0479220994616
+        "home_rating_after": 1560.3143103313362,
+        "away_rating_after": 1297.0504373784215
       },
       {
         "game_id": "401909911",
         "start": "2026-11-03T00:30Z",
         "home": "Orlando Magic",
         "away": "Washington Wizards",
-        "home_rating": 1514.5838150241889,
-        "away_rating": 1333.618476038008,
-        "home_probability": 0.6600057339844483,
-        "away_probability": 0.3399942660155517,
+        "home_rating": 1514.5864176196728,
+        "away_rating": 1333.6210645439885,
+        "home_probability": 0.6600057465635818,
+        "away_probability": 0.3399942534364182,
         "home_context": {
           "rest": 0,
           "travel": 0.0,
@@ -4637,8 +4637,8 @@
         "home_sos": 0.4729938271604938,
         "away_sos": 0.42361111111111116,
         "model_version": "0.3.0",
-        "base_home_probability": 0.648943220682598,
-        "base_away_probability": 0.351056779317402,
+        "base_home_probability": 0.6489432355429208,
+        "base_away_probability": 0.35105676445707923,
         "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
         "injury_coverage": {
           "home": "submitted",
@@ -4657,18 +4657,18 @@
         "home_win": 0,
         "home_score": 94,
         "away_score": 103,
-        "home_rating_after": 1497.46659432025,
-        "away_rating_after": 1364.374031302666
+        "home_rating_after": 1497.469196456809,
+        "away_rating_after": 1364.3766226978123
       },
       {
         "game_id": "401909912",
         "start": "2026-11-03T00:30Z",
         "home": "Philadelphia 76ers",
         "away": "Chicago Bulls",
-        "home_rating": 1579.7759942702414,
-        "away_rating": 1358.551776402523,
-        "home_probability": 0.7051749181541029,
-        "away_probability": 0.29482508184589706,
+        "home_rating": 1579.7751016699115,
+        "away_rating": 1358.554378998007,
+        "home_probability": 0.705172027009763,
+        "away_probability": 0.294827972990237,
         "home_context": {
           "rest": 1,
           "travel": 725.2793103377227,
@@ -4684,8 +4684,8 @@
         "home_sos": 0.34027777777777785,
         "away_sos": 0.6686507936507936,
         "model_version": "0.3.0",
-        "base_home_probability": 0.7390367652900786,
-        "base_away_probability": 0.26096323470992144,
+        "base_home_probability": 0.7390336444820699,
+        "base_away_probability": 0.2609663555179301,
         "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
         "injury_coverage": {
           "home": "submitted",
@@ -4704,16 +4704,16 @@
         "home_win": 1,
         "home_score": 126,
         "away_score": 107,
-        "home_rating_after": 1591.0961173914736,
-        "away_rating_after": 1352.0848213764796
+        "home_rating_after": 1591.0953719279587,
+        "away_rating_after": 1352.0873583966084
       },
       {
         "game_id": "401909913",
         "start": "2026-11-03T01:00Z",
         "home": "Dallas Mavericks",
         "away": "Sacramento Kings",
-        "home_rating": 1472.311359086146,
-        "away_rating": 1306.9920202967364,
+        "home_rating": 1472.31396168163,
+        "away_rating": 1306.9946228922204,
         "home_probability": 0.7878887979600981,
         "away_probability": 0.21211120203990186,
         "home_context": {
@@ -4751,16 +4751,16 @@
         "home_win": 0,
         "home_score": 100,
         "away_score": 115,
-        "home_rating_after": 1447.3546844830398,
-        "away_rating_after": 1344.2661903841354
+        "home_rating_after": 1447.3571997619997,
+        "away_rating_after": 1344.2687056630953
       },
       {
         "game_id": "401909914",
         "start": "2026-11-03T01:00Z",
         "home": "Memphis Grizzlies",
         "away": "New Orleans Pelicans",
-        "home_rating": 1459.7900235715572,
-        "away_rating": 1411.0879564712498,
+        "home_rating": 1459.7926261670411,
+        "away_rating": 1411.0905590667337,
         "home_probability": 0.4893549140764651,
         "away_probability": 0.510645085923535,
         "home_context": {
@@ -4798,16 +4798,16 @@
         "home_win": 0,
         "home_score": 134,
         "away_score": 135,
-        "home_rating_after": 1449.2264577221974,
-        "away_rating_after": 1424.8200400915598
+        "home_rating_after": 1449.2289730011573,
+        "away_rating_after": 1424.8225553705197
       },
       {
         "game_id": "401909915",
         "start": "2026-11-03T01:00Z",
         "home": "Minnesota Timberwolves",
         "away": "Milwaukee Bucks",
-        "home_rating": 1584.4320898170502,
-        "away_rating": 1364.0242844695572,
+        "home_rating": 1584.434692412534,
+        "away_rating": 1364.0268870650411,
         "home_probability": 0.7046908900378868,
         "away_probability": 0.29530910996211324,
         "home_context": {
@@ -4845,16 +4845,16 @@
         "home_win": 1,
         "home_score": 112,
         "away_score": 100,
-        "home_rating_after": 1593.4015341625254,
-        "away_rating_after": 1356.618536491799
+        "home_rating_after": 1593.4040494414853,
+        "away_rating_after": 1356.6210517707589
       },
       {
         "game_id": "401909916",
         "start": "2026-11-03T01:30Z",
         "home": "Houston Rockets",
         "away": "Boston Celtics",
-        "home_rating": 1650.4201559989235,
-        "away_rating": 1642.8047033027383,
+        "home_rating": 1650.4227585944075,
+        "away_rating": 1642.8073058982222,
         "home_probability": 0.680199316025556,
         "away_probability": 0.31980068397444406,
         "home_context": {
@@ -4892,16 +4892,16 @@
         "home_win": 1,
         "home_score": 109,
         "away_score": 93,
-        "home_rating_after": 1667.3332623179278,
-        "away_rating_after": 1632.4449730986587
+        "home_rating_after": 1667.3357775968877,
+        "away_rating_after": 1632.4474883776186
       },
       {
         "game_id": "401909917",
         "start": "2026-11-03T01:30Z",
         "home": "San Antonio Spurs",
         "away": "Utah Jazz",
-        "home_rating": 1649.7013097227384,
-        "away_rating": 1287.9226813523937,
+        "home_rating": 1649.7039123182224,
+        "away_rating": 1287.9252839478777,
         "home_probability": 0.8830037849933551,
         "away_probability": 0.11699621500664492,
         "home_context": {
@@ -4939,16 +4939,16 @@
         "home_win": 1,
         "home_score": 119,
         "away_score": 97,
-        "home_rating_after": 1652.3931727607298,
-        "away_rating_after": 1281.831481405541
+        "home_rating_after": 1652.3956880396897,
+        "away_rating_after": 1281.8339966845008
       },
       {
         "game_id": "401909918",
         "start": "2026-11-03T02:00Z",
         "home": "Denver Nuggets",
         "away": "Portland Trail Blazers",
-        "home_rating": 1594.6160648539012,
-        "away_rating": 1556.787637791751,
+        "home_rating": 1594.6186674493852,
+        "away_rating": 1556.790240387235,
         "home_probability": 0.6870293640566334,
         "away_probability": 0.3129706359433666,
         "home_context": {
@@ -4986,16 +4986,16 @@
         "home_win": 0,
         "home_score": 110,
         "away_score": 118,
-        "home_rating_after": 1579.7158803406708,
-        "away_rating_after": 1580.2181809062165
+        "home_rating_after": 1579.7183956196307,
+        "away_rating_after": 1580.2206961851764
       },
       {
         "game_id": "401909919",
         "start": "2026-11-03T03:00Z",
         "home": "Golden State Warriors",
         "away": "Phoenix Suns",
-        "home_rating": 1504.610166474259,
-        "away_rating": 1482.4467948538431,
+        "home_rating": 1504.6127690697429,
+        "away_rating": 1482.449397449327,
         "home_probability": 0.32686872829415764,
         "away_probability": 0.6731312717058424,
         "home_context": {
@@ -5033,16 +5033,16 @@
         "home_win": 1,
         "home_score": 116,
         "away_score": 113,
-        "home_rating_after": 1513.3971089548131,
-        "away_rating_after": 1471.8939918772521
+        "home_rating_after": 1513.399624233773,
+        "away_rating_after": 1471.896507156212
       },
       {
         "game_id": "401909920",
         "start": "2026-11-03T03:00Z",
         "home": "LA Clippers",
         "away": "Toronto Raptors",
-        "home_rating": 1477.6437367073836,
-        "away_rating": 1526.4126640548207,
+        "home_rating": 1477.6463393028675,
+        "away_rating": 1526.4152666503046,
         "home_probability": 0.4275898220243241,
         "away_probability": 0.5724101779756758,
         "home_context": {
@@ -5080,16 +5080,16 @@
         "home_win": 0,
         "home_score": 118,
         "away_score": 125,
-        "home_rating_after": 1464.1361003333604,
-        "away_rating_after": 1538.6156648820502
+        "home_rating_after": 1464.1386156123203,
+        "away_rating_after": 1538.61818016101
       },
       {
         "game_id": "401909921",
         "start": "2026-11-03T03:00Z",
         "home": "Los Angeles Lakers",
         "away": "Miami Heat",
-        "home_rating": 1602.179788917979,
-        "away_rating": 1499.0133653144765,
+        "home_rating": 1602.182391513463,
+        "away_rating": 1499.0159679099604,
         "home_probability": 0.5725105192355385,
         "away_probability": 0.42748948076446147,
         "home_context": {
@@ -5127,18 +5127,18 @@
         "home_win": 1,
         "home_score": 138,
         "away_score": 117,
-        "home_rating_after": 1615.4767216403093,
-        "away_rating_after": 1487.1269655564251
+        "home_rating_after": 1615.4792369192692,
+        "away_rating_after": 1487.129480835385
       },
       {
         "game_id": "401909922",
         "start": "2026-11-05T00:00Z",
         "home": "Detroit Pistons",
         "away": "Philadelphia 76ers",
-        "home_rating": 1675.3096707847915,
-        "away_rating": 1587.628544464254,
-        "home_probability": 0.5521165511020963,
-        "away_probability": 0.44788344889790366,
+        "home_rating": 1675.3077553787718,
+        "away_rating": 1587.6277146901182,
+        "home_probability": 0.5521154829964604,
+        "away_probability": 0.4478845170035396,
         "home_context": {
           "rest": 1,
           "travel": 812.6271146088313,
@@ -5154,8 +5154,8 @@
         "home_sos": 0.6736111111111112,
         "away_sos": 0.674074074074074,
         "model_version": "0.3.0",
-        "base_home_probability": 0.6432138189120635,
-        "base_away_probability": 0.35678618108793647,
+        "base_home_probability": 0.6432126654726614,
+        "base_away_probability": 0.3567873345273386,
         "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
         "injury_coverage": {
           "home": "submitted",
@@ -5174,18 +5174,18 @@
         "home_win": 0,
         "home_score": 106,
         "away_score": 112,
-        "home_rating_after": 1665.9676331971411,
-        "away_rating_after": 1610.4930300276078
+        "home_rating_after": 1665.9657337810752,
+        "away_rating_after": 1610.4921584892672
       },
       {
         "game_id": "401909923",
         "start": "2026-11-05T00:00Z",
         "home": "Washington Wizards",
         "away": "Atlanta Hawks",
-        "home_rating": 1360.5380321455082,
-        "away_rating": 1545.6141498469992,
-        "home_probability": 0.2400925998533135,
-        "away_probability": 0.7599074001466866,
+        "home_rating": 1360.5405363109246,
+        "away_rating": 1545.6166651259591,
+        "home_probability": 0.24009259178602227,
+        "away_probability": 0.7599074082139777,
         "home_context": {
           "rest": 1,
           "travel": 1219.2298567687592,
@@ -5201,8 +5201,8 @@
         "home_sos": 0.4986111111111111,
         "away_sos": 0.4984126984126984,
         "model_version": "0.3.0",
-        "base_home_probability": 0.33635875929821485,
-        "base_away_probability": 0.6636412407017851,
+        "base_home_probability": 0.3363587478130523,
+        "base_away_probability": 0.6636412521869477,
         "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
         "injury_coverage": {
           "home": "submitted",
@@ -5221,16 +5221,16 @@
         "home_win": 0,
         "home_score": 105,
         "away_score": 120,
-        "home_rating_after": 1351.5443371472895,
-        "away_rating_after": 1563.5397662553623
+        "home_rating_after": 1351.5468421384153,
+        "away_rating_after": 1563.5422809043584
       },
       {
         "game_id": "401909924",
         "start": "2026-11-05T00:30Z",
         "home": "Boston Celtics",
         "away": "Milwaukee Bucks",
-        "home_rating": 1630.960835764349,
-        "away_rating": 1353.833244915918,
+        "home_rating": 1630.9633510433089,
+        "away_rating": 1353.8357601948778,
         "home_probability": 0.7109482679852122,
         "away_probability": 0.28905173201478784,
         "home_context": {
@@ -5268,18 +5268,18 @@
         "home_win": 1,
         "home_score": 109,
         "away_score": 102,
-        "home_rating_after": 1636.3167525675503,
-        "away_rating_after": 1350.7056210561457
+        "home_rating_after": 1636.3192678395194,
+        "away_rating_after": 1350.7081363281147
       },
       {
         "game_id": "401909925",
         "start": "2026-11-05T00:30Z",
         "home": "Brooklyn Nets",
         "away": "Charlotte Hornets",
-        "home_rating": 1294.0826970871633,
-        "away_rating": 1521.139103919853,
-        "home_probability": 0.2009589692362365,
-        "away_probability": 0.7990410307637635,
+        "home_rating": 1294.0852123661232,
+        "away_rating": 1521.074010623218,
+        "home_probability": 0.20007376880664368,
+        "away_probability": 0.7999262311933564,
         "home_context": {
           "rest": 1,
           "travel": 8.574585690484435,
@@ -5295,8 +5295,8 @@
         "home_sos": 0.4550925925925926,
         "away_sos": 0.31216931216931215,
         "model_version": "0.3.0",
-        "base_home_probability": 0.2995313972329869,
-        "base_away_probability": 0.7004686027670131,
+        "base_home_probability": 0.29959707351359594,
+        "base_away_probability": 0.700402926486404,
         "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
         "injury_coverage": {
           "home": "submitted",
@@ -5315,18 +5315,18 @@
         "home_win": 1,
         "home_score": 114,
         "away_score": 104,
-        "home_rating_after": 1328.2794562025101,
-        "away_rating_after": 1498.8946408014758
+        "home_rating_after": 1328.2782473831887,
+        "away_rating_after": 1498.8435927336866
       },
       {
         "game_id": "401909926",
         "start": "2026-11-05T00:30Z",
         "home": "New York Knicks",
         "away": "Chicago Bulls",
-        "home_rating": 1557.346570040078,
-        "away_rating": 1348.61724844926,
-        "home_probability": 0.7470626960169733,
-        "away_probability": 0.2529373039830267,
+        "home_rating": 1557.3490853190378,
+        "away_rating": 1348.6197011587678,
+        "home_probability": 0.7470627430570478,
+        "away_probability": 0.2529372569429522,
         "home_context": {
           "rest": 1,
           "travel": 0.0,
@@ -5342,8 +5342,8 @@
         "home_sos": 0.3343915343915344,
         "away_sos": 0.4783068783068783,
         "model_version": "0.3.0",
-        "base_home_probability": 0.7602839850034944,
-        "base_away_probability": 0.23971601499650563,
+        "base_home_probability": 0.7602840377973888,
+        "base_away_probability": 0.23971596220261115,
         "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
         "injury_coverage": {
           "home": "submitted",
@@ -5362,16 +5362,16 @@
         "home_win": 1,
         "home_score": 135,
         "away_score": 105,
-        "home_rating_after": 1566.5022942355902,
-        "away_rating_after": 1342.1377083650675
+        "home_rating_after": 1566.5048082053672,
+        "away_rating_after": 1342.1401632088275
       },
       {
         "game_id": "401909927",
         "start": "2026-11-05T01:00Z",
         "home": "Memphis Grizzlies",
         "away": "Indiana Pacers",
-        "home_rating": 1447.3093206771252,
-        "away_rating": 1316.7875110477646,
+        "home_rating": 1447.3118359560851,
+        "away_rating": 1316.7900263267245,
         "home_probability": 0.791351153392082,
         "away_probability": 0.20864884660791805,
         "home_context": {
@@ -5409,16 +5409,16 @@
         "home_win": 0,
         "home_score": 103,
         "away_score": 107,
-        "home_rating_after": 1429.877742907332,
-        "away_rating_after": 1343.608181254294
+        "home_rating_after": 1429.8798905910228,
+        "away_rating_after": 1343.6103289379848
       },
       {
         "game_id": "401909928",
         "start": "2026-11-05T01:00Z",
         "home": "New Orleans Pelicans",
         "away": "Utah Jazz",
-        "home_rating": 1422.9029030464876,
-        "away_rating": 1280.4558182961987,
+        "home_rating": 1422.9054183254475,
+        "away_rating": 1280.4583335751586,
         "home_probability": 0.7221008686238273,
         "away_probability": 0.2778991313761727,
         "home_context": {
@@ -5456,16 +5456,16 @@
         "home_win": 1,
         "home_score": 120,
         "away_score": 113,
-        "home_rating_after": 1432.0290832259448,
-        "away_rating_after": 1271.5730852581564
+        "home_rating_after": 1432.0312319047625,
+        "away_rating_after": 1271.5752339369742
       },
       {
         "game_id": "401909929",
         "start": "2026-11-05T01:00Z",
         "home": "Oklahoma City Thunder",
         "away": "Cleveland Cavaliers",
-        "home_rating": 1657.6564263319951,
-        "away_rating": 1564.1399061818943,
+        "home_rating": 1657.658941610955,
+        "away_rating": 1564.1424214608542,
         "home_probability": 0.38457294639074124,
         "away_probability": 0.6154270536092588,
         "home_context": {
@@ -5503,16 +5503,16 @@
         "home_win": 1,
         "home_score": 124,
         "away_score": 116,
-        "home_rating_after": 1667.654253023989,
-        "away_rating_after": 1556.861381176028
+        "home_rating_after": 1667.6564017028068,
+        "away_rating_after": 1556.8635000010315
       },
       {
         "game_id": "401909930",
         "start": "2026-11-05T01:30Z",
         "home": "Houston Rockets",
         "away": "Minnesota Timberwolves",
-        "home_rating": 1665.8491249836181,
-        "away_rating": 1590.6162425866444,
+        "home_rating": 1665.851640262578,
+        "away_rating": 1590.6187578656043,
         "home_probability": 0.726380885416547,
         "away_probability": 0.273619114583453,
         "home_context": {
@@ -5550,16 +5550,16 @@
         "home_win": 0,
         "home_score": 107,
         "away_score": 117,
-        "home_rating_after": 1646.897815580224,
-        "away_rating_after": 1624.981859988329
+        "home_rating_after": 1646.8999642590418,
+        "away_rating_after": 1624.9840086671468
       },
       {
         "game_id": "401909931",
         "start": "2026-11-05T02:00Z",
         "home": "Denver Nuggets",
         "away": "Toronto Raptors",
-        "home_rating": 1578.8825001691541,
-        "away_rating": 1538.6156648820502,
+        "home_rating": 1578.885015448114,
+        "away_rating": 1538.61818016101,
         "home_probability": 0.6397807106226703,
         "away_probability": 0.3602192893773297,
         "home_context": {
@@ -5597,16 +5597,16 @@
         "home_win": 1,
         "home_score": 128,
         "away_score": 109,
-        "home_rating_after": 1593.8697779846455,
-        "away_rating_after": 1526.4634433416727
+        "home_rating_after": 1593.8719266634632,
+        "away_rating_after": 1526.4655920204905
       },
       {
         "game_id": "401909932",
         "start": "2026-11-05T02:00Z",
         "home": "Phoenix Suns",
         "away": "Portland Trail Blazers",
-        "home_rating": 1471.623983399593,
-        "away_rating": 1579.3848007346999,
+        "home_rating": 1471.626498678553,
+        "away_rating": 1579.3873160136598,
         "home_probability": 0.47975675467007567,
         "away_probability": 0.5202432453299244,
         "home_context": {
@@ -5644,16 +5644,16 @@
         "home_win": 0,
         "home_score": 119,
         "away_score": 132,
-        "home_rating_after": 1460.7963962475617,
-        "away_rating_after": 1592.1199860867853
+        "home_rating_after": 1460.7985449263795,
+        "away_rating_after": 1592.122134765603
       },
       {
         "game_id": "401909933",
         "start": "2026-11-05T02:30Z",
         "home": "San Antonio Spurs",
         "away": "Dallas Mavericks",
-        "home_rating": 1651.0175096513876,
-        "away_rating": 1445.1462429860553,
+        "home_rating": 1651.0200249303475,
+        "away_rating": 1445.1487582650152,
         "home_probability": 0.6861678321307911,
         "away_probability": 0.31383216786920887,
         "home_context": {
@@ -5691,16 +5691,16 @@
         "home_win": 1,
         "home_score": 112,
         "away_score": 111,
-        "home_rating_after": 1652.3360604016677,
-        "away_rating_after": 1439.0976009479305
+        "home_rating_after": 1652.3382090804855,
+        "away_rating_after": 1439.0997496267482
       },
       {
         "game_id": "401909934",
         "start": "2026-11-05T03:00Z",
         "home": "Sacramento Kings",
         "away": "Los Angeles Lakers",
-        "home_rating": 1342.0577488871509,
-        "away_rating": 1614.9700794151431,
+        "home_rating": 1342.0602641661108,
+        "away_rating": 1614.972594694103,
         "home_probability": 0.2101209825214439,
         "away_probability": 0.7898790174785562,
         "home_context": {
@@ -5738,16 +5738,16 @@
         "home_win": 0,
         "home_score": 103,
         "away_score": 116,
-        "home_rating_after": 1333.4764829886421,
-        "away_rating_after": 1620.6614052937632
+        "home_rating_after": 1333.47863166746,
+        "away_rating_after": 1620.663553972581
       },
       {
         "game_id": "401909935",
         "start": "2026-11-05T03:30Z",
         "home": "LA Clippers",
         "away": "Miami Heat",
-        "home_rating": 1464.1361003333604,
-        "away_rating": 1486.620323331259,
+        "home_rating": 1464.1386156123203,
+        "away_rating": 1486.6228386102189,
         "home_probability": 0.3697879374918446,
         "away_probability": 0.6302120625081554,
         "home_context": {
@@ -5785,18 +5785,18 @@
         "home_win": 0,
         "home_score": 116,
         "away_score": 117,
-        "home_rating_after": 1454.0811291903137,
-        "away_rating_after": 1492.721516102168
+        "home_rating_after": 1454.0832778691317,
+        "away_rating_after": 1492.723664780986
       },
       {
         "game_id": "401909936",
         "start": "2026-11-06T02:00Z",
         "home": "Phoenix Suns",
         "away": "Orlando Magic",
-        "home_rating": 1460.3581379037664,
-        "away_rating": 1489.3482319891632,
-        "home_probability": 0.44900249819457905,
-        "away_probability": 0.550997501805421,
+        "home_rating": 1460.3602865825844,
+        "away_rating": 1489.3503802958505,
+        "home_probability": 0.4490024985608729,
+        "away_probability": 0.5509975014391271,
         "home_context": {
           "rest": 0,
           "travel": 0.0,
@@ -5812,8 +5812,8 @@
         "home_sos": 0.4070707070707071,
         "away_sos": 0.38950617283950617,
         "model_version": "0.3.0",
-        "base_home_probability": 0.4821524131024391,
-        "base_away_probability": 0.5178475868975609,
+        "base_home_probability": 0.48215241353259936,
+        "base_away_probability": 0.5178475864674006,
         "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
         "injury_coverage": {
           "home": "submitted",
@@ -5832,16 +5832,16 @@
         "home_win": 1,
         "home_score": 117,
         "away_score": 104,
-        "home_rating_after": 1478.8636561338087,
-        "away_rating_after": 1478.4631460174478
+        "home_rating_after": 1478.8658047972544,
+        "away_rating_after": 1478.4652943331766
       },
       {
         "game_id": "401909937",
         "start": "2026-11-06T03:00Z",
         "home": "Golden State Warriors",
         "away": "Miami Heat",
-        "home_rating": 1508.8447373032252,
-        "away_rating": 1492.721516102168,
+        "home_rating": 1508.8468859820432,
+        "away_rating": 1492.723664780986,
         "home_probability": 0.3775511444978843,
         "away_probability": 0.6224488555021157,
         "home_context": {
@@ -5879,13 +5879,13 @@
         "home_win": 1,
         "home_score": 120,
         "away_score": 100,
-        "home_rating_after": 1526.0462425887142,
-        "away_rating_after": 1483.9617104117135
+        "home_rating_after": 1526.048391267758,
+        "away_rating_after": 1483.9638590907573
       }
     ],
     "replay_policy": "current-method-v1"
   },
-  "input_sha256": "f303f61e62164dbfa37a14c1a0c465c3fe1b8fd1a28504637789920568adcd5a",
-  "source_result_sha256": "e06db0970e2e587eadd9ebc7e2e8196ad4787667bd57a804cc174184a525e03f",
+  "input_sha256": "5e3763d2326f52092543811ad1d4e441839112b2a9c35da9e914283df92d05ae",
+  "source_result_sha256": "9814233c5e2e6e956cd8aa5d3a34d673fa54af262fffd98562197c5b8d4c406b",
   "provenance": "Current-method retrospective reconstruction; original issued forecasts and chronological backtests remain separate."
 }
