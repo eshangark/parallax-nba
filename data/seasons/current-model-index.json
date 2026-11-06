@@ -45,17 +45,17 @@
     },
     "2026-27": {
       "file": "2026-27/current-model.json",
-      "source_result_sha256": "0962f31a4880e8d2b8df07022ef1b63db54a1ae9c41da71ad616becf6a742d15",
-      "input_sha256": "d5126571d19984a5b284c4695f46d6811e6b28f83630b892a4acc9aa3d5e3a0f",
-      "result_sha256": "a4440770d4be4c376a1abb957704ce1b9afc279d279acbf3de51d7b4bf175baa",
+      "source_result_sha256": "e06db0970e2e587eadd9ebc7e2e8196ad4787667bd57a804cc174184a525e03f",
+      "input_sha256": "f303f61e62164dbfa37a14c1a0c465c3fe1b8fd1a28504637789920568adcd5a",
+      "result_sha256": "a2d0165c2b6a0a059747f83b115a499e6ea8b5988b53e63a904158d65c9ca948",
       "games": 123,
       "evaluation_role": "post_fit_replay"
     }
   },
   "summary": {
     "games": 6273,
-    "log_loss": 0.6072547052400472,
-    "brier_score": 0.21009560437432756,
+    "log_loss": 0.6072539671896521,
+    "brier_score": 0.2100953677607201,
     "winner_accuracy": 0.6690578670492587,
     "tie_policy": "pick home when probability equals 0.5",
     "calibration": [
@@ -77,7 +77,7 @@
         "lower": 0.2,
         "upper": 0.3,
         "games": 468,
-        "mean_probability": 0.25196512172240704,
+        "mean_probability": 0.2519671051570194,
         "observed_home_win_rate": 0.24145299145299146
       },
       {
@@ -136,8 +136,8 @@
       "Season": "2026-27",
       "Games": 123,
       "Winner accuracy": 0.6097560975609756,
-      "Brier score": 0.22803931836242014,
-      "Log loss": 0.6462378105918533,
+      "Brier score": 0.22802725106843963,
+      "Log loss": 0.6462001700217028,
       "Evaluation role": "Post-fit reconstruction"
     },
     {
@@ -2315,28 +2315,28 @@
       "Team": "Brooklyn Nets",
       "Games": 8,
       "Winner accuracy": 0.875,
-      "Brier score": 0.16333196638946607,
-      "Log loss": 0.5177905400797175,
-      "Expected wins": 2.60204560315806,
+      "Brier score": 0.16314643174451574,
+      "Log loss": 0.5172118163136545,
+      "Expected wins": 2.6029738505566646,
       "Actual wins": 2,
-      "Wins \u2212 expected": -0.6020456031580599,
-      "Mean forecast": 0.3252557003947575,
+      "Wins \u2212 expected": -0.6029738505566646,
+      "Mean forecast": 0.3253717313195831,
       "Actual win rate": 0.25,
-      "Calibration gap (pp)": -7.525570039475749
+      "Calibration gap (pp)": -7.537173131958308
     },
     {
       "Season": "2026-27",
       "Team": "Charlotte Hornets",
       "Games": 9,
       "Winner accuracy": 0.5555555555555556,
-      "Brier score": 0.30599831132887045,
-      "Log loss": 0.8252776007897301,
-      "Expected wins": 5.631779844589399,
+      "Brier score": 0.30583339164447015,
+      "Log loss": 0.8247631796643409,
+      "Expected wins": 5.630851597190794,
       "Actual wins": 3,
-      "Wins \u2212 expected": -2.631779844589399,
-      "Mean forecast": 0.6257533160654888,
+      "Wins \u2212 expected": -2.6308515971907944,
+      "Mean forecast": 0.6256501774656438,
       "Actual win rate": 0.3333333333333333,
-      "Calibration gap (pp)": -29.241998273215547
+      "Calibration gap (pp)": -29.23168441323105
     },
     {
       "Season": "2026-27",
@@ -2955,10 +2955,10 @@
         "Probability range": "20\u201330%",
         "Games": 69,
         "Wins": 12,
-        "Mean forecast": 0.24904604026140523,
+        "Mean forecast": 0.24905949312225456,
         "Actual win rate": 0.17391304347826086,
         "Winner accuracy": 0.8260869565217391,
-        "Calibration gap (pp)": -7.513299678314435,
+        "Calibration gap (pp)": -7.51464496439937,
         "Observed-rate 95% interval": "10.2%\u201328.0%",
         "Evidence": "Read with sampling uncertainty"
       },
@@ -3122,10 +3122,10 @@
         "Probability range": "70\u201380%",
         "Games": 20,
         "Wins": 13,
-        "Mean forecast": 0.7489001459292959,
+        "Mean forecast": 0.7488537335593657,
         "Actual win rate": 0.65,
         "Winner accuracy": 0.65,
-        "Calibration gap (pp)": -9.890014592929594,
+        "Calibration gap (pp)": -9.88537335593657,
         "Observed-rate 95% interval": "43.3%\u201381.9%",
         "Evidence": "Small sample"
       },
