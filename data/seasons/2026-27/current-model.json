@@ -26,10 +26,10 @@
     },
     "evaluation_role": "post_fit_replay",
     "metrics": {
-      "games": 27,
-      "log_loss": 0.5788545588650423,
-      "brier_score": 0.1995513197638753,
-      "winner_accuracy": 0.6296296296296297,
+      "games": 32,
+      "log_loss": 0.6464500657617644,
+      "brier_score": 0.2283859369708983,
+      "winner_accuracy": 0.5625,
       "tie_policy": "pick home when probability equals 0.5",
       "calibration": [
         {
@@ -42,16 +42,16 @@
         {
           "lower": 0.2,
           "upper": 0.3,
-          "games": 4,
-          "mean_probability": 0.2567499599301508,
-          "observed_home_win_rate": 0.25
+          "games": 5,
+          "mean_probability": 0.24584013406989805,
+          "observed_home_win_rate": 0.2
         },
         {
           "lower": 0.3,
           "upper": 0.4,
-          "games": 6,
-          "mean_probability": 0.3267150027578,
-          "observed_home_win_rate": 0.5
+          "games": 9,
+          "mean_probability": 0.345251043719892,
+          "observed_home_win_rate": 0.6666666666666666
         },
         {
           "lower": 0.4,
@@ -84,9 +84,9 @@
         {
           "lower": 0.8,
           "upper": 0.9,
-          "games": 2,
-          "mean_probability": 0.8339912631207217,
-          "observed_home_win_rate": 1
+          "games": 3,
+          "mean_probability": 0.8417017477036445,
+          "observed_home_win_rate": 0.6666666666666666
         },
         {
           "lower": 0.9,
@@ -98,10 +98,10 @@
       ]
     },
     "metrics_all_issued": {
-      "games": 183,
-      "log_loss": 0.6065802293835478,
-      "brier_score": 0.21043908417559198,
-      "winner_accuracy": 0.6502732240437158,
+      "games": 188,
+      "log_loss": 0.617348462724519,
+      "brier_score": 0.21505753592328428,
+      "winner_accuracy": 0.6382978723404256,
       "tie_policy": "pick home when probability equals 0.5",
       "calibration": [
         {
@@ -114,16 +114,16 @@
         {
           "lower": 0.2,
           "upper": 0.3,
-          "games": 21,
-          "mean_probability": 0.24555157999543445,
-          "observed_home_win_rate": 0.2857142857142857
+          "games": 22,
+          "mean_probability": 0.2435810913878641,
+          "observed_home_win_rate": 0.2727272727272727
         },
         {
           "lower": 0.3,
           "upper": 0.4,
-          "games": 28,
-          "mean_probability": 0.35063867531638215,
-          "observed_home_win_rate": 0.39285714285714285
+          "games": 31,
+          "mean_probability": 0.3537049124448686,
+          "observed_home_win_rate": 0.45161290322580644
         },
         {
           "lower": 0.4,
@@ -156,9 +156,9 @@
         {
           "lower": 0.8,
           "upper": 0.9,
-          "games": 14,
-          "mean_probability": 0.8442715876984912,
-          "observed_home_win_rate": 0.9285714285714286
+          "games": 15,
+          "mean_probability": 0.8451283296432245,
+          "observed_home_win_rate": 0.8666666666666667
         },
         {
           "lower": 0.9,
@@ -174,210 +174,210 @@
       {
         "team_id": "24",
         "team": "San Antonio Spurs",
-        "elo": 1706.5375561497224,
+        "elo": 1704.3987488042499,
         "games": 13,
         "wins": 11
       },
       {
         "team_id": "2",
         "team": "Boston Celtics",
-        "elo": 1683.5455340106712,
+        "elo": 1681.4067266651987,
         "games": 12,
         "wins": 10
       },
       {
         "team_id": "13",
         "team": "Los Angeles Lakers",
-        "elo": 1666.5204818658522,
+        "elo": 1664.3816745203796,
         "games": 13,
         "wins": 11
       },
       {
         "team_id": "10",
         "team": "Houston Rockets",
-        "elo": 1653.368161142334,
+        "elo": 1651.2293537968615,
         "games": 13,
         "wins": 10
       },
       {
-        "team_id": "8",
-        "team": "Detroit Pistons",
-        "elo": 1649.237776758971,
-        "games": 11,
+        "team_id": "25",
+        "team": "Oklahoma City Thunder",
+        "elo": 1636.190515608939,
+        "games": 13,
         "wins": 8
       },
       {
-        "team_id": "16",
-        "team": "Minnesota Timberwolves",
-        "elo": 1639.0759358727967,
+        "team_id": "8",
+        "team": "Detroit Pistons",
+        "elo": 1629.4317619688695,
         "games": 12,
-        "wins": 9
-      },
-      {
-        "team_id": "25",
-        "team": "Oklahoma City Thunder",
-        "elo": 1638.3293229544115,
-        "games": 13,
         "wins": 8
       },
       {
         "team_id": "22",
         "team": "Portland Trail Blazers",
-        "elo": 1630.6326175856386,
+        "elo": 1628.493810240166,
         "games": 12,
+        "wins": 9
+      },
+      {
+        "team_id": "16",
+        "team": "Minnesota Timberwolves",
+        "elo": 1614.204155658076,
+        "games": 13,
         "wins": 9
       },
       {
         "team_id": "7",
         "team": "Denver Nuggets",
-        "elo": 1591.0703767954944,
-        "games": 10,
-        "wins": 6
+        "elo": 1597.0468928249861,
+        "games": 11,
+        "wins": 7
       },
       {
         "team_id": "20",
         "team": "Philadelphia 76ers",
-        "elo": 1591.0503962985608,
+        "elo": 1588.9115889530883,
         "games": 13,
         "wins": 10
       },
       {
         "team_id": "5",
         "team": "Cleveland Cavaliers",
-        "elo": 1558.9436971635778,
+        "elo": 1571.3489808418376,
+        "games": 14,
+        "wins": 7
+      },
+      {
+        "team_id": "14",
+        "team": "Miami Heat",
+        "elo": 1554.6123985850782,
         "games": 13,
-        "wins": 6
+        "wins": 7
       },
       {
         "team_id": "18",
         "team": "New York Knicks",
-        "elo": 1555.5820216939367,
+        "elo": 1553.4432143484642,
         "games": 12,
         "wins": 6
       },
       {
         "team_id": "1",
         "team": "Atlanta Hawks",
-        "elo": 1533.0925317953877,
+        "elo": 1530.9537244499152,
         "games": 13,
         "wins": 7
       },
       {
         "team_id": "9",
         "team": "Golden State Warriors",
-        "elo": 1526.1505210984133,
+        "elo": 1524.0117137529408,
         "games": 13,
         "wins": 8
       },
       {
-        "team_id": "14",
-        "team": "Miami Heat",
-        "elo": 1517.0786326102839,
-        "games": 12,
-        "wins": 6
-      },
-      {
         "team_id": "21",
         "team": "Phoenix Suns",
-        "elo": 1508.0244088657284,
+        "elo": 1505.885601520256,
         "games": 11,
         "wins": 5
       },
       {
         "team_id": "28",
         "team": "Toronto Raptors",
-        "elo": 1495.6358642270195,
+        "elo": 1493.497056881547,
         "games": 12,
         "wins": 5
       },
       {
         "team_id": "19",
         "team": "Orlando Magic",
-        "elo": 1492.9846543577105,
+        "elo": 1490.845847012238,
         "games": 12,
         "wins": 5
       },
       {
         "team_id": "30",
         "team": "Charlotte Hornets",
-        "elo": 1481.293006280721,
+        "elo": 1479.1541989352486,
         "games": 12,
         "wins": 4
       },
       {
         "team_id": "29",
         "team": "Memphis Grizzlies",
-        "elo": 1461.5621620975555,
-        "games": 12,
-        "wins": 8
+        "elo": 1478.0412526678804,
+        "games": 13,
+        "wins": 9
       },
       {
         "team_id": "12",
         "team": "LA Clippers",
-        "elo": 1457.7035902248208,
+        "elo": 1455.5647828793483,
         "games": 11,
         "wins": 3
       },
       {
         "team_id": "6",
         "team": "Dallas Mavericks",
-        "elo": 1448.8110855016312,
-        "games": 12,
+        "elo": 1439.9327436980964,
+        "games": 13,
         "wins": 7
+      },
+      {
+        "team_id": "4",
+        "team": "Chicago Bulls",
+        "elo": 1383.426784286077,
+        "games": 12,
+        "wins": 3
       },
       {
         "team_id": "3",
         "team": "New Orleans Pelicans",
-        "elo": 1361.9020784423094,
-        "games": 13,
+        "elo": 1355.9222808589068,
+        "games": 14,
         "wins": 4
       },
       {
         "team_id": "11",
         "team": "Indiana Pacers",
-        "elo": 1355.8372903152795,
+        "elo": 1353.698482969807,
         "games": 13,
         "wins": 5
       },
       {
-        "team_id": "4",
-        "team": "Chicago Bulls",
-        "elo": 1342.5756105077253,
-        "games": 11,
-        "wins": 2
-      },
-      {
         "team_id": "17",
         "team": "Brooklyn Nets",
-        "elo": 1326.5615826679204,
-        "games": 11,
+        "elo": 1315.6278339379114,
+        "games": 12,
         "wins": 3
       },
       {
         "team_id": "27",
         "team": "Washington Wizards",
-        "elo": 1303.5113100733631,
+        "elo": 1301.3725027278906,
         "games": 13,
         "wins": 4
       },
       {
         "team_id": "15",
         "team": "Milwaukee Bucks",
-        "elo": 1302.5843329906108,
+        "elo": 1300.4455256451383,
         "games": 13,
         "wins": 1
       },
       {
         "team_id": "23",
         "team": "Sacramento Kings",
-        "elo": 1292.8126294093324,
+        "elo": 1290.67382206386,
         "games": 12,
         "wins": 1
       },
       {
         "team_id": "26",
         "team": "Utah Jazz",
-        "elo": 1227.9848302422195,
+        "elo": 1225.846022896747,
         "games": 13,
         "wins": 1
       }
@@ -8773,11 +8773,246 @@
         "away_score": 112,
         "home_rating_after": 1457.7035902248208,
         "away_rating_after": 1638.3293229544115
+      },
+      {
+        "game_id": "401909980",
+        "start": "2026-11-15T00:00Z",
+        "home": "New Orleans Pelicans",
+        "away": "Denver Nuggets",
+        "home_rating": 1361.9020784423094,
+        "away_rating": 1591.0703767954944,
+        "home_probability": 0.20220083062888694,
+        "away_probability": 0.7977991693711131,
+        "home_context": {
+          "rest": 0,
+          "travel": 0.0,
+          "timezone_change": 0.0,
+          "opening_prior": false
+        },
+        "away_context": {
+          "rest": 2,
+          "travel": 577.6494684791654,
+          "timezone_change": 0.0,
+          "opening_prior": false
+        },
+        "home_sos": 0.5637973137973139,
+        "away_sos": 0.36901474593782285,
+        "model_version": "0.3.0",
+        "base_home_probability": 0.21287514030563034,
+        "base_away_probability": 0.7871248596943696,
+        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "injury_coverage": {
+          "home": "submitted",
+          "away": "submitted"
+        },
+        "injury_source": {
+          "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-14_03_45PM.pdf",
+          "published_at": "2026-11-14T15:45:00-05:00",
+          "sha256": "6e0a03e9251257fb0982cedf3255a710389c4aea470219ad71843e9cf1dc8163"
+        },
+        "injury_status": "complete",
+        "kind": "current_method_replay",
+        "forecast_cutoff": "2026-11-14T20:47:46.795110+00:00",
+        "replay_input_basis": "captured_report_and_prior_player_history",
+        "eligible_for_evaluation": true,
+        "home_win": 0,
+        "home_score": 108,
+        "away_score": 116,
+        "home_rating_after": 1357.9186104331447,
+        "away_rating_after": 1599.043222399224
+      },
+      {
+        "game_id": "401909981",
+        "start": "2026-11-15T00:30Z",
+        "home": "Cleveland Cavaliers",
+        "away": "Dallas Mavericks",
+        "home_rating": 1558.9436971635778,
+        "away_rating": 1448.8110855016312,
+        "home_probability": 0.3676774241080169,
+        "away_probability": 0.632322575891983,
+        "home_context": {
+          "rest": 0,
+          "travel": 1754.0031407981985,
+          "timezone_change": 0.0,
+          "opening_prior": false
+        },
+        "away_context": {
+          "rest": 1,
+          "travel": 1012.6904881142377,
+          "timezone_change": 1.0,
+          "opening_prior": false
+        },
+        "home_sos": 0.5549755799755799,
+        "away_sos": 0.47895181741335585,
+        "model_version": "0.3.0",
+        "base_home_probability": 0.6320245303311984,
+        "base_away_probability": 0.36797546966880157,
+        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "injury_coverage": {
+          "home": "submitted",
+          "away": "submitted"
+        },
+        "injury_source": {
+          "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-14_03_45PM.pdf",
+          "published_at": "2026-11-14T15:45:00-05:00",
+          "sha256": "6e0a03e9251257fb0982cedf3255a710389c4aea470219ad71843e9cf1dc8163"
+        },
+        "injury_status": "complete",
+        "kind": "current_method_replay",
+        "forecast_cutoff": "2026-11-14T20:47:46.795110+00:00",
+        "replay_input_basis": "captured_report_and_prior_player_history",
+        "eligible_for_evaluation": true,
+        "home_win": 1,
+        "home_score": 127,
+        "away_score": 117,
+        "home_rating_after": 1573.0851585305534,
+        "away_rating_after": 1441.6689213868121
+      },
+      {
+        "game_id": "401909982",
+        "start": "2026-11-15T01:00Z",
+        "home": "Miami Heat",
+        "away": "Detroit Pistons",
+        "home_rating": 1517.0786326102839,
+        "away_rating": 1649.237776758971,
+        "home_probability": 0.3931038341902265,
+        "away_probability": 0.6068961658097736,
+        "home_context": {
+          "rest": 0,
+          "travel": 0.0,
+          "timezone_change": 0.0,
+          "opening_prior": false
+        },
+        "away_context": {
+          "rest": 1,
+          "travel": 1488.5339912669747,
+          "timezone_change": 0.0,
+          "opening_prior": false
+        },
+        "home_sos": 0.6355089355089355,
+        "away_sos": 0.49219576719576724,
+        "model_version": "0.3.0",
+        "base_home_probability": 0.3411400517876962,
+        "base_away_probability": 0.6588599482123039,
+        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "injury_coverage": {
+          "home": "submitted",
+          "away": "submitted"
+        },
+        "injury_source": {
+          "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-14_03_45PM.pdf",
+          "published_at": "2026-11-14T15:45:00-05:00",
+          "sha256": "6e0a03e9251257fb0982cedf3255a710389c4aea470219ad71843e9cf1dc8163"
+        },
+        "injury_status": "complete",
+        "kind": "current_method_replay",
+        "forecast_cutoff": "2026-11-14T20:47:46.795110+00:00",
+        "replay_input_basis": "captured_report_and_prior_player_history",
+        "eligible_for_evaluation": true,
+        "home_win": 1,
+        "home_score": 137,
+        "away_score": 117,
+        "home_rating_after": 1554.6123985850782,
+        "away_rating_after": 1629.4317619688695
+      },
+      {
+        "game_id": "401909983",
+        "start": "2026-11-15T01:00Z",
+        "home": "Memphis Grizzlies",
+        "away": "Brooklyn Nets",
+        "home_rating": 1461.5621620975555,
+        "away_rating": 1326.5615826679204,
+        "home_probability": 0.3861881186339845,
+        "away_probability": 0.6138118813660155,
+        "home_context": {
+          "rest": 0,
+          "travel": 577.6494684791654,
+          "timezone_change": 0.0,
+          "opening_prior": false
+        },
+        "away_context": {
+          "rest": 2,
+          "travel": 577.6494684791654,
+          "timezone_change": 0.0,
+          "opening_prior": false
+        },
+        "home_sos": 0.3686757686757687,
+        "away_sos": 0.5548280423280424,
+        "model_version": "0.3.0",
+        "base_home_probability": 0.5916457898736992,
+        "base_away_probability": 0.4083542101263008,
+        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "injury_coverage": {
+          "home": "submitted",
+          "away": "submitted"
+        },
+        "injury_source": {
+          "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-14_03_45PM.pdf",
+          "published_at": "2026-11-14T15:45:00-05:00",
+          "sha256": "6e0a03e9251257fb0982cedf3255a710389c4aea470219ad71843e9cf1dc8163"
+        },
+        "injury_status": "complete",
+        "kind": "current_method_replay",
+        "forecast_cutoff": "2026-11-14T20:47:46.795110+00:00",
+        "replay_input_basis": "captured_report_and_prior_player_history",
+        "eligible_for_evaluation": true,
+        "home_win": 1,
+        "home_score": 129,
+        "away_score": 110,
+        "home_rating_after": 1478.7747648637348,
+        "away_rating_after": 1316.361346133766
+      },
+      {
+        "game_id": "401909984",
+        "start": "2026-11-15T01:00Z",
+        "home": "Minnesota Timberwolves",
+        "away": "Chicago Bulls",
+        "home_rating": 1639.0759358727967,
+        "away_rating": 1342.5756105077253,
+        "home_probability": 0.85712271686949,
+        "away_probability": 0.14287728313050996,
+        "home_context": {
+          "rest": 1,
+          "travel": 0.0,
+          "timezone_change": 0.0,
+          "opening_prior": false
+        },
+        "away_context": {
+          "rest": 0,
+          "travel": 571.369631519587,
+          "timezone_change": 0.0,
+          "opening_prior": false
+        },
+        "home_sos": 0.34374514374514376,
+        "away_sos": 0.6271978021978022,
+        "model_version": "0.3.0",
+        "base_home_probability": 0.8647987910783136,
+        "base_away_probability": 0.1352012089216864,
+        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "injury_coverage": {
+          "home": "submitted",
+          "away": "submitted"
+        },
+        "injury_source": {
+          "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-14_03_45PM.pdf",
+          "published_at": "2026-11-14T15:45:00-05:00",
+          "sha256": "6e0a03e9251257fb0982cedf3255a710389c4aea470219ad71843e9cf1dc8163"
+        },
+        "injury_status": "complete",
+        "kind": "current_method_replay",
+        "forecast_cutoff": "2026-11-14T20:47:46.795110+00:00",
+        "replay_input_basis": "captured_report_and_prior_player_history",
+        "eligible_for_evaluation": true,
+        "home_win": 0,
+        "home_score": 106,
+        "away_score": 117,
+        "home_rating_after": 1615.2650997383057,
+        "away_rating_after": 1384.4877283663068
       }
     ],
     "replay_policy": "current-method-v1"
   },
-  "input_sha256": "4becf864d65908a8228a509e20ec5b90bffdea51e3932b701c559b8016bdf2c8",
-  "source_result_sha256": "3a2d1cfe47ff1b4a64aa6c4f2b83cbea6cd009a635102f5cba931bd170c48cec",
+  "input_sha256": "f74da0f4e3cd0c51cdd5a71a470789b1eea67b058eebbad3b065298a9fde19a5",
+  "source_result_sha256": "b549d9857bf6d69eaf20295f460c232746859520d711ad6e7f5bdc7484c00ca1",
   "provenance": "Current-method retrospective reconstruction; original issued forecasts and chronological backtests remain separate."
 }
