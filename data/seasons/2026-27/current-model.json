@@ -188,210 +188,210 @@
       {
         "team_id": "24",
         "team": "San Antonio Spurs",
-        "elo": 1704.6486275265343,
+        "elo": 1704.6497567704912,
         "games": 14,
         "wins": 12
       },
       {
         "team_id": "13",
         "team": "Los Angeles Lakers",
-        "elo": 1670.5384950399628,
+        "elo": 1670.5396242839197,
         "games": 14,
         "wins": 12
       },
       {
         "team_id": "2",
         "team": "Boston Celtics",
-        "elo": 1665.4741793851617,
+        "elo": 1665.4753086291187,
         "games": 14,
         "wins": 11
       },
       {
         "team_id": "10",
         "team": "Houston Rockets",
-        "elo": 1645.9846847345902,
+        "elo": 1645.9858139785472,
         "games": 15,
         "wins": 11
       },
       {
         "team_id": "25",
         "team": "Oklahoma City Thunder",
-        "elo": 1640.1731094674076,
+        "elo": 1640.1742387113645,
         "games": 14,
         "wins": 9
       },
       {
         "team_id": "16",
         "team": "Minnesota Timberwolves",
-        "elo": 1627.6139145172478,
+        "elo": 1627.6150437612048,
         "games": 14,
         "wins": 10
       },
       {
         "team_id": "8",
         "team": "Detroit Pistons",
-        "elo": 1624.5080650662514,
+        "elo": 1624.5091943102084,
         "games": 12,
         "wins": 8
       },
       {
         "team_id": "22",
         "team": "Portland Trail Blazers",
-        "elo": 1616.287270453533,
+        "elo": 1616.28839969749,
         "games": 13,
         "wins": 9
       },
       {
         "team_id": "20",
         "team": "Philadelphia 76ers",
-        "elo": 1601.1577640047171,
+        "elo": 1601.158893248674,
         "games": 15,
         "wins": 12
       },
       {
         "team_id": "7",
         "team": "Denver Nuggets",
-        "elo": 1576.9056697889946,
+        "elo": 1576.9067990329515,
         "games": 12,
         "wins": 7
       },
       {
         "team_id": "5",
         "team": "Cleveland Cavaliers",
-        "elo": 1576.5853685547586,
+        "elo": 1576.5864977987155,
         "games": 15,
         "wins": 8
       },
       {
         "team_id": "14",
         "team": "Miami Heat",
-        "elo": 1575.6591288969942,
+        "elo": 1575.660258140951,
         "games": 14,
         "wins": 8
       },
       {
         "team_id": "18",
         "team": "New York Knicks",
-        "elo": 1565.0870848380061,
+        "elo": 1565.088214081963,
         "games": 13,
         "wins": 7
       },
       {
         "team_id": "1",
         "team": "Atlanta Hawks",
-        "elo": 1533.9415389678084,
+        "elo": 1533.9426682117653,
         "games": 14,
         "wins": 8
       },
       {
         "team_id": "21",
         "team": "Phoenix Suns",
-        "elo": 1528.2260521660949,
+        "elo": 1528.2271814100518,
         "games": 13,
         "wins": 6
       },
       {
         "team_id": "19",
         "team": "Orlando Magic",
-        "elo": 1525.6119826348322,
+        "elo": 1525.6131118787891,
         "games": 13,
         "wins": 6
       },
       {
         "team_id": "9",
         "team": "Golden State Warriors",
-        "elo": 1501.5792778151033,
+        "elo": 1501.5462590716502,
         "games": 14,
         "wins": 8
       },
       {
         "team_id": "29",
         "team": "Memphis Grizzlies",
-        "elo": 1487.3513035707247,
+        "elo": 1487.3524328146816,
         "games": 14,
         "wins": 10
       },
       {
         "team_id": "28",
         "team": "Toronto Raptors",
-        "elo": 1480.282066580652,
+        "elo": 1480.283195824609,
         "games": 13,
         "wins": 5
       },
       {
         "team_id": "12",
         "team": "LA Clippers",
-        "elo": 1469.478824856451,
+        "elo": 1469.479954100408,
         "games": 12,
         "wins": 4
       },
       {
         "team_id": "30",
         "team": "Charlotte Hornets",
-        "elo": 1463.7737111700833,
+        "elo": 1463.7748404140402,
         "games": 13,
         "wins": 4
       },
       {
         "team_id": "6",
         "team": "Dallas Mavericks",
-        "elo": 1432.166750734863,
+        "elo": 1432.1678799788199,
         "games": 14,
         "wins": 7
       },
       {
         "team_id": "3",
         "team": "New Orleans Pelicans",
-        "elo": 1384.6898572703874,
+        "elo": 1384.6912571830444,
         "games": 15,
         "wins": 5
       },
       {
         "team_id": "4",
         "team": "Chicago Bulls",
-        "elo": 1373.2946144134457,
+        "elo": 1373.2957436574027,
         "games": 13,
         "wins": 3
       },
       {
         "team_id": "11",
         "team": "Indiana Pacers",
-        "elo": 1345.8653287637503,
+        "elo": 1345.8664580077073,
         "games": 14,
         "wins": 5
       },
       {
         "team_id": "17",
         "team": "Brooklyn Nets",
-        "elo": 1306.4689875068025,
+        "elo": 1306.4701167507594,
         "games": 13,
         "wins": 3
       },
       {
         "team_id": "15",
         "team": "Milwaukee Bucks",
-        "elo": 1291.1667471836693,
+        "elo": 1291.1678764276262,
         "games": 14,
         "wins": 1
       },
       {
         "team_id": "27",
         "team": "Washington Wizards",
-        "elo": 1285.3837196816075,
+        "elo": 1285.3848489255645,
         "games": 15,
         "wins": 4
       },
       {
         "team_id": "23",
         "team": "Sacramento Kings",
-        "elo": 1281.3840892532696,
+        "elo": 1281.3852184972266,
         "games": 13,
         "wins": 1
       },
       {
         "team_id": "26",
         "team": "Utah Jazz",
-        "elo": 1218.7117851562941,
+        "elo": 1218.712914400251,
         "games": 14,
         "wins": 1
       }
@@ -9725,8 +9725,8 @@
         "home_win": 1,
         "home_score": 106,
         "away_score": 98,
-        "home_rating_after": 1628.1569831256465,
-        "away_rating_after": 1616.8303390619317
+        "home_rating_after": 1628.1581123696035,
+        "away_rating_after": 1616.8314683058886
       },
       {
         "game_id": "401910000",
@@ -9772,8 +9772,8 @@
         "home_win": 1,
         "home_score": 115,
         "away_score": 94,
-        "home_rating_after": 1385.5995458931138,
-        "away_rating_after": 1502.4889664378297
+        "home_rating_after": 1385.600945805771,
+        "away_rating_after": 1502.4559476943768
       },
       {
         "game_id": "401910001",
@@ -9819,13 +9819,13 @@
         "home_win": 0,
         "home_score": 105,
         "away_score": 117,
-        "home_rating_after": 1576.9056697889946,
-        "away_rating_after": 1528.2260521660949
+        "home_rating_after": 1576.9067990329515,
+        "away_rating_after": 1528.2271814100518
       }
     ],
     "replay_policy": "current-method-v1"
   },
-  "input_sha256": "25a6675a8485a5ba7ad224b107af831ef2640d1b587758ba482cbac5a14f737f",
-  "source_result_sha256": "b5ee4ba3a2f5390894aa063c03e9f59b672eb5888c2262398fe33e2a18718cb2",
+  "input_sha256": "bc4b2e7d79618a157adb1b17944479430eb533458d774e7826480d6240f6d398",
+  "source_result_sha256": "3acc73790741a632b151cd424a11ac6a80711dc72891395a190efa253bb60d5a",
   "provenance": "Current-method retrospective reconstruction; original issued forecasts and chronological backtests remain separate."
 }
