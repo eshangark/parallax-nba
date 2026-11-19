@@ -45,9 +45,9 @@
     },
     "2026-27": {
       "file": "2026-27/current-model.json",
-      "source_result_sha256": "57720895b4f6b3350abeebd09cce8e897001ec2d2677ad7e1a1cf7d0264ea066",
-      "input_sha256": "9bfc4e60a244ad2d1111e52dac7f63edc5fcce0592f730304d9cd80bc78ce103",
-      "result_sha256": "3ec0086b3d77f343373050ec989e30f03f8316849b93f5936d26f9bfe1d5cebb",
+      "source_result_sha256": "90b8d21e0e50fa4df074f45c9c95894571b18fda8330f13e309bb02eb457a5d8",
+      "input_sha256": "e73df480d7cd4583004c2cd9059503302eb47186e4d8981f339a345cc30e1287",
+      "result_sha256": "d55a7ef91b64b99e68d3015102d13164b6669d502b15d1347045e5605fdddf27",
       "games": 222,
       "evaluation_role": "post_fit_replay"
     }
