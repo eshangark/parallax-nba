@@ -27,8 +27,8 @@
     "evaluation_role": "post_fit_replay",
     "metrics": {
       "games": 70,
-      "log_loss": 0.6407369184123343,
-      "brier_score": 0.2233660124748335,
+      "log_loss": 0.6407024190359591,
+      "brier_score": 0.22334847923758902,
       "winner_accuracy": 0.5857142857142857,
       "tie_policy": "pick home when probability equals 0.5",
       "calibration": [
@@ -57,7 +57,7 @@
           "lower": 0.3,
           "upper": 0.4,
           "games": 13,
-          "mean_probability": 0.34390493573759456,
+          "mean_probability": 0.34373299185342987,
           "observed_home_win_rate": 0.46153846153846156
         },
         {
@@ -85,7 +85,7 @@
           "lower": 0.7,
           "upper": 0.8,
           "games": 6,
-          "mean_probability": 0.7249346450636859,
+          "mean_probability": 0.7248014370170308,
           "observed_home_win_rate": 0.8333333333333334
         },
         {
@@ -106,8 +106,8 @@
     },
     "metrics_all_issued": {
       "games": 226,
-      "log_loss": 0.6204720965778646,
-      "brier_score": 0.21574375145605748,
+      "log_loss": 0.6204614109303148,
+      "brier_score": 0.21573832080735342,
       "winner_accuracy": 0.6327433628318584,
       "tie_policy": "pick home when probability equals 0.5",
       "calibration": [
@@ -136,7 +136,7 @@
           "lower": 0.3,
           "upper": 0.4,
           "games": 35,
-          "mean_probability": 0.3522387730543037,
+          "mean_probability": 0.35217490818304253,
           "observed_home_win_rate": 0.4
         },
         {
@@ -164,7 +164,7 @@
           "lower": 0.7,
           "upper": 0.8,
           "games": 27,
-          "mean_probability": 0.7400020917676035,
+          "mean_probability": 0.7399724899794579,
           "observed_home_win_rate": 0.7407407407407407
         },
         {
@@ -10346,8 +10346,8 @@
         "away": "Detroit Pistons",
         "home_rating": 1382.6666310267558,
         "away_rating": 1657.6468901487049,
-        "home_probability": 0.3376841285163591,
-        "away_probability": 0.6623158714836409,
+        "home_probability": 0.33544885802221763,
+        "away_probability": 0.6645511419777823,
         "home_context": {
           "rest": 1,
           "travel": 0.0,
@@ -10440,8 +10440,8 @@
         "away": "Golden State Warriors",
         "home_rating": 1430.1432538225313,
         "away_rating": 1499.5216329153616,
-        "home_probability": 0.7695407791235356,
-        "away_probability": 0.23045922087646442,
+        "home_probability": 0.768036070043302,
+        "away_probability": 0.231963929956698,
         "home_context": {
           "rest": 2,
           "travel": 2493.3571976203125,
@@ -10628,8 +10628,8 @@
         "away": "Golden State Warriors",
         "home_rating": 1502.9262937562105,
         "away_rating": 1483.418951365271,
-        "home_probability": 0.7030293586822923,
-        "away_probability": 0.2969706413177077,
+        "home_probability": 0.7037348194825955,
+        "away_probability": 0.29626518051740447,
         "home_context": {
           "rest": 0,
           "travel": 1013.7313830198304,
@@ -10812,7 +10812,7 @@
     ],
     "replay_policy": "current-method-v1"
   },
-  "input_sha256": "72ee4f1d63da2e61d667b7551ef21e36e7f7070a4cf6c4d4d78d9432e37512e8",
+  "input_sha256": "22ce500b514d0db9b5c52373a4a09cc954069c702f311d03eb473a2d0c666976",
   "source_result_sha256": "60ca0f2c5f3a9b0a273b2ef3a1b81d14d1586fb183a3e6851a0a5504f0397263",
   "provenance": "Current-method retrospective reconstruction; original issued forecasts and chronological backtests remain separate."
 }
