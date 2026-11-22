@@ -26,10 +26,10 @@
     },
     "evaluation_role": "post_fit_replay",
     "metrics": {
-      "games": 79,
-      "log_loss": 0.630613286718156,
-      "brier_score": 0.2195198503164586,
-      "winner_accuracy": 0.5822784810126582,
+      "games": 80,
+      "log_loss": 0.6260781270695284,
+      "brier_score": 0.21746580997658913,
+      "winner_accuracy": 0.5875,
       "tie_policy": "pick home when probability equals 0.5",
       "calibration": [
         {
@@ -84,9 +84,9 @@
         {
           "lower": 0.7,
           "upper": 0.8,
-          "games": 8,
-          "mean_probability": 0.7395282851464686,
-          "observed_home_win_rate": 0.875
+          "games": 9,
+          "mean_probability": 0.7423651850283826,
+          "observed_home_win_rate": 0.8888888888888888
         },
         {
           "lower": 0.8,
@@ -105,10 +105,10 @@
       ]
     },
     "metrics_all_issued": {
-      "games": 235,
-      "log_loss": 0.6178449327168865,
-      "brier_score": 0.2147427026843867,
-      "winner_accuracy": 0.6297872340425532,
+      "games": 236,
+      "log_loss": 0.6163616936580351,
+      "brier_score": 0.21406665997439733,
+      "winner_accuracy": 0.6313559322033898,
       "tie_policy": "pick home when probability equals 0.5",
       "calibration": [
         {
@@ -163,9 +163,9 @@
         {
           "lower": 0.7,
           "upper": 0.8,
-          "games": 29,
-          "mean_probability": 0.7429887892591354,
-          "observed_home_win_rate": 0.7586206896551724
+          "games": 30,
+          "mean_probability": 0.7437245090866207,
+          "observed_home_win_rate": 0.7666666666666667
         },
         {
           "lower": 0.8,
@@ -188,210 +188,210 @@
       {
         "team_id": "24",
         "team": "San Antonio Spurs",
-        "elo": 1690.635180490798,
+        "elo": 1690.5620221591953,
         "games": 16,
         "wins": 13
       },
       {
         "team_id": "8",
         "team": "Detroit Pistons",
-        "elo": 1652.5792121497902,
+        "elo": 1652.5060538181876,
         "games": 15,
         "wins": 10
       },
       {
         "team_id": "2",
         "team": "Boston Celtics",
-        "elo": 1649.2384832952869,
+        "elo": 1649.1653249636843,
         "games": 15,
         "wins": 11
       },
       {
         "team_id": "13",
         "team": "Los Angeles Lakers",
-        "elo": 1647.956677051875,
+        "elo": 1647.8835187202724,
         "games": 17,
         "wins": 14
       },
       {
         "team_id": "10",
         "team": "Houston Rockets",
-        "elo": 1638.2449987587106,
+        "elo": 1638.171840427108,
         "games": 17,
         "wins": 12
       },
       {
         "team_id": "25",
         "team": "Oklahoma City Thunder",
-        "elo": 1627.5328271587493,
+        "elo": 1627.4596688271467,
         "games": 16,
         "wins": 10
       },
       {
         "team_id": "16",
         "team": "Minnesota Timberwolves",
-        "elo": 1621.1806639447877,
+        "elo": 1621.1075056131851,
         "games": 16,
         "wins": 11
       },
       {
+        "team_id": "20",
+        "team": "Philadelphia 76ers",
+        "elo": 1610.0228069636885,
+        "games": 17,
+        "wins": 14
+      },
+      {
         "team_id": "22",
         "team": "Portland Trail Blazers",
-        "elo": 1609.6871701605728,
+        "elo": 1609.6140118289702,
         "games": 15,
         "wins": 10
       },
       {
         "team_id": "7",
         "team": "Denver Nuggets",
-        "elo": 1609.3862664309845,
+        "elo": 1609.313108099382,
         "games": 14,
         "wins": 9
       },
       {
-        "team_id": "20",
-        "team": "Philadelphia 76ers",
-        "elo": 1606.4687548701895,
-        "games": 16,
-        "wins": 13
-      },
-      {
         "team_id": "18",
         "team": "New York Knicks",
-        "elo": 1593.8443870738415,
+        "elo": 1593.771228742239,
         "games": 15,
         "wins": 9
       },
       {
         "team_id": "14",
         "team": "Miami Heat",
-        "elo": 1571.3409117435317,
+        "elo": 1571.267753411929,
         "games": 15,
         "wins": 9
       },
       {
         "team_id": "5",
         "team": "Cleveland Cavaliers",
-        "elo": 1565.768329161769,
+        "elo": 1565.6951708301665,
         "games": 17,
         "wins": 9
       },
       {
         "team_id": "1",
         "team": "Atlanta Hawks",
-        "elo": 1563.46347055186,
+        "elo": 1563.3903122202573,
         "games": 16,
         "wins": 10
       },
       {
         "team_id": "21",
         "team": "Phoenix Suns",
-        "elo": 1545.7538743004927,
+        "elo": 1545.6807159688901,
         "games": 15,
         "wins": 8
       },
       {
         "team_id": "29",
         "team": "Memphis Grizzlies",
-        "elo": 1523.9773936957226,
+        "elo": 1523.90423536412,
         "games": 16,
         "wins": 12
       },
       {
         "team_id": "19",
         "team": "Orlando Magic",
-        "elo": 1517.5896385687424,
+        "elo": 1517.5164802371398,
         "games": 15,
         "wins": 7
       },
       {
         "team_id": "28",
         "team": "Toronto Raptors",
-        "elo": 1471.6538622821313,
+        "elo": 1471.5807039505287,
         "games": 16,
         "wins": 6
       },
       {
         "team_id": "9",
         "team": "Golden State Warriors",
-        "elo": 1469.9012940990772,
+        "elo": 1469.8281357674746,
         "games": 16,
         "wins": 8
       },
       {
         "team_id": "6",
         "team": "Dallas Mavericks",
-        "elo": 1449.1115974261288,
+        "elo": 1449.0384390945262,
         "games": 15,
         "wins": 8
       },
       {
         "team_id": "30",
         "team": "Charlotte Hornets",
-        "elo": 1444.2964543853948,
+        "elo": 1444.2232960537922,
         "games": 15,
         "wins": 4
       },
       {
         "team_id": "12",
         "team": "LA Clippers",
-        "elo": 1430.7529470779114,
+        "elo": 1430.6797887463088,
         "games": 14,
         "wins": 4
       },
       {
         "team_id": "4",
         "team": "Chicago Bulls",
-        "elo": 1375.6602618940271,
+        "elo": 1375.5871035624245,
         "games": 15,
         "wins": 4
       },
       {
         "team_id": "3",
         "team": "New Orleans Pelicans",
-        "elo": 1366.2066283949428,
+        "elo": 1366.1334700633402,
         "games": 17,
         "wins": 5
       },
       {
         "team_id": "11",
         "team": "Indiana Pacers",
-        "elo": 1327.8630260669813,
+        "elo": 1327.7898677353787,
         "games": 16,
         "wins": 5
       },
       {
         "team_id": "27",
         "team": "Washington Wizards",
-        "elo": 1319.1961756626852,
+        "elo": 1319.1230173310826,
         "games": 17,
         "wins": 6
       },
       {
         "team_id": "26",
         "team": "Utah Jazz",
-        "elo": 1291.439662312976,
+        "elo": 1291.3665039813734,
         "games": 17,
         "wins": 3
       },
       {
         "team_id": "17",
         "team": "Brooklyn Nets",
-        "elo": 1280.189323582226,
+        "elo": 1280.1161652506235,
         "games": 15,
         "wins": 3
       },
       {
         "team_id": "15",
         "team": "Milwaukee Bucks",
-        "elo": 1275.9142661086687,
-        "games": 16,
+        "elo": 1274.4086473000455,
+        "games": 17,
         "wins": 1
       },
       {
         "team_id": "23",
         "team": "Sacramento Kings",
-        "elo": 1263.1662612991427,
+        "elo": 1263.09310296754,
         "games": 15,
         "wins": 1
       }
@@ -11231,11 +11231,58 @@
         "away_score": 104,
         "home_rating_after": 1648.4776337920678,
         "away_rating_after": 1263.6872180393354
+      },
+      {
+        "game_id": "401910023",
+        "start": "2026-11-21T18:00Z",
+        "home": "Philadelphia 76ers",
+        "away": "Milwaukee Bucks",
+        "home_rating": 1606.4687548701895,
+        "away_rating": 1275.9142661086687,
+        "home_probability": 0.7650603840836943,
+        "away_probability": 0.23493961591630574,
+        "home_context": {
+          "rest": 2,
+          "travel": 1390.8813989075102,
+          "timezone_change": 0.0,
+          "opening_prior": false
+        },
+        "away_context": {
+          "rest": 1,
+          "travel": 1114.0856850633031,
+          "timezone_change": 1.0,
+          "opening_prior": false
+        },
+        "home_sos": 0.2646198830409357,
+        "away_sos": 0.6640186045178306,
+        "model_version": "0.3.0",
+        "base_home_probability": 0.8722214736670414,
+        "base_away_probability": 0.1277785263329586,
+        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "injury_coverage": {
+          "home": "submitted",
+          "away": "submitted"
+        },
+        "injury_source": {
+          "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_07_30AM.pdf",
+          "published_at": "2026-11-21T07:30:00-05:00",
+          "sha256": "edded20e453dc2d936581f0dc0fc4e6fa07709d446962f577e4d1630a8589a3b"
+        },
+        "injury_status": "complete",
+        "kind": "current_method_replay",
+        "forecast_cutoff": "2026-11-21T12:43:41.932593+00:00",
+        "replay_input_basis": "captured_report_and_prior_player_history",
+        "eligible_for_evaluation": true,
+        "home_win": 1,
+        "home_score": 132,
+        "away_score": 129,
+        "home_rating_after": 1610.0228069636885,
+        "away_rating_after": 1274.4086473000455
       }
     ],
     "replay_policy": "current-method-v1"
   },
-  "input_sha256": "3f98037d3c36522f1e8aa3c3079595ec4ae28b9d6e5c73e9f7996453ca1d8cf9",
-  "source_result_sha256": "52cf1bb3c2f4dffe2740dc61ecd7977010975b7e42f5c5a0a47d324507faafa9",
+  "input_sha256": "8c85c0b4bc99778e20ec39e04167f22d29a07a401cd5646ec94070430ca7bf5e",
+  "source_result_sha256": "baee9723daac6bd55653c608dd71877ef30f93c41e07a03e823ae8374dbc7255",
   "provenance": "Current-method retrospective reconstruction; original issued forecasts and chronological backtests remain separate."
 }
