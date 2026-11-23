@@ -4,9 +4,9 @@
 
 Parallax NBA combines a mathematical model for NBA game predictions with a dashboard for understanding probabilities, evaluating historical performance and making informed betting decisions. This project is adapted from work developed for the Wharton Data Science Competition.
 
-[Technical paper](paper/main.pdf) · [LaTeX source](paper/main.tex)
+[Open Parallax NBA v1](https://eshangark.github.io/parallax-nba/) · [Pages deployments](https://github.com/eshangark/parallax-nba/deployments) · [Technical paper](paper/main.pdf) · [LaTeX source](paper/main.tex)
 
-The Astro V1 dashboard presents dated matchups, team Elo histories, calibration and scorecards, and a pregame contract calculator. The release workflow builds the dashboard from a verified source revision. See [deployment and refresh](docs/ANALYTICS.md).
+The Astro V1 dashboard presents dated matchups, team Elo histories, calibration and scorecards, and a pregame contract calculator. GitHub Pages serves the dashboard from a verified source revision. Streamlit is a temporary fallback during the v1 rollout. See [deployment and refresh](docs/ANALYTICS.md).
 
 ## Active forecast model
 
