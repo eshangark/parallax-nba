@@ -1,0 +1,9 @@
+---
+import Slate from '../../components/Slate.astro';
+import { slateDays } from '../../lib/data';
+export function getStaticPaths() {
+  return slateDays.map(day => ({ params: { day } }));
+}
+const { day } = Astro.params;
+---
+<Slate day={day} />

@@ -1,0 +1,54 @@
+---
+import '@fontsource-variable/inter';
+import '@fontsource/barlow-condensed/latin-700.css';
+import '../styles/global.css';
+
+const { title } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, "") + "/";
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title} | Parallax NBA</title>
+    <meta name="description" content="NBA pregame forecasts and the evidence behind each matchup." />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="masthead">
+      <div class="frame mast-inner">
+        <a href={base} class="brand"><span class="brand-mark" aria-hidden="true"></span> PARALLAX <span>NBA</span></a>
+        <nav aria-label="Main navigation">
+          {([['', 'Home'], ['today/', 'Today'], ['archive/', 'Archive'], ['teams/', 'Teams'], ['accuracy/', 'Accuracy'], ['methodology/', 'Methodology']]).map(([path, label]) =>
+            <a href={base + path} aria-current={Astro.url.pathname === base + path ? 'page' : undefined}>{label}</a>)}
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="frame"><slot /></main>
+    <footer class="frame footer"><a href={base}>Parallax NBA</a><span>Pregame forecasts · Eastern time</span></footer>
+    <script>
+      import { dayKey } from '../lib/slate';
+      const freshness = () => {
+        for (const item of document.querySelectorAll<HTMLElement>('[data-checked-at]')) {
+          const elapsed = Date.now() - Date.parse(item.dataset.checkedAt || '');
+          const state = item.querySelector('[data-freshness]');
+          if (state) state.textContent = !Number.isFinite(elapsed) || elapsed < 0 ? 'Timestamp unavailable' :
+            elapsed >= 6 * 3600_000 ? 'Stale data' : elapsed >= 2 * 3600_000 ? 'Check delayed' : 'Recently checked';
+          item.classList.toggle('stale', !Number.isFinite(elapsed) || elapsed >= 2 * 3600_000);
+        }
+        for (const item of document.querySelectorAll<HTMLElement>('[data-pregame-tip]')) {
+          if (Date.parse(item.dataset.pregameTip || '') <= Date.now()) item.textContent = 'Scheduled tip passed';
+        }
+        const landing = document.querySelector<HTMLElement>('[data-build-day]');
+        if (landing && landing.dataset.buildDay !== dayKey()) {
+          const link = landing.querySelector<HTMLAnchorElement>(`[data-day="${dayKey()}"]`);
+          if (link) window.location.replace(link.href);
+          else landing.querySelector('[data-day-warning]')?.removeAttribute('hidden');
+        }
+      };
+      freshness();
+      setInterval(freshness, 60_000);
+    </script>
+  </body>
+</html>

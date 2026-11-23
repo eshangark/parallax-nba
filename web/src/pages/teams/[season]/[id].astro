@@ -1,0 +1,42 @@
+---
+import Shell from '../../../layouts/Shell.astro';
+import PageIntro from '../../../components/PageIntro.astro';
+import { games, manifest, teams } from '../../../lib/data';
+import { stamp } from '../../../lib/slate';
+export function getStaticPaths() {
+  const all = new Map(games().map(game => [game.game_id, game]));
+  return manifest.seasons.flatMap(season => teams(season).map(team => ({
+    params: { season, id: team.team_id },
+    props: { team, log: team.history.map(row => ({ ...row, game: all.get(row.game_id)! })) },
+  })));
+}
+const { team, log } = Astro.props;
+const { season, id } = Astro.params;
+const base = import.meta.env.BASE_URL;
+const lo = Math.min(...log.map(row => row.elo));
+const hi = Math.max(...log.map(row => row.elo));
+const points = log.map((row, i) => `${20 + i / Math.max(log.length - 1, 1) * 560},${144 - (row.elo - lo) / (hi - lo || 1) * 124}`).join(' ');
+---
+<Shell title={team.name}>
+  <a class="back" href={`${base}teams/?season=${season}`}>← Team ratings</a>
+  <PageIntro title={team.name} description={`${season} · Rank ${team.elo_rank} · Elo ${team.elo.toFixed(1)} · ${team.wins}–${team.games - team.wins}`} />
+  <section class="detail">
+    <h2>Elo over the season</h2>
+    {log.length ? <><svg class="elo-chart" viewBox="0 0 600 164" role="img" aria-label={`Elo ranged from ${lo.toFixed(1)} to ${hi.toFixed(1)}`}>
+      <path d="M20 20H580 M20 82H580 M20 144H580" stroke="var(--line)" fill="none" />
+      <polyline points={points} fill="none" stroke="var(--accent)" stroke-width="3" vector-effect="non-scaling-stroke" />
+    </svg><p class="subtle">Range {lo.toFixed(1)}–{hi.toFixed(1)} · {log.length} completed games</p></> : <p>No completed games yet.</p>}
+  </section>
+  <section class="detail">
+    <h2>Game history</h2>
+    <div class="table-wrap"><table><thead><tr><th>Game</th><th>Result</th><th>Elo after</th><th>Change</th></tr></thead><tbody>
+      {[...log].reverse().map(row => {
+        const g = row.game;
+        const home = g.home_id === id;
+        const own = home ? g.home_score! : g.away_score!;
+        const other = home ? g.away_score! : g.home_score!;
+        return <tr><th scope="row"><a href={`${base}games/${g.game_id}/`}>{home ? 'vs ' + g.away : 'at ' + g.home}</a><small>{stamp(g.start)}</small></th><td>{own > other ? 'W' : 'L'} {own}–{other}</td><td>{row.elo.toFixed(1)}</td><td>{row.change === null ? '—' : (row.change > 0 ? '+' : '') + row.change.toFixed(1)}</td></tr>;
+      })}
+    </tbody></table></div>
+  </section>
+</Shell>

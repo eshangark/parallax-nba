@@ -1,0 +1,119 @@
+---
+import { version } from '../../../package.json';
+import Shell from '../../layouts/Shell.astro';
+import PageIntro from '../../components/PageIntro.astro';
+import { games, manifest, scoredGames, teams } from '../../lib/data';
+import { stamp } from '../../lib/slate';
+const scored = scoredGames();
+const names = Object.fromEntries(manifest.seasons.flatMap(s => teams(s)).map(t => [t.team_id, t.name]));
+const upcoming = games().filter(g => g.status === 'scheduled' && g.forecast);
+---
+<Shell title="Forecast accuracy">
+  <PageIntro title="Forecast accuracy" description={`Compare Parallax v${version} forecasts with completed results. Each completed game contributes one saved pregame forecast.`} />
+  <div class="filters">
+    <label>Season <select id="accuracy-season"><option value="">All seasons</option>{[...manifest.seasons].reverse().map(s => <option>{s}</option>)}</select></label>
+    <label>Team <select id="accuracy-team"><option value="">All teams</option>{Object.entries(names).sort(([,a],[,b]) => a.localeCompare(b)).map(([id,name]) => <option value={id}>{name}</option>)}</select></label>
+    <label>Results available before <select id="accuracy-cutoff"><option value="">All completed games</option>{upcoming.map(g => <option value={g.game_id}>{g.away} at {g.home} · {stamp(g.start)}</option>)}</select></label>
+    <label>Sample <select id="accuracy-window"><option value="">All games</option><option value="established">Both teams had 10 prior games</option></select></label>
+  </div>
+  <div class="metrics" id="accuracy-metrics" aria-live="polite"></div>
+  <section class="detail">
+    <h2>Did teams win as often as forecast?</h2>
+    <p id="calibration-note" class="subtle"></p>
+    <div class="chart-key"><span>● Actual win rate</span><span>◇ Mean forecast</span></div>
+    <ul id="calibration-chart" class="step-chart" aria-label="Actual and forecast win rates by band"></ul>
+    <div class="table-wrap"><table><thead><tr><th>Forecast range</th><th>Games</th><th>Mean forecast</th><th>Actual win rate</th><th>95% interval</th></tr></thead><tbody id="accuracy-bands"></tbody></table></div>
+    <p class="subtle">Intervals show sampling uncertainty in each historical group. Small groups can vary widely.</p>
+  </section>
+  <details class="detail"><summary>Season breakdown</summary><div class="table-wrap"><table><thead><tr><th>Season</th><th>Games</th><th>Winner accuracy</th><th>Brier</th><th>Log loss</th></tr></thead><tbody id="season-scores"></tbody></table></div></details>
+  <details class="detail"><summary>Team breakdown</summary><div class="table-wrap"><table><thead><tr><th>Team</th><th>Games</th><th>Expected wins</th><th>Actual wins</th><th>Actual win rate</th></tr></thead><tbody id="team-scores"></tbody></table></div></details>
+  <button type="button" id="download-scored">Download selected records</button>
+  <script is:inline type="application/json" id="accuracy-data" set:html={JSON.stringify({
+    scored, names, cutoffs: Object.fromEntries(upcoming.map(g => [g.game_id, g.forecast!.cutoff]))
+  }).replaceAll('<', '\\u003c')} />
+</Shell>
+<script>
+  import { bands, scores, type ScoredGame } from '../../lib/accuracy';
+  const get = (id: string) => document.getElementById(id)!;
+  const { scored, names, cutoffs } = JSON.parse(get('accuracy-data').textContent!) as {
+    scored: ScoredGame[]; names: Record<string,string>; cutoffs: Record<string,string>;
+  };
+  const [season, team, cutoff, windowFilter] = ['season','team','cutoff','window']
+    .map(key => get('accuracy-' + key) as HTMLSelectElement);
+  const percent = (n: number | null) => n === null ? '—' : (n * 100).toFixed(1) + '%';
+  let rows: ScoredGame[] = [];
+  function table(id: string, data: (string | number)[][]) {
+    get(id).replaceChildren(...data.map(row => {
+      const tr = document.createElement('tr');
+      for (const cell of row) { const td = tr.insertCell(); td.textContent = String(cell); }
+      return tr;
+    }));
+  }
+  function render() {
+    rows = scored.filter(row =>
+      (!season.value || row.season === season.value) &&
+      (!team.value || [row.home_id, row.away_id].includes(team.value)) &&
+      (!windowFilter.value || row.eligible) &&
+      (!cutoff.value || row.completed_at < cutoffs[cutoff.value]));
+    const result = scores(rows);
+    const cards = [['Games', String(rows.length)], ['Winner accuracy', percent(result.accuracy)],
+      ['Brier · lower is better', result.brier?.toFixed(3) ?? '—'], ['Log loss · lower is better', result.loss?.toFixed(3) ?? '—']];
+    get('accuracy-metrics').replaceChildren(...cards.map(([label, value]) => {
+      const card = document.createElement('div');
+      const strong = document.createElement('strong');
+      strong.textContent = value;
+      const small = document.createElement('small');
+      small.textContent = label;
+      card.append(strong, small);
+      return card;
+    }));
+    get('calibration-note').textContent = team.value
+      ? `Uses ${names[team.value]}’s own win probability, including games as an underdog.`
+      : 'Each game counts once, using the forecast and outcome of its favored team.';
+    const calibration = bands(rows, team.value);
+    get('calibration-chart').replaceChildren(...calibration.map(band => {
+      const item = document.createElement('li');
+      const label = document.createElement('span');
+      label.textContent = band.label;
+      const track = document.createElement('span');
+      track.className = 'rate-track';
+      track.setAttribute('aria-hidden', 'true');
+      for (const [kind, value] of [['observed', band.rate], ['predicted', band.mean]] as const) {
+        const marker = document.createElement('i');
+        marker.className = kind;
+        marker.style.left = value * 100 + '%';
+        track.append(marker);
+      }
+      const count = document.createElement('strong');
+      count.textContent = 'n=' + band.n;
+      item.setAttribute('aria-label', `${band.label}, ${band.n} games, forecast ${percent(band.mean)}, actual ${percent(band.rate)}`);
+      item.append(label, track, count);
+      return item;
+    }));
+    table('accuracy-bands', calibration.map(b =>
+      [b.label, b.n, percent(b.mean), percent(b.rate), `${percent(b.low)}–${percent(b.high)}`]));
+    table('season-scores', [...new Set(rows.map(r => r.season))].sort().reverse().map(s => {
+      const selected = rows.filter(r => r.season === s);
+      const r = scores(selected);
+      return [s, selected.length, percent(r.accuracy), r.brier!.toFixed(3), r.loss!.toFixed(3)];
+    }));
+    table('team-scores', (team.value ? [team.value] : Object.keys(names).sort((a,b) => names[a].localeCompare(names[b]))).flatMap(id => {
+      const selected = rows.filter(r => r.home_id === id || r.away_id === id);
+      if (!selected.length) return [];
+      const wins = selected.reduce((n,r) => n + (r.home_id === id ? r.home_win : 1-r.home_win), 0);
+      const expected = selected.reduce((n,r) => n + (r.home_id === id ? r.home_probability : r.away_probability), 0);
+      return [[names[id], selected.length, expected.toFixed(1), wins, percent(wins/selected.length)]];
+    }));
+    (get('download-scored') as HTMLButtonElement).disabled = !rows.length;
+  }
+  for (const select of [season, team, cutoff, windowFilter]) select.addEventListener('change', render);
+  get('download-scored').addEventListener('click', () => {
+    const url = URL.createObjectURL(new Blob([JSON.stringify(rows, null, 2)], { type: 'application/json' }));
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'parallax-scored-games.json';
+    link.click();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  });
+  render();
+</script>

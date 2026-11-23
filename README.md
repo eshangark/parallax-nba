@@ -1,39 +1,18 @@
 # Parallax NBA
 
-**Application release: v0.3.0** · Working in public — this is a prerelease. Feature, database, and workflow changes are planned; the app is not yet ready for production use.
+**Application release: v1.0.0** · Static Astro dashboard powered by the Parallax analytics pipeline.
 
 Parallax NBA combines a mathematical model for NBA game predictions with a dashboard for understanding probabilities, evaluating historical performance and making informed betting decisions. This project is adapted from work developed for the Wharton Data Science Competition.
 
-[Application](https://parallax-nba.streamlit.app/) · [Technical paper](paper/main.pdf) · [LaTeX source](paper/main.tex)
+[Technical paper](paper/main.pdf) · [LaTeX source](paper/main.tex)
 
-The application displays its release version beside the introduction. Package metadata reads the same version from `nba_forecast.__version__`. Forecast/model versions are separate: the active model is v0.3.0, while the base Elo engine and retained historical records preserve their original v0.2.0 identifiers.
+The Astro V1 dashboard presents dated matchups, team Elo histories, calibration and scorecards, and a pregame contract calculator. The release workflow builds the dashboard from a verified source revision. See [deployment and refresh](docs/ANALYTICS.md).
 
-## What it does
+## Active forecast model
 
-The dashboard opens on **Home**, with an overview, a suggested workflow and a guide to every tab. Each page includes an explanation of its controls and how to interpret its information. A labeled section on Home is reserved for a future narrated video walkthrough; no video is currently included.
+V1 uses one frozen **v0.3.0** bundle for forecasts, rankings, calibration, and downloads. The published probability adds a regularized injury correction to the base Elo forecast. The base probability drives the rating update. Teams carry half of their prior season's rating deviation forward.
 
-- Ranks all NBA teams by Elo and estimates matchup win probabilities.
-- Shows matchup probabilities with current/prior Elo ranks, recent records, plain-language injury availability, and selectable explanations.
-- Replays completed games with Correct/Incorrect results and separates historical backtests, original issued forecasts, and current-method replay scores.
-- Shows report coverage and falls back to Elo when a verified injury report does not cover the game.
-- Supports the current season and five historical seasons, with downloadable datasets.
-- Collects results every two hours; open pages refresh saved snapshots every minute.
-
-The frontend reads stored outputs rather than scraping or fitting on page load. The live ledger preserves issued forecasts through source corrections; games discovered after completion never receive fabricated issued predictions. Past-game tables and their scorecards use a separate current-method replay, rebuilt after model changes. Replay probabilities use only pregame information at the saved cutoff, but historical seasons used for fitting are training replays rather than unseen tests. The original live ledger remains downloadable.
-
-## Models and historical performance
-
-Version **0.3.0** carries half of each team's previous-season Elo deviation forward. The published probability adds a regularized injury correction. This is the only dashboard forecast: it has the lowest retrospective log loss and Brier score among the tested procedures. The boosted research comparator picked three more winners out of 3,690 games, but had worse probability scores. Rating updates always use the base Elo probability; injuries do not alter the Elo rankings. Research comparators and their original records remain available for reproducibility.
-
-| Retrospective procedure | Games | Log loss ↓ | Brier ↓ | Winner accuracy |
-| --- | ---: | ---: | ---: | ---: |
-| Carryover Elo | 3,690 | 0.6035 | 0.2084 | 66.64% |
-| Elo + injuries (published) | 3,690 | 0.5983 | 0.2062 | 67.07% |
-| Boosted comparison | 3,690 | 0.6000 | 0.2069 | 67.15% |
-
-Each evaluation season uses earlier seasons for fitting and selection. These all-game comparisons include opening games and the deployed missing-report fallback. The production checks corrected five exploratory injury-feature rows that could use another current-slate player's performance; refitted boosted selections therefore supersede earlier exploratory accuracy figures.
-
-These are reconstructed results on previously studied outcomes, not live accuracy claims. The retained v0.2 release scored 68.56% on a different population: one season after both teams' ten-game warmup. See [evaluation](docs/EVALUATION.md) for protocols, per-season scores and limitations.
+Matchups show compatible saved pregame forecasts where available. Accuracy scores original forecasts against completed games. Replays support the backend rating history and remain separate from the published accuracy views. The contract calculator uses the issued pregame forecast and an entered price to estimate profit at settlement before fees.
 
 ## Injury data and mathematical basis
 
@@ -45,13 +24,11 @@ The base probability is a covariate-adjusted [Bradley–Terry](https://doi.org/1
 
 `data/seasons/*/current-model.json` contains the active model's reconstruction of each season. Historical replays start from the earliest stored season, rebuild ratings chronologically, and carry ratings/player histories forward. The five complete seasons use saved morning report inputs and earlier player appearances in `replay-inputs.json.gz`. Current-season replays use each game's last actual pregame issuance cutoff and captured rest/travel context. Saved raw injury reports are preferred; older records can reuse saved pregame injury covariates with the current scaler and coefficients. If neither exists, the replay uses an explicit Elo fallback. Original issued probabilities are never overwritten.
 
-The past-game **Prediction** column marks the higher-probability team Correct or Incorrect; exactly 50% picks home. Dashboard replay scores evaluate the latest specification, while the chronological backtests below the methodology retain earlier-season fitting and the original issued ledger measures what was actually published. Training replay scores are not an estimate of unseen-game accuracy.
-
-Under **Games → Past games**, choose a date and select a table row or use **Choose past matchup** to inspect the same evidence shown for upcoming games. **Forecast record** switches between the current-method replay and the original issued forecast (or stored historical replay). The final score is separate from the pregame evidence. Team strength, player history and calibration evidence use only information available before that forecast's cutoff; context that cannot be recovered and verified is marked unavailable.
+The game page displays the final score alongside pregame evidence. Earlier issued revisions are retained in the local ledger for provenance. V1 downloads use the frozen bundle fingerprint to identify compatible revisions.
 
 ## Symbol dictionary
 
-The paper builds the model in order: season carryover → base forecast → published probability corrections → completed-game features → performance factor → Elo update. Constants below refer to v0.3 and are rounded; the [model bundle](models/nba-v0.3/bundle.json) retains full precision. Game-dependent quantities have no single value. Original v0.2 configurations remain preserved.
+The constants below are rounded from the [v0.3.0 model bundle](models/nba-v0.3/bundle.json). The Methodology page starts with the completed-game Elo update, then shows the next matchup’s base forecast and injury correction.
 
 <details>
 <summary>Notation, English meanings, and numerical values</summary>
@@ -177,16 +154,21 @@ The paper builds the model in order: season carryover → base forecast → publ
 
 ## Run locally
 
-Use Python 3.12 and run commands from the repository root:
+Use Python 3.12, Node.js 24 and pnpm. Start in the project root.
 
 ```sh
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
-python -m streamlit run app.py
+python scripts/build_analytics.py --output local/releases/example
+export PARALLAX_DATA_DIR="$PWD/local/releases/example/site"
+cd web
+pnpm install --frozen-lockfile
+pnpm build
+pnpm preview --host 127.0.0.1 --port 4321
 ```
 
-The committed snapshots are sufficient to run the app. No API key or source collection is required. The current model carries ratings across seasons; preseason results are excluded. Archived v0.2 outputs retain their original resets.
+Open [the local V1 dashboard](http://127.0.0.1:4321/parallax-nba/). The stored source snapshots support an offline analytics build. See the [refresh instructions](docs/ANALYTICS.md) for collecting newer results and forecasts.
 
 ## Data and code
 
@@ -210,28 +192,6 @@ The repository includes **6,150 games and 12,300 team-game records** across five
 
 Original project code and documentation use the [MIT License](LICENSE). Provider records, raw-source test fixtures, datasets, and third-party materials retain their separate rights and attribution notices; see [data and sources](docs/DATA.md#sources-and-reuse).
 
-## Understanding forecasts and fair comparisons
+## Validation
 
-The matchup details show an exact sequential reconstruction: ratings only → home court → rest/travel → injury inputs and fitted recalibration. These percentage-point changes depend on that order and are not causal player-impact estimates. Recent form excludes games unfinished at the forecast cutoff. Prior-season ranks and returning observed minutes provide context; neither is a confirmed current roster or a confidence grade.
-
-The performance view separates historical chronological backtests, original issued predictions for the selected season, and current-method replays. Five-point favorite probability bins show sample counts, mean predictions, actual win rates and sampling intervals for chronological or issued forecasts only, excluding training replays.
-
-Run `python scripts/audit_comparisons.py` before comparing changes. The audit rejects unequal game sets, duplicates, altered outcomes, cutoffs, eligibility, source-snapshot IDs or invalid probabilities. A single declared warmup filter applies to every model, and the shared sample ID and game list are saved in `models/nba-v0.3/matched-evaluation.json`. The three current historical procedures retain their original scores on the same 3,690 games; no model is allowed to omit difficult or missing-report games from its comparison.
-
-## Forecast reliability indicators
-
-The **Matchup** tab provides a searchable upcoming-game lookup and reuses the exact forecast explanation and reliability panels from **Games**. The **Accuracy** tab provides searchable evidence-source, season and team selectors, season scores, team expected/actual wins and calibration by probability band. These additions leave Teams, Games and Methodology intact. Choose an upcoming game in **Accuracy evidence cutoff** to reproduce its pregame evidence window; issued evidence then also matches that forecast's model fingerprint. The default **All available seasons** scope uses every season rebuilt with the active model; choose an upcoming matchup cutoff to match the main Games/Matchup panel.
-
-Accuracy defaults to **Latest model · reconstructed history**; earlier-fit benchmarks and the original issued track record are under an optional comparison expander. Latest-model calibration tables include training replays as explicitly labeled historical fit, never as unseen-game validation. Each overall game is counted once, while team summaries include one appearance for each side. Expected wins are summed probabilities; calibration gap is actual minus mean forecast in percentage points, not an accuracy percentage. The read-only explorer checks IDs, teams, results, scores and pregame cutoffs against the stored season records, and rejects stale replays using the same bundle/source hashes as Games. A scheduled tip-off retained by an immutable issued forecast can differ from the completed-game source; exports preserve both times and require the cutoff to precede both. Integrity failures withhold Accuracy scores rather than silently dropping conflicting games.
-
-Upcoming matchups summarize captured input status, league-wide team strength and current-season evidence. Past-game details provide the same panels at the selected forecast's pregame cutoff. Expand **Inspect forecast reliability** for report coverage, unmatched-player/missing-history counts, unresolved availability, captured timestamps, prior completed-game counts and calibration by favorite-probability band. The main panel uses latest-model history; earlier-fit and original-issued evidence remain in a separate expander. Training-history rates describe fit, not future reliability. Counts and sampling intervals accompany observed rates. Snapshot freshness appears only in upcoming forecast details.
-
-These are observable input checks, not a numerical confidence grade. The early-season flag uses the existing ten-game evaluation warmup; freshness uses the two-hour collection interval. The captured injury/recalibration adjustment is shown against base Elo; player-availability scenario ranges are not available. The page does not change probabilities or collect new inputs.
-
-The evidence view also separates league-wide strength from matchup favoritism, shows the favored team’s base-to-published probability change, and provides team-specific calibration bands with counts, expected/actual rates and observed-rate sampling intervals. A displayed pooled historical error uses 80 league-reference team appearances and does not revise the forecast. Latest-model history is the primary comparison; earlier chronological and original-issued records remain separately labeled. Reported-player minutes/value proxies are displayed only when their saved history state matches the forecast; unknown values stay blank. Freshness remains in details rather than the main evidence summary.
-
-## Latest-model dataset organization
-
-`data/seasons/SEASON/current-model.json` stores the latest model’s reconstructed forecasts and ratings. `data/seasons/current-model-index.json` binds all completed seasons to one model fingerprint and their source/input/result hashes, with persisted season scores, team-season expected/actual wins and pooled team probability-band summaries. The collector rebuilds this index after refreshing all season replays. Games, team history and Accuracy validate the same identity contract; mismatched latest-model analyses are withheld until refreshed. Factual games and immutable original issued forecasts remain unchanged.
-
-In **Accuracy → Probability ranges**, search for a team and choose a band (for example, Spurs at 70–80%). The table shows games, wins, mean forecast, actual team win rate, winner-pick accuracy, calibration gap and sampling interval. Selecting an upcoming matchup as the cutoff automatically selects that team’s corresponding band. For underdog bands, winner-pick accuracy usually counts the opponent winning, so it differs from the team’s own win rate.
+Run `python -m unittest discover -s tests -v` and `python scripts/audit_comparisons.py` from the project root. Run the [browser suite](web/README.md) after building the site. The local comparison audit checks identical game sets, teams, outcomes, cutoffs, eligibility and source identifiers. The website uses the active forecast bundle only. The source ledger and comparison records are retained for local reproducibility.

@@ -1,82 +1,144 @@
-name: Update NBA forecasts
+name: Refresh and build Parallax
 
 "on":
   push:
     branches: [main]
-    paths:
-      - 'nba_forecast/**'
-      - 'scripts/update_live.py'
-      - 'scripts/replay_current.py'
-      - 'data/seasons/*/replay-inputs.json.gz'
-      - 'models/nba-v0.3/**'
-      - '.github/workflows/update-live.yml'
+  pull_request:
   schedule:
-    # UTC; off the hour to avoid the busiest scheduler period.
     - cron: '17 */2 * * *'
   workflow_dispatch:
     inputs:
       full_refresh:
         description: Recheck older completed games for source corrections
         required: false
-        default: false
         type: boolean
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
-  group: nba-live-update
+  group: parallax-release-${{ github.event_name == 'pull_request' && github.ref || 'main' }}
   cancel-in-progress: false
 
 jobs:
-  update:
+  collect:
+    if: github.ref == 'refs/heads/main' && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')
     runs-on: ubuntu-24.04
-    timeout-minutes: ${{ github.event_name == 'workflow_dispatch' && inputs.full_refresh && 10 || 5 }}
-    env:
-      NBA_FULL_REFRESH: ${{ inputs.full_refresh && 'true' || 'false' }}
+    timeout-minutes: 12
+    permissions:
+      contents: write
+    outputs:
+      source: ${{ steps.persist.outputs.source }}
     steps:
-      - name: Check out current main
-        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
         with:
           ref: main
-      - name: Set up Python
-        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
         with:
           python-version: '3.12'
-      - name: Install live collection dependencies
-        run: python -m pip install -r requirements-live.txt
-      - name: Run core checks
-        run: python -m unittest discover -s tests -v
-      - name: Download geography
-        run: python scripts/download_geography.py
-      - name: Collect and validate latest games
+      - run: |
+          python -m pip install --upgrade pip==26.3
+          python -m pip install -r requirements-live.txt
+      - run: python scripts/download_geography.py
+      - name: Collect provider data
         id: collect
         continue-on-error: true
-        shell: bash
+        env:
+          FULL_REFRESH: ${{ inputs.full_refresh }}
         run: |
-          nba_refresh_args=()
-          if [[ "$NBA_FULL_REFRESH" == "true" ]]; then
-            nba_refresh_args+=(--full-refresh)
+          args=()
+          if [[ "$FULL_REFRESH" == "true" ]]; then
+            args+=(--full-refresh)
           fi
-          python scripts/update_live.py --cities data/raw/geography/cities15000.zip "${nba_refresh_args[@]}"
-      - name: Publish snapshot or failure status
-        if: ${{ !cancelled() && steps.collect.outcome != 'skipped' }}
-        shell: bash
+          python scripts/update_live.py --cities data/raw/geography/cities15000.zip "${args[@]}"
+      - name: Persist the ledger and recovery state
+        id: persist
         run: |
           git fetch origin main
           if [[ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]]; then
-            echo 'Main changed during collection; refusing to overwrite newer history.'
+            echo 'Main changed during collection. Rerun against the new head.'
             exit 1
           fi
           git add data/seasons/index.json data/seasons/current-model-index.json data/seasons/*/live.json data/seasons/*/update_status.json data/seasons/*/current-model.json
-          if git diff --cached --quiet; then
-            echo 'No published data changes.'
-            exit 0
+          if ! git diff --cached --quiet; then
+            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Update observed NBA forecasts and collection status'
+            git push origin HEAD:main
           fi
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git commit -m 'Update observed NBA forecasts and collection status'
-          git push origin HEAD:main
-      - name: Report failed ingestion
-        if: ${{ steps.collect.outcome == 'failure' }}
+          echo "source=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+      - name: Block release on collection failure
+        if: steps.collect.outcome == 'failure'
         run: exit 1
+
+  build:
+    needs: collect
+    if: ${{ !cancelled() && (needs.collect.result == 'success' || needs.collect.result == 'skipped') }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      ASTRO_TELEMETRY_DISABLED: '1'
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          ref: ${{ needs.collect.outputs.source || github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.12'
+      - run: |
+          python -m pip install --upgrade pip==26.3
+          python -m pip install -r requirements-live.txt
+      - run: python scripts/audit_comparisons.py
+      - run: |
+          python scripts/build_analytics.py --output "$RUNNER_TEMP/parallax-release"
+          echo "PARALLAX_DATA_DIR=$RUNNER_TEMP/parallax-release/site" >> "$GITHUB_ENV"
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '24'
+          package-manager-cache: false
+      - uses: pnpm/action-setup@b906affcce14559ad1aafd4ab0e942779e9f58b1 # v4
+        with:
+          version: '11.25.0'
+      - name: Build and verify the site
+        working-directory: web
+        run: |
+          pnpm install --frozen-lockfile
+          pnpm build
+          pnpm exec playwright install --with-deps chromium
+          pnpm test
+      - name: Record deployed data provenance
+        run: |
+          python - <<'PY'
+          import json, os, subprocess
+          from pathlib import Path
+          manifest = json.loads((Path(os.environ['PARALLAX_DATA_DIR']) / 'manifest.json').read_text())
+          keys = ('schema_version', 'application_version', 'model_version', 'source_sha256', 'latest_snapshot_at')
+          provenance = {key: manifest[key] for key in keys}
+          provenance['source_commit'] = subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip()
+          Path('web/dist/release.json').write_text(json.dumps(provenance, indent=2) + '\n')
+          PY
+          test "$(du -sk web/dist | cut -f1)" -lt 500000
+      - uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4
+        if: github.ref == 'refs/heads/main' && vars.PARALLAX_PAGES_ENABLED == 'true'
+        with:
+          path: web/dist
+
+  deploy:
+    if: ${{ !cancelled() && needs.build.result == 'success' && github.ref == 'refs/heads/main' && vars.PARALLAX_PAGES_ENABLED == 'true' }}
+    needs: [collect, build]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.pages.outputs.page_url }}
+    steps:
+      - name: Confirm the build still matches main
+        env:
+          EXPECTED: ${{ needs.collect.outputs.source || github.sha }}
+          GH_TOKEN: ${{ github.token }}
+        run: test "$EXPECTED" = "$(gh api "repos/$GITHUB_REPOSITORY/commits/main" --jq .sha)"
+      - id: pages
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4

@@ -4,8 +4,9 @@ import copy
 import json
 import tempfile
 import unittest
+from datetime import datetime, timezone
 from pathlib import Path
-from unittest.mock import patch
+from unittest.mock import Mock, patch
 
 from nba_forecast.live import build_snapshot, event_kind
 from nba_forecast.model import Parameters
@@ -119,6 +120,19 @@ class LiveTests(unittest.TestCase):
         self.assertEqual(event_kind(event, 2027), 'excluded')
         event['competitions'][0]['type']['abbreviation'] = 'UNKNOWN'
         with self.assertRaises(ValueError): event_kind(event, 2027)
+
+    def test_collection_revisits_missed_dates_after_extended_outage(self):
+        from scripts.update_live import collect
+
+        payload = {'events': [], 'leagues': [{'id': '46', 'season': {
+            'year': 2027, 'startDate': '2026-10-19T16:00:00Z'}}]}
+        client = Mock()
+        client.get.return_value = payload
+        prior = {'published_at': '2026-11-01T20:00:00Z', '_internal': {'games': []}}
+        _, _, coverage = collect(client, None, prior, SEASON,
+                                 datetime(2026, 11, 22, 20, tzinfo=timezone.utc))
+        self.assertEqual(coverage['dates_checked'][0], '2026-11-01')
+        self.assertIn('2026-11-08', coverage['dates_checked'])
 
     def test_collector_failure_preserves_published_file(self):
         from scripts import update_live

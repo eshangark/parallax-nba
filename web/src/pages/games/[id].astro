@@ -1,0 +1,100 @@
+---
+import { version } from '../../../package.json';
+import Shell from '../../layouts/Shell.astro';
+import Probability from '../../components/Probability.astro';
+import ContractPricing from '../../components/ContractPricing.astro';
+import Freshness from '../../components/Freshness.astro';
+import { games, matchup, scoredGames, teams, manifest } from '../../lib/data';
+import { bands } from '../../lib/accuracy';
+import { coverage, pct, stamp, statusLabel } from '../../lib/slate';
+export function getStaticPaths() {
+  return games().map(game => ({ params: { id: game.game_id } }));
+}
+const game = matchup(Astro.params.id);
+const forecast = game.forecast;
+const title = `${game.away} at ${game.home}`;
+const favorite = forecast && forecast.home_probability >= .5 ? game.home : game.away;
+const comparison = forecast ? (() => {
+  const sample = scoredGames().filter(row => row.completed_at < forecast.cutoff
+    && row.model_sha256 === forecast.model_sha256);
+  const confidence = Math.max(forecast.home_probability, forecast.away_probability);
+  const bucket = Math.min(95, Math.floor(Math.round(confidence * 100 * 1e8) / 1e8 / 5) * 5);
+  return bands(sample).find(b => b.label === `${bucket}–${bucket+5}%`);
+})() : undefined;
+const olderSeasons = [...manifest.seasons].reverse().filter(season => season < game.season).slice(0, 3);
+const previousRanks = forecast ? olderSeasons.map(season => ({
+  season, ranks: teams(season).filter(team => [game.away_id, game.home_id].includes(team.team_id)),
+})) : [];
+const base = import.meta.env.BASE_URL.replace(/\/$/, "") + "/";
+---
+<Shell title={title}>
+  <a class="back" href={`${base}slate/${game.slate_date}/`}>← Back to slate</a>
+  <section class="hero matchup-hero">
+    <div class="court" aria-hidden="true"><i></i><b></b></div>
+    <div class="hero-copy">
+      <p class="kicker">{stamp(game.start)} · <span data-pregame-tip={game.status === 'scheduled' ? game.start : undefined}>{game.status === 'scheduled' && Date.parse(game.start) > Date.now() ? 'Scheduled' : statusLabel(game.status, game.start)}</span></p>
+      <h1>{game.away} <span class="versus">at</span> {game.home}</h1>
+      <Freshness />
+    </div>
+  </section>
+  {game.status === 'final' && <section class="detail result" aria-labelledby="result-heading">
+    <h2 id="result-heading">Final score</h2>
+    <dl class="result-values"><div><dt>{game.away}</dt><dd>{game.away_score}</dd></div><div><dt>{game.home}</dt><dd>{game.home_score}</dd></div></dl>
+  </section>}
+  <section class="detail" aria-labelledby="forecast-heading">
+    <div class="section-head"><h2 id="forecast-heading">Pregame forecast</h2>{forecast && <span>Parallax v{version}</span>}</div>
+    {forecast ? <>
+      <div class="game-teams detail-teams"><div><small>Away</small><strong>{game.away}</strong></div><div><small>Home</small><strong>{game.home}</strong></div></div>
+      <Probability away={forecast.away_probability} home={forecast.home_probability} />
+      <p><strong>{forecast.home_probability === .5 ? 'The model gives both teams an equal chance.' : favorite + ' is favored.'}</strong> {coverage(forecast.injury_status)}.</p>
+      <p class="subtle">Issued <time datetime={forecast.issued_at}>{stamp(forecast.issued_at)}</time></p>
+      {forecast.base_home_probability !== null && <p class="subtle">Base Elo for {game.home} · {pct(forecast.base_home_probability)}</p>}
+    </> : <p>No saved pregame forecast for this game.</p>}
+  </section>
+  {forecast && game.status === 'scheduled' && <ContractPricing game={game} forecast={forecast} />}
+  {forecast && <details class="detail">
+    <summary>Why this forecast?</summary>
+    {forecast.probability_steps.length > 0 && <ul class="step-chart" aria-label="Home win probability by model step">
+      {forecast.probability_steps.map(step => <li><span>{step.Stage}</span><meter min="0" max="100" value={step['Home win %']} aria-label={step.Stage}></meter><strong>{step['Home win %'].toFixed(1)}%</strong></li>)}
+    </ul>}
+    {forecast.probability_steps.length > 0 && <div class="table-wrap"><table><thead><tr><th>Inputs included</th><th>Home win chance</th><th>Change</th></tr></thead><tbody>
+      {forecast.probability_steps.map(step => <tr><th scope="row">{step.Stage}</th><td>{step['Home win %'].toFixed(1)}%</td>
+        <td>{step['Change (pp)'] === null ? '—' : `${step['Change (pp)'] > 0 ? '+' : ''}${step['Change (pp)'].toFixed(1)} pp`}</td></tr>)}
+    </tbody></table><p class="subtle">The change depends on the order shown. The final adjustment includes fitted recalibration.</p></div>}
+    <div class="context-grid">
+      {(['away', 'home'] as const).map(side => {
+        const info = forecast.context[side];
+        return <article><h3>{game[side]}</h3><dl>
+          <div><dt>Elo rating</dt><dd>{info.elo?.toFixed(1) ?? 'Unavailable'}</dd></div>
+          <div><dt>Prior games</dt><dd>{info.prior_games}</dd></div>
+          <div><dt>Recent record</dt><dd>{info.recent_games ? `${info.recent_wins}–${info.recent_games - info.recent_wins}` : 'No prior results'}</dd></div>
+          <div><dt>Rest days</dt><dd>{info.rest_days ?? 'Unavailable'}</dd></div>
+          <div><dt>Estimated travel</dt><dd>{info.travel_km === null ? 'Unavailable' : `${Math.round(info.travel_km).toLocaleString('en-US')} km`}</dd></div>
+          <div><dt>Injury report</dt><dd>{forecast.injury_coverage[side] === 'submitted' ? 'Submitted' : 'Unavailable'}</dd></div>
+        </dl></article>;
+      })}
+    </div>
+    <p class="subtle">{coverage(forecast.injury_status)}{forecast.injury_report_at && ` · Report published ${stamp(forecast.injury_report_at)}`}</p>
+    {forecast.schedule_projected && <p class="subtle">Rest and travel include intervening scheduled games.</p>}
+  </details>}
+  {forecast && <details class="detail">
+    <summary>Team history and form</summary>
+    <p class="subtle">Recent records count up to 10 results available before issuance. Prior-season ranks are season-end Elo ranks.</p>
+    <div class="link-list">{(['away','home'] as const).map(side =>
+      <a href={`${base}teams/${game.season}/${game[side + '_id']}/`}>{game[side]} season history</a>)}</div>
+    {previousRanks.map(({season, ranks}) => <p>{season} · {ranks.map(team => `${team.name} #${team.elo_rank}`).join(' · ')}</p>)}
+  </details>}
+  {forecast && <details class="detail">
+    <summary>Injury report coverage</summary>
+    <p>{coverage(forecast.injury_status)}. Reports describe participation status at the recorded cutoff.</p>
+    {forecast.injury_details.map(row => <p><strong>{row.Team}</strong> · {row.Report} · {row['Unmatched names'] ?? 'Unknown'} unmatched · {row['Missing histories'] ?? 'Unknown'} missing histories.</p>)}
+  </details>}
+  {forecast && <details class="detail">
+    <summary>How similar forecasts performed</summary>
+    <p class="subtle">Saved forecasts for games completed before this forecast was issued.</p>
+    <p>{comparison
+      ? `${comparison.label} band · ${comparison.n} games · ${pct(comparison.mean)} mean forecast · ${pct(comparison.rate)} won · 95% interval ${pct(comparison.low)}–${pct(comparison.high)}`
+      : 'No comparable saved forecasts in this band.'}</p>
+    <a class="action-link" href={base + 'accuracy/'}>Explore accuracy →</a>
+  </details>}
+</Shell>

@@ -1,0 +1,68 @@
+---
+import Shell from '../layouts/Shell.astro';
+import Probability from './Probability.astro';
+import Freshness from './Freshness.astro';
+import { slate, slateDays, today } from '../lib/data';
+import { coverage, formatDate, shiftDay, statusLabel } from '../lib/slate';
+
+const { day, landing = false } = Astro.props as { day: string; landing?: boolean };
+const list = slate(day);
+const base = import.meta.env.BASE_URL.replace(/\/$/, "") + "/";
+const days = [-3, -2, -1, 0, 1, 2, 3].map(offset => shiftDay(day, offset));
+const dateLink = (value: string) => `${base}slate/${value}/`;
+---
+<Shell title={day === today ? 'Today' : formatDate(day, { month: 'short', day: 'numeric' })}>
+  <div data-build-day={landing ? today : undefined}>
+    <section class="hero">
+      <div class="court" aria-hidden="true"><i></i><b></b></div>
+      <div class="hero-copy">
+        <p class="kicker">{formatDate(day, { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' })}</p>
+        <h1>{day === today ? 'Today’s slate' : 'NBA slate'}</h1>
+        <Freshness />
+      </div>
+    </section>
+    <p hidden data-day-warning class="notice">This build shows a previous slate. The last data check is listed above.</p>
+    <nav aria-label="Slate dates" class="dates">
+      {days.map(value => slateDays.includes(value)
+        ? <a href={dateLink(value)} data-day={value} aria-current={value === day ? 'date' : undefined}><span>{formatDate(value, { weekday: 'short' })}</span><strong>{formatDate(value, { month: 'short', day: 'numeric' })}</strong></a>
+        : <span class="unavailable-date"><span>{formatDate(value, { weekday: 'short' })}</span><strong>{formatDate(value, { month: 'short', day: 'numeric' })}</strong></span>)}
+    </nav>
+    <section class="slate" aria-labelledby="slate-heading">
+      <div class="section-head"><h2 id="slate-heading">Matchups</h2><span>{list.length} {list.length === 1 ? 'game' : 'games'}</span></div>
+      {list.length === 0 && <div class="notice"><strong>No games in this snapshot for {formatDate(day, { month: 'long', day: 'numeric' })}.</strong><p>Schedule coverage for this date is unconfirmed.</p></div>}
+      {list.length > 0 && <><label class="slate-sort">Sort matchups <select id="slate-sort"><option value="tip">Tip time</option><option value="close">Closest model forecasts</option><option value="favorite">Biggest model favorites</option></select></label><ul class="games" id="slate-games">{list.map(game => {
+        const forecast = game.forecast;
+        return (
+        <li data-gap={forecast ? Math.abs(forecast.home_probability - .5) : undefined}>
+          <a class="game-card" href={`${base}games/${game.game_id}/`}>
+            <div class="game-meta"><span><time datetime={game.start}>{formatDate(game.slate_date, { month: 'short', day: 'numeric' })}</time> · <span data-pregame-tip={game.status === 'scheduled' ? game.start : undefined}>{statusLabel(game.status, game.start)}</span></span><span aria-hidden="true">↗</span></div>
+            <div class="game-teams">
+              <div><small>Away</small><strong>{game.away}</strong></div>
+              <div><small>Home</small><strong>{game.home}</strong></div>
+            </div>
+            {game.status === 'final' && <div class="scores"><span>{game.away_score}</span><span>{game.home_score}</span></div>}
+            <div class="game-forecast">
+              {forecast ? <><div class="forecast-label">Pregame win probability</div><Probability away={forecast.away_probability} home={forecast.home_probability} /><div class="coverage">{coverage(forecast.injury_status)}</div></>
+                : <div class="coverage">No saved pregame forecast</div>}
+            </div>
+          </a>
+          {game.status === 'scheduled' && game.forecast && <a class="card-pricing" href={`${base}games/${game.game_id}/#contract-pricing`} aria-label={`Compare contract price for ${game.away} at ${game.home}`}>Compare contract price →</a>}
+        </li>
+      ); })}</ul></>}
+    </section>
+  </div>
+</Shell>
+
+<script>
+  const sort = document.querySelector<HTMLSelectElement>('#slate-sort');
+  const games = document.querySelector<HTMLUListElement>('#slate-games');
+  if (sort && games) {
+    const original = [...games.children] as HTMLLIElement[];
+    sort.addEventListener('change', () => {
+      const direction = sort.value === 'favorite' ? -1 : 1;
+      const gap = (game: HTMLLIElement) => game.dataset.gap ? Number(game.dataset.gap) * direction : Infinity;
+      const ordered = sort.value === 'tip' ? original : [...original].sort((a, b) => gap(a) - gap(b));
+      games.append(...ordered);
+    });
+  }
+</script>

@@ -1,0 +1,28 @@
+---
+import Shell from '../../layouts/Shell.astro';
+import PageIntro from '../../components/PageIntro.astro';
+import { manifest, teams } from '../../lib/data';
+const base = import.meta.env.BASE_URL;
+---
+<Shell title="Team ratings">
+  <PageIntro title="Team ratings" description="Elo tracks team strength as results arrive. Open a team to see its rating history and game log." />
+  <label class="filter">Season <select id="team-season">{[...manifest.seasons].reverse().map(s => <option>{s}</option>)}</select></label>
+  {[...manifest.seasons].reverse().map((season, index) => (
+    <section class="detail" data-team-season={season} hidden={index !== 0}>
+      <h2>{season} rankings</h2>
+      <div class="table-wrap"><table><thead><tr><th>Rank</th><th>Team</th><th>Elo</th><th>Record</th></tr></thead><tbody>
+        {teams(season).map(t => <tr><td>{t.elo_rank}</td><th scope="row"><a href={`${base}teams/${season}/${t.team_id}/`}>{t.name}</a></th><td>{t.elo.toFixed(1)}</td><td>{t.wins}–{t.games - t.wins}</td></tr>)}
+      </tbody></table></div>
+    </section>
+  ))}
+</Shell>
+<script>
+  const select = document.querySelector<HTMLSelectElement>('#team-season')!;
+  const season = new URLSearchParams(location.search).get('season');
+  if ([...select.options].some(option => option.value === season)) select.value = season!;
+  const show = () => {
+    for (const section of document.querySelectorAll<HTMLElement>('[data-team-season]')) section.hidden = section.dataset.teamSeason !== select.value;
+  };
+  select.addEventListener('change', show);
+  show();
+</script>

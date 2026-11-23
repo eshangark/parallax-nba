@@ -1,0 +1,39 @@
+---
+import Shell from '../layouts/Shell.astro';
+import Freshness from '../components/Freshness.astro';
+
+const base = import.meta.env.BASE_URL;
+const demo = import.meta.env.PUBLIC_PARALLAX_DEMO_VIDEO;
+const captions = import.meta.env.PUBLIC_PARALLAX_DEMO_CAPTIONS;
+const poster = import.meta.env.PUBLIC_PARALLAX_DEMO_POSTER;
+const links = [
+  ['archive/', 'Game archive', 'Find past games and compare the final score with the forecast record.'],
+  ['teams/', 'Team ratings', 'See where teams rank and how their Elo has moved over the season.'],
+  ['accuracy/', 'Forecast accuracy', 'See how often teams won at different predicted probabilities.'],
+  ['methodology/', 'Methodology', 'Read how the model works and find the technical paper and data downloads.'],
+];
+---
+<Shell title="Home">
+  <section class="hero home-hero">
+    <div class="court" aria-hidden="true"><i></i><b></b></div>
+    <div class="hero-copy">
+      <h1>Parallax NBA</h1>
+      <p>NBA win probabilities, team ratings, and the evidence behind each forecast.</p>
+      <Freshness />
+    </div>
+  </section>
+  {demo && <section class="detail" aria-labelledby="demo-heading">
+    <h2 id="demo-heading">Dashboard demo</h2>
+    <video class="demo-video" controls playsinline preload="metadata" src={demo} poster={poster}
+      aria-label="Parallax NBA dashboard demo">
+      {captions && <track kind="captions" src={captions} srclang="en" label="English" default />}
+    </video>
+  </section>}
+  <section class="detail">
+    <h2>How to read a forecast</h2>
+    <p>A 70% forecast means the model expects about 7 wins in 10 comparable games. Open a matchup to see what went into the estimate, then use Accuracy to see how forecasts in that range have performed.</p>
+  </section>
+  <nav class="home-links" aria-label="Explore Parallax">
+    {links.map(([path, title, description]) => <a class="detail" href={base + path}><h2>{title} →</h2><p>{description}</p></a>)}
+  </nav>
+</Shell>

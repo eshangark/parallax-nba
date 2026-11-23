@@ -1,0 +1,32 @@
+---
+import Shell from '../../layouts/Shell.astro';
+import Formulas from '../../components/Formulas.astro';
+import PageIntro from '../../components/PageIntro.astro';
+import { downloadNames, manifest, read, scoredGames } from '../../lib/data';
+const base = import.meta.env.BASE_URL.replace(/\/$/, "") + "/";
+const model = read<{ version: string; sha256: string; core_parameters: Record<string, number | number[]> }>('model.json');
+if (model.sha256 !== manifest.model_sha256 || model.version !== manifest.model_version) {
+  throw new Error('Parallax methodology model does not match the release');
+}
+const scoredSeasons = new Set(scoredGames().map(row => row.season));
+---
+<Shell title="Methodology">
+  <PageIntro title="How Parallax forecasts" description="A pregame probability estimates how often a team would win in comparable situations. Use Accuracy to see how past forecasts tracked results." />
+  <Formulas />
+  <section class="detail"><h2>How to read the records</h2>
+    <p>Archive shows the latest eligible forecast saved before tip and pairs it with the final score when available. Accuracy uses those same saved forecasts after games finish.</p>
+    <a class="action-link" href={base + 'accuracy/'}>Explore forecast accuracy →</a>
+  </section>
+  <section class="detail"><h2>Sources and technical paper</h2><p>ESPN provides schedules and results. SportsDataverse supplies historical inputs, NBA reports supply injury designations, and GeoNames supplies coordinates for venue-to-venue travel estimates.</p>
+    <p class="link-list"><a href={base + 'downloads/main.pdf'}>Technical paper</a><a download href={base + 'downloads/main.tex'}>LaTeX source</a></p>
+  </section>
+  <details class="detail"><summary>Fitted model constants</summary><pre>{JSON.stringify(model.core_parameters, null, 2)}</pre></details>
+  <details class="detail"><summary>Season data downloads</summary>
+    <ul class="download-list">{[...manifest.seasons].reverse().map(season => <li><strong>{season}</strong><div class="link-list">
+      {scoredSeasons.has(season) &&
+        <a download href={base + 'downloads/' + season + '-forecasts.json'}>Scored forecasts</a>}
+      {downloadNames.includes(season + '-saved-forecasts.json') &&
+        <a download href={base + 'downloads/' + season + '-saved-forecasts.json'}>Saved pregame forecasts</a>}
+    </div></li>)}</ul>
+  </details>
+</Shell>
