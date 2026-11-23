@@ -2,7 +2,7 @@
   "schema_version": 1,
   "season": "2026-27",
   "status": "live",
-  "published_at": "2026-11-23T05:39:03.953075+00:00",
+  "published_at": "2026-11-23T07:42:41.337604+00:00",
   "coverage": {
     "start": "2026-10-20",
     "end": "2026-11-22",
@@ -49216,9 +49216,9 @@
         "away": "submitted"
       },
       "injury_source": {
-        "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_12_30AM.pdf",
-        "published_at": "2026-11-23T00:30:00-05:00",
-        "sha256": "8c73bac12fe2800b96adc164c1e0ffccd3e34d310085d58f6a49c2cf2334f0a3"
+        "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_02_30AM.pdf",
+        "published_at": "2026-11-23T02:30:00-05:00",
+        "sha256": "1ef6fce3e1263f66eca6473f7d8aab796df9d0afabf30733459bb970395815c8"
       },
       "forecast_features": {
         "injury": [
@@ -49368,18 +49368,18 @@
           ]
         }
       },
-      "issued_at": "2026-11-23T05:30:45.150624+00:00",
-      "forecast_cutoff": "2026-11-23T05:30:45.150624+00:00",
+      "issued_at": "2026-11-23T07:42:41.337604+00:00",
+      "forecast_cutoff": "2026-11-23T07:42:41.337604+00:00",
       "kind": "issued_live",
       "forecast_policy_version": "after-game-v3",
-      "input_signature": "e6c524ab45863399d8badba3d5189ec6e8c3e4a15ffca42db7be85d1f995d436",
+      "input_signature": "59cfc25f21e77414ac54af3662e94c16dc76e620d08a356d1299314470b638a9",
       "parameter_hash": "8196c93fe79e6ab08ecb4119373d7166aa37c439d53ca0f67fb118838bdb586b",
       "state_sha256": "7082e7898b5400394db3210ca83905d9d814fbb2a2b770dddb2ab2a4e8ccb963",
       "home_id": "30",
       "away_id": "29",
       "scheduled_context_projected": false,
       "eligible_for_evaluation": true,
-      "forecast_id": "f4ce21b43fc7f7dcdf216cab4fb05409b4226529749214cb49d1f8bf0b835200"
+      "forecast_id": "c63cea719b912a3c1d03350508ae8efa4b659a1d3cb69d85f3c399ef2f4232fd"
     },
     {
       "game_id": "401910037",
@@ -49433,9 +49433,9 @@
         "away": "submitted"
       },
       "injury_source": {
-        "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_12_30AM.pdf",
-        "published_at": "2026-11-23T00:30:00-05:00",
-        "sha256": "8c73bac12fe2800b96adc164c1e0ffccd3e34d310085d58f6a49c2cf2334f0a3"
+        "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_02_30AM.pdf",
+        "published_at": "2026-11-23T02:30:00-05:00",
+        "sha256": "1ef6fce3e1263f66eca6473f7d8aab796df9d0afabf30733459bb970395815c8"
       },
       "forecast_features": {
         "injury": [
@@ -49565,18 +49565,18 @@
           ]
         }
       },
-      "issued_at": "2026-11-23T05:30:45.150624+00:00",
-      "forecast_cutoff": "2026-11-23T05:30:45.150624+00:00",
+      "issued_at": "2026-11-23T07:42:41.337604+00:00",
+      "forecast_cutoff": "2026-11-23T07:42:41.337604+00:00",
       "kind": "issued_live",
       "forecast_policy_version": "after-game-v3",
-      "input_signature": "55c17cdb379f75e4861077528d0c7c9f90bdb5114787449635237c44c7bf1bb7",
+      "input_signature": "d97bd4606aebf2cf2585721c5e035ff2abda10a9235e525cf3d0a43a0517706c",
       "parameter_hash": "8196c93fe79e6ab08ecb4119373d7166aa37c439d53ca0f67fb118838bdb586b",
       "state_sha256": "7082e7898b5400394db3210ca83905d9d814fbb2a2b770dddb2ab2a4e8ccb963",
       "home_id": "20",
       "away_id": "22",
       "scheduled_context_projected": false,
       "eligible_for_evaluation": true,
-      "forecast_id": "b064483749add88fb6dc4455b2763bf6b5966e2244e06029e8a355da7dc34523"
+      "forecast_id": "c11b2272167da2f102193bc0b4b5f5aa5529a37c46a3b801bb4bb12b0551759c"
     },
     {
       "game_id": "401910038",
@@ -49630,9 +49630,9 @@
         "away": "not_submitted"
       },
       "injury_source": {
-        "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_12_30AM.pdf",
-        "published_at": "2026-11-23T00:30:00-05:00",
-        "sha256": "8c73bac12fe2800b96adc164c1e0ffccd3e34d310085d58f6a49c2cf2334f0a3"
+        "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_02_30AM.pdf",
+        "published_at": "2026-11-23T02:30:00-05:00",
+        "sha256": "1ef6fce3e1263f66eca6473f7d8aab796df9d0afabf30733459bb970395815c8"
       },
       "forecast_features": {
         "injury": [
@@ -49720,18 +49720,18 @@
           "players": []
         }
       },
-      "issued_at": "2026-11-23T05:30:45.150624+00:00",
-      "forecast_cutoff": "2026-11-23T05:30:45.150624+00:00",
+      "issued_at": "2026-11-23T07:42:41.337604+00:00",
+      "forecast_cutoff": "2026-11-23T07:42:41.337604+00:00",
       "kind": "issued_live",
       "forecast_policy_version": "after-game-v3",
-      "input_signature": "0ee374045b95a2f142b7ae04379e9325a2f64cc5b81c2ecb3fd396f44ee890d9",
+      "input_signature": "57b153251c2144310f8157d48bd65be2d02544b5469603cecc12a015f0d8caef",
       "parameter_hash": "8196c93fe79e6ab08ecb4119373d7166aa37c439d53ca0f67fb118838bdb586b",
       "state_sha256": "7082e7898b5400394db3210ca83905d9d814fbb2a2b770dddb2ab2a4e8ccb963",
       "home_id": "11",
       "away_id": "25",
       "scheduled_context_projected": false,
       "eligible_for_evaluation": true,
-      "forecast_id": "b870bfba0bebb8b2dbfd76c2a35039c03cd0af734c654cc1bebb11c8700d8302"
+      "forecast_id": "7dba7535c4fb46f58d115238c4b3acb542d56c8c1a55930cebbf5b12ea2b4057"
     },
     {
       "game_id": "401910039",
@@ -49785,9 +49785,9 @@
         "away": "submitted"
       },
       "injury_source": {
-        "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_12_30AM.pdf",
-        "published_at": "2026-11-23T00:30:00-05:00",
-        "sha256": "8c73bac12fe2800b96adc164c1e0ffccd3e34d310085d58f6a49c2cf2334f0a3"
+        "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_02_30AM.pdf",
+        "published_at": "2026-11-23T02:30:00-05:00",
+        "sha256": "1ef6fce3e1263f66eca6473f7d8aab796df9d0afabf30733459bb970395815c8"
       },
       "forecast_features": {
         "injury": [
@@ -49912,18 +49912,18 @@
           ]
         }
       },
-      "issued_at": "2026-11-23T05:30:45.150624+00:00",
-      "forecast_cutoff": "2026-11-23T05:30:45.150624+00:00",
+      "issued_at": "2026-11-23T07:42:41.337604+00:00",
+      "forecast_cutoff": "2026-11-23T07:42:41.337604+00:00",
       "kind": "issued_live",
       "forecast_policy_version": "after-game-v3",
-      "input_signature": "5ae89a9b8c109fca0caf4ae4252929946eed62a376dcdb6e86e65c387131200b",
+      "input_signature": "2d6635c9f44e1b46101d9c309d80a688866b6cf16c607154f00f178ec0a27817",
       "parameter_hash": "8196c93fe79e6ab08ecb4119373d7166aa37c439d53ca0f67fb118838bdb586b",
       "state_sha256": "7082e7898b5400394db3210ca83905d9d814fbb2a2b770dddb2ab2a4e8ccb963",
       "home_id": "28",
       "away_id": "15",
       "scheduled_context_projected": false,
       "eligible_for_evaluation": true,
-      "forecast_id": "a1e138fa8a2ab6abecc6bc6826f7406bf49e60531d6196146a3757cd50a99463"
+      "forecast_id": "2aef062bebf95b51828a0ba6da2a7bbc382cf6e621bf2d208f09cf7dcb61c06e"
     },
     {
       "game_id": "401910040",
@@ -49977,9 +49977,9 @@
         "away": "submitted"
       },
       "injury_source": {
-        "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_12_30AM.pdf",
-        "published_at": "2026-11-23T00:30:00-05:00",
-        "sha256": "8c73bac12fe2800b96adc164c1e0ffccd3e34d310085d58f6a49c2cf2334f0a3"
+        "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_02_30AM.pdf",
+        "published_at": "2026-11-23T02:30:00-05:00",
+        "sha256": "1ef6fce3e1263f66eca6473f7d8aab796df9d0afabf30733459bb970395815c8"
       },
       "forecast_features": {
         "injury": [
@@ -50129,18 +50129,18 @@
           ]
         }
       },
-      "issued_at": "2026-11-23T05:30:45.150624+00:00",
-      "forecast_cutoff": "2026-11-23T05:30:45.150624+00:00",
+      "issued_at": "2026-11-23T07:42:41.337604+00:00",
+      "forecast_cutoff": "2026-11-23T07:42:41.337604+00:00",
       "kind": "issued_live",
       "forecast_policy_version": "after-game-v3",
-      "input_signature": "6377409a6a5f479749059f7606b473cf8fafc352459ca8961df358455f37569e",
+      "input_signature": "d7e44506948dc9b8f4913724d67b11ddf86a3826d59ede71ed87789e11c7db55",
       "parameter_hash": "8196c93fe79e6ab08ecb4119373d7166aa37c439d53ca0f67fb118838bdb586b",
       "state_sha256": "7082e7898b5400394db3210ca83905d9d814fbb2a2b770dddb2ab2a4e8ccb963",
       "home_id": "16",
       "away_id": "17",
       "scheduled_context_projected": false,
       "eligible_for_evaluation": true,
-      "forecast_id": "cdd187a0986349b954d64904c0f5790a8d0d18d6ac1e6e58ebb0e8edce00f5cb"
+      "forecast_id": "fe509b378704f619b221605fd583bfd3fb36f4f7537a191945c7e2e5b9568bb5"
     },
     {
       "game_id": "401910041",
@@ -50194,9 +50194,9 @@
         "away": "submitted"
       },
       "injury_source": {
-        "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_12_30AM.pdf",
-        "published_at": "2026-11-23T00:30:00-05:00",
-        "sha256": "8c73bac12fe2800b96adc164c1e0ffccd3e34d310085d58f6a49c2cf2334f0a3"
+        "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_02_30AM.pdf",
+        "published_at": "2026-11-23T02:30:00-05:00",
+        "sha256": "1ef6fce3e1263f66eca6473f7d8aab796df9d0afabf30733459bb970395815c8"
       },
       "forecast_features": {
         "injury": [
@@ -50315,18 +50315,18 @@
           "players": []
         }
       },
-      "issued_at": "2026-11-23T05:30:45.150624+00:00",
-      "forecast_cutoff": "2026-11-23T05:30:45.150624+00:00",
+      "issued_at": "2026-11-23T07:42:41.337604+00:00",
+      "forecast_cutoff": "2026-11-23T07:42:41.337604+00:00",
       "kind": "issued_live",
       "forecast_policy_version": "after-game-v3",
-      "input_signature": "3216e1372d235f9a2a9dcd9aa35959a09c32a649800be814c4814a1525bf6ea2",
+      "input_signature": "afc44a4063d639020a15534a1b090c7113d15c5dbf0440ddda817cc755bb3d9d",
       "parameter_hash": "8196c93fe79e6ab08ecb4119373d7166aa37c439d53ca0f67fb118838bdb586b",
       "state_sha256": "7082e7898b5400394db3210ca83905d9d814fbb2a2b770dddb2ab2a4e8ccb963",
       "home_id": "4",
       "away_id": "5",
       "scheduled_context_projected": false,
       "eligible_for_evaluation": true,
-      "forecast_id": "ec6fa741d0f65a1fe7c4e2e55841c1f6f5d27114a6635d9aa9b272a01eb63e5c"
+      "forecast_id": "a2b0a80dde4f1183ed756d1cc14ac9ee3414d0633dec155190d34f9b51bca57f"
     },
     {
       "game_id": "401910042",
@@ -50380,9 +50380,9 @@
         "away": "submitted"
       },
       "injury_source": {
-        "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_12_30AM.pdf",
-        "published_at": "2026-11-23T00:30:00-05:00",
-        "sha256": "8c73bac12fe2800b96adc164c1e0ffccd3e34d310085d58f6a49c2cf2334f0a3"
+        "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_02_30AM.pdf",
+        "published_at": "2026-11-23T02:30:00-05:00",
+        "sha256": "1ef6fce3e1263f66eca6473f7d8aab796df9d0afabf30733459bb970395815c8"
       },
       "forecast_features": {
         "injury": [
@@ -50527,18 +50527,18 @@
           ]
         }
       },
-      "issued_at": "2026-11-23T05:30:45.150624+00:00",
-      "forecast_cutoff": "2026-11-23T05:30:45.150624+00:00",
+      "issued_at": "2026-11-23T07:42:41.337604+00:00",
+      "forecast_cutoff": "2026-11-23T07:42:41.337604+00:00",
       "kind": "issued_live",
       "forecast_policy_version": "after-game-v3",
-      "input_signature": "e7c3b9ecf4e3c002b01c5b76fbd9c1a845287754c933ba607168eaeb158cc458",
+      "input_signature": "bfdb668fe88f0f4d9919820b6f66fa2fd520eaa150f83b47db1b0cb5785ebb19",
       "parameter_hash": "8196c93fe79e6ab08ecb4119373d7166aa37c439d53ca0f67fb118838bdb586b",
       "state_sha256": "7082e7898b5400394db3210ca83905d9d814fbb2a2b770dddb2ab2a4e8ccb963",
       "home_id": "3",
       "away_id": "21",
       "scheduled_context_projected": false,
       "eligible_for_evaluation": true,
-      "forecast_id": "90cf5068419ed83e1b06ca843c7a4817696ab8034486dd43b9cb3993453d4c2a"
+      "forecast_id": "e5f437ea3e6c3065b18a32861238d5ab452d9f86eee52c354c0862db9bbf5099"
     },
     {
       "game_id": "401910043",
@@ -50592,9 +50592,9 @@
         "away": "submitted"
       },
       "injury_source": {
-        "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_12_30AM.pdf",
-        "published_at": "2026-11-23T00:30:00-05:00",
-        "sha256": "8c73bac12fe2800b96adc164c1e0ffccd3e34d310085d58f6a49c2cf2334f0a3"
+        "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_02_30AM.pdf",
+        "published_at": "2026-11-23T02:30:00-05:00",
+        "sha256": "1ef6fce3e1263f66eca6473f7d8aab796df9d0afabf30733459bb970395815c8"
       },
       "forecast_features": {
         "injury": [
@@ -50714,18 +50714,18 @@
           ]
         }
       },
-      "issued_at": "2026-11-23T05:30:45.150624+00:00",
-      "forecast_cutoff": "2026-11-23T05:30:45.150624+00:00",
+      "issued_at": "2026-11-23T07:42:41.337604+00:00",
+      "forecast_cutoff": "2026-11-23T07:42:41.337604+00:00",
       "kind": "issued_live",
       "forecast_policy_version": "after-game-v3",
-      "input_signature": "46fd250aa7a1c7e31c43669d1a92f5a2769982d3c64e14f081ed8803d8a4a2ff",
+      "input_signature": "6494d8d7c43bbd1acd1eebf3de7d4cfd2191bc96d61bf40e69efffe08df83eb4",
       "parameter_hash": "8196c93fe79e6ab08ecb4119373d7166aa37c439d53ca0f67fb118838bdb586b",
       "state_sha256": "7082e7898b5400394db3210ca83905d9d814fbb2a2b770dddb2ab2a4e8ccb963",
       "home_id": "10",
       "away_id": "12",
       "scheduled_context_projected": false,
       "eligible_for_evaluation": true,
-      "forecast_id": "a89fd0502c094ea296feb4a82a41fa4fe0bbe1a19ed0fb9235d6e97f6dc3fc70"
+      "forecast_id": "01a7feb789d8002d297467fd6432f1b875767d6f35c12bf22804b5a11ad3520a"
     },
     {
       "game_id": "401910044",
@@ -50779,9 +50779,9 @@
         "away": "not_submitted"
       },
       "injury_source": {
-        "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_12_30AM.pdf",
-        "published_at": "2026-11-23T00:30:00-05:00",
-        "sha256": "8c73bac12fe2800b96adc164c1e0ffccd3e34d310085d58f6a49c2cf2334f0a3"
+        "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_02_30AM.pdf",
+        "published_at": "2026-11-23T02:30:00-05:00",
+        "sha256": "1ef6fce3e1263f66eca6473f7d8aab796df9d0afabf30733459bb970395815c8"
       },
       "forecast_features": {
         "injury": [
@@ -50880,18 +50880,18 @@
           ]
         }
       },
-      "issued_at": "2026-11-23T05:30:45.150624+00:00",
-      "forecast_cutoff": "2026-11-23T05:30:45.150624+00:00",
+      "issued_at": "2026-11-23T07:42:41.337604+00:00",
+      "forecast_cutoff": "2026-11-23T07:42:41.337604+00:00",
       "kind": "issued_live",
       "forecast_policy_version": "after-game-v3",
-      "input_signature": "490b1e3406d3840569dbc7f13ada31d1ae1e7a703f6a254499173dc23044486b",
+      "input_signature": "c4e6175cd8b8b634bb85cf98e2f7a8f8f148a317167e88d84f7a194d05906133",
       "parameter_hash": "8196c93fe79e6ab08ecb4119373d7166aa37c439d53ca0f67fb118838bdb586b",
       "state_sha256": "7082e7898b5400394db3210ca83905d9d814fbb2a2b770dddb2ab2a4e8ccb963",
       "home_id": "13",
       "away_id": "26",
       "scheduled_context_projected": false,
       "eligible_for_evaluation": true,
-      "forecast_id": "864d3419ccc9c06cebaabd84138e3060be82b5f1442f054772359c7bca45a7a5"
+      "forecast_id": "a7e1157aedbb421b7a3ce2d29f7ba93a8c9cdb9548104463b9190d0add029315"
     },
     {
       "game_id": "401910045",
@@ -50945,9 +50945,9 @@
         "away": "submitted"
       },
       "injury_source": {
-        "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_12_30AM.pdf",
-        "published_at": "2026-11-23T00:30:00-05:00",
-        "sha256": "8c73bac12fe2800b96adc164c1e0ffccd3e34d310085d58f6a49c2cf2334f0a3"
+        "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_02_30AM.pdf",
+        "published_at": "2026-11-23T02:30:00-05:00",
+        "sha256": "1ef6fce3e1263f66eca6473f7d8aab796df9d0afabf30733459bb970395815c8"
       },
       "forecast_features": {
         "injury": [
@@ -51087,18 +51087,18 @@
           ]
         }
       },
-      "issued_at": "2026-11-23T05:30:45.150624+00:00",
-      "forecast_cutoff": "2026-11-23T05:30:45.150624+00:00",
+      "issued_at": "2026-11-23T07:42:41.337604+00:00",
+      "forecast_cutoff": "2026-11-23T07:42:41.337604+00:00",
       "kind": "issued_live",
       "forecast_policy_version": "after-game-v3",
-      "input_signature": "cebc96111157aa5508accff7d7e3c31e306c50fec5b0b6791f09df9121539816",
+      "input_signature": "15ebf95bd934384f1ff667869eeb0c522604a30634d7dcc41e8d4c05207e4861",
       "parameter_hash": "8196c93fe79e6ab08ecb4119373d7166aa37c439d53ca0f67fb118838bdb586b",
       "state_sha256": "7082e7898b5400394db3210ca83905d9d814fbb2a2b770dddb2ab2a4e8ccb963",
       "home_id": "23",
       "away_id": "24",
       "scheduled_context_projected": false,
       "eligible_for_evaluation": true,
-      "forecast_id": "4c60d8fc35db28bafb812dcbcf47dec8b9763edb60addcc91c41275cc6295008"
+      "forecast_id": "8d772c455d5188f15425e7b73ebd3a6a658df3018ec0b15da37db761cd4f7473"
     },
     {
       "game_id": "401909314",
@@ -51152,9 +51152,9 @@
         "away": "not_submitted"
       },
       "injury_source": {
-        "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_12_30AM.pdf",
-        "published_at": "2026-11-23T00:30:00-05:00",
-        "sha256": "8c73bac12fe2800b96adc164c1e0ffccd3e34d310085d58f6a49c2cf2334f0a3"
+        "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_02_30AM.pdf",
+        "published_at": "2026-11-23T02:30:00-05:00",
+        "sha256": "1ef6fce3e1263f66eca6473f7d8aab796df9d0afabf30733459bb970395815c8"
       },
       "forecast_features": {
         "injury": [
@@ -51242,18 +51242,18 @@
           "players": []
         }
       },
-      "issued_at": "2026-11-23T05:30:45.150624+00:00",
-      "forecast_cutoff": "2026-11-23T05:30:45.150624+00:00",
+      "issued_at": "2026-11-23T07:42:41.337604+00:00",
+      "forecast_cutoff": "2026-11-23T07:42:41.337604+00:00",
       "kind": "issued_live",
       "forecast_policy_version": "after-game-v3",
-      "input_signature": "e60364f1c9fbc5897e3d02a8f24387c82cccda6318ef87895b8a55e94bdd27d6",
+      "input_signature": "95f7a81884d2431c50205ac6ce54918bab79cefef1e8022ab3c04caa81e0fa4f",
       "parameter_hash": "8196c93fe79e6ab08ecb4119373d7166aa37c439d53ca0f67fb118838bdb586b",
       "state_sha256": "7082e7898b5400394db3210ca83905d9d814fbb2a2b770dddb2ab2a4e8ccb963",
       "home_id": "19",
       "away_id": "8",
       "scheduled_context_projected": false,
       "eligible_for_evaluation": true,
-      "forecast_id": "f9bd93666c5e567ca0113b04335a5d5e1daf956b05f9bb2c1a61ecdb98f3da05"
+      "forecast_id": "2d16b2c513c2dab9a29c0163f75383d1913b5759e57ff325bc588c4945f841e4"
     },
     {
       "game_id": "401909315",
@@ -51307,9 +51307,9 @@
         "away": "not_submitted"
       },
       "injury_source": {
-        "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_12_30AM.pdf",
-        "published_at": "2026-11-23T00:30:00-05:00",
-        "sha256": "8c73bac12fe2800b96adc164c1e0ffccd3e34d310085d58f6a49c2cf2334f0a3"
+        "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_02_30AM.pdf",
+        "published_at": "2026-11-23T02:30:00-05:00",
+        "sha256": "1ef6fce3e1263f66eca6473f7d8aab796df9d0afabf30733459bb970395815c8"
       },
       "forecast_features": {
         "injury": [
@@ -51397,18 +51397,18 @@
           "players": []
         }
       },
-      "issued_at": "2026-11-23T05:30:45.150624+00:00",
-      "forecast_cutoff": "2026-11-23T05:30:45.150624+00:00",
+      "issued_at": "2026-11-23T07:42:41.337604+00:00",
+      "forecast_cutoff": "2026-11-23T07:42:41.337604+00:00",
       "kind": "issued_live",
       "forecast_policy_version": "after-game-v3",
-      "input_signature": "73694109e539769bef2975f3ff9aee60f6ac05677f98201ead02f346dee60327",
+      "input_signature": "1bee6fb4b817ad9afe19609efa18cd30d358bc1cc70c20daf3d11a5b155e86fd",
       "parameter_hash": "8196c93fe79e6ab08ecb4119373d7166aa37c439d53ca0f67fb118838bdb586b",
       "state_sha256": "7082e7898b5400394db3210ca83905d9d814fbb2a2b770dddb2ab2a4e8ccb963",
       "home_id": "27",
       "away_id": "2",
       "scheduled_context_projected": false,
       "eligible_for_evaluation": true,
-      "forecast_id": "3c5e330bfeeba5e1135dc41647a238dc91a174ff64a9cd9d6d5ef73bb71780cd"
+      "forecast_id": "7725f29bcaad21531a29c342d7be624c20579c3a879ce66cd965e8084410fc02"
     },
     {
       "game_id": "401909316",
@@ -51462,9 +51462,9 @@
         "away": "not_submitted"
       },
       "injury_source": {
-        "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_12_30AM.pdf",
-        "published_at": "2026-11-23T00:30:00-05:00",
-        "sha256": "8c73bac12fe2800b96adc164c1e0ffccd3e34d310085d58f6a49c2cf2334f0a3"
+        "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_02_30AM.pdf",
+        "published_at": "2026-11-23T02:30:00-05:00",
+        "sha256": "1ef6fce3e1263f66eca6473f7d8aab796df9d0afabf30733459bb970395815c8"
       },
       "forecast_features": {
         "injury": [
@@ -51552,18 +51552,18 @@
           "players": []
         }
       },
-      "issued_at": "2026-11-23T05:30:45.150624+00:00",
-      "forecast_cutoff": "2026-11-23T05:30:45.150624+00:00",
+      "issued_at": "2026-11-23T07:42:41.337604+00:00",
+      "forecast_cutoff": "2026-11-23T07:42:41.337604+00:00",
       "kind": "issued_live",
       "forecast_policy_version": "after-game-v3",
-      "input_signature": "58a8bd91128acd6c8ccf2a82f068b56f890e202a94f1eb6dfb4eb4104e5298dc",
+      "input_signature": "551eac5d9f66dbc575e0fe54350715d13a07a99f702449e1d4ab919f3bddf615",
       "parameter_hash": "8196c93fe79e6ab08ecb4119373d7166aa37c439d53ca0f67fb118838bdb586b",
       "state_sha256": "7082e7898b5400394db3210ca83905d9d814fbb2a2b770dddb2ab2a4e8ccb963",
       "home_id": "7",
       "away_id": "6",
       "scheduled_context_projected": false,
       "eligible_for_evaluation": true,
-      "forecast_id": "824985af66193078c104b15aabc63be02bcee5065d69cc4523dd80d7cfcba19c"
+      "forecast_id": "abbe6399972dfc47ba821412bbd04659d0e5c5099aded03431709750a4e37a99"
     },
     {
       "game_id": "401909317",
@@ -596630,6 +596630,2407 @@
         "scheduled_context_projected": true,
         "eligible_for_evaluation": true,
         "forecast_id": "439e2af188e936088beb7a5fc72ae381e0d90b96120e073e52e9473bb82d5234"
+      },
+      {
+        "game_id": "401910036",
+        "start": "2026-11-24T00:00Z",
+        "home": "Charlotte Hornets",
+        "away": "Memphis Grizzlies",
+        "home_rating": 1440.841693962527,
+        "away_rating": 1515.1486542297316,
+        "home_probability": 0.4817844664065558,
+        "away_probability": 0.5182155335934442,
+        "home_context": {
+          "rest": 2,
+          "travel": 364.06414735189907,
+          "timezone_change": 0.0,
+          "opening_prior": false
+        },
+        "away_context": {
+          "rest": 1,
+          "travel": 1510.5570608510907,
+          "timezone_change": 1.0,
+          "opening_prior": false
+        },
+        "home_sos": 0.5889556648252696,
+        "away_sos": 0.372244008714597,
+        "model_version": "0.3.0",
+        "base_home_probability": 0.5175541023036696,
+        "base_away_probability": 0.4824458976963304,
+        "probability_models": {
+          "base": {
+            "home_probability": 0.5175541023036696,
+            "away_probability": 0.4824458976963304,
+            "model_version": "0.3.0/base",
+            "status": "carryover_elo"
+          },
+          "injury": {
+            "home_probability": 0.4817844664065558,
+            "away_probability": 0.5182155335934442,
+            "model_version": "0.3.0/injury",
+            "status": "complete"
+          },
+          "boosted": {
+            "home_probability": 0.5323113923531464,
+            "away_probability": 0.4676886076468536,
+            "model_version": "0.3.0/boosted",
+            "status": "complete"
+          }
+        },
+        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "injury_coverage": {
+          "home": "submitted",
+          "away": "submitted"
+        },
+        "injury_source": {
+          "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_02_30AM.pdf",
+          "published_at": "2026-11-23T02:30:00-05:00",
+          "sha256": "1ef6fce3e1263f66eca6473f7d8aab796df9d0afabf30733459bb970395815c8"
+        },
+        "forecast_features": {
+          "injury": [
+            0.07024527982403639,
+            0.03177708787389888,
+            -0.03519128764132251,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.12582706241906916,
+            0.13675062433470728,
+            0.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            2.0,
+            2.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "boosted": [
+            0.07024527982403639,
+            1,
+            0.0,
+            0,
+            -1.1464929134991917,
+            -1.0,
+            -1.0,
+            2,
+            1,
+            -14.222609286477585,
+            -14.92098607014271,
+            -5.188254422998891,
+            -8.291786306068444,
+            1.492594882136851,
+            -1.6391169106799577,
+            -5.188254422998891,
+            -0.044250455641127395,
+            -0.04639375419095304,
+            0.05177011021370903,
+            0.07370861906081405,
+            -0.4424179411248541,
+            0.01517610436138142,
+            -0.010744280568210307,
+            -12.191413790422928,
+            -7.32062135315347,
+            -4.385060819403478,
+            -0.6812238493723849,
+            -0.20141213389121349,
+            -0.348159509202454,
+            -1.0,
+            0.0,
+            0.0,
+            0.03177708787389888,
+            -0.03519128764132251,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.12582706241906916,
+            0.13675062433470728,
+            0.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            2.0,
+            2.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "injury_status": "complete",
+        "injury_report": {
+          "29": {
+            "submitted": true,
+            "players": [
+              {
+                "athlete": "5041935",
+                "name": "Boozer, Cameron",
+                "status": "Out"
+              },
+              {
+                "athlete": "2991070",
+                "name": "Grant, Jerami",
+                "status": "Out"
+              },
+              {
+                "athlete": "5105550",
+                "name": "Jackson, GG",
+                "status": "Out"
+              },
+              {
+                "athlete": "4431785",
+                "name": "Pippen Jr., Scotty",
+                "status": "Out"
+              },
+              {
+                "athlete": null,
+                "name": "Saunders, Richie",
+                "status": "Out"
+              }
+            ]
+          },
+          "30": {
+            "submitted": true,
+            "players": [
+              {
+                "athlete": null,
+                "name": "Ajayi, Michael",
+                "status": "Out"
+              },
+              {
+                "athlete": "3135045",
+                "name": "Allen, Grayson",
+                "status": "Out"
+              },
+              {
+                "athlete": null,
+                "name": "Boswell, Kylan",
+                "status": "Out"
+              },
+              {
+                "athlete": "5061575",
+                "name": "Knueppel, Kon",
+                "status": "Out"
+              },
+              {
+                "athlete": "4433287",
+                "name": "Miller, Brandon",
+                "status": "Probable"
+              },
+              {
+                "athlete": "3032979",
+                "name": "Schroder, Dennis",
+                "status": "Out"
+              },
+              {
+                "athlete": "4066218",
+                "name": "Williams, Grant",
+                "status": "Out"
+              }
+            ]
+          }
+        },
+        "issued_at": "2026-11-23T07:42:41.337604+00:00",
+        "forecast_cutoff": "2026-11-23T07:42:41.337604+00:00",
+        "kind": "issued_live",
+        "forecast_policy_version": "after-game-v3",
+        "input_signature": "59cfc25f21e77414ac54af3662e94c16dc76e620d08a356d1299314470b638a9",
+        "parameter_hash": "8196c93fe79e6ab08ecb4119373d7166aa37c439d53ca0f67fb118838bdb586b",
+        "state_sha256": "7082e7898b5400394db3210ca83905d9d814fbb2a2b770dddb2ab2a4e8ccb963",
+        "home_id": "30",
+        "away_id": "29",
+        "scheduled_context_projected": false,
+        "eligible_for_evaluation": true,
+        "forecast_id": "c63cea719b912a3c1d03350508ae8efa4b659a1d3cb69d85f3c399ef2f4232fd"
+      },
+      {
+        "game_id": "401910037",
+        "start": "2026-11-24T00:00Z",
+        "home": "Philadelphia 76ers",
+        "away": "Portland Trail Blazers",
+        "home_rating": 1606.6412048724233,
+        "away_rating": 1601.8207046619104,
+        "home_probability": 0.6582851864428722,
+        "away_probability": 0.34171481355712785,
+        "home_context": {
+          "rest": 1,
+          "travel": 0.0,
+          "timezone_change": 0.0,
+          "opening_prior": false
+        },
+        "away_context": {
+          "rest": 1,
+          "travel": 129.63523988229818,
+          "timezone_change": 0.0,
+          "opening_prior": false
+        },
+        "home_sos": 0.5856366815732141,
+        "away_sos": 0.66219807496442,
+        "model_version": "0.3.0",
+        "base_home_probability": 0.5523598058614728,
+        "base_away_probability": 0.4476401941385272,
+        "probability_models": {
+          "base": {
+            "home_probability": 0.5523598058614728,
+            "away_probability": 0.4476401941385272,
+            "model_version": "0.3.0/base",
+            "status": "carryover_elo"
+          },
+          "injury": {
+            "home_probability": 0.6582851864428722,
+            "away_probability": 0.34171481355712785,
+            "model_version": "0.3.0/injury",
+            "status": "complete"
+          },
+          "boosted": {
+            "home_probability": 0.5012177849893112,
+            "away_probability": 0.49878221501068876,
+            "model_version": "0.3.0/boosted",
+            "status": "complete"
+          }
+        },
+        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "injury_coverage": {
+          "home": "submitted",
+          "away": "submitted"
+        },
+        "injury_source": {
+          "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_02_30AM.pdf",
+          "published_at": "2026-11-23T02:30:00-05:00",
+          "sha256": "1ef6fce3e1263f66eca6473f7d8aab796df9d0afabf30733459bb970395815c8"
+        },
+        "forecast_features": {
+          "injury": [
+            0.21020988450291567,
+            -0.29618322513060924,
+            -0.36532968889414,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.31546472535346526,
+            0.3503861191464569,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "boosted": [
+            0.21020988450291567,
+            0,
+            0.0,
+            0,
+            -0.1296352398822982,
+            0.0,
+            0.0,
+            1,
+            1,
+            -1.4636893158850528,
+            -4.3411825109868705,
+            -3.0593847289302163,
+            -4.537246818183982,
+            -3.053296671934287,
+            -3.671548133645988,
+            -3.0593847289302163,
+            -0.004114956072648668,
+            0.0006384857993833037,
+            -0.05010558426268433,
+            0.0049292591970199195,
+            0.9948603973977863,
+            -0.035482811802390005,
+            0.0025644945634185623,
+            2.251480474095729,
+            5.161233795757951,
+            -0.8662948035392901,
+            -0.010258713982302936,
+            -0.24896265560165975,
+            0.3014888337468983,
+            0.0,
+            0.0,
+            0.0,
+            -0.29618322513060924,
+            -0.36532968889414,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.31546472535346526,
+            0.3503861191464569,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "injury_status": "complete",
+        "injury_report": {
+          "22": {
+            "submitted": true,
+            "players": [
+              {
+                "athlete": "4578893",
+                "name": "Krejci, Vit",
+                "status": "Out"
+              },
+              {
+                "athlete": "4279888",
+                "name": "Morant, Ja",
+                "status": "Out"
+              },
+              {
+                "athlete": "4914336",
+                "name": "Sharpe, Shaedon",
+                "status": "Out"
+              },
+              {
+                "athlete": "4706557",
+                "name": "Youngblood, Chris",
+                "status": "Out"
+              }
+            ]
+          },
+          "20": {
+            "submitted": true,
+            "players": [
+              {
+                "athlete": "5105637",
+                "name": "Bona, Adem",
+                "status": "Probable"
+              },
+              {
+                "athlete": "3917376",
+                "name": "Brown, Jaylen",
+                "status": "Probable"
+              },
+              {
+                "athlete": "4871141",
+                "name": "Hukporti, Ariel",
+                "status": "Out"
+              },
+              {
+                "athlete": "3912848",
+                "name": "Wade, Dean",
+                "status": "Probable"
+              }
+            ]
+          }
+        },
+        "issued_at": "2026-11-23T07:42:41.337604+00:00",
+        "forecast_cutoff": "2026-11-23T07:42:41.337604+00:00",
+        "kind": "issued_live",
+        "forecast_policy_version": "after-game-v3",
+        "input_signature": "d97bd4606aebf2cf2585721c5e035ff2abda10a9235e525cf3d0a43a0517706c",
+        "parameter_hash": "8196c93fe79e6ab08ecb4119373d7166aa37c439d53ca0f67fb118838bdb586b",
+        "state_sha256": "7082e7898b5400394db3210ca83905d9d814fbb2a2b770dddb2ab2a4e8ccb963",
+        "home_id": "20",
+        "away_id": "22",
+        "scheduled_context_projected": false,
+        "eligible_for_evaluation": true,
+        "forecast_id": "c11b2272167da2f102193bc0b4b5f5aa5529a37c46a3b801bb4bb12b0551759c"
+      },
+      {
+        "game_id": "401910038",
+        "start": "2026-11-24T00:30Z",
+        "home": "Indiana Pacers",
+        "away": "Oklahoma City Thunder",
+        "home_rating": 1320.3704602125404,
+        "away_rating": 1616.134053713252,
+        "home_probability": 0.2527677102385696,
+        "away_probability": 0.7472322897614304,
+        "home_context": {
+          "rest": 0,
+          "travel": 1035.956360914439,
+          "timezone_change": 0.0,
+          "opening_prior": false
+        },
+        "away_context": {
+          "rest": 0,
+          "travel": 1651.9016522842485,
+          "timezone_change": 0.0,
+          "opening_prior": false
+        },
+        "home_sos": 0.5601954713774054,
+        "away_sos": 0.38817998475620036,
+        "model_version": "0.3.0",
+        "base_home_probability": 0.23822965140911506,
+        "base_away_probability": 0.7617703485908849,
+        "probability_models": {
+          "base": {
+            "home_probability": 0.23822965140911506,
+            "away_probability": 0.7617703485908849,
+            "model_version": "0.3.0/base",
+            "status": "carryover_elo"
+          },
+          "injury": {
+            "home_probability": 0.2527677102385696,
+            "away_probability": 0.7472322897614304,
+            "model_version": "0.3.0/injury",
+            "status": "partial_or_unsubmitted"
+          },
+          "boosted": {
+            "home_probability": 0.3663214862668581,
+            "away_probability": 0.6336785137331419,
+            "model_version": "0.3.0/boosted",
+            "status": "partial_or_unsubmitted"
+          }
+        },
+        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "injury_coverage": {
+          "home": "not_submitted",
+          "away": "not_submitted"
+        },
+        "injury_source": {
+          "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_02_30AM.pdf",
+          "published_at": "2026-11-23T02:30:00-05:00",
+          "sha256": "1ef6fce3e1263f66eca6473f7d8aab796df9d0afabf30733459bb970395815c8"
+        },
+        "forecast_features": {
+          "injury": [
+            -1.162410000139995,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "boosted": [
+            -1.162410000139995,
+            0,
+            0.0,
+            0,
+            -0.6159452913698094,
+            0.0,
+            0.0,
+            0,
+            0,
+            -7.798155022370613,
+            4.12474834172887,
+            -9.847866838124919,
+            2.802422050538778,
+            -12.277982622550038,
+            0.8284782056209324,
+            -9.847866838124919,
+            -0.0039036924731395972,
+            -0.00030564045763481484,
+            -0.04549586957312207,
+            0.004046647558593519,
+            0.09489095798755898,
+            0.013520560755769406,
+            -0.011219957863605218,
+            -2.8868447726813287,
+            7.1750946821696004,
+            0.48294716452026876,
+            0.26960983702496777,
+            0.26985704323570436,
+            -0.37508747375787266,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "injury_status": "partial_or_unsubmitted",
+        "injury_report": {
+          "25": {
+            "submitted": false,
+            "players": []
+          },
+          "11": {
+            "submitted": false,
+            "players": []
+          }
+        },
+        "issued_at": "2026-11-23T07:42:41.337604+00:00",
+        "forecast_cutoff": "2026-11-23T07:42:41.337604+00:00",
+        "kind": "issued_live",
+        "forecast_policy_version": "after-game-v3",
+        "input_signature": "57b153251c2144310f8157d48bd65be2d02544b5469603cecc12a015f0d8caef",
+        "parameter_hash": "8196c93fe79e6ab08ecb4119373d7166aa37c439d53ca0f67fb118838bdb586b",
+        "state_sha256": "7082e7898b5400394db3210ca83905d9d814fbb2a2b770dddb2ab2a4e8ccb963",
+        "home_id": "11",
+        "away_id": "25",
+        "scheduled_context_projected": false,
+        "eligible_for_evaluation": true,
+        "forecast_id": "7dba7535c4fb46f58d115238c4b3acb542d56c8c1a55930cebbf5b12ea2b4057"
+      },
+      {
+        "game_id": "401910039",
+        "start": "2026-11-24T00:30Z",
+        "home": "Toronto Raptors",
+        "away": "Milwaukee Bucks",
+        "home_rating": 1468.1991018592635,
+        "away_rating": 1271.0270452087802,
+        "home_probability": 0.6594612818665921,
+        "away_probability": 0.34053871813340786,
+        "home_context": {
+          "rest": 2,
+          "travel": 332.08424279717,
+          "timezone_change": 0.0,
+          "opening_prior": false
+        },
+        "away_context": {
+          "rest": 1,
+          "travel": 539.9595149063548,
+          "timezone_change": 0.0,
+          "opening_prior": false
+        },
+        "home_sos": 0.26308909528723773,
+        "away_sos": 0.4356409815388143,
+        "model_version": "0.3.0",
+        "base_home_probability": 0.7801197788979679,
+        "base_away_probability": 0.2198802211020321,
+        "probability_models": {
+          "base": {
+            "home_probability": 0.7801197788979679,
+            "away_probability": 0.2198802211020321,
+            "model_version": "0.3.0/base",
+            "status": "carryover_elo"
+          },
+          "injury": {
+            "home_probability": 0.6594612818665921,
+            "away_probability": 0.34053871813340786,
+            "model_version": "0.3.0/injury",
+            "status": "complete"
+          },
+          "boosted": {
+            "home_probability": 0.7571450996889528,
+            "away_probability": 0.24285490031104717,
+            "model_version": "0.3.0/boosted",
+            "status": "complete"
+          }
+        },
+        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "injury_coverage": {
+          "home": "submitted",
+          "away": "submitted"
+        },
+        "injury_source": {
+          "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_02_30AM.pdf",
+          "published_at": "2026-11-23T02:30:00-05:00",
+          "sha256": "1ef6fce3e1263f66eca6473f7d8aab796df9d0afabf30733459bb970395815c8"
+        },
+        "forecast_features": {
+          "injury": [
+            1.2663645220341202,
+            0.16769388723935363,
+            0.3367978862511407,
+            0.0,
+            0.0,
+            -0.0825467910684707,
+            -0.06529181755337467,
+            0.09778961339307944,
+            0.10182243390916823,
+            0.0,
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "boosted": [
+            1.2663645220341202,
+            1,
+            0.0,
+            0,
+            -0.20787527210918477,
+            0.0,
+            0.0,
+            2,
+            1,
+            9.09062008111562,
+            0.7778923802759523,
+            11.803518497414986,
+            5.006809143033324,
+            11.519018647727371,
+            6.598060224707538,
+            11.803518497414986,
+            0.01139098004296546,
+            0.008079844853851825,
+            -0.00022065986396180293,
+            0.010972489200420266,
+            0.907510925220155,
+            -0.026430298069651456,
+            0.014483226290039314,
+            2.177573320643802,
+            -9.924399658147834,
+            -1.7359499558660616,
+            0.1984439834024897,
+            0.4308782849239281,
+            0.3337998600419874,
+            0.0,
+            0.0,
+            0.0,
+            0.16769388723935363,
+            0.3367978862511407,
+            0.0,
+            0.0,
+            -0.0825467910684707,
+            -0.06529181755337467,
+            0.09778961339307944,
+            0.10182243390916823,
+            0.0,
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "injury_status": "complete",
+        "injury_report": {
+          "15": {
+            "submitted": true,
+            "players": [
+              {
+                "athlete": "4997526",
+                "name": "Dieng, Ousmane",
+                "status": "Questionable"
+              },
+              {
+                "athlete": "4697268",
+                "name": "Jones, Kam",
+                "status": "Out"
+              },
+              {
+                "athlete": "5214989",
+                "name": "Markovic, Bogoljub",
+                "status": "Out"
+              }
+            ]
+          },
+          "28": {
+            "submitted": true,
+            "players": [
+              {
+                "athlete": "4395625",
+                "name": "Barrett, RJ",
+                "status": "Out"
+              },
+              {
+                "athlete": null,
+                "name": "Bittle, Nate",
+                "status": "Out"
+              },
+              {
+                "athlete": "6450",
+                "name": "Leonard, Kawhi",
+                "status": "Out"
+              },
+              {
+                "athlete": "5093267",
+                "name": "Murray-Boyles, Collin",
+                "status": "Probable"
+              }
+            ]
+          }
+        },
+        "issued_at": "2026-11-23T07:42:41.337604+00:00",
+        "forecast_cutoff": "2026-11-23T07:42:41.337604+00:00",
+        "kind": "issued_live",
+        "forecast_policy_version": "after-game-v3",
+        "input_signature": "2d6635c9f44e1b46101d9c309d80a688866b6cf16c607154f00f178ec0a27817",
+        "parameter_hash": "8196c93fe79e6ab08ecb4119373d7166aa37c439d53ca0f67fb118838bdb586b",
+        "state_sha256": "7082e7898b5400394db3210ca83905d9d814fbb2a2b770dddb2ab2a4e8ccb963",
+        "home_id": "28",
+        "away_id": "15",
+        "scheduled_context_projected": false,
+        "eligible_for_evaluation": true,
+        "forecast_id": "2aef062bebf95b51828a0ba6da2a7bbc382cf6e621bf2d208f09cf7dcb61c06e"
+      },
+      {
+        "game_id": "401910040",
+        "start": "2026-11-24T00:30Z",
+        "home": "Minnesota Timberwolves",
+        "away": "Brooklyn Nets",
+        "home_rating": 1630.6325142500027,
+        "away_rating": 1276.7345631593582,
+        "home_probability": 0.7115140394073263,
+        "away_probability": 0.28848596059267373,
+        "home_context": {
+          "rest": 1,
+          "travel": 0.0,
+          "timezone_change": 0.0,
+          "opening_prior": false
+        },
+        "away_context": {
+          "rest": 2,
+          "travel": 1642.7401092693892,
+          "timezone_change": -1.0,
+          "opening_prior": false
+        },
+        "home_sos": 0.31968122921683295,
+        "away_sos": 0.6181967799159568,
+        "model_version": "0.3.0",
+        "base_home_probability": 0.8528259019898268,
+        "base_away_probability": 0.14717409801017323,
+        "probability_models": {
+          "base": {
+            "home_probability": 0.8528259019898268,
+            "away_probability": 0.14717409801017323,
+            "model_version": "0.3.0/base",
+            "status": "carryover_elo"
+          },
+          "injury": {
+            "home_probability": 0.7115140394073263,
+            "away_probability": 0.28848596059267373,
+            "model_version": "0.3.0/injury",
+            "status": "complete"
+          },
+          "boosted": {
+            "home_probability": 0.7897250573961889,
+            "away_probability": 0.21027494260381108,
+            "model_version": "0.3.0/boosted",
+            "status": "complete"
+          }
+        },
+        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "injury_coverage": {
+          "home": "submitted",
+          "away": "submitted"
+        },
+        "injury_source": {
+          "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_02_30AM.pdf",
+          "published_at": "2026-11-23T02:30:00-05:00",
+          "sha256": "1ef6fce3e1263f66eca6473f7d8aab796df9d0afabf30733459bb970395815c8"
+        },
+        "forecast_features": {
+          "injury": [
+            1.7569391996213233,
+            -0.013104481974397453,
+            0.10161554876806422,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -0.03495345960284272,
+            -0.03529849026779619,
+            0.0,
+            -1.0,
+            -1.0,
+            -2.0,
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "boosted": [
+            1.7569391996213233,
+            -1,
+            0.0,
+            0,
+            -1.6427401092693892,
+            1.0,
+            -1.0,
+            1,
+            2,
+            16.32945656787665,
+            5.8316513994853105,
+            16.436277948190675,
+            5.621966628673649,
+            15.72256136518989,
+            4.759275991344429,
+            16.436277948190675,
+            0.024928869221412908,
+            0.014708051819936396,
+            0.009327191610797259,
+            0.016161909729497714,
+            0.028479053091820195,
+            -0.0020520619384007954,
+            0.0006230408503965917,
+            5.294004522092365,
+            -11.374832836736829,
+            1.8652711642103839,
+            0.08355809128630698,
+            0.051400414937759265,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -0.013104481974397453,
+            0.10161554876806422,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -0.03495345960284272,
+            -0.03529849026779619,
+            0.0,
+            -1.0,
+            -1.0,
+            -2.0,
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "injury_status": "complete",
+        "injury_report": {
+          "17": {
+            "submitted": true,
+            "players": [
+              {
+                "athlete": null,
+                "name": "Bilodeau, Tyler",
+                "status": "Out"
+              },
+              {
+                "athlete": "4870564",
+                "name": "Jefferson, Joshua",
+                "status": "Out"
+              },
+              {
+                "athlete": "5174655",
+                "name": "Johnson, Chaney",
+                "status": "Out"
+              },
+              {
+                "athlete": "4702670",
+                "name": "Nelson, Grant",
+                "status": "Probable"
+              },
+              {
+                "athlete": "5037873",
+                "name": "Powell, Drake",
+                "status": "Out"
+              },
+              {
+                "athlete": "5242502",
+                "name": "Saraf, Ben",
+                "status": "Out"
+              },
+              {
+                "athlete": "5279130",
+                "name": "Traore, Nolan",
+                "status": "Out"
+              }
+            ]
+          },
+          "16": {
+            "submitted": true,
+            "players": [
+              {
+                "athlete": "5279133",
+                "name": "Beringer, Joan",
+                "status": "Available"
+              },
+              {
+                "athlete": "4432247",
+                "name": "Clark, Jaylen",
+                "status": "Out"
+              },
+              {
+                "athlete": "3934673",
+                "name": "DiVincenzo, Donte",
+                "status": "Out"
+              },
+              {
+                "athlete": "4594268",
+                "name": "Edwards, Anthony",
+                "status": "Out"
+              },
+              {
+                "athlete": "5157587",
+                "name": "Zikarsky, Rocco",
+                "status": "Out"
+              }
+            ]
+          }
+        },
+        "issued_at": "2026-11-23T07:42:41.337604+00:00",
+        "forecast_cutoff": "2026-11-23T07:42:41.337604+00:00",
+        "kind": "issued_live",
+        "forecast_policy_version": "after-game-v3",
+        "input_signature": "d7e44506948dc9b8f4913724d67b11ddf86a3826d59ede71ed87789e11c7db55",
+        "parameter_hash": "8196c93fe79e6ab08ecb4119373d7166aa37c439d53ca0f67fb118838bdb586b",
+        "state_sha256": "7082e7898b5400394db3210ca83905d9d814fbb2a2b770dddb2ab2a4e8ccb963",
+        "home_id": "16",
+        "away_id": "17",
+        "scheduled_context_projected": false,
+        "eligible_for_evaluation": true,
+        "forecast_id": "fe509b378704f619b221605fd583bfd3fb36f4f7537a191945c7e2e5b9568bb5"
+      },
+      {
+        "game_id": "401910041",
+        "start": "2026-11-24T01:00Z",
+        "home": "Chicago Bulls",
+        "away": "Cleveland Cavaliers",
+        "home_rating": 1366.9120934081611,
+        "away_rating": 1562.3135687389013,
+        "home_probability": 0.10154114457496048,
+        "away_probability": 0.8984588554250396,
+        "home_context": {
+          "rest": 0,
+          "travel": 0.0,
+          "timezone_change": 0.0,
+          "opening_prior": false
+        },
+        "away_context": {
+          "rest": 2,
+          "travel": 495.9951203796784,
+          "timezone_change": -1.0,
+          "opening_prior": false
+        },
+        "home_sos": 0.5237850489352948,
+        "away_sos": 0.370879916294003,
+        "model_version": "0.3.0",
+        "base_home_probability": 0.26465285368843466,
+        "base_away_probability": 0.7353471463115653,
+        "probability_models": {
+          "base": {
+            "home_probability": 0.26465285368843466,
+            "away_probability": 0.7353471463115653,
+            "model_version": "0.3.0/base",
+            "status": "carryover_elo"
+          },
+          "injury": {
+            "home_probability": 0.10154114457496048,
+            "away_probability": 0.8984588554250396,
+            "model_version": "0.3.0/injury",
+            "status": "partial_or_unsubmitted"
+          },
+          "boosted": {
+            "home_probability": 0.33959773592168596,
+            "away_probability": 0.660402264078314,
+            "model_version": "0.3.0/boosted",
+            "status": "partial_or_unsubmitted"
+          }
+        },
+        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "injury_coverage": {
+          "home": "not_submitted",
+          "away": "submitted"
+        },
+        "injury_source": {
+          "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_02_30AM.pdf",
+          "published_at": "2026-11-23T02:30:00-05:00",
+          "sha256": "1ef6fce3e1263f66eca6473f7d8aab796df9d0afabf30733459bb970395815c8"
+        },
+        "forecast_features": {
+          "injury": [
+            -1.0219237144944562,
+            -0.19440649881418487,
+            -0.24700273922467703,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -0.1034937240757343,
+            -0.0984047486212106,
+            -1.0,
+            -3.0,
+            -3.0,
+            -3.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            3.0,
+            3.0
+          ],
+          "boosted": [
+            -1.0219237144944562,
+            -2,
+            1.0,
+            1,
+            -0.49599512037967836,
+            1.0,
+            -1.0,
+            0,
+            2,
+            -5.717227858819063,
+            2.6997098590825064,
+            -8.5600155498129,
+            0.0008166414884784867,
+            -9.68663726654389,
+            -1.5218048185465785,
+            -8.5600155498129,
+            -0.024916956740241414,
+            -0.02190421748327409,
+            -0.0023554030030737416,
+            -0.04374544006054337,
+            -0.4134757244954186,
+            0.021258093200489797,
+            0.0004750386220981201,
+            -2.189783439419287,
+            7.07340850462424,
+            4.540997664545543,
+            -0.20699685534591195,
+            0.10872641509433967,
+            -0.26588397790055246,
+            0.0,
+            0.0,
+            0.0,
+            -0.19440649881418487,
+            -0.24700273922467703,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -0.1034937240757343,
+            -0.0984047486212106,
+            -1.0,
+            -3.0,
+            -3.0,
+            -3.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            3.0,
+            3.0
+          ]
+        },
+        "injury_status": "partial_or_unsubmitted",
+        "injury_report": {
+          "5": {
+            "submitted": true,
+            "players": [
+              {
+                "athlete": null,
+                "name": "Austin, Zack",
+                "status": "Out"
+              },
+              {
+                "athlete": null,
+                "name": "Diop, Khalifa",
+                "status": "Out"
+              },
+              {
+                "athlete": "4432158",
+                "name": "Mobley, Evan",
+                "status": "Out"
+              },
+              {
+                "athlete": "5106268",
+                "name": "Tomlin, Nae'Qwan",
+                "status": "Out"
+              },
+              {
+                "athlete": "4683747",
+                "name": "Tyson, Jaylon",
+                "status": "Probable"
+              },
+              {
+                "athlete": null,
+                "name": "Udeh Jr., Ernest",
+                "status": "Out"
+              }
+            ]
+          },
+          "4": {
+            "submitted": false,
+            "players": []
+          }
+        },
+        "issued_at": "2026-11-23T07:42:41.337604+00:00",
+        "forecast_cutoff": "2026-11-23T07:42:41.337604+00:00",
+        "kind": "issued_live",
+        "forecast_policy_version": "after-game-v3",
+        "input_signature": "afc44a4063d639020a15534a1b090c7113d15c5dbf0440ddda817cc755bb3d9d",
+        "parameter_hash": "8196c93fe79e6ab08ecb4119373d7166aa37c439d53ca0f67fb118838bdb586b",
+        "state_sha256": "7082e7898b5400394db3210ca83905d9d814fbb2a2b770dddb2ab2a4e8ccb963",
+        "home_id": "4",
+        "away_id": "5",
+        "scheduled_context_projected": false,
+        "eligible_for_evaluation": true,
+        "forecast_id": "a2b0a80dde4f1183ed756d1cc14ac9ee3414d0633dec155190d34f9b51bca57f"
+      },
+      {
+        "game_id": "401910042",
+        "start": "2026-11-24T01:00Z",
+        "home": "New Orleans Pelicans",
+        "away": "Phoenix Suns",
+        "home_rating": 1360.3291149140778,
+        "away_rating": 1542.299113877625,
+        "home_probability": 0.34161892433597907,
+        "away_probability": 0.6583810756640209,
+        "home_context": {
+          "rest": 1,
+          "travel": 815.1647965802786,
+          "timezone_change": 0.0,
+          "opening_prior": false
+        },
+        "away_context": {
+          "rest": 2,
+          "travel": 2304.9228570641926,
+          "timezone_change": 1.0,
+          "opening_prior": false
+        },
+        "home_sos": 0.5265061346175898,
+        "away_sos": 0.3679521971231637,
+        "model_version": "0.3.0",
+        "base_home_probability": 0.32642140955986687,
+        "base_away_probability": 0.6735785904401331,
+        "probability_models": {
+          "base": {
+            "home_probability": 0.32642140955986687,
+            "away_probability": 0.6735785904401331,
+            "model_version": "0.3.0/base",
+            "status": "carryover_elo"
+          },
+          "injury": {
+            "home_probability": 0.34161892433597907,
+            "away_probability": 0.6583810756640209,
+            "model_version": "0.3.0/injury",
+            "status": "complete"
+          },
+          "boosted": {
+            "home_probability": 0.3509572512255425,
+            "away_probability": 0.6490427487744574,
+            "model_version": "0.3.0/boosted",
+            "status": "complete"
+          }
+        },
+        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "injury_coverage": {
+          "home": "submitted",
+          "away": "submitted"
+        },
+        "injury_source": {
+          "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_02_30AM.pdf",
+          "published_at": "2026-11-23T02:30:00-05:00",
+          "sha256": "1ef6fce3e1263f66eca6473f7d8aab796df9d0afabf30733459bb970395815c8"
+        },
+        "forecast_features": {
+          "injury": [
+            -0.7244154646814785,
+            0.18422424419045175,
+            0.17115890938657136,
+            0.0,
+            0.0,
+            0.027144112562147077,
+            0.031064346076130248,
+            0.4070947284192864,
+            0.4912514595978057,
+            0.0,
+            0.0,
+            0.0,
+            7.0,
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "boosted": [
+            -0.7244154646814785,
+            -1,
+            0.0,
+            1,
+            -1.489758060483914,
+            -1.0,
+            -1.0,
+            1,
+            2,
+            -14.722897986309238,
+            -8.531144171913361,
+            -9.84589855580587,
+            -4.678515634387741,
+            -6.871187418746789,
+            -1.2651849471237728,
+            -9.84589855580587,
+            -0.035225896773111276,
+            -0.014822413854984173,
+            -0.014540642464555664,
+            0.018526089008693458,
+            -0.5220781765362201,
+            0.008358558030202981,
+            0.005914311191709723,
+            -0.005226309264983797,
+            9.945604631632833,
+            4.070938474683999,
+            -0.210978561549101,
+            0.04166666666666674,
+            0.3231631382316314,
+            0.0,
+            0.0,
+            0.0,
+            0.18422424419045175,
+            0.17115890938657136,
+            0.0,
+            0.0,
+            0.027144112562147077,
+            0.031064346076130248,
+            0.4070947284192864,
+            0.4912514595978057,
+            0.0,
+            0.0,
+            0.0,
+            7.0,
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "injury_status": "complete",
+        "injury_report": {
+          "21": {
+            "submitted": true,
+            "players": [
+              {
+                "athlete": "4888725",
+                "name": "Dunn, Ryan",
+                "status": "Questionable"
+              },
+              {
+                "athlete": "4701232",
+                "name": "Williams, Mark",
+                "status": "Out"
+              }
+            ]
+          },
+          "3": {
+            "submitted": true,
+            "players": [
+              {
+                "athlete": "4712862",
+                "name": "Dia, Malik",
+                "status": "Questionable"
+              },
+              {
+                "athlete": "4683634",
+                "name": "Mathurin, Bennedict",
+                "status": "Out"
+              },
+              {
+                "athlete": "4576086",
+                "name": "McGowens, Bryce",
+                "status": "Probable"
+              },
+              {
+                "athlete": "4397688",
+                "name": "Murphy III, Trey",
+                "status": "Probable"
+              },
+              {
+                "athlete": "3907497",
+                "name": "Murray, Dejounte",
+                "status": "Out"
+              },
+              {
+                "athlete": "4703115",
+                "name": "Pierre Jr., Jaron",
+                "status": "Probable"
+              },
+              {
+                "athlete": "4683742",
+                "name": "Reese, Julian",
+                "status": "Questionable"
+              },
+              {
+                "athlete": "4431675",
+                "name": "Watford, Trendon",
+                "status": "Out"
+              },
+              {
+                "athlete": "4395628",
+                "name": "Williamson, Zion",
+                "status": "Probable"
+              }
+            ]
+          }
+        },
+        "issued_at": "2026-11-23T07:42:41.337604+00:00",
+        "forecast_cutoff": "2026-11-23T07:42:41.337604+00:00",
+        "kind": "issued_live",
+        "forecast_policy_version": "after-game-v3",
+        "input_signature": "bfdb668fe88f0f4d9919820b6f66fa2fd520eaa150f83b47db1b0cb5785ebb19",
+        "parameter_hash": "8196c93fe79e6ab08ecb4119373d7166aa37c439d53ca0f67fb118838bdb586b",
+        "state_sha256": "7082e7898b5400394db3210ca83905d9d814fbb2a2b770dddb2ab2a4e8ccb963",
+        "home_id": "3",
+        "away_id": "21",
+        "scheduled_context_projected": false,
+        "eligible_for_evaluation": true,
+        "forecast_id": "e5f437ea3e6c3065b18a32861238d5ab452d9f86eee52c354c0862db9bbf5099"
+      },
+      {
+        "game_id": "401910043",
+        "start": "2026-11-24T01:30Z",
+        "home": "Houston Rockets",
+        "away": "LA Clippers",
+        "home_rating": 1634.7902383358428,
+        "away_rating": 1418.8562539579627,
+        "home_probability": 0.8051947591314496,
+        "away_probability": 0.19480524086855044,
+        "home_context": {
+          "rest": 2,
+          "travel": 1413.4331394789037,
+          "timezone_change": 1.0,
+          "opening_prior": false
+        },
+        "away_context": {
+          "rest": 1,
+          "travel": 362.71140612677755,
+          "timezone_change": 0.0,
+          "opening_prior": false
+        },
+        "home_sos": 0.3695447769751175,
+        "away_sos": 0.6343221567952947,
+        "model_version": "0.3.0",
+        "base_home_probability": 0.7790556689424556,
+        "base_away_probability": 0.2209443310575444,
+        "probability_models": {
+          "base": {
+            "home_probability": 0.7790556689424556,
+            "away_probability": 0.2209443310575444,
+            "model_version": "0.3.0/base",
+            "status": "carryover_elo"
+          },
+          "injury": {
+            "home_probability": 0.8051947591314496,
+            "away_probability": 0.19480524086855044,
+            "model_version": "0.3.0/injury",
+            "status": "complete"
+          },
+          "boosted": {
+            "home_probability": 0.7934688083169853,
+            "away_probability": 0.2065311916830147,
+            "model_version": "0.3.0/boosted",
+            "status": "complete"
+          }
+        },
+        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "injury_coverage": {
+          "home": "submitted",
+          "away": "submitted"
+        },
+        "injury_source": {
+          "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_02_30AM.pdf",
+          "published_at": "2026-11-23T02:30:00-05:00",
+          "sha256": "1ef6fce3e1263f66eca6473f7d8aab796df9d0afabf30733459bb970395815c8"
+        },
+        "forecast_features": {
+          "injury": [
+            1.2601717312550338,
+            -0.21963004513028647,
+            -0.23945250276811536,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            -3.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "boosted": [
+            1.2601717312550338,
+            1,
+            0.0,
+            0,
+            1.0507217333521262,
+            1.0,
+            1.0,
+            2,
+            1,
+            12.63443535594756,
+            6.949025486192163,
+            10.558067007924372,
+            6.280035870467129,
+            7.263870929081213,
+            4.061989964801019,
+            10.558067007924372,
+            0.005902883866222952,
+            0.003464399839835486,
+            0.08936076747391392,
+            0.02818594922783224,
+            0.33899840610345433,
+            -0.01638939427352032,
+            -0.01675548658956645,
+            5.7205928849245,
+            -4.678299368946952,
+            -0.8983449086294115,
+            -0.0986052998605299,
+            0.14476987447698741,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -0.21963004513028647,
+            -0.23945250276811536,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            -3.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "injury_status": "complete",
+        "injury_report": {
+          "12": {
+            "submitted": true,
+            "players": [
+              {
+                "athlete": "6580",
+                "name": "Beal, Bradley",
+                "status": "Out"
+              },
+              {
+                "athlete": "4845363",
+                "name": "Christie, Cam",
+                "status": "Out"
+              },
+              {
+                "athlete": "5105832",
+                "name": "Martinelli, Nick",
+                "status": "Out"
+              },
+              {
+                "athlete": "4396818",
+                "name": "Miller, Jordan",
+                "status": "Out"
+              }
+            ]
+          },
+          "10": {
+            "submitted": true,
+            "players": [
+              {
+                "athlete": null,
+                "name": "Copeland, Quadir",
+                "status": "Out"
+              },
+              {
+                "athlete": "5105553",
+                "name": "Phillips, Julian",
+                "status": "Out"
+              }
+            ]
+          }
+        },
+        "issued_at": "2026-11-23T07:42:41.337604+00:00",
+        "forecast_cutoff": "2026-11-23T07:42:41.337604+00:00",
+        "kind": "issued_live",
+        "forecast_policy_version": "after-game-v3",
+        "input_signature": "6494d8d7c43bbd1acd1eebf3de7d4cfd2191bc96d61bf40e69efffe08df83eb4",
+        "parameter_hash": "8196c93fe79e6ab08ecb4119373d7166aa37c439d53ca0f67fb118838bdb586b",
+        "state_sha256": "7082e7898b5400394db3210ca83905d9d814fbb2a2b770dddb2ab2a4e8ccb963",
+        "home_id": "10",
+        "away_id": "12",
+        "scheduled_context_projected": false,
+        "eligible_for_evaluation": true,
+        "forecast_id": "01a7feb789d8002d297467fd6432f1b875767d6f35c12bf22804b5a11ad3520a"
+      },
+      {
+        "game_id": "401910044",
+        "start": "2026-11-24T03:00Z",
+        "home": "Los Angeles Lakers",
+        "away": "Utah Jazz",
+        "home_rating": 1644.5019166290072,
+        "away_rating": 1283.0738851151336,
+        "home_probability": 0.9009507979490636,
+        "away_probability": 0.09904920205093637,
+        "home_context": {
+          "rest": 2,
+          "travel": 0.0,
+          "timezone_change": 0.0,
+          "opening_prior": false
+        },
+        "away_context": {
+          "rest": 0,
+          "travel": 932.8371840941228,
+          "timezone_change": -1.0,
+          "opening_prior": false
+        },
+        "home_sos": 0.33578335817757904,
+        "away_sos": 0.6590198101944597,
+        "model_version": "0.3.0",
+        "base_home_probability": 0.9148822302378128,
+        "base_away_probability": 0.08511776976218721,
+        "probability_models": {
+          "base": {
+            "home_probability": 0.9148822302378128,
+            "away_probability": 0.08511776976218721,
+            "model_version": "0.3.0/base",
+            "status": "carryover_elo"
+          },
+          "injury": {
+            "home_probability": 0.9009507979490636,
+            "away_probability": 0.09904920205093637,
+            "model_version": "0.3.0/injury",
+            "status": "partial_or_unsubmitted"
+          },
+          "boosted": {
+            "home_probability": 0.7542265818704966,
+            "away_probability": 0.24577341812950337,
+            "model_version": "0.3.0/boosted",
+            "status": "partial_or_unsubmitted"
+          }
+        },
+        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "injury_coverage": {
+          "home": "submitted",
+          "away": "not_submitted"
+        },
+        "injury_source": {
+          "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_02_30AM.pdf",
+          "published_at": "2026-11-23T02:30:00-05:00",
+          "sha256": "1ef6fce3e1263f66eca6473f7d8aab796df9d0afabf30733459bb970395815c8"
+        },
+        "forecast_features": {
+          "injury": [
+            2.3747595227210985,
+            0.1461734733360492,
+            0.2079819134508653,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "boosted": [
+            2.3747595227210985,
+            2,
+            -1.0,
+            -1,
+            -0.9328371840941228,
+            1.0,
+            -1.0,
+            2,
+            0,
+            8.676365101677991,
+            -7.928010245481652,
+            11.605239730439145,
+            -3.3473384563269786,
+            12.073469037036258,
+            -1.1525351690265455,
+            11.605239730439145,
+            0.03163105958433454,
+            0.03791888703592883,
+            0.010034100307140581,
+            -0.03442262690065501,
+            0.04531848921687387,
+            -0.007310611488788421,
+            0.025306383700553894,
+            6.352160668636756,
+            -5.360918904321778,
+            -1.4404362030330304,
+            0.10488145048814501,
+            -0.34583333333333327,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.1461734733360492,
+            0.2079819134508653,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "injury_status": "partial_or_unsubmitted",
+        "injury_report": {
+          "26": {
+            "submitted": false,
+            "players": []
+          },
+          "13": {
+            "submitted": true,
+            "players": [
+              {
+                "athlete": "4397014",
+                "name": "Grimes, Quentin",
+                "status": "Available"
+              },
+              {
+                "athlete": "4066457",
+                "name": "Reaves, Austin",
+                "status": "Out"
+              }
+            ]
+          }
+        },
+        "issued_at": "2026-11-23T07:42:41.337604+00:00",
+        "forecast_cutoff": "2026-11-23T07:42:41.337604+00:00",
+        "kind": "issued_live",
+        "forecast_policy_version": "after-game-v3",
+        "input_signature": "c4e6175cd8b8b634bb85cf98e2f7a8f8f148a317167e88d84f7a194d05906133",
+        "parameter_hash": "8196c93fe79e6ab08ecb4119373d7166aa37c439d53ca0f67fb118838bdb586b",
+        "state_sha256": "7082e7898b5400394db3210ca83905d9d814fbb2a2b770dddb2ab2a4e8ccb963",
+        "home_id": "13",
+        "away_id": "26",
+        "scheduled_context_projected": false,
+        "eligible_for_evaluation": true,
+        "forecast_id": "a7e1157aedbb421b7a3ce2d29f7ba93a8c9cdb9548104463b9190d0add029315"
+      },
+      {
+        "game_id": "401910045",
+        "start": "2026-11-24T03:00Z",
+        "home": "Sacramento Kings",
+        "away": "San Antonio Spurs",
+        "home_rating": 1280.0932787245329,
+        "away_rating": 1692.784888968893,
+        "home_probability": 0.24601438959767813,
+        "away_probability": 0.7539856104023219,
+        "home_context": {
+          "rest": 1,
+          "travel": 0.0,
+          "timezone_change": 0.0,
+          "opening_prior": false
+        },
+        "away_context": {
+          "rest": 1,
+          "travel": 2343.1920339983453,
+          "timezone_change": -2.0,
+          "opening_prior": false
+        },
+        "home_sos": 0.6672656265808697,
+        "away_sos": 0.3135506249283339,
+        "model_version": "0.3.0",
+        "base_home_probability": 0.17730770095326373,
+        "base_away_probability": 0.8226922990467362,
+        "probability_models": {
+          "base": {
+            "home_probability": 0.17730770095326373,
+            "away_probability": 0.8226922990467362,
+            "model_version": "0.3.0/base",
+            "status": "carryover_elo"
+          },
+          "injury": {
+            "home_probability": 0.24601438959767813,
+            "away_probability": 0.7539856104023219,
+            "model_version": "0.3.0/injury",
+            "status": "complete"
+          },
+          "boosted": {
+            "home_probability": 0.2646882707781318,
+            "away_probability": 0.7353117292218683,
+            "model_version": "0.3.0/boosted",
+            "status": "complete"
+          }
+        },
+        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "injury_coverage": {
+          "home": "submitted",
+          "away": "submitted"
+        },
+        "injury_source": {
+          "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_02_30AM.pdf",
+          "published_at": "2026-11-23T02:30:00-05:00",
+          "sha256": "1ef6fce3e1263f66eca6473f7d8aab796df9d0afabf30733459bb970395815c8"
+        },
+        "forecast_features": {
+          "injury": [
+            -1.5346956068166098,
+            0.03342421314040658,
+            -0.026435499665510953,
+            0.0,
+            0.0,
+            -0.2830578869728903,
+            -0.4841827298812596,
+            0.0,
+            0.0,
+            0.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "boosted": [
+            -1.5346956068166098,
+            0,
+            0.0,
+            1,
+            -2.343192033998345,
+            2.0,
+            -2.0,
+            1,
+            1,
+            -23.025010761120914,
+            -5.406573704032416,
+            -22.6706546483503,
+            -6.6565292841064885,
+            -20.76126411731412,
+            -6.8200576579924075,
+            -22.6706546483503,
+            -0.021182161241260045,
+            -0.023588354191690253,
+            -0.019130739563779586,
+            -0.01811904274089049,
+            -0.8177835609259689,
+            0.03277079326722604,
+            -0.007499950981522868,
+            -10.805991957772008,
+            12.10396013203561,
+            -0.7420411239914557,
+            -0.027852697095435697,
+            -0.22396265560165973,
+            -0.31857813547954394,
+            0.0,
+            0.0,
+            0.0,
+            0.03342421314040658,
+            -0.026435499665510953,
+            0.0,
+            0.0,
+            -0.2830578869728903,
+            -0.4841827298812596,
+            0.0,
+            0.0,
+            0.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "injury_status": "complete",
+        "injury_report": {
+          "24": {
+            "submitted": true,
+            "players": [
+              {
+                "athlete": "4066259",
+                "name": "Fox, De'Aaron",
+                "status": "Questionable"
+              },
+              {
+                "athlete": "5037871",
+                "name": "Harper, Dylan",
+                "status": "Out"
+              },
+              {
+                "athlete": "6440",
+                "name": "Harris, Tobias",
+                "status": "Out"
+              },
+              {
+                "athlete": "3134916",
+                "name": "McLaughlin, Jordan",
+                "status": "Questionable"
+              },
+              {
+                "athlete": null,
+                "name": "Quaintance, Jayden",
+                "status": "Out"
+              },
+              {
+                "athlete": "5104157",
+                "name": "Wembanyama, Victor",
+                "status": "Questionable"
+              }
+            ]
+          },
+          "23": {
+            "submitted": true,
+            "players": [
+              {
+                "athlete": "5107897",
+                "name": "Mogbo, Jonathan",
+                "status": "Out"
+              },
+              {
+                "athlete": "4709131",
+                "name": "Pedulla, Sean",
+                "status": "Out"
+              },
+              {
+                "athlete": "4898371",
+                "name": "Raynaud, Maxime",
+                "status": "Out"
+              },
+              {
+                "athlete": "3907387",
+                "name": "Simmons, Ben",
+                "status": "Out"
+              }
+            ]
+          }
+        },
+        "issued_at": "2026-11-23T07:42:41.337604+00:00",
+        "forecast_cutoff": "2026-11-23T07:42:41.337604+00:00",
+        "kind": "issued_live",
+        "forecast_policy_version": "after-game-v3",
+        "input_signature": "15ebf95bd934384f1ff667869eeb0c522604a30634d7dcc41e8d4c05207e4861",
+        "parameter_hash": "8196c93fe79e6ab08ecb4119373d7166aa37c439d53ca0f67fb118838bdb586b",
+        "state_sha256": "7082e7898b5400394db3210ca83905d9d814fbb2a2b770dddb2ab2a4e8ccb963",
+        "home_id": "23",
+        "away_id": "24",
+        "scheduled_context_projected": false,
+        "eligible_for_evaluation": true,
+        "forecast_id": "8d772c455d5188f15425e7b73ebd3a6a658df3018ec0b15da37db761cd4f7473"
+      },
+      {
+        "game_id": "401909314",
+        "start": "2026-11-25T00:00Z",
+        "home": "Orlando Magic",
+        "away": "Detroit Pistons",
+        "home_rating": 1496.357286099189,
+        "away_rating": 1636.7988902790892,
+        "home_probability": 0.3790158828151563,
+        "away_probability": 0.6209841171848437,
+        "home_context": {
+          "rest": 1,
+          "travel": 1219.2298567687592,
+          "timezone_change": 0.0,
+          "opening_prior": false
+        },
+        "away_context": {
+          "rest": 1,
+          "travel": 646.1958753283099,
+          "timezone_change": 0.0,
+          "opening_prior": false
+        },
+        "home_sos": 0.5863089095287238,
+        "away_sos": 0.4492281561747506,
+        "model_version": "0.3.0",
+        "base_home_probability": 0.3832763305689927,
+        "base_away_probability": 0.6167236694310073,
+        "probability_models": {
+          "base": {
+            "home_probability": 0.3832763305689927,
+            "away_probability": 0.6167236694310073,
+            "model_version": "0.3.0/base",
+            "status": "carryover_elo"
+          },
+          "injury": {
+            "home_probability": 0.3790158828151563,
+            "away_probability": 0.6209841171848437,
+            "model_version": "0.3.0/injury",
+            "status": "partial_or_unsubmitted"
+          },
+          "boosted": {
+            "home_probability": 0.4430942325359496,
+            "away_probability": 0.5569057674640504,
+            "model_version": "0.3.0/boosted",
+            "status": "partial_or_unsubmitted"
+          }
+        },
+        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "injury_coverage": {
+          "home": "not_submitted",
+          "away": "not_submitted"
+        },
+        "injury_source": {
+          "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_02_30AM.pdf",
+          "published_at": "2026-11-23T02:30:00-05:00",
+          "sha256": "1ef6fce3e1263f66eca6473f7d8aab796df9d0afabf30733459bb970395815c8"
+        },
+        "forecast_features": {
+          "injury": [
+            -0.47566484327905767,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "boosted": [
+            -0.47566484327905767,
+            0,
+            0.0,
+            0,
+            0.5730339814404494,
+            0.0,
+            0.0,
+            1,
+            1,
+            -5.650357934164958,
+            -1.7717958264765024,
+            -7.57449957525778,
+            -2.7954799985164875,
+            -8.073678002263751,
+            -3.230223642803787,
+            -7.57449957525778,
+            -0.007838512666813346,
+            -0.009370484198376605,
+            -0.02572949662798063,
+            0.0618804665469318,
+            -0.18933295791336224,
+            0.009019862058742278,
+            -0.01800911524669002,
+            -3.434664907848415,
+            4.017124741846558,
+            0.7746822811871823,
+            -0.01906283095192629,
+            0.12863070539419086,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "injury_status": "partial_or_unsubmitted",
+        "injury_report": {
+          "8": {
+            "submitted": false,
+            "players": []
+          },
+          "19": {
+            "submitted": false,
+            "players": []
+          }
+        },
+        "issued_at": "2026-11-23T07:42:41.337604+00:00",
+        "forecast_cutoff": "2026-11-23T07:42:41.337604+00:00",
+        "kind": "issued_live",
+        "forecast_policy_version": "after-game-v3",
+        "input_signature": "95f7a81884d2431c50205ac6ce54918bab79cefef1e8022ab3c04caa81e0fa4f",
+        "parameter_hash": "8196c93fe79e6ab08ecb4119373d7166aa37c439d53ca0f67fb118838bdb586b",
+        "state_sha256": "7082e7898b5400394db3210ca83905d9d814fbb2a2b770dddb2ab2a4e8ccb963",
+        "home_id": "19",
+        "away_id": "8",
+        "scheduled_context_projected": false,
+        "eligible_for_evaluation": true,
+        "forecast_id": "2d16b2c513c2dab9a29c0163f75383d1913b5759e57ff325bc588c4945f841e4"
+      },
+      {
+        "game_id": "401909315",
+        "start": "2026-11-25T01:00Z",
+        "home": "Washington Wizards",
+        "away": "Boston Celtics",
+        "home_rating": 1350.492955835518,
+        "away_rating": 1627.4995666310065,
+        "home_probability": 0.3157395940131224,
+        "away_probability": 0.6842604059868775,
+        "home_context": {
+          "rest": 1,
+          "travel": 0.0,
+          "timezone_change": 0.0,
+          "opening_prior": false
+        },
+        "away_context": {
+          "rest": 1,
+          "travel": 3918.8892295843793,
+          "timezone_change": 3.0,
+          "opening_prior": false
+        },
+        "home_sos": 0.5623984027735621,
+        "away_sos": 0.41834397176674437,
+        "model_version": "0.3.0",
+        "base_home_probability": 0.30978539086975154,
+        "base_away_probability": 0.6902146091302485,
+        "probability_models": {
+          "base": {
+            "home_probability": 0.30978539086975154,
+            "away_probability": 0.6902146091302485,
+            "model_version": "0.3.0/base",
+            "status": "carryover_elo"
+          },
+          "injury": {
+            "home_probability": 0.3157395940131224,
+            "away_probability": 0.6842604059868775,
+            "model_version": "0.3.0/injury",
+            "status": "partial_or_unsubmitted"
+          },
+          "boosted": {
+            "home_probability": 0.3251329183115554,
+            "away_probability": 0.6748670816884446,
+            "model_version": "0.3.0/boosted",
+            "status": "partial_or_unsubmitted"
+          }
+        },
+        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "injury_coverage": {
+          "home": "not_submitted",
+          "away": "not_submitted"
+        },
+        "injury_source": {
+          "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_02_30AM.pdf",
+          "published_at": "2026-11-23T02:30:00-05:00",
+          "sha256": "1ef6fce3e1263f66eca6473f7d8aab796df9d0afabf30733459bb970395815c8"
+        },
+        "forecast_features": {
+          "injury": [
+            -0.8011228067366019,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "boosted": [
+            -0.8011228067366019,
+            0,
+            0.0,
+            -1,
+            -3.918889229584379,
+            -3.0,
+            -3.0,
+            1,
+            1,
+            -12.06868032476848,
+            1.1700222096363224,
+            -16.140609225006592,
+            -2.0389454367868494,
+            -18.001923835444266,
+            -3.28517662678407,
+            -16.140609225006592,
+            -0.002888095245647926,
+            0.0022269162219222816,
+            -0.06873027718436539,
+            -0.026275945289886415,
+            -0.3203415745399838,
+            0.008164058609483715,
+            -0.005900164913023184,
+            0.35440524166035914,
+            16.76387336037311,
+            3.9729953831308507,
+            0.1975244072524407,
+            -0.2221234309623431,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "injury_status": "partial_or_unsubmitted",
+        "injury_report": {
+          "2": {
+            "submitted": false,
+            "players": []
+          },
+          "27": {
+            "submitted": false,
+            "players": []
+          }
+        },
+        "issued_at": "2026-11-23T07:42:41.337604+00:00",
+        "forecast_cutoff": "2026-11-23T07:42:41.337604+00:00",
+        "kind": "issued_live",
+        "forecast_policy_version": "after-game-v3",
+        "input_signature": "1bee6fb4b817ad9afe19609efa18cd30d358bc1cc70c20daf3d11a5b155e86fd",
+        "parameter_hash": "8196c93fe79e6ab08ecb4119373d7166aa37c439d53ca0f67fb118838bdb586b",
+        "state_sha256": "7082e7898b5400394db3210ca83905d9d814fbb2a2b770dddb2ab2a4e8ccb963",
+        "home_id": "27",
+        "away_id": "2",
+        "scheduled_context_projected": false,
+        "eligible_for_evaluation": true,
+        "forecast_id": "7725f29bcaad21531a29c342d7be624c20579c3a879ce66cd965e8084410fc02"
+      },
+      {
+        "game_id": "401909316",
+        "start": "2026-11-25T03:00Z",
+        "home": "Denver Nuggets",
+        "away": "Dallas Mavericks",
+        "home_rating": 1617.7220939836134,
+        "away_rating": 1472.8013219115244,
+        "home_probability": 0.640258614780097,
+        "away_probability": 0.35974138521990295,
+        "home_context": {
+          "rest": 1,
+          "travel": 1475.381899456305,
+          "timezone_change": -1.0,
+          "opening_prior": false
+        },
+        "away_context": {
+          "rest": 1,
+          "travel": 596.8631709425691,
+          "timezone_change": 0.0,
+          "opening_prior": false
+        },
+        "home_sos": 0.5474061932994733,
+        "away_sos": 0.5945250926881475,
+        "model_version": "0.3.0",
+        "base_home_probability": 0.6834478350567582,
+        "base_away_probability": 0.3165521649432418,
+        "probability_models": {
+          "base": {
+            "home_probability": 0.6834478350567582,
+            "away_probability": 0.3165521649432418,
+            "model_version": "0.3.0/base",
+            "status": "carryover_elo"
+          },
+          "injury": {
+            "home_probability": 0.640258614780097,
+            "away_probability": 0.35974138521990295,
+            "model_version": "0.3.0/injury",
+            "status": "partial_or_unsubmitted"
+          },
+          "boosted": {
+            "home_probability": 0.6912643090036822,
+            "away_probability": 0.3087356909963178,
+            "model_version": "0.3.0/boosted",
+            "status": "partial_or_unsubmitted"
+          }
+        },
+        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "injury_coverage": {
+          "home": "not_submitted",
+          "away": "not_submitted"
+        },
+        "injury_source": {
+          "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_02_30AM.pdf",
+          "published_at": "2026-11-23T02:30:00-05:00",
+          "sha256": "1ef6fce3e1263f66eca6473f7d8aab796df9d0afabf30733459bb970395815c8"
+        },
+        "forecast_features": {
+          "injury": [
+            0.7696622867755282,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "boosted": [
+            0.7696622867755282,
+            0,
+            0.0,
+            -1,
+            0.8785187285137359,
+            -1.0,
+            1.0,
+            1,
+            1,
+            4.650964507943671,
+            -1.0858507701116114,
+            6.628806367838635,
+            -0.5690236127945223,
+            7.9896204518963625,
+            0.20258255466853198,
+            6.628806367838635,
+            0.03735153318854001,
+            0.040056109418552754,
+            -0.02230738699547541,
+            0.010092108196251393,
+            0.7814809959869073,
+            -0.011203112212389746,
+            -0.01032781567432986,
+            7.869039233755586,
+            0.954810773218,
+            0.024303233026813587,
+            0.06532994831477035,
+            0.2993167566218451,
+            -0.32470258922323303,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "injury_status": "partial_or_unsubmitted",
+        "injury_report": {
+          "6": {
+            "submitted": false,
+            "players": []
+          },
+          "7": {
+            "submitted": false,
+            "players": []
+          }
+        },
+        "issued_at": "2026-11-23T07:42:41.337604+00:00",
+        "forecast_cutoff": "2026-11-23T07:42:41.337604+00:00",
+        "kind": "issued_live",
+        "forecast_policy_version": "after-game-v3",
+        "input_signature": "551eac5d9f66dbc575e0fe54350715d13a07a99f702449e1d4ab919f3bddf615",
+        "parameter_hash": "8196c93fe79e6ab08ecb4119373d7166aa37c439d53ca0f67fb118838bdb586b",
+        "state_sha256": "7082e7898b5400394db3210ca83905d9d814fbb2a2b770dddb2ab2a4e8ccb963",
+        "home_id": "7",
+        "away_id": "6",
+        "scheduled_context_projected": false,
+        "eligible_for_evaluation": true,
+        "forecast_id": "abbe6399972dfc47ba821412bbd04659d0e5c5099aded03431709750a4e37a99"
       }
     ],
     "parameter_registry": {
@@ -603234,608 +605635,608 @@
     "latest_sources": [
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261123&limit=1000",
-        "retrieved_at": "2026-11-23T05:38:25.752896+00:00",
-        "sha256": "29e720c6221d1458f0af9df8081a0d1019f090d465dd567cba99700ab15d12cb"
+        "retrieved_at": "2026-11-23T07:42:13.365987+00:00",
+        "sha256": "b55e41c283c84320b1bde8f1a35dce7171a6e61acd572e37b6d9abfe07846687"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261116&limit=1000",
-        "retrieved_at": "2026-11-23T05:38:26.148117+00:00",
-        "sha256": "b0e6c11e77f73d53417b1b6292dae1223608d4d99a89336fa91690ca48d25b49"
+        "retrieved_at": "2026-11-23T07:42:13.740835+00:00",
+        "sha256": "bfc07aab7eca9cdfa3975efe40a0e0abb3e1b48a64a04652986d667580c0663b"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261117&limit=1000",
-        "retrieved_at": "2026-11-23T05:38:26.550942+00:00",
-        "sha256": "a35223732cc68e5c3622cad2f82906ac89bf591d89543cafbe5cac22fa4b4f87"
+        "retrieved_at": "2026-11-23T07:42:14.109224+00:00",
+        "sha256": "b03755c5a8bb91ab56a0cbb397c9f613f3c3d9a7ad436c03d7a3da766a3743ac"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261118&limit=1000",
-        "retrieved_at": "2026-11-23T05:38:27.023363+00:00",
-        "sha256": "2cb585563a3d10a30265bbdb11ce9f248592053e111993b46d75da472c5cb8db"
+        "retrieved_at": "2026-11-23T07:42:14.498238+00:00",
+        "sha256": "d07f37245687d5d5a8c1af5e10493a59568145b256128495f2251ae92f1cd4a3"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261119&limit=1000",
-        "retrieved_at": "2026-11-23T05:38:27.512229+00:00",
-        "sha256": "f119f7dcf8240a587735653fc0bd673e3555b031d9307150cb867ad0e5ac968a"
+        "retrieved_at": "2026-11-23T07:42:14.904040+00:00",
+        "sha256": "5d9a032e87045241ac53936c1877ca96f9ee6c5581740ff8b74ba010e50ea8d3"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261120&limit=1000",
-        "retrieved_at": "2026-11-23T05:38:27.896498+00:00",
-        "sha256": "a5b8c55b99a063a7d14364fdb0bdaf7449324169c07f6c997c0d49d01d4c2fe4"
+        "retrieved_at": "2026-11-23T07:42:15.280790+00:00",
+        "sha256": "00a11569134c3a38fd066f5556f6a932019dadbead105e2bd7ec3c9cb6860104"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261121&limit=1000",
-        "retrieved_at": "2026-11-23T05:38:28.325081+00:00",
-        "sha256": "f1cdd8c47d912b4f36f22821995f96b4b8b7da236810de76d48390d88d9937ed"
+        "retrieved_at": "2026-11-23T07:42:15.648193+00:00",
+        "sha256": "44cd193ca9b0a308d418a258da6eb93cd50bc4f09ee84998510bbf0a291eafed"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261122&limit=1000",
-        "retrieved_at": "2026-11-23T05:38:28.925364+00:00",
-        "sha256": "3370ef22e430a0061aaaedce67dfa6539ba716a2985f051782c2f054c0435206"
+        "retrieved_at": "2026-11-23T07:42:16.016504+00:00",
+        "sha256": "1bd8f47d55862ad0c1f1eb756399199db17047f0ae589e6a3e62963a42123ad0"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261124&limit=1000",
-        "retrieved_at": "2026-11-23T05:38:29.317384+00:00",
-        "sha256": "1c03f681e2d37d81834ee3dabc79e6188beedc24a6f437496e12a8b3ddcc29f9"
+        "retrieved_at": "2026-11-23T07:42:16.350966+00:00",
+        "sha256": "876d298f328fb15db7609a698491f23262b1029d38af287419cf70b73118239d"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261125&limit=1000",
-        "retrieved_at": "2026-11-23T05:38:29.728018+00:00",
-        "sha256": "7d02ecec9b0f29d22c85444c5f55f35960c1fe6d73800565fd23b982612c160f"
+        "retrieved_at": "2026-11-23T07:42:16.877287+00:00",
+        "sha256": "5350cf6f0f313ce551e357b6c593f3d7fdb3181839afd456bdc586bc7e66d3ca"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261127&limit=1000",
-        "retrieved_at": "2026-11-23T05:38:30.124638+00:00",
-        "sha256": "e7ff74c5c13dc3d4fc3d08bf3fb633d55cdb96261e89511f7491d3db486432eb"
+        "retrieved_at": "2026-11-23T07:42:17.318273+00:00",
+        "sha256": "138b8e8f6f0abb75084c7c28b2fd7007161feb60e7c3a7b99f14e770f1c21d87"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261128&limit=1000",
-        "retrieved_at": "2026-11-23T05:38:30.530356+00:00",
-        "sha256": "32092153621483ce2f849bbf638130e66b6fa28e2e416d8176e51793bceac6b2"
+        "retrieved_at": "2026-11-23T07:42:17.686395+00:00",
+        "sha256": "196cf5eb5894d578d15e27e8b5e706182b752ea42fcb8e8d026d98f540f3f470"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261129&limit=1000",
-        "retrieved_at": "2026-11-23T05:38:30.910383+00:00",
-        "sha256": "2a3c7558e7f739756cfe5b7d89226e2a77d548fac27bf397e2fe14fb1766aeb9"
+        "retrieved_at": "2026-11-23T07:42:18.083162+00:00",
+        "sha256": "46bef8d2c5d8778e75d7c5a99503c8417e5df3866cacdd335983ee453b1d6a89"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261130&limit=1000",
-        "retrieved_at": "2026-11-23T05:38:31.325017+00:00",
-        "sha256": "7c321ca93751a74e7fd7f03dadb45a988e03c58cbbab8bd96180b9f565ca26fe"
+        "retrieved_at": "2026-11-23T07:42:18.450982+00:00",
+        "sha256": "ed8a733057fb2a071e67057ab6f7f3a69f7a7d8d94e4cde452b10a32fb70c071"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909305",
-        "retrieved_at": "2026-11-23T05:38:32.151018+00:00",
-        "sha256": "c1b67675210932af979a3668a82fce55b49d36e74ae18b1b681a3b960b9255b7"
+        "retrieved_at": "2026-11-23T07:42:18.818729+00:00",
+        "sha256": "c7fed0728186659b60d338d8b32c64cb3593880a99703351fe837f048408ecdc"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909306",
-        "retrieved_at": "2026-11-23T05:38:32.746069+00:00",
-        "sha256": "7df5307455ba929feea7f94b8ac8775b42d904d3ceaf6b0ef1e8579a088e560f"
+        "retrieved_at": "2026-11-23T07:42:19.299190+00:00",
+        "sha256": "c10bdc788c24fdc7a0ee4ba82dcfd75dedbfb38d20f322ac533b20b649d67ec9"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909307",
-        "retrieved_at": "2026-11-23T05:38:33.168279+00:00",
-        "sha256": "0f6a6b6defb3cc5f385680299079666a63a63851cf433a140f6594ee2d5731ec"
+        "retrieved_at": "2026-11-23T07:42:19.686059+00:00",
+        "sha256": "43690065ba44422476060c5e02195433e41d009d0c4c49de90442b4b3aac8761"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909308",
-        "retrieved_at": "2026-11-23T05:38:33.807287+00:00",
-        "sha256": "062e74b4893a93985f5beb4354ae12a57cc66f4157c5de5f98a706b339acda40"
+        "retrieved_at": "2026-11-23T07:42:20.098342+00:00",
+        "sha256": "d3a7912fe877cb272d71ef20d62c606b80cc88afbc187f689ab690ef7f4facf3"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909309",
-        "retrieved_at": "2026-11-23T05:38:34.201028+00:00",
-        "sha256": "a255f3d8d77fc36a3c3f5e69a832c5ffb0d614c9a0349e5b72f2aea28c7bfa0c"
+        "retrieved_at": "2026-11-23T07:42:20.582813+00:00",
+        "sha256": "d60921db2ff0119576133dc8310bd963aa9020c0f6c41b8929929d0d683a0f14"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909310",
-        "retrieved_at": "2026-11-23T05:38:34.834574+00:00",
-        "sha256": "2d26d3bbe36ba0624394c640cad461f43fa1a0ce995ee4ddd2f62ddc6aadb966"
+        "retrieved_at": "2026-11-23T07:42:20.965808+00:00",
+        "sha256": "5abf694d0f7ba24640f0fcddaa97beb03ded5fa893cd846628e7e2972f7f5e8d"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909311",
-        "retrieved_at": "2026-11-23T05:38:35.259279+00:00",
-        "sha256": "eed0bddd5701d11cfcd10ff16bb16b95d4a3190b3f2e2d1069edf52e79356692"
+        "retrieved_at": "2026-11-23T07:42:21.363199+00:00",
+        "sha256": "c89a5b52c1eee526f5837a3706b2b27b129a4670f4f8c1d7472922a8740b83fc"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909312",
-        "retrieved_at": "2026-11-23T05:38:35.667757+00:00",
-        "sha256": "f948f66909e8292c457e80b73f1cb760a9383e480a53de3d292e6baa3b74549b"
+        "retrieved_at": "2026-11-23T07:42:21.733238+00:00",
+        "sha256": "72a5b047e418cd6c22395b4e07ac74c4ded4e5965dfcec62fba5155de5d99937"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909313",
-        "retrieved_at": "2026-11-23T05:38:36.256739+00:00",
-        "sha256": "127e37b074d4a12b6509949d9c5235872407a26f7d8708d225a4e6675a459b1a"
+        "retrieved_at": "2026-11-23T07:42:22.143977+00:00",
+        "sha256": "e8c31a8c4fd3015f8a55905b0dbe6066abd065030df27d2cd5b4ad36268562ec"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909994",
-        "retrieved_at": "2026-11-23T05:38:36.809496+00:00",
-        "sha256": "18ea34a318aa9772809f68d1604920661dfc38a18437e24e548599b9e6b5aeea"
+        "retrieved_at": "2026-11-23T07:42:22.596819+00:00",
+        "sha256": "e91d2ed3b8aec97950bb2a3a17f5638d08d1c5051e28de2423646d40fde022c3"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909995",
-        "retrieved_at": "2026-11-23T05:38:37.581414+00:00",
-        "sha256": "bf265e01258be636b6d54fe6d24d05a5650adeafcaca014072c2e949e9d85e4a"
+        "retrieved_at": "2026-11-23T07:42:22.997198+00:00",
+        "sha256": "5cd1d2bf71f893a474e4fc52d8e50061a41743d1660de72faa6d33e8c7c2d2ea"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909996",
-        "retrieved_at": "2026-11-23T05:38:38.072140+00:00",
-        "sha256": "81eb654319351e8050e1a0f34f8e0e714c6d1f3ee3360c593908eb988eeb2fc4"
+        "retrieved_at": "2026-11-23T07:42:23.400322+00:00",
+        "sha256": "65cf8d0c7022255751ce975cf0ad90995cab1b69dbb8fd6037265575defb7429"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909997",
-        "retrieved_at": "2026-11-23T05:38:38.572572+00:00",
-        "sha256": "cd16af79850fe27aeebc24e1236520e644bd790aaaa124d295c703b09ac75d2d"
+        "retrieved_at": "2026-11-23T07:42:23.773492+00:00",
+        "sha256": "128e3d978ac5eef6ff64fa07cb38267a56b1a06593df0b5c01778a0f5c17cf16"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909998",
-        "retrieved_at": "2026-11-23T05:38:39.263223+00:00",
-        "sha256": "b2db6542c30c8daa57328172755bcdecd9b48533a6c633ba8d8e1ac0587e2f2d"
+        "retrieved_at": "2026-11-23T07:42:24.158497+00:00",
+        "sha256": "1e0c5655263d40e64f557d8dd4b02195e715635a949feb92d72b491f0357136f"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909999",
-        "retrieved_at": "2026-11-23T05:38:41.021177+00:00",
-        "sha256": "c94f95d3cf530b381ea1d1f98f411385b4c09cf1b7de024d03fc737993073b78"
+        "retrieved_at": "2026-11-23T07:42:24.542028+00:00",
+        "sha256": "3a7e9526722ea938f6ee36d4ed8571ddad876f6d4d736fb8b441ca7897e5ab4a"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910000",
-        "retrieved_at": "2026-11-23T05:38:41.744208+00:00",
-        "sha256": "5bb7e217e252d301dfb1d9206498c535d5437ea0128a1c959c0202025dfcafa6"
+        "retrieved_at": "2026-11-23T07:42:24.910895+00:00",
+        "sha256": "52e57b9b6efa3d6a91680cf9ef69d17d298f646a94059df1b10a404fa8911fde"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910001",
-        "retrieved_at": "2026-11-23T05:38:42.391355+00:00",
-        "sha256": "74fef0ef24e70eb14d0870d4eae4e16a84e3f19e6b2fe959a2eef7bef89e11f2"
+        "retrieved_at": "2026-11-23T07:42:25.306041+00:00",
+        "sha256": "86634c07d72e97775b3ed453b892ac43a2e71a2bfd3ac8fc2597798d042d1a8f"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910002",
-        "retrieved_at": "2026-11-23T05:38:42.818919+00:00",
-        "sha256": "d9e8658a532ddf3da721545cadbbe8f46134fa2c7dce8d2c173a94c631038ce0"
+        "retrieved_at": "2026-11-23T07:42:25.671577+00:00",
+        "sha256": "cf54dabc2aa9e321b8a28d1cebe756ba8cb9cf7bd113aebb4ffc6cf64fa6fdf5"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910003",
-        "retrieved_at": "2026-11-23T05:38:43.394872+00:00",
-        "sha256": "74bab7bd29660edee4f2837c3fa889190e7ba0f2c4b6520c0696f89cd6449cb8"
+        "retrieved_at": "2026-11-23T07:42:26.040365+00:00",
+        "sha256": "33e965b5aecab06f7b10e7da620474010985d5f8fb411d71d86173239d4814e5"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910004",
-        "retrieved_at": "2026-11-23T05:38:43.877767+00:00",
-        "sha256": "c3dcb7d8198122ffbfd61456b9305daff91b9dc11ec31d20e3f6fe4d347dbb3b"
+        "retrieved_at": "2026-11-23T07:42:26.431116+00:00",
+        "sha256": "3e6f2d725d8ea2f693381a10442b134be80c57250a9fc85669ec0b47183961a8"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910005",
-        "retrieved_at": "2026-11-23T05:38:44.302943+00:00",
-        "sha256": "48ec76701891fd9c7aa5ff29f2b63947746a8556872471ef2a4b5e6692815bb6"
+        "retrieved_at": "2026-11-23T07:42:26.796182+00:00",
+        "sha256": "557d3ca6be9da9c55d2ac81c5a7ee0afb8b178e80b29be261fb4b9d0c2a9efd8"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910006",
-        "retrieved_at": "2026-11-23T05:38:44.744782+00:00",
-        "sha256": "5521f3f7ea17257d6e3502ee0f1f4373482e197041cdbae54ca759a916e50c3d"
+        "retrieved_at": "2026-11-23T07:42:27.201481+00:00",
+        "sha256": "e3385d8cf85e8827d7b74e0e7cdfcb40be7098fca5951bc5e4c19c914edbb291"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910007",
-        "retrieved_at": "2026-11-23T05:38:45.332426+00:00",
-        "sha256": "569a179b5f2e3a020a95c014cb9653d37baabd6db5a6817170d61305b114199f"
+        "retrieved_at": "2026-11-23T07:42:27.582755+00:00",
+        "sha256": "d7dacbfaa90c619d4591f2787da2d94bc149e91701f1e05ad59712fce0654cb3"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910008",
-        "retrieved_at": "2026-11-23T05:38:45.898274+00:00",
-        "sha256": "b3b8513516d3be06c634963b64e76599b01e6abc16365406c4873274567047b6"
+        "retrieved_at": "2026-11-23T07:42:27.989205+00:00",
+        "sha256": "cff21495412840f245b900d418815483c63164901c23d846a902bcc3a808140f"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910009",
-        "retrieved_at": "2026-11-23T05:38:46.369531+00:00",
-        "sha256": "275cb0e7d3833ac6a1a8c4eb29d51e79ed4937b1b9e728369427647aa74ced95"
+        "retrieved_at": "2026-11-23T07:42:28.397294+00:00",
+        "sha256": "c2361d8c80d91b1f4900dc26d5ada3ef979886f5507b6d6ee821a47bfdac0427"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910010",
-        "retrieved_at": "2026-11-23T05:38:46.920970+00:00",
-        "sha256": "32ee5459213dc4c28582fe9edbd1ea408c1047693c2da5bd2d4ff8e00effcfd5"
+        "retrieved_at": "2026-11-23T07:42:28.827054+00:00",
+        "sha256": "14a4db85805c8a92d4fc0b479713dfe7ee1db33469029bc73f0f4199e4a04531"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910011",
-        "retrieved_at": "2026-11-23T05:38:47.442492+00:00",
-        "sha256": "f32059440be1280729d2bf807e064cb3ee3a937e50a27131d3677d3e4181a0e3"
+        "retrieved_at": "2026-11-23T07:42:29.234065+00:00",
+        "sha256": "f4038df6827799c9a200d7905531e881cd9edc6c5148cb5fad0a2469e144e53e"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910012",
-        "retrieved_at": "2026-11-23T05:38:48.196319+00:00",
-        "sha256": "912bd407362701179e5bcb2228f9878074b8025eea6fa206e055fb855f10a10d"
+        "retrieved_at": "2026-11-23T07:42:29.678373+00:00",
+        "sha256": "4357f85c7c15bc0fbee268022e998f7a5952910a36ceeaa499ab1d9d04aa0352"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910013",
-        "retrieved_at": "2026-11-23T05:38:48.667851+00:00",
-        "sha256": "4b9f1a58e0f97bbb64cd6c4383f6d522d3833b356e6a2939b454ba9d3d7328e5"
+        "retrieved_at": "2026-11-23T07:42:30.060079+00:00",
+        "sha256": "226a79a3ea53fab0193c6d1878f3338b9f51a523c1b8e612b40277de0b650eb3"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910014",
-        "retrieved_at": "2026-11-23T05:38:49.140386+00:00",
-        "sha256": "77ec13bb21c20b29b1d64f64a0402458e5b73693cd73554ed2ead8bd8ae44c37"
+        "retrieved_at": "2026-11-23T07:42:30.427547+00:00",
+        "sha256": "d5d060cefd23f3ce7b769de436d617bb7c2bd95cfb858553108913ad39c9fea4"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910015",
-        "retrieved_at": "2026-11-23T05:38:49.590365+00:00",
-        "sha256": "99971abf2647f214ee2f08759041ee0231b5e10b01911680d74b2407e30f350b"
+        "retrieved_at": "2026-11-23T07:42:30.837419+00:00",
+        "sha256": "67d54ee29001a4659b2ae202f7fda27937815e1aa8e6a01d120f68a24f0f5a56"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910016",
-        "retrieved_at": "2026-11-23T05:38:50.063143+00:00",
-        "sha256": "367d8b5cda1183218a65dbc88c9a89c2b3d023875cd0de6989110d138c54b3fc"
+        "retrieved_at": "2026-11-23T07:42:31.259264+00:00",
+        "sha256": "8422e25f666def7e5d21115a1dcbd68df51c0e037395b32fc80b367bba4b3d85"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910017",
-        "retrieved_at": "2026-11-23T05:38:50.481318+00:00",
-        "sha256": "026ac0db7afa6710fabf5c0a0903024072e6be40a3d1eec366f736d82add7de6"
+        "retrieved_at": "2026-11-23T07:42:31.658139+00:00",
+        "sha256": "b6e0f5837a33851916fff08e9c03a99a8903c1b05695c25791fdc9a2ff74a8f0"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910018",
-        "retrieved_at": "2026-11-23T05:38:51.160013+00:00",
-        "sha256": "acfe3afeff45ca7659bd2e9d886102a0546f34676a81dca052f1811d2a9ee349"
+        "retrieved_at": "2026-11-23T07:42:32.048932+00:00",
+        "sha256": "cdb0e7ef860102ee4d5d12464a1d85e8a3dae8bafba138d453fc5f977232baa2"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910019",
-        "retrieved_at": "2026-11-23T05:38:51.827150+00:00",
-        "sha256": "fdad39be1049b22226f80777dd06a5769a7b50e8fc88b8aa451765c47bc340d8"
+        "retrieved_at": "2026-11-23T07:42:32.417322+00:00",
+        "sha256": "850015b8233368dce3fdd930c8be47097a47e04b2556180a63ab8dfa7aa06220"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910020",
-        "retrieved_at": "2026-11-23T05:38:52.379878+00:00",
-        "sha256": "e5ad2425057e383234c48a42480591da95d13c15971ee7b72e89c40df2001ae5"
+        "retrieved_at": "2026-11-23T07:42:32.794101+00:00",
+        "sha256": "5c19222996b9ca3f8dd4a5447cd9553f1a04a1dcbf7143bb5a67fc4bbdfe9cca"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910021",
-        "retrieved_at": "2026-11-23T05:38:53.217075+00:00",
-        "sha256": "d94d8a1b247bc5ad9c34280df16f3357b02f37c9652233a49d8c72760c928220"
+        "retrieved_at": "2026-11-23T07:42:33.164352+00:00",
+        "sha256": "60cd570fbb39b175b357a299b8e07f35f9657a4c5b6d5b0deb771591de3c2e98"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910022",
-        "retrieved_at": "2026-11-23T05:38:53.885679+00:00",
-        "sha256": "d362b2537ef5b5529115af81478e50df807a939dd5d7d40458c042ebad170c87"
+        "retrieved_at": "2026-11-23T07:42:33.578534+00:00",
+        "sha256": "0b972aa257f3db471f414517b57abeb45768d3c6d57900f80313f6607cce7565"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910023",
-        "retrieved_at": "2026-11-23T05:38:54.465025+00:00",
-        "sha256": "a5d200ec1b59d5679c8b4cfaf187e0a25adc2fad1a0e02b2c50d008823aaf74d"
+        "retrieved_at": "2026-11-23T07:42:33.956680+00:00",
+        "sha256": "bfa4ab140ac52e0a01acb82a3a4abb336c93953c29ff3c22febbf83d025f156e"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910024",
-        "retrieved_at": "2026-11-23T05:38:55.294240+00:00",
-        "sha256": "64a64731bd3453d3aa22b824b3f3e44de3d18d2aaae408fb24c3e99efd0dd8f1"
+        "retrieved_at": "2026-11-23T07:42:34.328826+00:00",
+        "sha256": "d5b8ca24117509414bb2bc464a4e64881e6e11b69317c682826053eaffa7af21"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910025",
-        "retrieved_at": "2026-11-23T05:38:55.797405+00:00",
-        "sha256": "2e256b86f23e76e9d2398bd1aef80c15a66cf19e264d574c42fe95128dbfadda"
+        "retrieved_at": "2026-11-23T07:42:34.700461+00:00",
+        "sha256": "8929b57cbeab0ff41ad24414fbcf53415cd8eaad5b0c5795ff6ce621c09af6c4"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910026",
-        "retrieved_at": "2026-11-23T05:38:56.229693+00:00",
-        "sha256": "f9a4c08fc2bb615f95d2d8076d2c69e9f018e88848ea2da63513e2c3aac13f1c"
+        "retrieved_at": "2026-11-23T07:42:35.071222+00:00",
+        "sha256": "c75995a2a7c58f40029e396ad481aa0349c1319332451cf5d1c7e369901927b2"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910027",
-        "retrieved_at": "2026-11-23T05:38:56.813047+00:00",
-        "sha256": "056822d2277a2354325465071343dc4af0d1dc1568055f6bd07dda3923d6fe2d"
+        "retrieved_at": "2026-11-23T07:42:35.431678+00:00",
+        "sha256": "1664e05eaad4526da7c923f50bd0a8cba5a4b546f0d11add72f42c290eb23e34"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910028",
-        "retrieved_at": "2026-11-23T05:38:57.688576+00:00",
-        "sha256": "593cf92059157691c6025cfe8758e227659ef3b506029042b86a4bff7ab6cdca"
+        "retrieved_at": "2026-11-23T07:42:35.830952+00:00",
+        "sha256": "2a8e85259f7c909c277b12dd6ec88c97517b581a832eaab644ef0275ed44e84f"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910029",
-        "retrieved_at": "2026-11-23T05:38:58.092071+00:00",
-        "sha256": "87f3ad85c8b2a73aed6c9079f8cd1a97d6cad1af97aa20ebd8f66f5cad8d2252"
+        "retrieved_at": "2026-11-23T07:42:36.201880+00:00",
+        "sha256": "73d8ababc113fc9cec664b07f5ed6d862781442ac4b0d2b8376a5fa2c34e2580"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910030",
-        "retrieved_at": "2026-11-23T05:38:58.582113+00:00",
-        "sha256": "219bdcd566a4379275764a77f51db5e36758519dca9c24821d6fe60da3b04dd9"
+        "retrieved_at": "2026-11-23T07:42:36.593499+00:00",
+        "sha256": "cad7a7ac67e9091ba9bedccb09ee1395a2db6f504116763d5af37072438dbac7"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910031",
-        "retrieved_at": "2026-11-23T05:38:59.186356+00:00",
-        "sha256": "698b6665e220a708197ba687149ffcd43582cafabe5d825ecde7fe8558d66aa7"
+        "retrieved_at": "2026-11-23T07:42:37.010820+00:00",
+        "sha256": "3732d3e0d85de77a838b8aac15af92be0bfdea4118a73bb66afe7c9133790422"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910032",
-        "retrieved_at": "2026-11-23T05:38:59.585504+00:00",
-        "sha256": "d7204558f2253a1f512cd26acbe12ea5666cfa629787a1381e679baa875ae2aa"
+        "retrieved_at": "2026-11-23T07:42:37.428212+00:00",
+        "sha256": "fc0c5e9840a9823f9d8644875a292059abc060683795855101af055d94fd1143"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910033",
-        "retrieved_at": "2026-11-23T05:39:00.127907+00:00",
-        "sha256": "70f7fe932c7f10ca8e2bd854db9dfe83ae8aa4b8191009660754b464d1ee5957"
+        "retrieved_at": "2026-11-23T07:42:37.810441+00:00",
+        "sha256": "9d3255b69e78068024bf00fb0e68a0177b09c44f96c2cf3d80c825ceca0a7b7b"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910034",
-        "retrieved_at": "2026-11-23T05:39:00.565232+00:00",
-        "sha256": "4798fb35c1b25d0dba1f904d522d9d5dcc3651ac2583d994df3a9b91055dd854"
+        "retrieved_at": "2026-11-23T07:42:38.216524+00:00",
+        "sha256": "352614e56ec141988ec47e5cca41bfa1561401c09a7aacdeef09b385f3f7c173"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910035",
-        "retrieved_at": "2026-11-23T05:39:01.075013+00:00",
-        "sha256": "c924511ef008be3218b4beea716bed03fc901938954eb6342d0e85b2c091ce4e"
+        "retrieved_at": "2026-11-23T07:42:38.630911+00:00",
+        "sha256": "47a4d83ad93de7b752110fee045f139b005891ad3908e2f35fb9b26719fbba3a"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909095",
-        "retrieved_at": "2026-11-23T05:39:01.654537+00:00",
-        "sha256": "8b5dd5af4891a0e3c71b97e1ea0aba7b058267c4667f2c6516238b73c49f69f6"
+        "retrieved_at": "2026-11-23T07:42:39.112681+00:00",
+        "sha256": "5b92f9a1f160f6d6dc5f80f2a3c3f727e5bc25b1a591eb83bf50d8f7215e7877"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909872",
-        "retrieved_at": "2026-11-23T05:39:02.138671+00:00",
-        "sha256": "2a57d209dbd4c5525b2520c59d8dfc76c47d577cee9037ee5717b73512bd26f7"
+        "retrieved_at": "2026-11-23T07:42:39.613665+00:00",
+        "sha256": "d634ad18c364a4585d798ae2c840d96553b331f94c8f97acb14265c9683edb8f"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909285",
-        "retrieved_at": "2026-11-23T05:39:02.736047+00:00",
-        "sha256": "208970cd86455eb2bf2d0e600c0c09adbb07acb90fc3df8866182411bd20e783"
+        "retrieved_at": "2026-11-23T07:42:40.007661+00:00",
+        "sha256": "ad734279daf3d58730a8a7a0d798993240525f6ebc0b513297f10df6dada36f9"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909914",
-        "retrieved_at": "2026-11-23T05:39:03.171459+00:00",
-        "sha256": "c62a5570e0069088c0ad6ccce456ca9f3b16d1020dcdb50114d7a996a24b3065"
+        "retrieved_at": "2026-11-23T07:42:40.419158+00:00",
+        "sha256": "63f81ecdb806103c9a54ee3e1297c5c77ba9afa5656fb162c385c7c95c7bba26"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909994",
-        "retrieved_at": "2026-11-23T05:38:36.809496+00:00",
-        "sha256": "18ea34a318aa9772809f68d1604920661dfc38a18437e24e548599b9e6b5aeea"
+        "retrieved_at": "2026-11-23T07:42:22.596819+00:00",
+        "sha256": "e91d2ed3b8aec97950bb2a3a17f5638d08d1c5051e28de2423646d40fde022c3"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909995",
-        "retrieved_at": "2026-11-23T05:38:37.581414+00:00",
-        "sha256": "bf265e01258be636b6d54fe6d24d05a5650adeafcaca014072c2e949e9d85e4a"
+        "retrieved_at": "2026-11-23T07:42:22.997198+00:00",
+        "sha256": "5cd1d2bf71f893a474e4fc52d8e50061a41743d1660de72faa6d33e8c7c2d2ea"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909996",
-        "retrieved_at": "2026-11-23T05:38:38.072140+00:00",
-        "sha256": "81eb654319351e8050e1a0f34f8e0e714c6d1f3ee3360c593908eb988eeb2fc4"
+        "retrieved_at": "2026-11-23T07:42:23.400322+00:00",
+        "sha256": "65cf8d0c7022255751ce975cf0ad90995cab1b69dbb8fd6037265575defb7429"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909998",
-        "retrieved_at": "2026-11-23T05:38:39.263223+00:00",
-        "sha256": "b2db6542c30c8daa57328172755bcdecd9b48533a6c633ba8d8e1ac0587e2f2d"
+        "retrieved_at": "2026-11-23T07:42:24.158497+00:00",
+        "sha256": "1e0c5655263d40e64f557d8dd4b02195e715635a949feb92d72b491f0357136f"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909997",
-        "retrieved_at": "2026-11-23T05:38:38.572572+00:00",
-        "sha256": "cd16af79850fe27aeebc24e1236520e644bd790aaaa124d295c703b09ac75d2d"
+        "retrieved_at": "2026-11-23T07:42:23.773492+00:00",
+        "sha256": "128e3d978ac5eef6ff64fa07cb38267a56b1a06593df0b5c01778a0f5c17cf16"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909999",
-        "retrieved_at": "2026-11-23T05:38:41.021177+00:00",
-        "sha256": "c94f95d3cf530b381ea1d1f98f411385b4c09cf1b7de024d03fc737993073b78"
+        "retrieved_at": "2026-11-23T07:42:24.542028+00:00",
+        "sha256": "3a7e9526722ea938f6ee36d4ed8571ddad876f6d4d736fb8b441ca7897e5ab4a"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910000",
-        "retrieved_at": "2026-11-23T05:38:41.744208+00:00",
-        "sha256": "5bb7e217e252d301dfb1d9206498c535d5437ea0128a1c959c0202025dfcafa6"
+        "retrieved_at": "2026-11-23T07:42:24.910895+00:00",
+        "sha256": "52e57b9b6efa3d6a91680cf9ef69d17d298f646a94059df1b10a404fa8911fde"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910001",
-        "retrieved_at": "2026-11-23T05:38:42.391355+00:00",
-        "sha256": "74fef0ef24e70eb14d0870d4eae4e16a84e3f19e6b2fe959a2eef7bef89e11f2"
+        "retrieved_at": "2026-11-23T07:42:25.306041+00:00",
+        "sha256": "86634c07d72e97775b3ed453b892ac43a2e71a2bfd3ac8fc2597798d042d1a8f"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910002",
-        "retrieved_at": "2026-11-23T05:38:42.818919+00:00",
-        "sha256": "d9e8658a532ddf3da721545cadbbe8f46134fa2c7dce8d2c173a94c631038ce0"
+        "retrieved_at": "2026-11-23T07:42:25.671577+00:00",
+        "sha256": "cf54dabc2aa9e321b8a28d1cebe756ba8cb9cf7bd113aebb4ffc6cf64fa6fdf5"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910003",
-        "retrieved_at": "2026-11-23T05:38:43.394872+00:00",
-        "sha256": "74bab7bd29660edee4f2837c3fa889190e7ba0f2c4b6520c0696f89cd6449cb8"
+        "retrieved_at": "2026-11-23T07:42:26.040365+00:00",
+        "sha256": "33e965b5aecab06f7b10e7da620474010985d5f8fb411d71d86173239d4814e5"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910004",
-        "retrieved_at": "2026-11-23T05:38:43.877767+00:00",
-        "sha256": "c3dcb7d8198122ffbfd61456b9305daff91b9dc11ec31d20e3f6fe4d347dbb3b"
+        "retrieved_at": "2026-11-23T07:42:26.431116+00:00",
+        "sha256": "3e6f2d725d8ea2f693381a10442b134be80c57250a9fc85669ec0b47183961a8"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910005",
-        "retrieved_at": "2026-11-23T05:38:44.302943+00:00",
-        "sha256": "48ec76701891fd9c7aa5ff29f2b63947746a8556872471ef2a4b5e6692815bb6"
+        "retrieved_at": "2026-11-23T07:42:26.796182+00:00",
+        "sha256": "557d3ca6be9da9c55d2ac81c5a7ee0afb8b178e80b29be261fb4b9d0c2a9efd8"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910006",
-        "retrieved_at": "2026-11-23T05:38:44.744782+00:00",
-        "sha256": "5521f3f7ea17257d6e3502ee0f1f4373482e197041cdbae54ca759a916e50c3d"
+        "retrieved_at": "2026-11-23T07:42:27.201481+00:00",
+        "sha256": "e3385d8cf85e8827d7b74e0e7cdfcb40be7098fca5951bc5e4c19c914edbb291"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910007",
-        "retrieved_at": "2026-11-23T05:38:45.332426+00:00",
-        "sha256": "569a179b5f2e3a020a95c014cb9653d37baabd6db5a6817170d61305b114199f"
+        "retrieved_at": "2026-11-23T07:42:27.582755+00:00",
+        "sha256": "d7dacbfaa90c619d4591f2787da2d94bc149e91701f1e05ad59712fce0654cb3"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910008",
-        "retrieved_at": "2026-11-23T05:38:45.898274+00:00",
-        "sha256": "b3b8513516d3be06c634963b64e76599b01e6abc16365406c4873274567047b6"
+        "retrieved_at": "2026-11-23T07:42:27.989205+00:00",
+        "sha256": "cff21495412840f245b900d418815483c63164901c23d846a902bcc3a808140f"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910009",
-        "retrieved_at": "2026-11-23T05:38:46.369531+00:00",
-        "sha256": "275cb0e7d3833ac6a1a8c4eb29d51e79ed4937b1b9e728369427647aa74ced95"
+        "retrieved_at": "2026-11-23T07:42:28.397294+00:00",
+        "sha256": "c2361d8c80d91b1f4900dc26d5ada3ef979886f5507b6d6ee821a47bfdac0427"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910010",
-        "retrieved_at": "2026-11-23T05:38:46.920970+00:00",
-        "sha256": "32ee5459213dc4c28582fe9edbd1ea408c1047693c2da5bd2d4ff8e00effcfd5"
+        "retrieved_at": "2026-11-23T07:42:28.827054+00:00",
+        "sha256": "14a4db85805c8a92d4fc0b479713dfe7ee1db33469029bc73f0f4199e4a04531"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910011",
-        "retrieved_at": "2026-11-23T05:38:47.442492+00:00",
-        "sha256": "f32059440be1280729d2bf807e064cb3ee3a937e50a27131d3677d3e4181a0e3"
+        "retrieved_at": "2026-11-23T07:42:29.234065+00:00",
+        "sha256": "f4038df6827799c9a200d7905531e881cd9edc6c5148cb5fad0a2469e144e53e"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910012",
-        "retrieved_at": "2026-11-23T05:38:48.196319+00:00",
-        "sha256": "912bd407362701179e5bcb2228f9878074b8025eea6fa206e055fb855f10a10d"
+        "retrieved_at": "2026-11-23T07:42:29.678373+00:00",
+        "sha256": "4357f85c7c15bc0fbee268022e998f7a5952910a36ceeaa499ab1d9d04aa0352"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910013",
-        "retrieved_at": "2026-11-23T05:38:48.667851+00:00",
-        "sha256": "4b9f1a58e0f97bbb64cd6c4383f6d522d3833b356e6a2939b454ba9d3d7328e5"
+        "retrieved_at": "2026-11-23T07:42:30.060079+00:00",
+        "sha256": "226a79a3ea53fab0193c6d1878f3338b9f51a523c1b8e612b40277de0b650eb3"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910014",
-        "retrieved_at": "2026-11-23T05:38:49.140386+00:00",
-        "sha256": "77ec13bb21c20b29b1d64f64a0402458e5b73693cd73554ed2ead8bd8ae44c37"
+        "retrieved_at": "2026-11-23T07:42:30.427547+00:00",
+        "sha256": "d5d060cefd23f3ce7b769de436d617bb7c2bd95cfb858553108913ad39c9fea4"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910015",
-        "retrieved_at": "2026-11-23T05:38:49.590365+00:00",
-        "sha256": "99971abf2647f214ee2f08759041ee0231b5e10b01911680d74b2407e30f350b"
+        "retrieved_at": "2026-11-23T07:42:30.837419+00:00",
+        "sha256": "67d54ee29001a4659b2ae202f7fda27937815e1aa8e6a01d120f68a24f0f5a56"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910016",
-        "retrieved_at": "2026-11-23T05:38:50.063143+00:00",
-        "sha256": "367d8b5cda1183218a65dbc88c9a89c2b3d023875cd0de6989110d138c54b3fc"
+        "retrieved_at": "2026-11-23T07:42:31.259264+00:00",
+        "sha256": "8422e25f666def7e5d21115a1dcbd68df51c0e037395b32fc80b367bba4b3d85"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910017",
-        "retrieved_at": "2026-11-23T05:38:50.481318+00:00",
-        "sha256": "026ac0db7afa6710fabf5c0a0903024072e6be40a3d1eec366f736d82add7de6"
+        "retrieved_at": "2026-11-23T07:42:31.658139+00:00",
+        "sha256": "b6e0f5837a33851916fff08e9c03a99a8903c1b05695c25791fdc9a2ff74a8f0"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910018",
-        "retrieved_at": "2026-11-23T05:38:51.160013+00:00",
-        "sha256": "acfe3afeff45ca7659bd2e9d886102a0546f34676a81dca052f1811d2a9ee349"
+        "retrieved_at": "2026-11-23T07:42:32.048932+00:00",
+        "sha256": "cdb0e7ef860102ee4d5d12464a1d85e8a3dae8bafba138d453fc5f977232baa2"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910019",
-        "retrieved_at": "2026-11-23T05:38:51.827150+00:00",
-        "sha256": "fdad39be1049b22226f80777dd06a5769a7b50e8fc88b8aa451765c47bc340d8"
+        "retrieved_at": "2026-11-23T07:42:32.417322+00:00",
+        "sha256": "850015b8233368dce3fdd930c8be47097a47e04b2556180a63ab8dfa7aa06220"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910020",
-        "retrieved_at": "2026-11-23T05:38:52.379878+00:00",
-        "sha256": "e5ad2425057e383234c48a42480591da95d13c15971ee7b72e89c40df2001ae5"
+        "retrieved_at": "2026-11-23T07:42:32.794101+00:00",
+        "sha256": "5c19222996b9ca3f8dd4a5447cd9553f1a04a1dcbf7143bb5a67fc4bbdfe9cca"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910021",
-        "retrieved_at": "2026-11-23T05:38:53.217075+00:00",
-        "sha256": "d94d8a1b247bc5ad9c34280df16f3357b02f37c9652233a49d8c72760c928220"
+        "retrieved_at": "2026-11-23T07:42:33.164352+00:00",
+        "sha256": "60cd570fbb39b175b357a299b8e07f35f9657a4c5b6d5b0deb771591de3c2e98"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910022",
-        "retrieved_at": "2026-11-23T05:38:53.885679+00:00",
-        "sha256": "d362b2537ef5b5529115af81478e50df807a939dd5d7d40458c042ebad170c87"
+        "retrieved_at": "2026-11-23T07:42:33.578534+00:00",
+        "sha256": "0b972aa257f3db471f414517b57abeb45768d3c6d57900f80313f6607cce7565"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909305",
-        "retrieved_at": "2026-11-23T05:38:32.151018+00:00",
-        "sha256": "c1b67675210932af979a3668a82fce55b49d36e74ae18b1b681a3b960b9255b7"
+        "retrieved_at": "2026-11-23T07:42:18.818729+00:00",
+        "sha256": "c7fed0728186659b60d338d8b32c64cb3593880a99703351fe837f048408ecdc"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909306",
-        "retrieved_at": "2026-11-23T05:38:32.746069+00:00",
-        "sha256": "7df5307455ba929feea7f94b8ac8775b42d904d3ceaf6b0ef1e8579a088e560f"
+        "retrieved_at": "2026-11-23T07:42:19.299190+00:00",
+        "sha256": "c10bdc788c24fdc7a0ee4ba82dcfd75dedbfb38d20f322ac533b20b649d67ec9"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909307",
-        "retrieved_at": "2026-11-23T05:38:33.168279+00:00",
-        "sha256": "0f6a6b6defb3cc5f385680299079666a63a63851cf433a140f6594ee2d5731ec"
+        "retrieved_at": "2026-11-23T07:42:19.686059+00:00",
+        "sha256": "43690065ba44422476060c5e02195433e41d009d0c4c49de90442b4b3aac8761"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909308",
-        "retrieved_at": "2026-11-23T05:38:33.807287+00:00",
-        "sha256": "062e74b4893a93985f5beb4354ae12a57cc66f4157c5de5f98a706b339acda40"
+        "retrieved_at": "2026-11-23T07:42:20.098342+00:00",
+        "sha256": "d3a7912fe877cb272d71ef20d62c606b80cc88afbc187f689ab690ef7f4facf3"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909309",
-        "retrieved_at": "2026-11-23T05:38:34.201028+00:00",
-        "sha256": "a255f3d8d77fc36a3c3f5e69a832c5ffb0d614c9a0349e5b72f2aea28c7bfa0c"
+        "retrieved_at": "2026-11-23T07:42:20.582813+00:00",
+        "sha256": "d60921db2ff0119576133dc8310bd963aa9020c0f6c41b8929929d0d683a0f14"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909310",
-        "retrieved_at": "2026-11-23T05:38:34.834574+00:00",
-        "sha256": "2d26d3bbe36ba0624394c640cad461f43fa1a0ce995ee4ddd2f62ddc6aadb966"
+        "retrieved_at": "2026-11-23T07:42:20.965808+00:00",
+        "sha256": "5abf694d0f7ba24640f0fcddaa97beb03ded5fa893cd846628e7e2972f7f5e8d"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909311",
-        "retrieved_at": "2026-11-23T05:38:35.259279+00:00",
-        "sha256": "eed0bddd5701d11cfcd10ff16bb16b95d4a3190b3f2e2d1069edf52e79356692"
+        "retrieved_at": "2026-11-23T07:42:21.363199+00:00",
+        "sha256": "c89a5b52c1eee526f5837a3706b2b27b129a4670f4f8c1d7472922a8740b83fc"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909312",
-        "retrieved_at": "2026-11-23T05:38:35.667757+00:00",
-        "sha256": "f948f66909e8292c457e80b73f1cb760a9383e480a53de3d292e6baa3b74549b"
+        "retrieved_at": "2026-11-23T07:42:21.733238+00:00",
+        "sha256": "72a5b047e418cd6c22395b4e07ac74c4ded4e5965dfcec62fba5155de5d99937"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909313",
-        "retrieved_at": "2026-11-23T05:38:36.256739+00:00",
-        "sha256": "127e37b074d4a12b6509949d9c5235872407a26f7d8708d225a4e6675a459b1a"
+        "retrieved_at": "2026-11-23T07:42:22.143977+00:00",
+        "sha256": "e8c31a8c4fd3015f8a55905b0dbe6066abd065030df27d2cd5b4ad36268562ec"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910023",
-        "retrieved_at": "2026-11-23T05:38:54.465025+00:00",
-        "sha256": "a5d200ec1b59d5679c8b4cfaf187e0a25adc2fad1a0e02b2c50d008823aaf74d"
+        "retrieved_at": "2026-11-23T07:42:33.956680+00:00",
+        "sha256": "bfa4ab140ac52e0a01acb82a3a4abb336c93953c29ff3c22febbf83d025f156e"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910024",
-        "retrieved_at": "2026-11-23T05:38:55.294240+00:00",
-        "sha256": "64a64731bd3453d3aa22b824b3f3e44de3d18d2aaae408fb24c3e99efd0dd8f1"
+        "retrieved_at": "2026-11-23T07:42:34.328826+00:00",
+        "sha256": "d5b8ca24117509414bb2bc464a4e64881e6e11b69317c682826053eaffa7af21"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910025",
-        "retrieved_at": "2026-11-23T05:38:55.797405+00:00",
-        "sha256": "2e256b86f23e76e9d2398bd1aef80c15a66cf19e264d574c42fe95128dbfadda"
+        "retrieved_at": "2026-11-23T07:42:34.700461+00:00",
+        "sha256": "8929b57cbeab0ff41ad24414fbcf53415cd8eaad5b0c5795ff6ce621c09af6c4"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910026",
-        "retrieved_at": "2026-11-23T05:38:56.229693+00:00",
-        "sha256": "f9a4c08fc2bb615f95d2d8076d2c69e9f018e88848ea2da63513e2c3aac13f1c"
+        "retrieved_at": "2026-11-23T07:42:35.071222+00:00",
+        "sha256": "c75995a2a7c58f40029e396ad481aa0349c1319332451cf5d1c7e369901927b2"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910027",
-        "retrieved_at": "2026-11-23T05:38:56.813047+00:00",
-        "sha256": "056822d2277a2354325465071343dc4af0d1dc1568055f6bd07dda3923d6fe2d"
+        "retrieved_at": "2026-11-23T07:42:35.431678+00:00",
+        "sha256": "1664e05eaad4526da7c923f50bd0a8cba5a4b546f0d11add72f42c290eb23e34"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910028",
-        "retrieved_at": "2026-11-23T05:38:57.688576+00:00",
-        "sha256": "593cf92059157691c6025cfe8758e227659ef3b506029042b86a4bff7ab6cdca"
+        "retrieved_at": "2026-11-23T07:42:35.830952+00:00",
+        "sha256": "2a8e85259f7c909c277b12dd6ec88c97517b581a832eaab644ef0275ed44e84f"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910029",
-        "retrieved_at": "2026-11-23T05:38:58.092071+00:00",
-        "sha256": "87f3ad85c8b2a73aed6c9079f8cd1a97d6cad1af97aa20ebd8f66f5cad8d2252"
+        "retrieved_at": "2026-11-23T07:42:36.201880+00:00",
+        "sha256": "73d8ababc113fc9cec664b07f5ed6d862781442ac4b0d2b8376a5fa2c34e2580"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910030",
-        "retrieved_at": "2026-11-23T05:38:58.582113+00:00",
-        "sha256": "219bdcd566a4379275764a77f51db5e36758519dca9c24821d6fe60da3b04dd9"
+        "retrieved_at": "2026-11-23T07:42:36.593499+00:00",
+        "sha256": "cad7a7ac67e9091ba9bedccb09ee1395a2db6f504116763d5af37072438dbac7"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910031",
-        "retrieved_at": "2026-11-23T05:38:59.186356+00:00",
-        "sha256": "698b6665e220a708197ba687149ffcd43582cafabe5d825ecde7fe8558d66aa7"
+        "retrieved_at": "2026-11-23T07:42:37.010820+00:00",
+        "sha256": "3732d3e0d85de77a838b8aac15af92be0bfdea4118a73bb66afe7c9133790422"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910032",
-        "retrieved_at": "2026-11-23T05:38:59.585504+00:00",
-        "sha256": "d7204558f2253a1f512cd26acbe12ea5666cfa629787a1381e679baa875ae2aa"
+        "retrieved_at": "2026-11-23T07:42:37.428212+00:00",
+        "sha256": "fc0c5e9840a9823f9d8644875a292059abc060683795855101af055d94fd1143"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910033",
-        "retrieved_at": "2026-11-23T05:39:00.127907+00:00",
-        "sha256": "70f7fe932c7f10ca8e2bd854db9dfe83ae8aa4b8191009660754b464d1ee5957"
+        "retrieved_at": "2026-11-23T07:42:37.810441+00:00",
+        "sha256": "9d3255b69e78068024bf00fb0e68a0177b09c44f96c2cf3d80c825ceca0a7b7b"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910034",
-        "retrieved_at": "2026-11-23T05:39:00.565232+00:00",
-        "sha256": "4798fb35c1b25d0dba1f904d522d9d5dcc3651ac2583d994df3a9b91055dd854"
+        "retrieved_at": "2026-11-23T07:42:38.216524+00:00",
+        "sha256": "352614e56ec141988ec47e5cca41bfa1561401c09a7aacdeef09b385f3f7c173"
       },
       {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910035",
-        "retrieved_at": "2026-11-23T05:39:01.075013+00:00",
-        "sha256": "c924511ef008be3218b4beea716bed03fc901938954eb6342d0e85b2c091ce4e"
+        "retrieved_at": "2026-11-23T07:42:38.630911+00:00",
+        "sha256": "47a4d83ad93de7b752110fee045f139b005891ad3908e2f35fb9b26719fbba3a"
       },
       {
-        "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_12_30AM.pdf",
-        "sha256": "8c73bac12fe2800b96adc164c1e0ffccd3e34d310085d58f6a49c2cf2334f0a3",
-        "retrieved_at": "2026-11-23T05:39:03.953068+00:00"
+        "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_02_30AM.pdf",
+        "sha256": "1ef6fce3e1263f66eca6473f7d8aab796df9d0afabf30733459bb970395815c8",
+        "retrieved_at": "2026-11-23T07:42:41.337597+00:00"
       }
     ],
     "state_sha256": "7082e7898b5400394db3210ca83905d9d814fbb2a2b770dddb2ab2a4e8ccb963",
@@ -662792,9 +665193,9 @@
       ],
       "injuries": {
         "state": "available",
-        "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_12_30AM.pdf",
-        "published_at": "2026-11-23T00:30:00-05:00",
-        "sha256": "8c73bac12fe2800b96adc164c1e0ffccd3e34d310085d58f6a49c2cf2334f0a3"
+        "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_02_30AM.pdf",
+        "published_at": "2026-11-23T02:30:00-05:00",
+        "sha256": "1ef6fce3e1263f66eca6473f7d8aab796df9d0afabf30733459bb970395815c8"
       }
     },
     "policy": "Source-completion event replay for rating state; observed runs issue upcoming revisions. No historical forecast fabrication.",
