@@ -66,7 +66,8 @@ test('Home serves the walkthrough and English captions', async ({ page }) => {
   expect(metadata.status()).toBe(206);
   expect(metadata.headers()['content-type']).toContain('video/mp4');
   expect((await metadata.body()).subarray(4, 8).toString()).toBe('ftyp');
-  const track = video.locator('track[kind=captions][srclang=en][default]');
+  const track = video.locator('track[kind=captions][srclang=en]');
+  await expect(track).not.toHaveAttribute('default', /.*/);
   const response = await page.request.get((await track.getAttribute('src'))!);
   expect(response.ok()).toBeTruthy();
   expect(await response.text()).toMatch(/^WEBVTT/);
