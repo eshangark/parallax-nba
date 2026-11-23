@@ -45,18 +45,18 @@
     },
     "2026-27": {
       "file": "2026-27/current-model.json",
-      "source_result_sha256": "d66b02a780ca7ea115e2dd3873b04a0ebdc4a7aea2b7679c0fa58f7f84193199",
-      "input_sha256": "00e085a6750cdbb6e5fcc15564e6d34e8822dfaf7513fd5a9d013a18145821b7",
-      "result_sha256": "7373862746332829c7d2dd164ebcff6087c7910c74f976b189676624bea277a0",
-      "games": 242,
+      "source_result_sha256": "fade5c42bd0261e2c2ebe59701e997caf0fbb884ee5a961f70b7991ae092024d",
+      "input_sha256": "512682c9109d844347a0fe39f0e89e041d6e668d1cbad714703ca0019f41fd4d",
+      "result_sha256": "dbbe1962b8e6126c4576780f074f1597fdd0f0efe96b186324fa1205af2ea9cc",
+      "games": 248,
       "evaluation_role": "post_fit_replay"
     }
   },
   "summary": {
-    "games": 6392,
-    "log_loss": 0.6068713248527499,
-    "brier_score": 0.2099107922619062,
-    "winner_accuracy": 0.6688047559449312,
+    "games": 6398,
+    "log_loss": 0.606948355364749,
+    "brier_score": 0.20994300735219665,
+    "winner_accuracy": 0.6688027508596437,
     "tie_policy": "pick home when probability equals 0.5",
     "calibration": [
       {
@@ -76,9 +76,9 @@
       {
         "lower": 0.2,
         "upper": 0.3,
-        "games": 483,
-        "mean_probability": 0.2518019465349515,
-        "observed_home_win_rate": 0.2422360248447205
+        "games": 487,
+        "mean_probability": 0.2519262369200584,
+        "observed_home_win_rate": 0.24435318275154005
       },
       {
         "lower": 0.3,
@@ -104,9 +104,9 @@
       {
         "lower": 0.6,
         "upper": 0.7,
-        "games": 1157,
-        "mean_probability": 0.649255429554182,
-        "observed_home_win_rate": 0.6542783059636992
+        "games": 1158,
+        "mean_probability": 0.6492455747215371,
+        "observed_home_win_rate": 0.6545768566493955
       },
       {
         "lower": 0.7,
@@ -118,9 +118,9 @@
       {
         "lower": 0.8,
         "upper": 0.9,
-        "games": 517,
-        "mean_probability": 0.8447784063402876,
-        "observed_home_win_rate": 0.8297872340425532
+        "games": 518,
+        "mean_probability": 0.8447302711507562,
+        "observed_home_win_rate": 0.8301158301158301
       },
       {
         "lower": 0.9,
@@ -134,10 +134,10 @@
   "season_summary": [
     {
       "Season": "2026-27",
-      "Games": 242,
-      "Winner accuracy": 0.6322314049586777,
-      "Brier score": 0.21433427296084875,
-      "Log loss": 0.6169421206229708,
+      "Games": 248,
+      "Winner accuracy": 0.6330645161290323,
+      "Brier score": 0.21505835063618997,
+      "Log loss": 0.6186857353050234,
       "Evaluation role": "Post-fit reconstruction"
     },
     {
@@ -2299,16 +2299,16 @@
     {
       "Season": "2026-27",
       "Team": "Boston Celtics",
-      "Games": 16,
-      "Winner accuracy": 0.75,
-      "Brier score": 0.17547076732312933,
-      "Log loss": 0.529565487865071,
-      "Expected wins": 10.35912743346581,
+      "Games": 17,
+      "Winner accuracy": 0.7058823529411765,
+      "Brier score": 0.20028915601721403,
+      "Log loss": 0.5856140102281203,
+      "Expected wins": 11.132033233109317,
       "Actual wins": 11,
-      "Wins \u2212 expected": 0.6408725665341901,
-      "Mean forecast": 0.6474454645916131,
-      "Actual win rate": 0.6875,
-      "Calibration gap (pp)": 4.005453540838689
+      "Wins \u2212 expected": -0.13203323310931658,
+      "Mean forecast": 0.654825484300548,
+      "Actual win rate": 0.6470588235294118,
+      "Calibration gap (pp)": -0.7766660771136269
     },
     {
       "Season": "2026-27",
@@ -2341,16 +2341,16 @@
     {
       "Season": "2026-27",
       "Team": "Chicago Bulls",
-      "Games": 15,
-      "Winner accuracy": 0.6666666666666666,
-      "Brier score": 0.21826872421695162,
-      "Log loss": 0.641720777002665,
-      "Expected wins": 5.0120693427383465,
+      "Games": 16,
+      "Winner accuracy": 0.6875,
+      "Brier score": 0.2095484871831045,
+      "Log loss": 0.6221981646099176,
+      "Expected wins": 5.292684616156238,
       "Actual wins": 4,
-      "Wins \u2212 expected": -1.0120693427383465,
-      "Mean forecast": 0.33413795618255643,
-      "Actual win rate": 0.26666666666666666,
-      "Calibration gap (pp)": -6.7471289515889765
+      "Wins \u2212 expected": -1.2926846161562384,
+      "Mean forecast": 0.3307927885097649,
+      "Actual win rate": 0.25,
+      "Calibration gap (pp)": -8.07927885097649
     },
     {
       "Season": "2026-27",
@@ -2369,30 +2369,30 @@
     {
       "Season": "2026-27",
       "Team": "Dallas Mavericks",
-      "Games": 16,
-      "Winner accuracy": 0.6875,
-      "Brier score": 0.21451170098435612,
-      "Log loss": 0.6161533896287289,
-      "Expected wins": 7.759218649780907,
-      "Actual wins": 9,
-      "Wins \u2212 expected": 1.240781350219093,
-      "Mean forecast": 0.4849511656113067,
-      "Actual win rate": 0.5625,
-      "Calibration gap (pp)": 7.7548834388693315
+      "Games": 17,
+      "Winner accuracy": 0.7058823529411765,
+      "Brier score": 0.20698934540104702,
+      "Log loss": 0.6004156138321948,
+      "Expected wins": 8.464886089454833,
+      "Actual wins": 10,
+      "Wins \u2212 expected": 1.5351139105451672,
+      "Mean forecast": 0.4979344758502843,
+      "Actual win rate": 0.5882352941176471,
+      "Calibration gap (pp)": 9.030081826736277
     },
     {
       "Season": "2026-27",
       "Team": "Denver Nuggets",
-      "Games": 14,
-      "Winner accuracy": 0.5714285714285714,
-      "Brier score": 0.26632800797001194,
-      "Log loss": 0.7355190442086106,
-      "Expected wins": 8.4583754861976,
-      "Actual wins": 9,
-      "Wins \u2212 expected": 0.5416245138024003,
-      "Mean forecast": 0.6041696775855429,
-      "Actual win rate": 0.6428571428571429,
-      "Calibration gap (pp)": 3.8687465271600017
+      "Games": 15,
+      "Winner accuracy": 0.6,
+      "Brier score": 0.253822469550371,
+      "Log loss": 0.7084417065092835,
+      "Expected wins": 9.177760212779708,
+      "Actual wins": 10,
+      "Wins \u2212 expected": 0.8222397872202922,
+      "Mean forecast": 0.6118506808519805,
+      "Actual win rate": 0.6666666666666666,
+      "Calibration gap (pp)": 5.481598581468615
     },
     {
       "Season": "2026-27",
@@ -2411,16 +2411,16 @@
     {
       "Season": "2026-27",
       "Team": "Golden State Warriors",
-      "Games": 16,
-      "Winner accuracy": 0.4375,
-      "Brier score": 0.27840734274362994,
-      "Log loss": 0.7625374365643997,
-      "Expected wins": 4.914065179865723,
-      "Actual wins": 8,
-      "Wins \u2212 expected": 3.085934820134277,
-      "Mean forecast": 0.3071290737416077,
-      "Actual win rate": 0.5,
-      "Calibration gap (pp)": 19.28709262583923
+      "Games": 17,
+      "Winner accuracy": 0.4117647058823529,
+      "Brier score": 0.29717063876592054,
+      "Log loss": 0.804881726651018,
+      "Expected wins": 5.141159380222216,
+      "Actual wins": 9,
+      "Wins \u2212 expected": 3.8588406197777836,
+      "Mean forecast": 0.3024211400130716,
+      "Actual win rate": 0.5294117647058824,
+      "Calibration gap (pp)": 22.69906246928108
     },
     {
       "Season": "2026-27",
@@ -2439,16 +2439,16 @@
     {
       "Season": "2026-27",
       "Team": "Indiana Pacers",
-      "Games": 16,
-      "Winner accuracy": 0.75,
-      "Brier score": 0.17100788948970944,
-      "Log loss": 0.5151228966756595,
-      "Expected wins": 4.791721909100905,
+      "Games": 17,
+      "Winner accuracy": 0.7647058823529411,
+      "Brier score": 0.16285778117145924,
+      "Log loss": 0.49650629919255246,
+      "Expected wins": 4.971877530937849,
       "Actual wins": 5,
-      "Wins \u2212 expected": 0.20827809089909533,
-      "Mean forecast": 0.29948261931880654,
-      "Actual win rate": 0.3125,
-      "Calibration gap (pp)": 1.3017380681193458
+      "Wins \u2212 expected": 0.028122469062150657,
+      "Mean forecast": 0.29246338417281464,
+      "Actual win rate": 0.29411764705882354,
+      "Calibration gap (pp)": 0.1654262886008862
     },
     {
       "Season": "2026-27",
@@ -2495,16 +2495,16 @@
     {
       "Season": "2026-27",
       "Team": "Miami Heat",
-      "Games": 15,
-      "Winner accuracy": 0.5333333333333333,
-      "Brier score": 0.22278417282141694,
-      "Log loss": 0.624491789076921,
-      "Expected wins": 8.46024507436721,
-      "Actual wins": 9,
-      "Wins \u2212 expected": 0.5397549256327903,
-      "Mean forecast": 0.5640163382911473,
-      "Actual win rate": 0.6,
-      "Calibration gap (pp)": 3.5983661708852686
+      "Games": 16,
+      "Winner accuracy": 0.5625,
+      "Brier score": 0.2170574936660424,
+      "Log loss": 0.6135649442124714,
+      "Expected wins": 9.098088607718573,
+      "Actual wins": 10,
+      "Wins \u2212 expected": 0.901911392281427,
+      "Mean forecast": 0.5686305379824108,
+      "Actual win rate": 0.625,
+      "Calibration gap (pp)": 5.636946201758919
     },
     {
       "Season": "2026-27",
@@ -2551,44 +2551,44 @@
     {
       "Season": "2026-27",
       "Team": "New York Knicks",
-      "Games": 16,
-      "Winner accuracy": 0.5625,
-      "Brier score": 0.2227211474249356,
-      "Log loss": 0.630101563092512,
-      "Expected wins": 9.363105346373898,
-      "Actual wins": 10,
-      "Wins \u2212 expected": 0.6368946536261024,
-      "Mean forecast": 0.5851940841483686,
-      "Actual win rate": 0.625,
-      "Calibration gap (pp)": 3.98059158516314
+      "Games": 17,
+      "Winner accuracy": 0.5882352941176471,
+      "Brier score": 0.21152908275755444,
+      "Log loss": 0.6047215146437077,
+      "Expected wins": 10.182949724536952,
+      "Actual wins": 11,
+      "Wins \u2212 expected": 0.817050275463048,
+      "Mean forecast": 0.5989970426198207,
+      "Actual win rate": 0.6470588235294118,
+      "Calibration gap (pp)": 4.806178090959106
     },
     {
       "Season": "2026-27",
       "Team": "Oklahoma City Thunder",
-      "Games": 16,
-      "Winner accuracy": 0.5,
-      "Brier score": 0.23059150909571327,
-      "Log loss": 0.6464446786675498,
-      "Expected wins": 9.890633189940369,
+      "Games": 17,
+      "Winner accuracy": 0.5294117647058824,
+      "Brier score": 0.22474243834510804,
+      "Log loss": 0.6348692429368544,
+      "Expected wins": 10.252789656589005,
       "Actual wins": 10,
-      "Wins \u2212 expected": 0.10936681005963145,
-      "Mean forecast": 0.618164574371273,
-      "Actual win rate": 0.625,
-      "Calibration gap (pp)": 0.6835425628726965
+      "Wins \u2212 expected": -0.2527896565890053,
+      "Mean forecast": 0.6031052739170003,
+      "Actual win rate": 0.5882352941176471,
+      "Calibration gap (pp)": -1.4869979799353255
     },
     {
       "Season": "2026-27",
       "Team": "Orlando Magic",
-      "Games": 15,
-      "Winner accuracy": 0.3333333333333333,
-      "Brier score": 0.25423751531059463,
-      "Log loss": 0.6985361043067493,
-      "Expected wins": 8.263389427482554,
+      "Games": 16,
+      "Winner accuracy": 0.3125,
+      "Brier score": 0.2720478946017304,
+      "Log loss": 0.7377154481835156,
+      "Expected wins": 8.997694257896168,
       "Actual wins": 7,
-      "Wins \u2212 expected": -1.2633894274825543,
-      "Mean forecast": 0.5508926284988369,
-      "Actual win rate": 0.4666666666666667,
-      "Calibration gap (pp)": -8.42259618321703
+      "Wins \u2212 expected": -1.9976942578961676,
+      "Mean forecast": 0.5623558911185105,
+      "Actual win rate": 0.4375,
+      "Calibration gap (pp)": -12.485589111851048
     },
     {
       "Season": "2026-27",
@@ -2677,30 +2677,30 @@
     {
       "Season": "2026-27",
       "Team": "Utah Jazz",
-      "Games": 17,
-      "Winner accuracy": 0.8235294117647058,
-      "Brier score": 0.16974285928108712,
-      "Log loss": 0.5352353623513683,
-      "Expected wins": 3.6866493078205904,
+      "Games": 18,
+      "Winner accuracy": 0.8333333333333334,
+      "Brier score": 0.16512557021369903,
+      "Log loss": 0.5248673533922728,
+      "Expected wins": 3.9809818681466638,
       "Actual wins": 3,
-      "Wins \u2212 expected": -0.6866493078205904,
-      "Mean forecast": 0.2168617239894465,
-      "Actual win rate": 0.17647058823529413,
-      "Calibration gap (pp)": -4.039113575415238
+      "Wins \u2212 expected": -0.9809818681466638,
+      "Mean forecast": 0.22116565934148133,
+      "Actual win rate": 0.16666666666666666,
+      "Calibration gap (pp)": -5.449899267481465
     },
     {
       "Season": "2026-27",
       "Team": "Washington Wizards",
-      "Games": 17,
-      "Winner accuracy": 0.5882352941176471,
-      "Brier score": 0.18843770827912903,
-      "Log loss": 0.5495488197010339,
-      "Expected wins": 5.034723876596539,
-      "Actual wins": 6,
-      "Wins \u2212 expected": 0.965276123403461,
-      "Mean forecast": 0.2961602280350905,
-      "Actual win rate": 0.35294117647058826,
-      "Calibration gap (pp)": 5.67809484354977
+      "Games": 18,
+      "Winner accuracy": 0.5555555555555556,
+      "Brier score": 0.2079247013729978,
+      "Log loss": 0.5926519745140326,
+      "Expected wins": 5.300419046182925,
+      "Actual wins": 7,
+      "Wins \u2212 expected": 1.6995809538170752,
+      "Mean forecast": 0.29446772478794025,
+      "Actual win rate": 0.3888888888888889,
+      "Calibration gap (pp)": 9.442116410094863
     }
   ],
   "team_probability_bands": {
@@ -2896,13 +2896,13 @@
       },
       {
         "Probability range": "70\u201380%",
-        "Games": 91,
+        "Games": 92,
         "Wins": 67,
-        "Mean forecast": 0.7502949918312461,
-        "Actual win rate": 0.7362637362637363,
-        "Winner accuracy": 0.7362637362637363,
-        "Calibration gap (pp)": -1.4031255567509928,
-        "Observed-rate 95% interval": "63.7%\u201381.6%",
+        "Mean forecast": 0.7505407614813795,
+        "Actual win rate": 0.7282608695652174,
+        "Winner accuracy": 0.7282608695652174,
+        "Calibration gap (pp)": -2.2279891916162073,
+        "Observed-rate 95% interval": "63.0%\u201380.9%",
         "Evidence": "Read with sampling uncertainty"
       },
       {
@@ -3177,13 +3177,13 @@
       },
       {
         "Probability range": "20\u201330%",
-        "Games": 46,
+        "Games": 47,
         "Wins": 12,
-        "Mean forecast": 0.2521941273884691,
-        "Actual win rate": 0.2608695652173913,
-        "Winner accuracy": 0.7391304347826086,
-        "Calibration gap (pp)": 0.8675437828922219,
-        "Observed-rate 95% interval": "15.6%\u201340.3%",
+        "Mean forecast": 0.2527988326231376,
+        "Actual win rate": 0.2553191489361702,
+        "Winner accuracy": 0.7446808510638298,
+        "Calibration gap (pp)": 0.25203163130325573,
+        "Observed-rate 95% interval": "15.3%\u201339.5%",
         "Evidence": "Read with sampling uncertainty"
       },
       {
@@ -3456,13 +3456,13 @@
       },
       {
         "Probability range": "70\u201380%",
-        "Games": 46,
-        "Wins": 36,
-        "Mean forecast": 0.7500384319547619,
-        "Actual win rate": 0.782608695652174,
-        "Winner accuracy": 0.782608695652174,
-        "Calibration gap (pp)": 3.257026369741199,
-        "Observed-rate 95% interval": "64.4%\u201387.7%",
+        "Games": 47,
+        "Wins": 37,
+        "Mean forecast": 0.7490943682892122,
+        "Actual win rate": 0.7872340425531915,
+        "Winner accuracy": 0.7872340425531915,
+        "Calibration gap (pp)": 3.8139674263979253,
+        "Observed-rate 95% interval": "65.1%\u201388.0%",
         "Evidence": "Read with sampling uncertainty"
       },
       {
@@ -3568,13 +3568,13 @@
       },
       {
         "Probability range": "70\u201380%",
-        "Games": 76,
-        "Wins": 55,
-        "Mean forecast": 0.7455849564530718,
-        "Actual win rate": 0.7236842105263158,
-        "Winner accuracy": 0.7236842105263158,
-        "Calibration gap (pp)": -2.190074592675594,
-        "Observed-rate 95% interval": "61.4%\u201381.2%",
+        "Games": 77,
+        "Wins": 56,
+        "Mean forecast": 0.7452446937274748,
+        "Actual win rate": 0.7272727272727273,
+        "Winner accuracy": 0.7272727272727273,
+        "Calibration gap (pp)": -1.797196645474753,
+        "Observed-rate 95% interval": "61.9%\u201381.4%",
         "Evidence": "Read with sampling uncertainty"
       },
       {
@@ -3737,14 +3737,14 @@
       },
       {
         "Probability range": "20\u201330%",
-        "Games": 29,
-        "Wins": 9,
-        "Mean forecast": 0.2614589222660307,
-        "Actual win rate": 0.3103448275862069,
-        "Winner accuracy": 0.6896551724137931,
-        "Calibration gap (pp)": 4.888590532017622,
-        "Observed-rate 95% interval": "17.3%\u201349.2%",
-        "Evidence": "Small sample"
+        "Games": 30,
+        "Wins": 10,
+        "Mean forecast": 0.26031343153571274,
+        "Actual win rate": 0.3333333333333333,
+        "Winner accuracy": 0.6666666666666666,
+        "Calibration gap (pp)": 7.301990179762058,
+        "Observed-rate 95% interval": "19.2%\u201351.2%",
+        "Evidence": "Read with sampling uncertainty"
       },
       {
         "Probability range": "30\u201340%",
@@ -3950,13 +3950,13 @@
       },
       {
         "Probability range": "10\u201320%",
-        "Games": 39,
+        "Games": 40,
         "Wins": 5,
-        "Mean forecast": 0.15265375216086183,
-        "Actual win rate": 0.1282051282051282,
-        "Winner accuracy": 0.8717948717948718,
-        "Calibration gap (pp)": -2.4448623955733604,
-        "Observed-rate 95% interval": "5.6%\u201326.7%",
+        "Mean forecast": 0.15334129890276388,
+        "Actual win rate": 0.125,
+        "Winner accuracy": 0.875,
+        "Calibration gap (pp)": -2.8341298902763885,
+        "Observed-rate 95% interval": "5.5%\u201326.1%",
         "Evidence": "Read with sampling uncertainty"
       },
       {
@@ -4453,13 +4453,13 @@
       },
       {
         "Probability range": "60\u201370%",
-        "Games": 75,
-        "Wins": 42,
-        "Mean forecast": 0.6439032128194078,
-        "Actual win rate": 0.56,
-        "Winner accuracy": 0.56,
-        "Calibration gap (pp)": -8.390321281940768,
-        "Observed-rate 95% interval": "44.7%\u201366.7%",
+        "Games": 76,
+        "Wins": 43,
+        "Mean forecast": 0.6438234801948282,
+        "Actual win rate": 0.5657894736842105,
+        "Winner accuracy": 0.5657894736842105,
+        "Calibration gap (pp)": -7.803400651061764,
+        "Observed-rate 95% interval": "45.4%\u201367.1%",
         "Evidence": "Read with sampling uncertainty"
       },
       {
@@ -4923,13 +4923,13 @@
       },
       {
         "Probability range": "80\u201390%",
-        "Games": 31,
-        "Wins": 27,
-        "Mean forecast": 0.8435345415656378,
-        "Actual win rate": 0.8709677419354839,
-        "Winner accuracy": 0.8709677419354839,
-        "Calibration gap (pp)": 2.743320036984614,
-        "Observed-rate 95% interval": "71.1%\u201394.9%",
+        "Games": 32,
+        "Wins": 28,
+        "Mean forecast": 0.842794223959307,
+        "Actual win rate": 0.875,
+        "Winner accuracy": 0.875,
+        "Calibration gap (pp)": 3.220577604069297,
+        "Observed-rate 95% interval": "71.9%\u201395.0%",
         "Evidence": "Read with sampling uncertainty"
       },
       {
@@ -4980,13 +4980,13 @@
       },
       {
         "Probability range": "30\u201340%",
-        "Games": 41,
+        "Games": 42,
         "Wins": 19,
-        "Mean forecast": 0.36058473956515885,
-        "Actual win rate": 0.4634146341463415,
-        "Winner accuracy": 0.5365853658536586,
-        "Calibration gap (pp)": 10.28298945811826,
-        "Observed-rate 95% interval": "32.1%\u201361.3%",
+        "Mean forecast": 0.360622161638575,
+        "Actual win rate": 0.4523809523809524,
+        "Winner accuracy": 0.5476190476190477,
+        "Calibration gap (pp)": 9.17587907423774,
+        "Observed-rate 95% interval": "31.2%\u201360.1%",
         "Evidence": "Read with sampling uncertainty"
       },
       {
@@ -5136,13 +5136,13 @@
       },
       {
         "Probability range": "70\u201380%",
-        "Games": 34,
+        "Games": 35,
         "Wins": 27,
-        "Mean forecast": 0.7457260454288436,
-        "Actual win rate": 0.7941176470588235,
-        "Winner accuracy": 0.7941176470588235,
-        "Calibration gap (pp)": 4.839160162997995,
-        "Observed-rate 95% interval": "63.2%\u201389.7%",
+        "Mean forecast": 0.745399724999837,
+        "Actual win rate": 0.7714285714285715,
+        "Winner accuracy": 0.7714285714285715,
+        "Calibration gap (pp)": 2.6028846428734402,
+        "Observed-rate 95% interval": "61.0%\u201387.9%",
         "Evidence": "Read with sampling uncertainty"
       },
       {
@@ -5865,13 +5865,13 @@
       },
       {
         "Probability range": "20\u201330%",
-        "Games": 74,
+        "Games": 75,
         "Wins": 15,
-        "Mean forecast": 0.2525142044830283,
-        "Actual win rate": 0.20270270270270271,
-        "Winner accuracy": 0.7972972972972973,
-        "Calibration gap (pp)": -4.9811501780325615,
-        "Observed-rate 95% interval": "12.7%\u201330.8%",
+        "Mean forecast": 0.2530717825609356,
+        "Actual win rate": 0.2,
+        "Winner accuracy": 0.8,
+        "Calibration gap (pp)": -5.307178256093559,
+        "Observed-rate 95% interval": "12.5%\u201330.4%",
         "Evidence": "Read with sampling uncertainty"
       },
       {
@@ -5977,13 +5977,13 @@
       },
       {
         "Probability range": "20\u201330%",
-        "Games": 80,
-        "Wins": 10,
-        "Mean forecast": 0.24495311554460336,
-        "Actual win rate": 0.125,
-        "Winner accuracy": 0.875,
-        "Calibration gap (pp)": -11.995311554460338,
-        "Observed-rate 95% interval": "6.9%\u201321.5%",
+        "Games": 81,
+        "Wins": 11,
+        "Mean forecast": 0.24520919028585997,
+        "Actual win rate": 0.13580246913580246,
+        "Winner accuracy": 0.8641975308641975,
+        "Calibration gap (pp)": -10.940672115005746,
+        "Observed-rate 95% interval": "7.8%\u201322.7%",
         "Evidence": "Read with sampling uncertainty"
       },
       {
