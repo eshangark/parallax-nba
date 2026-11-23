@@ -56,6 +56,22 @@ test('Today links and built assets resolve under the project path', async ({ pag
   expect(failures).toEqual([]);
 });
 
+test('Home serves the walkthrough and English captions', async ({ page }) => {
+  await page.goto(root);
+  await expect(page.getByRole('heading', { name: 'Dashboard walkthrough' })).toBeVisible();
+  const video = page.locator('video[controls]');
+  const src = await video.getAttribute('src');
+  expect(src).toMatch(/^\/parallax-nba\/demo\/.*\.mp4$/);
+  const metadata = await page.request.get(src!, { headers: { Range: 'bytes=0-31' } });
+  expect(metadata.status()).toBe(206);
+  expect(metadata.headers()['content-type']).toContain('video/mp4');
+  expect((await metadata.body()).subarray(4, 8).toString()).toBe('ftyp');
+  const track = video.locator('track[kind=captions][srclang=en][default]');
+  const response = await page.request.get((await track.getAttribute('src'))!);
+  expect(response.ok()).toBeTruthy();
+  expect(await response.text()).toMatch(/^WEBVTT/);
+});
+
 test('archive filters games and accuracy scores saved forecasts only', async ({ page }) => {
   const date = '2025-11-01';
   await page.goto(root + 'archive/');

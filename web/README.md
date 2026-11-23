@@ -14,4 +14,4 @@ To run the browser tests after building, run `pnpm exec playwright install chrom
 
 The local preview includes Today, dated Matchup pages, the game archive, team ratings and history, forecast accuracy, methodology and downloads. Rebuild the analytics export before building this interface. The expanded pages use the scored-game and matchup detail fields added to the export. See the analytics documentation for the Pages pipeline and its deployment switch.
 
-To add an approved walkthrough to Home, set `PUBLIC_PARALLAX_DEMO_VIDEO` at build time. Set `PUBLIC_PARALLAX_DEMO_CAPTIONS` to its WebVTT URL and `PUBLIC_PARALLAX_DEMO_POSTER` to a poster image URL if available. Use URLs under the project base path for assets served with the site.
+Home includes the bundled walkthrough and English captions in `public/demo/`. To use a different video, set `PUBLIC_PARALLAX_DEMO_VIDEO` at build time. Set `PUBLIC_PARALLAX_DEMO_CAPTIONS` to its WebVTT URL and `PUBLIC_PARALLAX_DEMO_POSTER` to a poster image URL if available. Use URLs under the project base path for assets served with the site.
