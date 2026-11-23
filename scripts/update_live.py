@@ -31,7 +31,10 @@ def collect(client, cities, previous, season, run_started, horizon_days=7, full_
     league = leagues[0]
     internal = (previous or {}).get('_internal', {})
     season_start = timestamp(league['season']['startDate']).astimezone(EASTERN).date()
-    start = season_start if full_refresh or not internal else max(season_start, today-timedelta(days=7))
+    start = season_start
+    if not full_refresh and internal:
+        previous_day = timestamp(previous['published_at']).astimezone(EASTERN).date()
+        start = max(season_start, min(previous_day, today - timedelta(days=7)))
     end = today + timedelta(days=horizon_days)
     if league.get('calendarIsWhitelist') and league.get('calendarType') == 'day':
         days = {timestamp(d).astimezone(EASTERN).date() for d in league['calendar']}

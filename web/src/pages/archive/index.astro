@@ -1,0 +1,55 @@
+---
+import Shell from '../../layouts/Shell.astro';
+import PageIntro from '../../components/PageIntro.astro';
+import { games, manifest } from '../../lib/data';
+import { stamp } from '../../lib/slate';
+const base = import.meta.env.BASE_URL;
+const records = games().map(g => ({ id: g.game_id, season: g.season, day: g.slate_date,
+  label: `${g.away} at ${g.home}`, date: stamp(g.start), score: g.status === 'final' ? `${g.away_score}–${g.home_score}` : null,
+  forecast: g.forecast ? 'Saved pregame forecast' : 'No saved pregame forecast' })).reverse();
+---
+<Shell title="Game archive">
+  <PageIntro title="Game archive" description="Find a game by date or team. Open it to compare the result with the forecast record." />
+  <div class="filters">
+    <label>Season <select id="season">{[...manifest.seasons].reverse().map(s => <option>{s}</option>)}</select></label>
+    <label>Date <input type="date" id="date" /></label>
+    <label>Team <input type="search" id="team" placeholder="e.g. Knicks" /></label>
+  </div>
+  <script is:inline type="application/json" id="archive-data" set:html={JSON.stringify(records).replaceAll('<', '\\u003c')} />
+  <div class="section-head"><h2>Games</h2><span id="archive-count" aria-live="polite"></span></div>
+  <ul id="archive-results" class="record-list" data-base={base}></ul>
+  <button id="more-games" type="button" hidden>Show more games</button>
+  <noscript><p>Use the date links on the Today page to browse games without JavaScript.</p></noscript>
+</Shell>
+<script>
+  const season = document.querySelector<HTMLSelectElement>('#season')!;
+  const date = document.querySelector<HTMLInputElement>('#date')!;
+  const team = document.querySelector<HTMLInputElement>('#team')!;
+  const list = document.querySelector<HTMLUListElement>('#archive-results')!;
+  const count = document.querySelector('#archive-count')!;
+  const more = document.querySelector<HTMLButtonElement>('#more-games')!;
+  const records = JSON.parse(document.querySelector('#archive-data')!.textContent!);
+  let limit = 24;
+  function render() {
+    const query = team.value.trim().toLowerCase();
+    const rows = records.filter(row => row.season === season.value && (!date.value || row.day === date.value) &&
+      row.label.toLowerCase().includes(query));
+    count.textContent = rows.length ? `Showing ${Math.min(limit, rows.length)} of ${rows.length}` : 'No matching games';
+    more.hidden = rows.length <= limit;
+    list.replaceChildren(...rows.slice(0, limit).map(row => {
+      const item = document.createElement('li');
+      const link = document.createElement('a');
+      const meta = document.createElement('small');
+      link.href = `${list.dataset.base}games/${row.id}/`;
+      link.textContent = row.label;
+      meta.textContent = [row.date, row.score ? `Final ${row.score}` : null,
+        row.forecast].filter(Boolean).join(' · ');
+      link.append(meta);
+      item.append(link);
+      return item;
+    }));
+  }
+  for (const filter of [season, date, team]) filter.addEventListener('input', () => { limit = 24; render(); });
+  more.addEventListener('click', () => { limit += 24; render(); });
+  render();
+</script>

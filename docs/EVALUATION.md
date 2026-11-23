@@ -102,3 +102,11 @@ The dashboard now evaluates `current-model.json`, a separate replay of the activ
 `python scripts/audit_comparisons.py` audits the three original next-season archives, verifies their reported scores to 1e-12 and records per-season raw-game/normalized-input source hashes. It regenerates `matched-evaluation.json`, including exact game lists and a pooled 3,690-game comparison. CI runs this audit. Future head fitting also checks duplicate IDs and records one validation sample shared by base, injury and boosted candidates. This guards sample fairness; it does not remove model-selection bias, dependence between games or historical source-vintage limitations.
 
 Favorite calibration summaries use max(home probability, away probability), count whether that favorite won, and group forecasts in five-percentage-point bins. Bins are left-inclusive and right-exclusive, except the final bin includes 100%; a 50% tie chooses home. Counts and Wilson 95% binomial intervals accompany observed rates; those intervals do not account for dependence or fitting uncertainty. Historical chronological and original-issued evidence is shown separately, and training replays are excluded from these calibration summaries.
+
+## V1 website evidence
+
+The Astro Accuracy page scores the latest compatible saved pregame forecast
+per finished game. Its matchup cutoff uses the recorded model cutoff. The
+SQLite backend keeps reconstructed ratings, training replays and chronological
+backtests separate from the original issued track record. See
+[the analytics backend](ANALYTICS.md) for the release data flow.

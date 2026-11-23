@@ -15,3 +15,6 @@ include = ["nba_forecast*"]
 
 [tool.setuptools.dynamic]
 version = {attr = "nba_forecast.__version__"}
+
+[tool.setuptools.package-data]
+nba_forecast = ["sql/*.sql"]

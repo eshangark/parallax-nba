@@ -74,20 +74,9 @@ Validated completed games deterministically rebuild current rating state. A time
 
 ## Hosting and scheduling
 
-| Component | Configuration |
-| --- | --- |
-| Frontend | Streamlit Community Cloud, `main`, `app.py`, Python 3.12 |
-| Production model | `models/nba-v0.3/bundle.json` |
-| Backend | GitHub Actions at minute 17 every two UTC hours |
-| Browser refresh | Rereads saved snapshots every minute while open |
+V1 builds Astro for the GitHub Pages project path `/parallax-nba/`. The release workflow checks the static output and builds from the exact source revision. Collection runs at minute 17 every two UTC hours and can also be started manually. A loaded browser page updates its age indicator every minute. Visitors receive new data when they load the latest deployed build.
 
-The [hosted application](https://eshan-nba-elo-forecast.streamlit.app/) is publicly accessible. App sharing and repository visibility are separate settings. Page refresh does not fetch provider data or fit parameters.
-
-The [update workflow](../.github/workflows/update-live.yml) supports scheduled and manual runs, and refreshes forecasts after a model/collector release is pushed. Standard jobs time out after five minutes; manual full-refresh jobs have ten minutes. Core checks precede ingestion. Failed collection can publish a failure status while keeping the valid snapshot, and the job reports failure. A branch-head check and ordinary push prevent overwriting concurrent changes. Only processed season data is committed by the updater; raw caches are not uploaded. NBA injury-source failures visibly fall back to Elo while keeping valid team updates. Player-source failures leave explicit gaps in player histories.
-
-Collection uses free endpoints without an availability guarantee. GitHub scheduling may be delayed, included Actions usage is shared across repositories, and exhaustion can stop updates. Paid usage is disabled in the current account configuration. Streamlit may sleep inactive apps. Use the saved successful collection timestamp to assess freshness.
-
-For maintenance, inspect [workflow runs](https://github.com/eshangark/nba-elo-forecast/actions/workflows/update-live.yml) or start a manual full refresh; use Streamlit **Manage app** for build logs and sharing. Disable the Actions workflow if collection must stop. Dependency/runtime changes require renewed hosting checks.
+The existing Streamlit site is the legacy fallback during cutover. See [hosting and recovery](ANALYTICS.md#hosting-and-recovery) for the deployment switch, failure handling and source revision tracking. Check the successful collection timestamp because scheduled jobs and upstream providers can be delayed.
 
 ## Contributions and model changes
 
@@ -103,7 +92,7 @@ Preserve the frozen v0.2 configuration and issued ledger. New formulas, constrai
 
 ## Rebuild the current-method dashboard views
 
-Run `python scripts/replay_current.py` after changing the active model. It rebuilds all five archived seasons from committed normalized pregame inputs and the current season from recorded pregame cutoffs, without changing original archives or issued forecasts. The live collector runs this step after successful collection, and the scheduled workflow commits the resulting `current-model.json` files. Regenerating inputs after changing player-history derivations requires the validated source player observations already included in the compressed replay inputs; provider corrections should be documented as a new input snapshot.
+Run `python scripts/replay_current.py` after changing the active model. It rebuilds all five archived seasons from committed normalized pregame inputs and the current season from recorded pregame cutoffs, without changing original archives or issued forecasts. It also rebuilds `data/seasons/current-model-index.json`, which binds all season views and stored analysis to the active model fingerprint. A model update is not ready for latest-model analysis until every completed season is indexed consistently. The live collector runs this step after successful collection, and the scheduled workflow commits the resulting `current-model.json` files. Regenerating inputs after changing player-history derivations requires the validated source player observations already included in the compressed replay inputs; provider corrections should be documented as a new input snapshot.
 
 ## Test a model change on a shared sample
 

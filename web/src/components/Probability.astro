@@ -1,0 +1,12 @@
+---
+import { pct } from '../lib/slate';
+const { away, home } = Astro.props as { away: number; home: number };
+const awayDisplay = Math.round(away * 100);
+---
+<div class="probability">
+  <div class="prob-values">
+    <span class:list={['away-value', { favorite: away > home }]}>{pct(away)}<span class="sr-only"> away</span></span>
+    <span class:list={['home-value', { favorite: home > away }]}>{100 - awayDisplay}%<span class="sr-only"> home</span></span>
+  </div>
+  <div class="track" style={`--away: ${away * 100}%`} aria-hidden="true"><i></i></div>
+</div>

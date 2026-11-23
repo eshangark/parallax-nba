@@ -1,0 +1,9 @@
+---
+import { manifest } from '../lib/data';
+import { stamp } from '../lib/slate';
+const checked = manifest.latest_snapshot_at;
+---
+<div class:list={['freshness', { stale: !checked || Date.now() - Date.parse(checked) >= 2 * 3600_000 }]} data-checked-at={checked || ''}>
+  <strong data-freshness>{!checked ? 'Timestamp unavailable' : Date.now() - Date.parse(checked) >= 6 * 3600_000 ? 'Stale data' : Date.now() - Date.parse(checked) >= 2 * 3600_000 ? 'Check delayed' : 'Recently checked'}</strong>
+  {checked && <time datetime={checked}>Checked {stamp(checked)}</time>}
+</div>

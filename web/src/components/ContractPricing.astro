@@ -1,0 +1,69 @@
+---
+const { game, forecast } = Astro.props;
+const homeFavored = forecast.home_probability >= forecast.away_probability;
+const cents = (p: number) => (100 * p).toFixed(1) + '¢';
+---
+<section id="contract-pricing" class="detail contract" aria-labelledby="contract-heading">
+  <h2 id="contract-heading">Contract pricing</h2>
+  <p>A win contract pays $1 if the selected team wins. Its model-implied value is the team’s win probability expressed in cents.</p>
+  <dl class="metrics contract-values">
+    <div><dt>{game.away}</dt><dd>{cents(forecast.away_probability)}</dd></div>
+    <div><dt>{game.home}</dt><dd>{cents(forecast.home_probability)}</dd></div>
+  </dl>
+  <form id="price-form">
+    <div class="filters">
+      <div class="contract-field"><label for="contract-team">Team</label><select id="contract-team">
+        <option value={forecast.away_probability} selected={!homeFavored}>{game.away}</option>
+        <option value={forecast.home_probability} selected={homeFavored}>{game.home}</option>
+      </select></div>
+      <label>Buy price in cents <input id="contract-price" type="number" min="0" max="100" step="any" placeholder="e.g. 60" /></label>
+    </div>
+    <p id="price-message" class="subtle" aria-live="polite">Enter a buy price to compare it with the model.</p>
+    <dl id="price-result" class="metrics contract-values" hidden aria-live="polite">
+      <div><dt>Break-even win chance</dt><dd data-result="breakEven"></dd></div>
+      <div><dt>Expected profit per contract</dt><dd data-result="expected"></dd></div>
+      <div><dt>Profit if team wins</dt><dd data-result="win"></dd></div>
+      <div><dt>Profit if team loses</dt><dd data-result="loss"></dd></div>
+    </dl>
+  </form>
+  <div class="price-scale" aria-hidden="true"><i id="price-marker"></i><b id="value-marker"></b></div>
+  <p class="scale-key"><span>Model value</span><span>Entered price</span></p>
+  <p class="subtle">Uses the saved pregame forecast and your entered price. All figures are before fees and assume you hold through settlement.</p>
+</section>
+<script>
+  const form = document.querySelector<HTMLFormElement>('#price-form')!;
+  const team = form.querySelector<HTMLSelectElement>('#contract-team')!;
+  const price = form.querySelector<HTMLInputElement>('#contract-price')!;
+  const message = form.querySelector<HTMLElement>('#price-message')!;
+  const result = form.querySelector<HTMLElement>('#price-result')!;
+  const signed = (value: number) => {
+    const rounded = Math.round(Math.abs(value) * 10) / 10;
+    const sign = rounded === 0 ? '' : value > 0 ? '+' : '−';
+    return sign + rounded.toFixed(1) + '¢';
+  };
+  function update() {
+    const buy = price.valueAsNumber;
+    const priceMarker = document.querySelector<HTMLElement>('#price-marker')!;
+    const valueMarker = document.querySelector<HTMLElement>('#value-marker')!;
+    valueMarker.style.left = Number(team.value) * 100 + '%';
+    priceMarker.hidden = !Number.isFinite(buy) || !price.validity.valid;
+    priceMarker.style.left = buy + '%';
+    result.hidden = !Number.isFinite(buy) || !price.validity.valid;
+    if (result.hidden) {
+      message.textContent = price.validity.badInput || price.value
+        ? 'Enter a price from 0 to 100 cents.' : 'Enter a buy price to compare it with the model.';
+      return;
+    }
+    const expected = Number(team.value) * 100 - buy;
+    const gap = Math.round(Math.abs(expected) * 10) / 10;
+    message.textContent = gap === 0 ? 'The price is within 0.05¢ of the model value.'
+      : `The buy price is ${gap.toFixed(1)}¢ ${expected > 0 ? 'below' : 'above'} the model value.`;
+    const values = { breakEven: buy + '%', expected: signed(expected), win: signed(100 - buy), loss: signed(-buy) };
+    for (const [key, value] of Object.entries(values)) {
+      result.querySelector(`[data-result="${key}"]`)!.textContent = value;
+    }
+  }
+  form.addEventListener('input', update);
+  form.addEventListener('submit', event => event.preventDefault());
+  update();
+</script>

@@ -1,0 +1,171 @@
+---
+import katex from 'katex';
+import 'katex/dist/katex.min.css';
+const math = String.raw;
+const groups = [
+  {
+    title: 'Measure performance after a game',
+    notation: [
+      ['Poss · PTS · O', 'Estimated possessions, points scored, and the opponent subscript.'],
+      ['FGA · FGM · 3PM · FTA', 'Field goals attempted, field goals made, three-pointers made, and free throws attempted.'],
+      ['OREB · DREB · AST · TOV · STL', 'Offensive rebounds, defensive rebounds, assists, turnovers, and steals.'],
+      ['X₁–X₄', 'Point margin per 100 possessions, effective field goal percentage, true shooting percentage, and offensive rebound share.'],
+      ['X₅–X₈', 'Defensive rebound share, assists per turnover (with a floor of one turnover), turnover rate, and steals per opponent possession.'],
+      ['xₖ · αₖ', 'The scaled form of input k and its fitted weight in the performance score.'],
+      ['Perf · PriorPerf · P', 'This game’s performance score, the average over n prior games, and the capped ratio used in the Elo update.'],
+      ['clip · σ', 'Clip bounds a value at the stated limits. For example, clip(5, 0.25, 4) returns 4. The sigmoid maps a real number to a value between 0 and 1.'],
+    ],
+    description: 'These features enter the rating update after the game. Season openers use P = 1.',
+    formulas: [
+      math`\begin{aligned}\operatorname{clip}(x,\ell,u)&=\min(u,\max(\ell,x))\\\sigma(x)&=\frac{1}{1+e^{-x}}\end{aligned}`,
+      math`\begin{aligned}\mathrm{Poss}&=FGA+0.44FTA\\ &\quad-OREB+TOV\end{aligned}`,
+      math`\begin{aligned}X_1&=\frac{100(PTS-PTS_O)}{\mathrm{Poss}}\\ X_2&=\frac{FGM+0.5(3PM)}{FGA}\\ X_3&=\frac{PTS}{2(FGA+0.44FTA)}\\ X_4&=\frac{OREB}{OREB+DREB_O}\end{aligned}`,
+      math`\begin{aligned}X_5&=\frac{DREB}{DREB+OREB_O}\\ X_6&=\frac{AST}{\max(TOV,1)}\\ X_7&=\frac{TOV}{FGA+0.44FTA+TOV}\\ X_8&=\frac{STL}{\mathrm{Poss}_O}\end{aligned}`,
+      math`\begin{aligned}(x_1,x_2,x_3,x_4)&=(X_1/10,X_2,X_3,X_4)\\ (x_5,x_6,x_7,x_8)&=(X_5,X_6/3,-X_7,X_8)\end{aligned}`,
+      math`\begin{aligned}\mathrm{Score}&=\sum_{k=1}^8\alpha_kx_k\\\mathrm{Perf}&=\operatorname{clip}(\sigma(\mathrm{Score}),10^{-6},1-10^{-6})\end{aligned}`,
+      math`\begin{aligned}\mathrm{PriorPerf}&=\frac1n\sum_{g=1}^n\mathrm{Perf}_g\\ P&=\operatorname{clip}\!\left(\frac{\mathrm{Perf}}{\mathrm{PriorPerf}},0.25,4\right)\end{aligned}`,
+    ],
+  },
+  {
+    title: 'Update Elo from the completed game',
+    notation: [
+      ['rᵢ · rᵢ,ₙₑw · K', 'The team’s Elo before and after the update, and the baseline size of the adjustment.'],
+      ['yᵢ · pᵢ · sᵢ', 'The outcome (1 for a win, 0 for a loss), base pregame win probability, and the corresponding win/loss sign (+1 or −1).'],
+      ['wₜ · nₜ · Wₜ', 'Wins, games played, and the smoothed win rate for team t.'],
+      ['S · L · LL', 'Schedule strength, lead retention (final margin divided by the larger peak lead), and each team’s largest lead.'],
+      ['β · φ · λ', 'Weights for schedule strength, lead retention, and relative performance P. log₂ is the base-two logarithm.'],
+    ],
+    description: 'The update compares outcome y with the base probability p calculated before this completed game. It uses the schedule strength S captured at prediction time, lead retention L and relative performance P. Live processing recenters ratings at 1500 after each completed game. Historical replay recenters after the slate.',
+    formulas: [
+      math`\begin{aligned}W_t&=\frac{w_t+1}{n_t+2}\\ S&=\frac{2W_{\mathrm{opp}}+\overline W_{\mathrm{opp\ history}}}{3}\\ L&=\frac{|PTS-PTS_O|}{\max(LL,LL_O)}\\ s_i&=2y_i-1\end{aligned}`,
+      math`\begin{aligned}r_{i,\mathrm{new}}&=r_i+K(y_i-p_i)(1+s_i\beta S_i)\\ &\quad\cdot(1+\phi\log_2(1+L_i))\\ &\quad\cdot(1+s_i\lambda(P_i-1))\end{aligned}`,
+    ],
+  },
+  {
+    title: 'Season carryover',
+    notation: [
+      ['r start · r previous final', 'The team’s opening Elo and its final Elo from the preceding season. The carryover starts from the 1500 league baseline.'],
+    ],
+    description: 'Teams retain half of their previous season’s Elo deviation from 1500.',
+    formulas: [math`r_{\mathrm{start}}=1500+0.5(r_{\mathrm{previous\ final}}-1500)`],
+  },
+  {
+    title: 'Calculate the next matchup’s base win probability',
+    notation: [
+      ['i · j · r', 'The home team, the away team, and their current Elo ratings.'],
+      ['H · h · c', 'The home-court bonus, its venue indicator (1 at home, 0 at a neutral site), and the scale that converts rating differences into win probabilities.'],
+      ['RD · TD · TZ', 'Rest days, estimated travel in kilometres, and time-zone change in hours.'],
+      ['Fᵢ · Gᵢ · γ · ν', 'The two rest and travel terms in the matchup, the overall fatigue weight, and the distance weight.'],
+      ['zᵢ · pᵢ · pⱼ', 'The combined home-team input to the probability formula, the home win chance, and its away complement. ln is the natural logarithm.'],
+    ],
+    description: 'The home team is i and the away team is j. Home advantage uses h = 1 at home and h = 0 at a neutral venue. RD is rest in days, TD is estimated travel in kilometres, and TZ is the time-zone change in hours.',
+    formulas: [
+      math`\begin{aligned}z_i&=\frac{r_j-r_i-Hh}{c}\\ &\quad+\gamma\ln(F_i/G_i)\end{aligned}`,
+      math`\begin{aligned}p_i&=\frac{1}{1+10^{z_i}}\\ p_j&=1-p_i\end{aligned}`,
+      math`\begin{aligned}F_i&=RD_j+e^{|TZ_i|/3}+\nu TD_i\\ G_i&=RD_i+e^{|TZ_j|/3}+\nu TD_j\end{aligned}`,
+    ],
+  },
+  {
+    title: 'Adjust the base forecast for injuries',
+    notation: [
+      ['t · s · a', 'Team, report status, and player. The sums include players on that team with that status.'],
+      ['m̄ₐ · Mₐ · Vₐ', 'The player’s estimated minutes from prior games, weighted historical minutes, and weighted historical Game Score.'],
+      ['Aₜ,ₛ · Bₜ,ₛ · vₐ', 'The minutes total and player-value-weighted minutes total for a status after scaling, and the player’s smoothed Game Score per minute.'],
+      ['uₖ · μₖ · sₖ · dₖ', 'The raw input, its training mean and scale, and its standardized value for feature k.'],
+      ['b · w · dᵢ', 'The fitted intercept, the fitted weights, and the home-matchup input vector. The dot product sums the weighted inputs.'],
+      ['qᵢ · qⱼ · σ', 'The adjusted home and away win chances, and the sigmoid used to convert adjusted log odds into a probability.'],
+    ],
+    definition: 'ln means natural logarithm. At a 50% win chance, the odds are 1 to 1 and ln(1) is 0. At 75%, the odds are 3 to 1 and ln(3) is about 1.10. The model adds the injury correction on this scale and applies the sigmoid to get back to a probability.',
+    description: 'The fitted correction uses standardized pregame inputs. For each status, A summarizes expected minutes and B weights those minutes by prior player value. Without verified matchup coverage, the published forecast uses base Elo.',
+    formulas: [
+      math`\begin{aligned}A_{t,s}&=\sum_{a\in(t,s)}\frac{\bar m_a}{240}\\ B_{t,s}&=\sum_{a\in(t,s)}\frac{\bar m_a v_a}{80}\\ v_a&=\frac{V_a+24}{M_a+80}\end{aligned}`,
+      math`d_k=\frac{u_k-\mu_k}{s_k}`,
+      math`\begin{aligned}q_i&=\sigma\!\left(\ln\!\left(\frac{p_i}{1-p_i}\right)+b+\mathbf w^{\mathsf T}\mathbf d_i\right)\\ q_j&=1-q_i\end{aligned}`,
+    ],
+  },
+  {
+    title: 'Contract pricing before fees',
+    notation: [
+      ['q · a', 'The selected team’s win probability as a decimal and the entered purchase price in cents.'],
+      ['Fair contract price · Expected profit', 'The model’s estimated contract value and the average profit per contract implied by the forecast, both in cents.'],
+      ['Break-even probability', 'The win rate that would cover the entered purchase price before fees.'],
+    ],
+    description: 'For a contract paying $1 on a win and $0 on a loss, q is the selected team’s forecast and a is the buy price in cents.',
+    formulas: [
+      math`\begin{aligned}\text{Fair contract price}&=100q\\ \text{Expected profit}&=100q-a\\ \text{Break-even probability}&=a/100\\ \text{Win profit}&=100-a\\ \text{Loss profit}&=-a\end{aligned}`,
+    ],
+  },
+];
+---
+<section aria-labelledby="formulas-heading">
+  <h2 id="formulas-heading">Model formulas</h2>
+  <p class="subtle">Earlier results update Elo. The updated ratings feed the next matchup’s base forecast, then the injury model adjusts the published probability.</p>
+  <p class="subtle">Open the notation glossary in each section for its symbols, abbreviations, and units.</p>
+  {groups.map(({ title, description, definition, formulas, notation }) => <article class="detail formula-group">
+    <h3>{title}</h3>
+    <p class="subtle">{description}</p>
+    {definition && <p>{definition}</p>}
+    <div class="formula-stack">
+      {formulas.map(formula => <div class="formula" set:html={katex.renderToString(formula, { displayMode: true, throwOnError: true })} />)}
+    </div>
+    <details class="notation">
+      <summary>Notation glossary</summary>
+      <dl>
+        {notation.map(([term, meaning]) => <div><dt>{term}</dt><dd>{meaning}</dd></div>)}
+      </dl>
+    </details>
+  </article>)}
+</section>
+
+<style>
+  .formula-stack {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 23rem), 1fr));
+    gap: 8px;
+    margin-block: 16px;
+  }
+  .formula {
+    min-width: 0;
+    padding: 4px 12px;
+    overflow-x: auto;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+  }
+  .formula :global(.katex-display) {
+    margin-block: .65em;
+  }
+  .formula :global(.katex-display > .katex) {
+    text-align: left;
+  }
+  .notation {
+    border-top: 1px solid var(--line);
+    padding-top: 12px;
+  }
+  .notation dl {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+    gap: 12px 24px;
+    margin-top: 12px;
+  }
+  .notation dt {
+    color: var(--accent);
+    font-weight: 650;
+  }
+  .notation dd {
+    margin: 2px 0 0;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+  @media (max-width: 520px) {
+    .formula {
+      font-size: .86rem;
+      padding-inline: 8px;
+    }
+  }
+  @media (max-width: 360px) {
+    .formula {
+      font-size: .8rem;
+    }
+  }
+</style>

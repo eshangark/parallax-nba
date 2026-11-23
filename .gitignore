@@ -23,3 +23,17 @@ htmlcov/
 paper/*.synctex.gz
 paper/*.fls
 paper/*.fdb_latexmk
+
+# Local development and generated V1 releases
+/AGENTS.md
+/.agents/
+/experiments/
+/local/
+/scripts/run_rating_experiment.py
+/tests/test_rating_experiment.py
+
+/web/node_modules/
+/web/.astro/
+/web/dist/
+/web/playwright-report/
+/web/test-results/
