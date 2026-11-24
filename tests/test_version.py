@@ -1,6 +1,7 @@
 """Keep the public release label and built package on the same version."""
 from pathlib import Path
 import re
+import json
 import tomllib
 import unittest
 
@@ -16,3 +17,8 @@ class ReleaseVersionTests(unittest.TestCase):
         release = re.search(r'Application release: v([0-9]+\.[0-9]+\.[0-9]+)', (root/'README.md').read_text())
         self.assertIsNotNone(release)
         self.assertEqual(release.group(1), __version__)
+
+    def test_production_model_matches_application_release(self):
+        root = Path(__file__).resolve().parents[1]
+        model = json.loads((root/'models/nba-v1.0/bundle.json').read_text())
+        self.assertEqual(model['version'], __version__)

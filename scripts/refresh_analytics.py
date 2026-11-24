@@ -23,7 +23,7 @@ def refresh(root, output, cities, cache, horizon_days=7, full_refresh=False):
     current = output / 'current'
     args = argparse.Namespace(
         archives=archives, cities=cities, cache=cache, legacy=False,
-        bundle=root / 'models/nba-v0.3/bundle.json',
+        bundle=root / 'models/nba-v1.0/bundle.json',
         horizon_days=horizon_days, full_refresh=full_refresh,
     )
     with live_lock(archives):

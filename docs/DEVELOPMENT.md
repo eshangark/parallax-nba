@@ -34,7 +34,7 @@ python scripts/compare_models.py
 
 See [evaluation](EVALUATION.md) for protocols and interpretation. `scripts/publish_history.py` writes committed historical archives; review regenerated outputs before replacing an existing release.
 
-## Reproduce v0.3 models
+## Reproduce model fitting
 
 ```sh
 python -m pip install -r requirements-fit.txt
@@ -43,6 +43,8 @@ python scripts/fit_forecasters.py --players data/raw/forecasters/players --repor
 ```
 
 The preparation command caches free historical player archives and official morning PDFs, records source hashes/errors and requires at least 95% verified report-date coverage before fitting. `--offline` validates cached files without network calls. Inspect `data-quality.json` and selection reports before promoting an artifact. The fit command preserves original `snapshot.json` files and creates separate `snapshot-v0.3.json` historical outputs; review those before changing the season index. The original core fit still optimizes its warmup-filtered objective. The two probability heads select settings on the last prior season and refit only earlier seasons.
+
+The active forecasting model is v1.0.0 in `models/nba-v1.0/bundle.json`. It promotes the unchanged fitted prerelease specification; the original fitting artifacts remain under `models/nba-v0.3/` for reproduction. Future collection issues v1.0.0 records while preserving earlier issued identities.
 
 The bundle freezes carryover, season-start ratings, player/form histories, core parameters, ordered/scaled head features and numerical tree nodes. Tree export is tested against the fitted estimator. Refit output is not prospective evidence, and small preparation differences can change the boosted candidate selected.
 
@@ -56,7 +58,7 @@ python scripts/update_live.py --cities data/raw/geography/cities15000.zip
 
 The default horizon covers seven Eastern-calendar dates, including the entire last date; `--horizon-days 14` extends it. Normal runs revisit the previous seven dates and unresolved events. `--full-refresh` rechecks the whole current-season provider calendar for older corrections. Requests use individual dates and provider calendar metadata; scoreboard and checked final-summary responses are refreshed.
 
-A filesystem lock permits one writer. Validated output is atomically saved to `data/seasons/SEASON/live.json`; failure leaves the last valid bundle intact and records an attempt in `update_status.json`. Raw responses remain in ignored local caches. Version 0.3 retains half of previous final Elo deviations; season records reset and preseason results are excluded. A later season can initialize from a complete compatible prior live season; incomplete or incompatible histories block that transition.
+A filesystem lock permits one writer. Validated output is atomically saved to `data/seasons/SEASON/live.json`; failure leaves the last valid bundle intact and records an attempt in `update_status.json`. Raw responses remain in ignored local caches. Version 1.0.0 retains half of previous final Elo deviations; season records reset and preseason results are excluded. A later season can initialize from a complete compatible prior live season; incomplete or incompatible histories block that transition.
 
 ## Live forecast lifecycle
 
@@ -82,7 +84,7 @@ tectonic --outdir paper paper/main.tex
 
 Inspect the PDF after compiling. Keep credentials, personal filesystem paths, raw downloads, environments, and generated build files outside tracked files; retain third-party notices.
 
-Preserve the frozen v0.2 configuration and issued ledger. New formulas, constraints, or training studies require a separately versioned model and evaluation protocol. The observed 2025–26 test cannot become an untouched test again. Carryover and both probability heads are implemented in v0.3. Prospective comparisons remain necessary; the boosted challenger is not a claim of stable superiority. Original issued rows and v0.2 artifacts remain unchanged.
+Preserve the frozen v0.2 configuration and issued ledger. New formulas, constraints, or training studies require a separately versioned model and evaluation protocol. The observed 2025–26 test cannot become an untouched test again. Carryover and both probability heads are implemented in the production model. Prospective comparisons remain necessary; the boosted challenger is not a claim of stable superiority. Original issued rows and v0.2 artifacts remain unchanged.
 
 ## Rebuild the current-method dashboard views
 

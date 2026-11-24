@@ -206,6 +206,15 @@ class Forecaster:
     def __init__(self, bundle):
         self.bundle = copy.deepcopy(bundle)
         self.fingerprint = hashlib.sha256(json.dumps(bundle, sort_keys=True, separators=(',', ':'), allow_nan=False).encode()).hexdigest()
+        self.compatible_fingerprints = {self.fingerprint}
+        predecessor = bundle.get('equivalent_predecessor')
+        if predecessor:
+            previous = {key: value for key, value in bundle.items() if key != 'equivalent_predecessor'}
+            previous['version'] = predecessor['version']
+            previous_hash = hashlib.sha256(json.dumps(previous, sort_keys=True, separators=(',', ':'), allow_nan=False).encode()).hexdigest()
+            if previous_hash != predecessor['sha256']:
+                raise ValueError('Equivalent predecessor differs from the forecast specification')
+            self.compatible_fingerprints.add(previous_hash)
         if bundle['feature_schema'] != {'injury': ['base_logit']+INJURY_FEATURES,
                                         'boosted': ['base_logit']+TEAM_FEATURES+INJURY_FEATURES}:
             raise ValueError('Unsupported forecast feature schema')

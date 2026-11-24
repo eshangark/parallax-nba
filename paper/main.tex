@@ -23,7 +23,7 @@ forecasting model combines sequential Elo, home court, rest and travel
 with a fitted injury correction. Five complete regular seasons provide
 6,150 games for the underlying historical archive. The v1.0.0 application
 adds a relational SQLite read model and a static Astro interface for
-forecasts, results, and evaluation. The forecast model remains v0.3.0.
+forecasts, results, and evaluation. The forecasting model and application are both version 1.0.0.
 Public accuracy scores use saved pregame forecasts, while reconstructed
 ratings and historical backtests have separate provenance. The contract
 calculator gives a model-implied value for a binary payout before fees.
@@ -76,7 +76,7 @@ multipliers below are empirical project specifications, not derivations
 from the Bradley--Terry or WHR papers.
 
 \section{Step 0: initialize the season}
-The first available historical season starts all teams at 1500. Version 0.3
+The first available historical season starts all teams at 1500. Version 1.0.0
 retains part of the preceding season's final rating deviation:
 \begin{equation}\label{eq:carryover}
  r_{\mathrm{start}}=1500+\rho(r_{\mathrm{previous\ final}}-1500),\qquad \rho=0.5.
@@ -122,7 +122,7 @@ box score cannot enter their own prediction.
 The base is fixed at 10 and $c=497.3558141396255$. Fixing the base and rating scale anchors the model's rating units rather
 than fitting redundant scales. Display rounding does not affect calculations.
 
-\subsection{Version 0.3: adjust the published probability for injuries}
+\subsection{Version 1.0.0: adjust the published probability for injuries}
 Write $p_i$ for the base Elo probability and $q_i$ for the default published
 probability. Define $\sigma(a)=(1+e^{-a})^{-1}$ and write the base log odds as $\ln(p/(1-p))$. The correction is an L2-penalized logistic model with the base log odds
 as an offset; penalized logistic modeling is discussed in
@@ -438,7 +438,7 @@ data cutoff, and model version in a separately preserved ledger.
 
 
 \section{Frozen model fitting and evaluation}
-The v0.3.0 core fit uses five complete regular seasons. Teams enter the
+The v1.0.0 core fit uses five complete regular seasons. Teams enter the
 fitting objective after both have ten prior games. Earlier games still
 update ratings and histories. SciPy differential evolution with L-BFGS-B
 polishing minimizes mean binary log loss over the 5,370 eligible games
@@ -601,7 +601,7 @@ names replace opaque intermediate symbols: Score is the weighted feature
 sum, Perf is a bounded game score, PriorPerf is its prior average, and P is
 their clipped ratio. Constants are rounded for display; the frozen release
 configuration retains full precision. Dictionary values refer to the current
-version 0.3.0 core fit.
+version 1.0.0 core fit.
 \begingroup
 \normalsize
 \setlength{\tabcolsep}{4pt}

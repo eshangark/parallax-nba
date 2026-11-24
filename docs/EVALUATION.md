@@ -1,6 +1,8 @@
 # Evaluation
 
-## Current v0.3 integrated models
+The active forecasting model is **v1.0.0**. It promotes the unchanged fitted prerelease specification; the original fitting and evaluation artifacts retain their recorded version labels.
+
+## Production v1.0.0 integrated models
 
 The default probability is carryover Elo plus a regularized injury correction. A boosted comparison uses the same ratings and additional prior team, schedule and rotation features. Both are implemented internally; only Elo + injuries is exposed as a dashboard forecast. It has the lowest pooled log loss and Brier score. The boosted model picks three additional winners out of 3,690 games, which does not establish better probability estimates. Missing verified report/game coverage falls back to carryover Elo. Unsubmitted teams remain explicit unknowns.
 
@@ -22,9 +24,9 @@ A production parity check corrected five exploratory injury-feature rows where o
 
 The unchanged base is an available inner candidate. In the first fold, both procedures select it; this is not evidence that an injury or tree term helped that fold. The original 68.56% v0.2 headline refers to one warmup-filtered season and is not directly comparable with this table.
 
-The current release core is fitted on all five completed seasons. The injury head selects mean validation log loss with L2 penalties 0.0001–10; the boosted challenger selects validation winner accuracy, with log loss as a tie-breaker. Scalers fit only training rows. The portable numerical trees reproduce their training estimator within 1e-12. [Frozen bundle](../models/nba-v0.3/bundle.json), [per-fold results](../models/nba-v0.3/evaluation.json), [selection](../models/nba-v0.3/selection.json), and [verification](../models/nba-v0.3/verification.json) record the complete implementation.
+The current release core is fitted on all five completed seasons. The injury head selects mean validation log loss with L2 penalties 0.0001–10; the boosted challenger selects validation winner accuracy, with log loss as a tie-breaker. Scalers fit only training rows. The portable numerical trees reproduce their training estimator within 1e-12. [Production v1.0.0 bundle](../models/nba-v1.0/bundle.json), [per-fold results](../models/nba-v0.3/evaluation.json), [selection](../models/nba-v0.3/selection.json), and [verification](../models/nba-v0.3/verification.json) record the complete implementation.
 
-All historical outcomes were already examined during development, and multiple model families were explored. These are retrospective chronological comparisons, not fresh confirmation. Live scoring compares only genuinely issued forecasts from the same frozen bundle. Earlier issued versions remain unchanged and never receive fabricated base/boosted probabilities.
+All historical outcomes were already examined during development, and multiple model families were explored. These are retrospective chronological comparisons, not fresh confirmation. Live scoring compares only genuinely issued forecasts from the same verified forecast specification. Earlier issued versions remain unchanged and never receive fabricated base/boosted probabilities.
 
 ## Reference v0.2 comparisons
 

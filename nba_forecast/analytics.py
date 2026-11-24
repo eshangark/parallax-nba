@@ -88,7 +88,7 @@ def populate(db, root):
     archives = root / 'data/seasons'
     paths = sorted(archives.glob('*/*.json')) + sorted(archives.glob('*.json'))
     paths += sorted(archives.glob('*/team_games.csv')) + sorted(archives.glob('*/replay-inputs.json.gz'))
-    paths += [root / 'models/nba-v0.3' / name for name in ('bundle.json', 'matched-evaluation.json')]
+    paths += [root / 'models/nba-v1.0/bundle.json', root / 'models/nba-v0.3/matched-evaluation.json']
     hashes = {path.relative_to(root).as_posix(): hashlib.sha256(path.read_bytes()).hexdigest() for path in paths}
     entries = json.loads((archives / 'index.json').read_text())['seasons']
     catalog, notices = accuracy_catalog(root, entries)

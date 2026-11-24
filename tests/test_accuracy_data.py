@@ -139,11 +139,11 @@ class AccuracyDataTests(unittest.TestCase):
         game = next(g for g in self.archive['_internal']['games'] if g['game_id'] == row['game_id'])
         archive = {'season': self.current, 'status': 'live', 'result': {'predictions': [row]},
                    '_internal': {'games': [game]}}
-        bundle = json.loads((ROOT/'models/nba-v0.3/bundle.json').read_text())
+        bundle = json.loads((ROOT/'models/nba-v1.0/bundle.json').read_text())
         with TemporaryDirectory() as temporary:
             root = Path(temporary)
-            (root/'models/nba-v0.3').mkdir(parents=True)
-            (root/'models/nba-v0.3/bundle.json').write_text(json.dumps(bundle))
+            (root/'models/nba-v1.0').mkdir(parents=True)
+            (root/'models/nba-v1.0/bundle.json').write_text(json.dumps(bundle))
             path = root/'data/seasons'/self.current/'current-model.json'
             path.parent.mkdir(parents=True)
             candidate = {'source_result_sha256': 'stale', 'result': {

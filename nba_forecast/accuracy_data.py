@@ -87,7 +87,7 @@ def accuracy_catalog(root, entries, selected_archive=None, validate_index=True, 
     root = Path(root); archives = Path(archives) if archives is not None else root/'data/seasons'
     catalog = {name: [] for name in SOURCES}; notices = []
     raw_by_season = {}; season_by_id = {}; inventory = {}
-    fingerprint = Forecaster(json.loads((root/'models/nba-v0.3/bundle.json').read_text())).fingerprint
+    fingerprint = Forecaster(json.loads((root/'models/nba-v1.0/bundle.json').read_text())).fingerprint
     for entry in entries:
         season = entry['season']
         archive = selected_archive if selected_archive and selected_archive['season'] == season else load_season(archives, entry)
@@ -154,7 +154,7 @@ def write_current_index(root, archives):
     root = Path(root); archives = Path(archives)
     entries = json.loads((archives/'index.json').read_text())['seasons']
     catalog, notices = accuracy_catalog(root, entries, validate_index=False, archives=archives)
-    forecaster = Forecaster(json.loads((root/'models/nba-v0.3/bundle.json').read_text()))
+    forecaster = Forecaster(json.loads((root/'models/nba-v1.0/bundle.json').read_text()))
     inventory = {}
     for season in sorted({r['season'] for r in catalog['replay']}):
         saved = json.loads((archives/season/'current-model.json').read_text()); result = saved['result']

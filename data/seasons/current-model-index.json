@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "model_version": "0.3.0",
-  "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+  "model_version": "1.0.0",
+  "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
   "seasons": {
     "2021-22": {
       "file": "2021-22/current-model.json",
       "source_result_sha256": "06b176570be9718ad7d3e9c01c6a62b6c37f0aa024328354ed1dd7a322120888",
       "input_sha256": "eb29ecdd39a6c6cd372c7545ed1b3d09d87fc8b00f14133817cdab24d89e8a0b",
-      "result_sha256": "605ca2d02ba06d5a0366e22cbc04870af1223a9289fca1df701b2fdc9ff4692f",
+      "result_sha256": "1255b1eaf8eff558873925e0dcd5fd734d9cc708953739491b7c7afaf60e99e4",
       "games": 1230,
       "evaluation_role": "training_replay"
     },
@@ -15,7 +15,7 @@
       "file": "2022-23/current-model.json",
       "source_result_sha256": "3f78eac6efe2f0fd66b9a4d372e735465b77277d79c13b14a5ae59039a55a492",
       "input_sha256": "31ce0808d48c756708da813c1a9b69abf380b7b9afd4fce8bc5b1a6eacc79bb2",
-      "result_sha256": "bcad03729e85cac6f96955079a7428a9332c4b0a9bcc80f698801aed849696b2",
+      "result_sha256": "9a859628d5110235a443fc6141b33b0354bbe12ebb86058128e48b34b6465e52",
       "games": 1230,
       "evaluation_role": "training_replay"
     },
@@ -23,7 +23,7 @@
       "file": "2023-24/current-model.json",
       "source_result_sha256": "b897e1560f593bd8e97f2c9afb4086b2c368ae5035be404e82c333a2ecdc9a0c",
       "input_sha256": "5fcab184dafeba82f341f368350113f4ec8f5cadba7cf58ba6f09b91d301f43c",
-      "result_sha256": "1db148d67cfed607c1675a672173ff2d10c5dee8e3ff67f8087839676cd60be2",
+      "result_sha256": "8cbfd349c78838c6ee2e32fb09a3891f5736e6239ffc97f91eb48680ef95a4f5",
       "games": 1230,
       "evaluation_role": "training_replay"
     },
@@ -31,7 +31,7 @@
       "file": "2024-25/current-model.json",
       "source_result_sha256": "5583b03f4bf6ecc30acc9cf7a317cd1e5ff74d58dac9f87add00779e79b18ed6",
       "input_sha256": "faa7586c82d7fb1ea609e9d849e066fc20338bb0740697d2201fe5e7924da8a4",
-      "result_sha256": "b819a720b07c8f70129321bf0110918f9fb6ed2621fd0b459381d287f42e69b0",
+      "result_sha256": "a2810533b98b366a7fd4dd1d013bf63fc586eb53a1dbe496ebc8eb941e2b47d4",
       "games": 1230,
       "evaluation_role": "training_replay"
     },
@@ -39,7 +39,7 @@
       "file": "2025-26/current-model.json",
       "source_result_sha256": "a33f9c7c9bc32ec56fa5bfa82c173fc9996da1e4dcb16d66ec8abea483fb27cd",
       "input_sha256": "2966e2bd4eec97cca14d26dc40c43620f8e5748f1d00419985a2df0d22289f1a",
-      "result_sha256": "82ab6848a375cd43f237416fdea87924cf47f3f34dd4b0febc94254b9648fc28",
+      "result_sha256": "09b12c3cc89a645924baa9fa79eab236f3cf0dfff966a0d8f5ecf32bd64c5ec6",
       "games": 1230,
       "evaluation_role": "training_replay"
     },
@@ -47,7 +47,7 @@
       "file": "2026-27/current-model.json",
       "source_result_sha256": "77580d34ae561f06ac6a310a34b79ef7aebf8702c4561ddf55b9612443a285a7",
       "input_sha256": "a7984b5eb3540eb8134092dfade544c261c15fb0a1d0003b36eb2972ea15c404",
-      "result_sha256": "61921dc7fe369903a928a29bb8e8def024949e4728f8afc4113fbf7f3472225f",
+      "result_sha256": "a771ea017adc36c65d0409919eceaedc643992f7cd96265fa02469d11c47ee67",
       "games": 258,
       "evaluation_role": "post_fit_replay"
     }
