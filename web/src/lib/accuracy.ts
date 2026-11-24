@@ -1,5 +1,5 @@
 export type ScoredGame = {
-  season: string; evidence: string; model_version: string; model_sha256: string | null;
+  game_id: string; season: string; evidence: string; model_version: string; model_sha256: string | null;
   completed_at: string; home_id: string; away_id: string; eligible: number;
   home_probability: number; away_probability: number; home_win: number;
 };

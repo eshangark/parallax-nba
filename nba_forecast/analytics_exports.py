@@ -109,6 +109,15 @@ def export(db, root, target):
         'core_parameters': model.bundle['core_parameters'],
     })
     _write(target / 'scored-games.json', evaluation)
+    historical = [dict(row) for row in db.execute('''
+        SELECT e.game_id, e.season, e.evidence, e.model_version, e.model_sha256,
+               e.home_probability, e.away_probability, e.cutoff, e.captured_start, e.eligible,
+               e.injury_status, e.home_win, g.completed_at, g.home_id, g.away_id
+        FROM evaluation_rows e JOIN games g USING (game_id)
+        WHERE e.evidence = 'training_replay' AND e.model_sha256 = ? AND g.status = 'final'
+        ORDER BY g.season, g.game_id
+    ''', (fingerprint,))]
+    _write(target / 'historical-accuracy.json', historical)
     form = defaultdict(list)
     for row in db.execute("SELECT * FROM games WHERE status = 'final' ORDER BY completed_at, game_id"):
         for side, opponent in (('home', 'away'), ('away', 'home')):

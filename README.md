@@ -1,6 +1,6 @@
 # Parallax NBA
 
-**Application release: v1.0.0** · Static Astro dashboard powered by the Parallax analytics pipeline.
+**Application release: v1.0.1** · Static Astro dashboard powered by the Parallax analytics pipeline.
 
 Parallax NBA combines a mathematical model for NBA game predictions with a dashboard for understanding probabilities, evaluating historical performance and making informed betting decisions. This project is adapted from work developed for the Wharton Data Science Competition.
 
@@ -12,7 +12,7 @@ The Astro V1 dashboard presents dated matchups, team Elo histories, calibration 
 
 V1 uses one frozen **v0.3.0** bundle for forecasts, rankings, calibration, and downloads. The published probability adds a regularized injury correction to the base Elo forecast. The base probability drives the rating update. Teams carry half of their prior season's rating deviation forward.
 
-Matchups show compatible saved pregame forecasts where available. Accuracy scores original forecasts against completed games. Replays support the backend rating history and remain separate from the published accuracy views. The contract calculator uses the issued pregame forecast and an entered price to estimate profit at settlement before fees.
+Matchups show compatible saved pregame forecasts where available. Accuracy covers historical training replays and live issued forecasts, with a source filter and counts for each type. The contract calculator uses the issued pregame forecast and an entered price to estimate profit at settlement before fees.
 
 ## Injury data and mathematical basis
 
