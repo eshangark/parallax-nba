@@ -30,6 +30,26 @@ class CurrentReplayTests(unittest.TestCase):
         self.assertEqual(result['metrics']['games'], 0)
         self.assertEqual(result['predictions'][0]['injury_status'], 'elo_fallback')
 
+    def test_rating_changes_exclude_games_played_after_early_issuance(self):
+        _, predictor = self.fixture()
+        initial = {'A': 1600., 'B': 1400.}
+        seed = FeatureState(); seed.start_season(SEASON)
+        params = Parameters(**predictor.bundle['core_parameters'])
+        issued = build_snapshot(None, [], [scheduled(), scheduled('2', '2026-10-22')],
+                                params, ROSTER, '2026-10-19T20:00:00Z', SEASON,
+                                forecaster=predictor, initial_ratings=initial, feature_seed=seed.data)
+        snapshot = build_snapshot(issued, [completed(), completed('2', '2026-10-22')], [],
+                                  params, ROSTER, '2026-10-23T02:00:00Z', SEASON,
+                                  forecaster=predictor, initial_ratings=initial, feature_seed=seed.data)
+        before = copy.deepcopy(snapshot)
+        first, second = replay_live(snapshot, predictor)['predictions']
+        for side in ('home', 'away'):
+            self.assertAlmostEqual(second[side + '_rating_change'],
+                                   second[side + '_rating_after'] - first[side + '_rating_after'])
+            self.assertNotAlmostEqual(second[side + '_rating_change'],
+                                      second[side + '_rating_after'] - second[side + '_rating'])
+        self.assertEqual(snapshot, before)
+
     def test_own_outcome_and_later_results_cannot_change_pregame_prediction(self):
         snapshot, predictor = self.fixture()
         expected = replay_live(snapshot, predictor)['predictions'][0]['home_probability']
