@@ -105,6 +105,7 @@ def replay_live(snapshot, forecaster):
             update_rows[identifier] = engine.predict(game)
         else:
             base = update_rows[identifier]
+            ratings_before = {side: engine.team(game[side]['id']).rating for side in ('home', 'away')}
             engine.update(game, base)
             engine.recenter()
             state.observe(game, base['home_probability'], internal.get('player_games', {}).get(identifier))
@@ -112,6 +113,8 @@ def replay_live(snapshot, forecaster):
                                     home_score=game['home']['points'], away_score=game['away']['points'],
                                     home_rating_after=engine.team(game['home']['id']).rating,
                                     away_rating_after=engine.team(game['away']['id']).rating)
+            for side in ('home', 'away'):
+                rows[identifier][side + '_rating_change'] = engine.team(game[side]['id']).rating - ratings_before[side]
     rankings = sorted([{'team_id': t, 'team': roster[t], 'elo': team.rating, 'games': team.games, 'wins': team.wins}
                        for t, team in engine.teams.items()], key=lambda r: (-r['elo'],r['team']))
     ordered = [rows[g['game_id']] for g in sorted(games,key=lambda g:(timestamp(g['start']),g['game_id']))]

@@ -11,13 +11,13 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "") + "/";
 const days = [-3, -2, -1, 0, 1, 2, 3].map(offset => shiftDay(day, offset));
 const dateLink = (value: string) => `${base}slate/${value}/`;
 ---
-<Shell title={day === today ? 'Today' : formatDate(day, { month: 'short', day: 'numeric' })}>
+<Shell title={formatDate(day, { month: 'short', day: 'numeric' })}>
   <div data-build-day={landing ? today : undefined}>
     <section class="hero">
       <div class="court" aria-hidden="true"><i></i><b></b></div>
       <div class="hero-copy">
         <p class="kicker">{formatDate(day, { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' })}</p>
-        <h1>{day === today ? 'Today’s slate' : 'NBA slate'}</h1>
+        <h1>NBA slate</h1>
         <Freshness />
       </div>
     </section>

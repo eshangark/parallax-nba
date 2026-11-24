@@ -47,7 +47,7 @@
       "file": "2026-27/current-model.json",
       "source_result_sha256": "77580d34ae561f06ac6a310a34b79ef7aebf8702c4561ddf55b9612443a285a7",
       "input_sha256": "a7984b5eb3540eb8134092dfade544c261c15fb0a1d0003b36eb2972ea15c404",
-      "result_sha256": "dd7a85f01eca83061c132390d1dd9641a564698e750c8e3ed9e10e4cb9aa2a6f",
+      "result_sha256": "61921dc7fe369903a928a29bb8e8def024949e4728f8afc4113fbf7f3472225f",
       "games": 258,
       "evaluation_role": "post_fit_replay"
     }

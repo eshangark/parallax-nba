@@ -51,7 +51,7 @@ test('Today links and built assets resolve under the project path', async ({ pag
   await page.goto(root);
   await expect(page.getByRole('heading', { level: 1, name: 'Parallax NBA' })).toBeVisible();
   await page.getByRole('link', { name: 'Today', exact: true }).click();
-  await expect(page.getByRole('heading', { level: 1, name: 'Today’s slate' })).toBeVisible();
+  await expect(page.getByRole('heading', { level: 1, name: 'NBA slate' })).toBeVisible();
   await page.evaluate(() => document.fonts.ready);
   expect(failures).toEqual([]);
 });
@@ -95,6 +95,7 @@ test('team history and methodology downloads open from navigation', async ({ pag
   await page.getByRole('link', { name: 'Teams', exact: true }).click();
   await page.locator('section[data-team-season]:visible tbody a').first().click();
   await expect(page.getByRole('heading', { name: 'Game history' })).toBeVisible();
+  expect(await page.locator('tbody tr td:last-child').allTextContents()).not.toContain('—');
   await page.getByRole('link', { name: 'Methodology', exact: true }).click();
   const path = await page.getByRole('link', { name: 'Technical paper' }).getAttribute('href');
   const response = await page.request.get(path!);
@@ -123,4 +124,15 @@ test('contract calculator compares entered price with the saved probability', as
   await expect(page.locator('[data-result=expected]')).toHaveText(sign + magnitude + '¢');
   await page.getByLabel('Buy price in cents').fill('101');
   await expect(page.locator('#price-result')).toBeHidden();
+});
+
+test('slate headings stay dated after Eastern midnight', async ({ page }) => {
+  const day = new Intl.DateTimeFormat('sv-SE', { timeZone: 'America/New_York' }).format(new Date());
+  await page.clock.setFixedTime(new Date(Date.parse(day + 'T12:00:00Z') + 24 * 3600_000));
+  await page.goto(root + 'slate/' + day + '/');
+  await expect(page.getByRole('heading', { level: 1, name: 'NBA slate' })).toBeVisible();
+  await expect(page).not.toHaveTitle(/^Today/);
+  const date = new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' })
+    .format(new Date(day + 'T12:00:00Z'));
+  await expect(page).toHaveTitle(date + ' | Parallax NBA');
 });
