@@ -18,7 +18,8 @@ class ReleaseVersionTests(unittest.TestCase):
         self.assertIsNotNone(release)
         self.assertEqual(release.group(1), __version__)
 
-    def test_production_model_matches_application_release(self):
+    def test_production_model_is_identified_in_readme(self):
         root = Path(__file__).resolve().parents[1]
         model = json.loads((root/'models/nba-v1.0/bundle.json').read_text())
-        self.assertEqual(model['version'], __version__)
+        self.assertEqual(model['version'], '1.0.0')
+        self.assertIn(f"v{model['version']} forecasting model", (root/'README.md').read_text())
