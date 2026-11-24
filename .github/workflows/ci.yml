@@ -37,7 +37,7 @@ jobs:
       - name: Install application and research dependencies
         run: python -m pip install -r requirements-fit.txt
       - name: Check Python sources
-        run: python -m compileall -q app.py nba_forecast scripts tests
+        run: python -m compileall -q nba_forecast scripts tests
       - name: Verify matched historical samples
         run: python scripts/audit_comparisons.py
       - name: Run full test suite

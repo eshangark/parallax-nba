@@ -1,21 +1,15 @@
 # Development and operation
 
-Run commands from the repository root using Python 3.12. `requirements.txt` installs the dashboard; `requirements-live.txt` adds the PDF parser for collection; `requirements-fit.txt` adds scientific, parquet and tree-training dependencies. Live probability scoring uses portable JSON and the standard library, not scikit-learn or pickle. The live collector runs on macOS/Linux; Windows users can use WSL.
+Run commands from the repository root using Python 3.12. `requirements.txt` installs the base Python runtime dependency; `requirements-live.txt` installs collection dependencies; `requirements-fit.txt` adds scientific, parquet and tree-training dependencies. Install the Astro dashboard dependencies with `pnpm install --frozen-lockfile` in `web/`. Live probability scoring uses portable JSON and the standard library, not scikit-learn or pickle. The live collector runs on macOS/Linux; Windows users can use WSL.
 
 ## Tests
-
-The dashboard uses Streamlit's polling file watcher to avoid Linux inotify
-instance limits leaving imported modules stale after a deployment. If a
-deployment reports an import name that exists in the published source, check
-the cloud logs for watcher failures and reboot the app from **Manage app**.
-A passing clean-start test does not verify an already-running cloud process.
 
 ```sh
 python -m pip install -r requirements-fit.txt
 python -m unittest discover -s tests -v
 ```
 
-The suite checks equations, canonical frozen replays, feature derivations, source normalization, chronology, correction handling, immutable forecast revisions, and season switching. Cross-platform numerical comparisons permit floating-point differences within 1e-12 while retaining exact identifiers, flags, and structure.
+The suite checks equations, canonical frozen replays, feature derivations, source normalization, chronology, correction handling, immutable forecast revisions, analytics exports, and database integrity. Cross-platform numerical comparisons permit floating-point differences within 1e-12 while retaining exact identifiers, flags, and structure.
 
 [Code validation](../.github/workflows/ci.yml) installs the full dependencies and runs all checks without contacting ESPN or refitting constants. Data-only updater commits do not trigger that extra workflow; collection performs its own core checks and input validation.
 
@@ -76,7 +70,7 @@ Validated completed games deterministically rebuild current rating state. A time
 
 V1 builds Astro for the GitHub Pages project path `/parallax-nba/`. The release workflow checks the static output and builds from the exact source revision. Collection runs at minute 17 every two UTC hours and can also be started manually. A loaded browser page updates its age indicator every minute. Visitors receive new data when they load the latest deployed build.
 
-The existing Streamlit site is the legacy fallback during cutover. See [hosting and recovery](ANALYTICS.md#hosting-and-recovery) for the deployment switch, failure handling and source revision tracking. Check the successful collection timestamp because scheduled jobs and upstream providers can be delayed.
+GitHub Pages is the sole production frontend. See [hosting and recovery](ANALYTICS.md#hosting-and-recovery) for failure handling and source revision tracking. Check the successful collection timestamp because scheduled jobs and upstream providers can be delayed.
 
 ## Contributions and model changes
 
