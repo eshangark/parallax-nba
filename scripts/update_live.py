@@ -95,7 +95,7 @@ def main():
     parser.add_argument('--cache', type=Path, default=Path('data/raw/live-espn'))
     parser.add_argument('--archives', type=Path, default=Path('data/seasons'))
     parser.add_argument('--parameters', type=Path, default=Path('models/nba-v0.2/parameters.json'))
-    parser.add_argument('--bundle', type=Path, default=Path('models/nba-v0.3/bundle.json'))
+    parser.add_argument('--bundle', type=Path, default=Path('models/nba-v1.0/bundle.json'))
     parser.add_argument('--legacy', action='store_true', help='Explicitly run the archived reset-Elo model')
     parser.add_argument('--horizon-days', type=int, default=7, choices=range(1, 15))
     parser.add_argument('--full-refresh', action='store_true', help='Recheck every current-season calendar date')
@@ -186,7 +186,7 @@ def run_update(args, started, season):
 def initialization(forecaster, previous, archives, season):
     """Reuse the frozen start state, or advance a complete prior live season."""
     old = (previous or {}).get('_internal', {})
-    if old.get('forecast_model_sha256') == forecaster.fingerprint and old.get('initialization', {}).get('feature_seed'):
+    if old.get('forecast_model_sha256') in forecaster.compatible_fingerprints and old.get('initialization', {}).get('feature_seed'):
         saved = old['initialization']
         if saved['feature_seed']['season'] != season:
             raise ValueError('Saved initialization belongs to another season')
@@ -202,7 +202,7 @@ def initialization(forecaster, previous, archives, season):
     payload = json.loads(path.read_text())
     internal = payload['_internal']
     counts = Counter(g[s]['id'] for g in internal['games'] for s in ['home', 'away'])
-    if (internal.get('forecast_model_sha256') != forecaster.fingerprint
+    if (internal.get('forecast_model_sha256') not in forecaster.compatible_fingerprints
             or len(internal['games']) != 1230 or len({g['game_id'] for g in internal['games']}) != 1230
             or len(counts) != 30 or set(counts.values()) != {82}
             or len(payload['result']['rankings']) != 30

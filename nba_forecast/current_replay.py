@@ -124,7 +124,7 @@ def replay_live(snapshot, forecaster):
 def refresh_current_replays(root, archives=None):
     """Regenerate all seasons with one current method, without rewriting archives."""
     root = Path(root)
-    forecaster = Forecaster(json.loads((root/'models/nba-v0.3/bundle.json').read_text()))
+    forecaster = Forecaster(json.loads((root/'models/nba-v1.0/bundle.json').read_text()))
     archives = Path(archives) if archives is not None else root/'data/seasons'
     previous_ratings, state = {}, FeatureState()
     index = json.loads((archives/'index.json').read_text())
@@ -135,7 +135,7 @@ def refresh_current_replays(root, archives=None):
         season = directory.name
         if (directory/'live.json').exists():
             snapshot = json.loads((directory/'live.json').read_text())
-            if snapshot['_internal'].get('forecast_model_sha256') != forecaster.fingerprint:
+            if snapshot['_internal'].get('forecast_model_sha256') not in forecaster.compatible_fingerprints:
                 continue  # Collector must first rebuild this season with the new bundle.
             result = replay_live(snapshot, forecaster)
             inputs_hash = digest({'games':snapshot['_internal']['games'], 'contexts':live_contexts(snapshot),

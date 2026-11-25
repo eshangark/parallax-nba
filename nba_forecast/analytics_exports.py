@@ -34,6 +34,8 @@ def _forecast(row, internal):
         'captured_start': row['captured_start'],
         'model_version': row['model_version'],
         'model_sha256': row['model_sha256'],
+        'issued_model_version': row['issued_model_version'],
+        'issued_model_sha256': row['issued_model_sha256'],
         'home_probability': row['home_probability'],
         'away_probability': row['away_probability'],
         'base_home_probability': row['base_home_probability'],
@@ -61,23 +63,28 @@ def export(db, root, target):
     db.row_factory = sqlite3.Row
     internals = {path.parent.name: json.loads(path.read_text())['_internal']
                  for path in (root / 'data/seasons').glob('*/live.json')}
-    model = Forecaster(json.loads((root / 'models/nba-v0.3/bundle.json').read_text()))
+    model = Forecaster(json.loads((root / 'models/nba-v1.0/bundle.json').read_text()))
     fingerprint = model.fingerprint
     selected = {}
-    for row in db.execute('''
+    compatible = sorted(model.compatible_fingerprints)
+    placeholders = ",".join("?" for _ in compatible)
+    for row in db.execute(f'''
         WITH revisions AS (
             SELECT f.*, g.season, row_number() OVER (
                 PARTITION BY f.game_id ORDER BY f.issued_at DESC, f.forecast_id
             ) AS revision
             FROM issued_forecasts f JOIN games g USING (game_id)
             LEFT JOIN upcoming u ON u.forecast_id = f.forecast_id
-            WHERE f.model_sha256 = ? AND f.home_id = g.home_id AND f.away_id = g.away_id
+            WHERE f.model_sha256 IN ({placeholders}) AND f.home_id = g.home_id AND f.away_id = g.away_id
                 AND f.issued_at < g.start
                 AND (g.status IN ('final', 'awaiting_final')
                      OR (g.status = 'scheduled' AND u.forecast_id IS NOT NULL))
         )
         SELECT * FROM revisions WHERE revision = 1
-    ''', (fingerprint,)):
+    ''', compatible):
+        row = dict(row)
+        row.update(issued_model_version=row['model_version'], issued_model_sha256=row['model_sha256'],
+                   model_version=model.bundle['version'], model_sha256=fingerprint)
         selected[row['game_id']] = row
 
     groups = defaultdict(list)
@@ -87,6 +94,7 @@ def export(db, root, target):
         if row is None:
             continue
         data = {key: row[key] for key in ('forecast_id', 'game_id', 'season', 'model_version', 'model_sha256',
+                 'issued_model_version', 'issued_model_sha256',
                  'home_probability', 'away_probability', 'cutoff', 'captured_start', 'eligible', 'injury_status')}
         data.update(evidence='issued', home_win=int(game['home_score'] > game['away_score']),
                     completed_at=game['completed_at'], home_id=game['home_id'], away_id=game['away_id'])
@@ -99,6 +107,7 @@ def export(db, root, target):
             key: row[key] for key in (
                 'forecast_id', 'game_id', 'season', 'issued_at', 'cutoff', 'captured_start',
                 'home_id', 'away_id', 'model_version', 'model_sha256',
+                'issued_model_version', 'issued_model_sha256',
                 'home_probability', 'away_probability', 'injury_status')
         })
     for season, rows in sorted(forecasts_by_season.items()):

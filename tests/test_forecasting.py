@@ -28,6 +28,46 @@ def bundle():
 
 
 class ForecastingTests(unittest.TestCase):
+    def test_version_promotion_requires_identical_specification(self):
+        previous = Forecaster(bundle())
+        promoted = copy.deepcopy(previous.bundle)
+        promoted.update(version='1.0.0', equivalent_predecessor={
+            'version': previous.bundle['version'], 'sha256': previous.fingerprint})
+        current = Forecaster(promoted)
+        self.assertEqual(current.compatible_fingerprints, {current.fingerprint, previous.fingerprint})
+        self.assertNotEqual(current.fingerprint, previous.fingerprint)
+        game = completed(); base = Engine().predict(game)
+        for key in ('home_probability', 'away_probability'):
+            self.assertEqual(current.predict(game, base, FeatureState())[key],
+                             previous.predict(game, base, FeatureState())[key])
+        promoted['injury_head']['weights'][0] += .01
+        with self.assertRaisesRegex(ValueError, 'predecessor differs'):
+            Forecaster(promoted)
+
+    def test_version_promotion_preserves_issued_history_and_score_coverage(self):
+        from scripts.update_live import initialization
+        predictor = Forecaster(bundle()); params = Parameters()
+        initial = {'A': 1600., 'B': 1400.}
+        state = FeatureState(); state.start_season(SEASON)
+        issued = build_snapshot(None, [], [scheduled()], params, ROSTER,
+                                '2026-10-19T20:00:00Z', SEASON, forecaster=predictor,
+                                initial_ratings=initial, feature_seed=state.data)
+        previous = build_snapshot(issued, [completed()], [], params, ROSTER,
+                                  '2026-10-21T02:00:00Z', SEASON, forecaster=predictor,
+                                  initial_ratings=initial, feature_seed=state.data)
+        promoted = copy.deepcopy(predictor.bundle)
+        promoted.update(version='1.0.0', equivalent_predecessor={
+            'version': predictor.bundle['version'], 'sha256': predictor.fingerprint})
+        current = Forecaster(promoted)
+        saved = initialization(current, previous, Path('/unused'), SEASON)
+        self.assertEqual(saved['ratings'], initial)
+        refreshed = build_snapshot(previous, [completed()], [scheduled('2', '2026-10-22')],
+                                   params, ROSTER, '2026-10-21T03:00:00Z', SEASON,
+                                   forecaster=current, initial_ratings=initial, feature_seed=state.data)
+        self.assertEqual(refreshed['_internal']['forecasts'][:1], issued['_internal']['forecasts'])
+        self.assertEqual(refreshed['upcoming'][0]['model_version'], '1.0.0')
+        self.assertEqual(refreshed['result']['model_comparison']['injury']['metrics_all_issued']['games'], 1)
+
     def test_carryover_is_centered_and_season_records_start_empty(self):
         initial = carryover_ratings({'A': 1600, 'B': 1400}, ROSTER)
         self.assertEqual(initial, {'A': 1550, 'B': 1450})

@@ -4,13 +4,13 @@
 
 Parallax NBA combines a mathematical model for NBA game predictions with a dashboard for understanding probabilities, evaluating historical performance and making informed betting decisions. This project is adapted from work developed for the Wharton Data Science Competition.
 
-[Open Parallax NBA v1](https://eshangark.github.io/parallax-nba/) · [Refresh and deployment runs](https://github.com/eshangark/parallax-nba/actions/workflows/update-live.yml) · [Technical paper](paper/main.pdf) · [LaTeX source](paper/main.tex)
+[Open Parallax NBA](https://eshangark.github.io/parallax-nba/) · [Data update and deployment status](https://github.com/eshangark/parallax-nba/actions/workflows/update-live.yml) · [Technical paper](paper/main.pdf) · [LaTeX source](paper/main.tex)
 
-The Astro V1 dashboard presents dated matchups, team Elo histories, calibration and scorecards, and a pregame contract calculator. GitHub Pages serves the dashboard from a verified source revision. See [deployment and refresh](docs/ANALYTICS.md).
+The Astro V1 dashboard presents dated matchups, team Elo histories, calibration and scorecards, and a pregame contract calculator. GitHub Pages serves the dashboard from a verified source revision.
 
 ## Active forecast model
 
-V1 uses one frozen **v0.3.0** bundle for forecasts, rankings, calibration, and downloads. The published probability adds a regularized injury correction to the base Elo forecast. The base probability drives the rating update. Teams carry half of their prior season's rating deviation forward.
+Parallax NBA uses the **v1.0.0 forecasting model** for forecasts, rankings, calibration, and downloads. The published probability adds a regularized injury correction to the base Elo forecast. The base probability drives the rating update. Teams carry half of their prior season's rating deviation forward.
 
 Matchups show compatible saved pregame forecasts where available. Accuracy covers historical training replays and live issued forecasts, with a source filter and counts for each type. The contract calculator uses the issued pregame forecast and an entered price to estimate profit at settlement before fees.
 
@@ -28,7 +28,7 @@ The game page displays the final score alongside pregame evidence. Earlier issue
 
 ## Symbol dictionary
 
-The constants below are rounded from the [v0.3.0 model bundle](models/nba-v0.3/bundle.json). The Methodology page starts with the completed-game Elo update, then shows the next matchup’s base forecast and injury correction.
+The constants below are rounded from the [v1.0.0 model bundle](models/nba-v1.0/bundle.json). The Methodology page starts with the completed-game Elo update, then shows the next matchup’s base forecast and injury correction.
 
 <details>
 <summary>Notation, English meanings, and numerical values</summary>

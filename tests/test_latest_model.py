@@ -95,8 +95,8 @@ class LatestModelTests(unittest.TestCase):
         snapshot, forecaster = CurrentReplayTests().fixture()
         with TemporaryDirectory() as temporary:
             root = Path(temporary); archives = root/'data/seasons'; season = snapshot['season']
-            (root/'models/nba-v0.3').mkdir(parents=True); (archives/season).mkdir(parents=True)
-            (root/'models/nba-v0.3/bundle.json').write_text(json.dumps(forecaster.bundle))
+            (root/'models/nba-v1.0').mkdir(parents=True); (archives/season).mkdir(parents=True)
+            (root/'models/nba-v1.0/bundle.json').write_text(json.dumps(forecaster.bundle))
             (archives/'index.json').write_text(json.dumps({'seasons': [{'season': season, 'file': f'{season}/live.json'}]}))
             source = archives/season/'live.json'; source.write_text(json.dumps(snapshot)); original = source.read_bytes()
             refresh_current_replays(root)
@@ -104,9 +104,9 @@ class LatestModelTests(unittest.TestCase):
             self.assertEqual(index['forecast_model_sha256'], forecaster.fingerprint)
             self.assertEqual(index['summary']['games'], 1)
             self.assertEqual(source.read_bytes(), original)
-            model = json.loads((root/'models/nba-v0.3/bundle.json').read_text())
+            model = json.loads((root/'models/nba-v1.0/bundle.json').read_text())
             model['carryover_fraction'] = .4
-            (root/'models/nba-v0.3/bundle.json').write_text(json.dumps(model))
+            (root/'models/nba-v1.0/bundle.json').write_text(json.dumps(model))
             with self.assertRaisesRegex(ValueError, 'cover every completed season'):
                 refresh_current_replays(root)
             self.assertEqual(source.read_bytes(), original)

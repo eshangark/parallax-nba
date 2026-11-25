@@ -12,6 +12,7 @@ from unittest.mock import patch
 
 from nba_forecast.analytics import populate, utc
 from nba_forecast.replay import metrics
+from nba_forecast.forecasting import Forecaster
 from scripts.build_analytics import build
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -82,6 +83,18 @@ class AnalyticsTests(unittest.TestCase):
             scored = json.loads((first / 'site/scored-games.json').read_text())
             self.assertEqual({row['model_sha256'] for row in scored}, {manifest['model_sha256']})
             self.assertEqual({row['evidence'] for row in scored}, {'issued'})
+            self.assertEqual({row['model_version'] for row in scored}, {'1.0.0'})
+            current = Forecaster(json.loads((ROOT/'models/nba-v1.0/bundle.json').read_text()))
+            expected = {row['forecast_id'] for row in live['result']['predictions']
+                        if row.get('forecast_model_sha256') in current.compatible_fingerprints}
+            self.assertEqual({row['forecast_id'] for row in scored}, expected)
+            with closing(sqlite3.connect(first / 'parallax.sqlite3')) as db:
+                raw = dict(db.execute('SELECT forecast_id, record_json FROM issued_forecasts'))
+            for row in scored:
+                original = json.loads(raw[row['forecast_id']])
+                self.assertEqual(row['issued_model_version'], original['model_version'])
+                self.assertEqual(row['issued_model_sha256'], original['forecast_model_sha256'])
+                self.assertEqual(row['home_probability'], original['home_probability'])
             historical = json.loads((first / 'site/historical-accuracy.json').read_text())
             self.assertEqual(Counter(row['season'] for row in historical),
                              {f'{year}-{str(year + 1)[-2:]}': 1230 for year in range(2021, 2026)})

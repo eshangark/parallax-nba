@@ -241,7 +241,7 @@ def build_snapshot(previous, games, pending, params, roster, now, season, source
     all_issued = [r for r in past if r['kind'] == 'issued_live']
     comparison = {}
     if forecaster:
-        comparable = [r for r in all_issued if r.get('forecast_model_sha256') == forecaster.fingerprint]
+        comparable = [r for r in all_issued if r.get('forecast_model_sha256') in forecaster.compatible_fingerprints]
         matched_all = compare_variants(comparable)
         matched_established = compare_variants(comparable, established=True)
         for variant in ['base','injury','boosted']:

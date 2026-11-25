@@ -2,8 +2,8 @@
   "season": "2026-27",
   "result": {
     "status": "current_method_replay",
-    "model_version": "0.3.0",
-    "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+    "model_version": "1.0.0",
+    "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
     "parameters": {
       "k": 13.748880997933203,
       "c": 497.3558141396255,
@@ -420,13 +420,13 @@
         },
         "home_sos": 0.5,
         "away_sos": 0.5,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "injury_source": null,
         "injury_status": "elo_fallback",
         "kind": "current_method_replay",
         "forecast_cutoff": "2026-10-14T00:59:12.576100+00:00",
         "replay_input_basis": "no_recoverable_pregame_injury_inputs",
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "eligible_for_evaluation": false,
         "home_win": 1,
         "home_score": 121,
@@ -459,13 +459,13 @@
         },
         "home_sos": 0.5,
         "away_sos": 0.5,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "injury_source": null,
         "injury_status": "elo_fallback",
         "kind": "current_method_replay",
         "forecast_cutoff": "2026-10-20T21:38:57.448385+00:00",
         "replay_input_basis": "no_recoverable_pregame_injury_inputs",
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "eligible_for_evaluation": false,
         "home_win": 0,
         "home_score": 100,
@@ -498,13 +498,13 @@
         },
         "home_sos": 0.5,
         "away_sos": 0.5,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "injury_source": null,
         "injury_status": "elo_fallback",
         "kind": "current_method_replay",
         "forecast_cutoff": "2026-10-20T21:38:57.448385+00:00",
         "replay_input_basis": "no_recoverable_pregame_injury_inputs",
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "eligible_for_evaluation": false,
         "home_win": 0,
         "home_score": 104,
@@ -537,13 +537,13 @@
         },
         "home_sos": 0.5,
         "away_sos": 0.5,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "injury_source": null,
         "injury_status": "elo_fallback",
         "kind": "current_method_replay",
         "forecast_cutoff": "2026-10-21T07:41:28.453899+00:00",
         "replay_input_basis": "no_recoverable_pregame_injury_inputs",
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "eligible_for_evaluation": false,
         "home_win": 0,
         "home_score": 125,
@@ -576,13 +576,13 @@
         },
         "home_sos": 0.5,
         "away_sos": 0.5,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "injury_source": null,
         "injury_status": "elo_fallback",
         "kind": "current_method_replay",
         "forecast_cutoff": "2026-10-21T07:41:28.453899+00:00",
         "replay_input_basis": "no_recoverable_pregame_injury_inputs",
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "eligible_for_evaluation": false,
         "home_win": 1,
         "home_score": 128,
@@ -615,13 +615,13 @@
         },
         "home_sos": 0.5,
         "away_sos": 0.5,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "injury_source": null,
         "injury_status": "elo_fallback",
         "kind": "current_method_replay",
         "forecast_cutoff": "2026-10-21T07:41:28.453899+00:00",
         "replay_input_basis": "no_recoverable_pregame_injury_inputs",
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "eligible_for_evaluation": false,
         "home_win": 0,
         "home_score": 106,
@@ -654,13 +654,13 @@
         },
         "home_sos": 0.5,
         "away_sos": 0.5,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "injury_source": null,
         "injury_status": "elo_fallback",
         "kind": "current_method_replay",
         "forecast_cutoff": "2026-10-21T07:41:28.453899+00:00",
         "replay_input_basis": "no_recoverable_pregame_injury_inputs",
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "eligible_for_evaluation": false,
         "home_win": 0,
         "home_score": 103,
@@ -693,13 +693,13 @@
         },
         "home_sos": 0.5,
         "away_sos": 0.5,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "injury_source": null,
         "injury_status": "elo_fallback",
         "kind": "current_method_replay",
         "forecast_cutoff": "2026-10-21T07:41:28.453899+00:00",
         "replay_input_basis": "no_recoverable_pregame_injury_inputs",
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "eligible_for_evaluation": false,
         "home_win": 1,
         "home_score": 135,
@@ -732,13 +732,13 @@
         },
         "home_sos": 0.5,
         "away_sos": 0.5,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "injury_source": null,
         "injury_status": "elo_fallback",
         "kind": "current_method_replay",
         "forecast_cutoff": "2026-10-21T07:41:28.453899+00:00",
         "replay_input_basis": "no_recoverable_pregame_injury_inputs",
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "eligible_for_evaluation": false,
         "home_win": 1,
         "home_score": 123,
@@ -771,13 +771,13 @@
         },
         "home_sos": 0.5,
         "away_sos": 0.5,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "injury_source": null,
         "injury_status": "elo_fallback",
         "kind": "current_method_replay",
         "forecast_cutoff": "2026-10-21T07:41:28.453899+00:00",
         "replay_input_basis": "no_recoverable_pregame_injury_inputs",
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "eligible_for_evaluation": false,
         "home_win": 0,
         "home_score": 120,
@@ -810,13 +810,13 @@
         },
         "home_sos": 0.5,
         "away_sos": 0.5,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "injury_source": null,
         "injury_status": "elo_fallback",
         "kind": "current_method_replay",
         "forecast_cutoff": "2026-10-21T07:41:28.453899+00:00",
         "replay_input_basis": "no_recoverable_pregame_injury_inputs",
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "eligible_for_evaluation": false,
         "home_win": 1,
         "home_score": 128,
@@ -849,13 +849,13 @@
         },
         "home_sos": 0.5,
         "away_sos": 0.5,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "injury_source": null,
         "injury_status": "elo_fallback",
         "kind": "current_method_replay",
         "forecast_cutoff": "2026-10-21T07:41:28.453899+00:00",
         "replay_input_basis": "no_recoverable_pregame_injury_inputs",
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "eligible_for_evaluation": false,
         "home_win": 1,
         "home_score": 127,
@@ -888,13 +888,13 @@
         },
         "home_sos": 0.5,
         "away_sos": 0.5,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "injury_source": null,
         "injury_status": "elo_fallback",
         "kind": "current_method_replay",
         "forecast_cutoff": "2026-10-21T07:41:28.453899+00:00",
         "replay_input_basis": "no_recoverable_pregame_injury_inputs",
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "eligible_for_evaluation": false,
         "home_win": 1,
         "home_score": 124,
@@ -927,13 +927,13 @@
         },
         "home_sos": 0.5,
         "away_sos": 0.5,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "injury_source": null,
         "injury_status": "elo_fallback",
         "kind": "current_method_replay",
         "forecast_cutoff": "2026-10-21T07:41:28.453899+00:00",
         "replay_input_basis": "no_recoverable_pregame_injury_inputs",
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "eligible_for_evaluation": false,
         "home_win": 1,
         "home_score": 121,
@@ -966,13 +966,13 @@
         },
         "home_sos": 0.5,
         "away_sos": 0.5555555555555555,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "injury_source": null,
         "injury_status": "elo_fallback",
         "kind": "current_method_replay",
         "forecast_cutoff": "2026-10-22T17:12:52.215653+00:00",
         "replay_input_basis": "no_recoverable_pregame_injury_inputs",
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "eligible_for_evaluation": false,
         "home_win": 1,
         "home_score": 114,
@@ -1005,13 +1005,13 @@
         },
         "home_sos": 0.5,
         "away_sos": 0.5555555555555555,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "injury_source": null,
         "injury_status": "elo_fallback",
         "kind": "current_method_replay",
         "forecast_cutoff": "2026-10-22T17:12:52.215653+00:00",
         "replay_input_basis": "no_recoverable_pregame_injury_inputs",
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "eligible_for_evaluation": false,
         "home_win": 1,
         "home_score": 96,
@@ -1044,10 +1044,10 @@
         },
         "home_sos": 0.4444444444444444,
         "away_sos": 0.4444444444444444,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.5606286829978374,
         "base_away_probability": 0.4393713170021626,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "unavailable",
           "away": "submitted"
@@ -1093,10 +1093,10 @@
         },
         "home_sos": 0.47222222222222215,
         "away_sos": 0.4444444444444444,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.5931439163480076,
         "base_away_probability": 0.40685608365199244,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -1142,10 +1142,10 @@
         },
         "home_sos": 0.5555555555555555,
         "away_sos": 0.5555555555555555,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.5649942400017116,
         "base_away_probability": 0.4350057599982884,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -1191,10 +1191,10 @@
         },
         "home_sos": 0.4444444444444444,
         "away_sos": 0.5555555555555555,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.5402115837608007,
         "base_away_probability": 0.4597884162391993,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -1240,10 +1240,10 @@
         },
         "home_sos": 0.5555555555555555,
         "away_sos": 0.4444444444444444,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.4825670092192923,
         "base_away_probability": 0.5174329907807077,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -1289,10 +1289,10 @@
         },
         "home_sos": 0.5555555555555555,
         "away_sos": 0.5555555555555555,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.30421691010149143,
         "base_away_probability": 0.6957830898985086,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -1338,10 +1338,10 @@
         },
         "home_sos": 0.5555555555555555,
         "away_sos": 0.4444444444444444,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.3633297428566893,
         "base_away_probability": 0.6366702571433107,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -1387,10 +1387,10 @@
         },
         "home_sos": 0.5555555555555555,
         "away_sos": 0.47222222222222215,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.6507197511839309,
         "base_away_probability": 0.3492802488160691,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -1436,10 +1436,10 @@
         },
         "home_sos": 0.4444444444444444,
         "away_sos": 0.4444444444444444,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.4573885196673881,
         "base_away_probability": 0.5426114803326119,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -1485,10 +1485,10 @@
         },
         "home_sos": 0.5555555555555555,
         "away_sos": 0.4444444444444444,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.6644035621586208,
         "base_away_probability": 0.33559643784137916,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -1534,10 +1534,10 @@
         },
         "home_sos": 0.5555555555555555,
         "away_sos": 0.5555555555555555,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.6068140983068403,
         "base_away_probability": 0.3931859016931597,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -1583,10 +1583,10 @@
         },
         "home_sos": 0.5555555555555555,
         "away_sos": 0.4444444444444444,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.3588319502017542,
         "base_away_probability": 0.6411680497982458,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -1632,10 +1632,10 @@
         },
         "home_sos": 0.4166666666666667,
         "away_sos": 0.5138888888888888,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.6447624770952651,
         "base_away_probability": 0.35523752290473487,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -1681,10 +1681,10 @@
         },
         "home_sos": 0.38888888888888884,
         "away_sos": 0.47222222222222215,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.7562839969158369,
         "base_away_probability": 0.24371600308416308,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -1730,10 +1730,10 @@
         },
         "home_sos": 0.3333333333333333,
         "away_sos": 0.5972222222222222,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.7957560992785319,
         "base_away_probability": 0.20424390072146814,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "unavailable"
@@ -1779,10 +1779,10 @@
         },
         "home_sos": 0.5,
         "away_sos": 0.5,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.6835103657375983,
         "base_away_probability": 0.31648963426240173,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -1828,10 +1828,10 @@
         },
         "home_sos": 0.4166666666666667,
         "away_sos": 0.5416666666666666,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.27312924050987697,
         "base_away_probability": 0.726870759490123,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -1877,10 +1877,10 @@
         },
         "home_sos": 0.625,
         "away_sos": 0.625,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.5897525180805353,
         "base_away_probability": 0.4102474819194647,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -1926,10 +1926,10 @@
         },
         "home_sos": 0.3333333333333333,
         "away_sos": 0.47222222222222215,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.77833856626753,
         "base_away_probability": 0.22166143373247005,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -1975,10 +1975,10 @@
         },
         "home_sos": 0.4166666666666667,
         "away_sos": 0.47222222222222215,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.7283755719698822,
         "base_away_probability": 0.27162442803011777,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -2024,10 +2024,10 @@
         },
         "home_sos": 0.6166666666666667,
         "away_sos": 0.4916666666666667,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.2704208835375213,
         "base_away_probability": 0.7295791164624787,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -2073,10 +2073,10 @@
         },
         "home_sos": 0.43333333333333335,
         "away_sos": 0.35000000000000003,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.4217586148451514,
         "base_away_probability": 0.5782413851548486,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -2122,10 +2122,10 @@
         },
         "home_sos": 0.39166666666666666,
         "away_sos": 0.3833333333333333,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.6200109512734865,
         "base_away_probability": 0.3799890487265135,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -2171,10 +2171,10 @@
         },
         "home_sos": 0.6666666666666666,
         "away_sos": 0.5750000000000001,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.5906427054302538,
         "base_away_probability": 0.40935729456974623,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -2220,10 +2220,10 @@
         },
         "home_sos": 0.5,
         "away_sos": 0.65,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.7613553444876222,
         "base_away_probability": 0.2386446555123778,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -2269,10 +2269,10 @@
         },
         "home_sos": 0.6166666666666667,
         "away_sos": 0.638888888888889,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.394688425313197,
         "base_away_probability": 0.605311574686803,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -2318,10 +2318,10 @@
         },
         "home_sos": 0.6,
         "away_sos": 0.375,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.5246455816087825,
         "base_away_probability": 0.4753544183912175,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -2367,10 +2367,10 @@
         },
         "home_sos": 0.5333333333333333,
         "away_sos": 0.5111111111111111,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.8071584222245665,
         "base_away_probability": 0.19284157777543354,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -2416,10 +2416,10 @@
         },
         "home_sos": 0.6666666666666666,
         "away_sos": 0.4777777777777778,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.5828826988833857,
         "base_away_probability": 0.41711730111661427,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -2465,10 +2465,10 @@
         },
         "home_sos": 0.4222222222222222,
         "away_sos": 0.5,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.8155090170660909,
         "base_away_probability": 0.1844909829339091,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -2514,10 +2514,10 @@
         },
         "home_sos": 0.4666666666666666,
         "away_sos": 0.37777777777777777,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.6619470736306245,
         "base_away_probability": 0.33805292636937545,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -2563,10 +2563,10 @@
         },
         "home_sos": 0.4888888888888889,
         "away_sos": 0.31851851851851853,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.58800416646695,
         "base_away_probability": 0.41199583353305,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "unavailable",
           "away": "submitted"
@@ -2612,10 +2612,10 @@
         },
         "home_sos": 0.4916666666666667,
         "away_sos": 0.6777777777777777,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.7271540576280064,
         "base_away_probability": 0.27284594237199356,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -2661,10 +2661,10 @@
         },
         "home_sos": 0.6,
         "away_sos": 0.688888888888889,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.5761147580828835,
         "base_away_probability": 0.4238852419171165,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -2710,10 +2710,10 @@
         },
         "home_sos": 0.6222222222222222,
         "away_sos": 0.46666666666666673,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.495602705911022,
         "base_away_probability": 0.504397294088978,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -2759,10 +2759,10 @@
         },
         "home_sos": 0.3666666666666667,
         "away_sos": 0.5,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.7560149005735819,
         "base_away_probability": 0.2439850994264181,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -2808,10 +2808,10 @@
         },
         "home_sos": 0.32962962962962966,
         "away_sos": 0.5481481481481482,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.8090214860962909,
         "base_away_probability": 0.19097851390370912,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -2857,10 +2857,10 @@
         },
         "home_sos": 0.6925925925925926,
         "away_sos": 0.31851851851851853,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.4069195302090432,
         "base_away_probability": 0.5930804697909569,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -2906,10 +2906,10 @@
         },
         "home_sos": 0.3537037037037037,
         "away_sos": 0.5074074074074074,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.8569073560515255,
         "base_away_probability": 0.14309264394847454,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -2955,10 +2955,10 @@
         },
         "home_sos": 0.6,
         "away_sos": 0.6518518518518519,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.5420896575233588,
         "base_away_probability": 0.4579103424766412,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -3004,10 +3004,10 @@
         },
         "home_sos": 0.3194444444444444,
         "away_sos": 0.5611111111111111,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.6519187648017445,
         "base_away_probability": 0.3480812351982555,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -3053,10 +3053,10 @@
         },
         "home_sos": 0.49444444444444446,
         "away_sos": 0.5666666666666667,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.7942282884402919,
         "base_away_probability": 0.20577171155970808,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -3102,10 +3102,10 @@
         },
         "home_sos": 0.5555555555555555,
         "away_sos": 0.5972222222222222,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.5527032412781178,
         "base_away_probability": 0.44729675872188224,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -3151,10 +3151,10 @@
         },
         "home_sos": 0.6055555555555555,
         "away_sos": 0.43333333333333335,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.299062158997449,
         "base_away_probability": 0.7009378410025511,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -3200,10 +3200,10 @@
         },
         "home_sos": 0.43333333333333335,
         "away_sos": 0.5666666666666667,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.54811634998742,
         "base_away_probability": 0.45188365001258,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -3249,10 +3249,10 @@
         },
         "home_sos": 0.4222222222222222,
         "away_sos": 0.3972222222222222,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.38921930307073305,
         "base_away_probability": 0.610780696929267,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -3298,10 +3298,10 @@
         },
         "home_sos": 0.7222222222222223,
         "away_sos": 0.38888888888888884,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.29416291452582605,
         "base_away_probability": 0.705837085474174,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "unavailable",
           "away": "submitted"
@@ -3347,10 +3347,10 @@
         },
         "home_sos": 0.4138888888888889,
         "away_sos": 0.5916666666666667,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.7091531204733267,
         "base_away_probability": 0.2908468795266733,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -3396,10 +3396,10 @@
         },
         "home_sos": 0.4185185185185185,
         "away_sos": 0.27037037037037037,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.3871150109860858,
         "base_away_probability": 0.6128849890139142,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -3445,10 +3445,10 @@
         },
         "home_sos": 0.5277777777777778,
         "away_sos": 0.4333333333333333,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.28721800774549144,
         "base_away_probability": 0.7127819922545086,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -3494,10 +3494,10 @@
         },
         "home_sos": 0.6972222222222223,
         "away_sos": 0.5,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.2314378707275694,
         "base_away_probability": 0.7685621292724306,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -3543,10 +3543,10 @@
         },
         "home_sos": 0.6,
         "away_sos": 0.4518518518518519,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.4855063611970954,
         "base_away_probability": 0.5144936388029047,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -3592,10 +3592,10 @@
         },
         "home_sos": 0.6011904761904762,
         "away_sos": 0.47936507936507927,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.5346540641614783,
         "base_away_probability": 0.4653459358385217,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -3641,10 +3641,10 @@
         },
         "home_sos": 0.3226190476190476,
         "away_sos": 0.25396825396825395,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.5198513187320258,
         "base_away_probability": 0.48014868126797416,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -3690,10 +3690,10 @@
         },
         "home_sos": 0.6527777777777778,
         "away_sos": 0.6756613756613756,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.6912388290056427,
         "base_away_probability": 0.3087611709943573,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "unavailable"
@@ -3739,13 +3739,13 @@
         },
         "home_sos": 0.5206349206349207,
         "away_sos": 0.4444444444444444,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "injury_source": null,
         "injury_status": "elo_fallback",
         "kind": "current_method_replay",
         "forecast_cutoff": "2026-10-30T19:27:40.769964+00:00",
         "replay_input_basis": "no_recoverable_pregame_injury_inputs",
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "eligible_for_evaluation": false,
         "home_win": 1,
         "home_score": 95,
@@ -3778,13 +3778,13 @@
         },
         "home_sos": 0.35555555555555557,
         "away_sos": 0.5773809523809523,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "injury_source": null,
         "injury_status": "elo_fallback",
         "kind": "current_method_replay",
         "forecast_cutoff": "2026-10-30T19:27:40.769964+00:00",
         "replay_input_basis": "no_recoverable_pregame_injury_inputs",
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "eligible_for_evaluation": false,
         "home_win": 1,
         "home_score": 125,
@@ -3817,13 +3817,13 @@
         },
         "home_sos": 0.653968253968254,
         "away_sos": 0.2976190476190476,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "injury_source": null,
         "injury_status": "elo_fallback",
         "kind": "current_method_replay",
         "forecast_cutoff": "2026-10-30T19:27:40.769964+00:00",
         "replay_input_basis": "no_recoverable_pregame_injury_inputs",
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "eligible_for_evaluation": false,
         "home_win": 0,
         "home_score": 94,
@@ -3856,13 +3856,13 @@
         },
         "home_sos": 0.4666666666666666,
         "away_sos": 0.6380952380952382,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "injury_source": null,
         "injury_status": "elo_fallback",
         "kind": "current_method_replay",
         "forecast_cutoff": "2026-10-30T19:27:40.769964+00:00",
         "replay_input_basis": "no_recoverable_pregame_injury_inputs",
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "eligible_for_evaluation": false,
         "home_win": 1,
         "home_score": 98,
@@ -3895,13 +3895,13 @@
         },
         "home_sos": 0.40277777777777773,
         "away_sos": 0.5793650793650794,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "injury_source": null,
         "injury_status": "elo_fallback",
         "kind": "current_method_replay",
         "forecast_cutoff": "2026-10-30T19:27:40.769964+00:00",
         "replay_input_basis": "no_recoverable_pregame_injury_inputs",
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "eligible_for_evaluation": false,
         "home_win": 0,
         "home_score": 114,
@@ -3934,10 +3934,10 @@
         },
         "home_sos": 0.42063492063492064,
         "away_sos": 0.3857142857142857,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.692858639617342,
         "base_away_probability": 0.30714136038265805,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -3983,10 +3983,10 @@
         },
         "home_sos": 0.7333333333333333,
         "away_sos": 0.5714285714285714,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.3449753463850761,
         "base_away_probability": 0.6550246536149239,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -4032,10 +4032,10 @@
         },
         "home_sos": 0.41269841269841273,
         "away_sos": 0.5333333333333333,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.6812016926148389,
         "base_away_probability": 0.31879830738516113,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -4081,10 +4081,10 @@
         },
         "home_sos": 0.6126984126984127,
         "away_sos": 0.4885714285714286,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.33120595349896875,
         "base_away_probability": 0.6687940465010312,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -4130,10 +4130,10 @@
         },
         "home_sos": 0.4761904761904762,
         "away_sos": 0.4677248677248677,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.5054289006608332,
         "base_away_probability": 0.49457109933916676,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -4179,10 +4179,10 @@
         },
         "home_sos": 0.6076388888888888,
         "away_sos": 0.4035714285714285,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.32570758918227266,
         "base_away_probability": 0.6742924108177273,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -4228,10 +4228,10 @@
         },
         "home_sos": 0.6517857142857143,
         "away_sos": 0.4871031746031746,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.5262075964964915,
         "base_away_probability": 0.4737924035035085,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -4277,10 +4277,10 @@
         },
         "home_sos": 0.5208333333333334,
         "away_sos": 0.3202380952380952,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.3611440107323139,
         "base_away_probability": 0.6388559892676862,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -4326,10 +4326,10 @@
         },
         "home_sos": 0.27619047619047615,
         "away_sos": 0.6952380952380951,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.6446940012103104,
         "base_away_probability": 0.3553059987896896,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -4375,10 +4375,10 @@
         },
         "home_sos": 0.5488095238095237,
         "away_sos": 0.3654761904761905,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.3909265267335663,
         "base_away_probability": 0.6090734732664337,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "unavailable",
           "away": "submitted"
@@ -4424,10 +4424,10 @@
         },
         "home_sos": 0.5684523809523809,
         "away_sos": 0.5464285714285714,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.6605491031551344,
         "base_away_probability": 0.3394508968448656,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -4473,10 +4473,10 @@
         },
         "home_sos": 0.6353174603174603,
         "away_sos": 0.6726190476190476,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.39140210792538666,
         "base_away_probability": 0.6085978920746133,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -4522,10 +4522,10 @@
         },
         "home_sos": 0.594047619047619,
         "away_sos": 0.45357142857142857,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.4329468765324519,
         "base_away_probability": 0.5670531234675481,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -4571,10 +4571,10 @@
         },
         "home_sos": 0.28915343915343916,
         "away_sos": 0.3914241622574956,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.6193222638735946,
         "base_away_probability": 0.38067773612640543,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -4620,10 +4620,10 @@
         },
         "home_sos": 0.3608465608465608,
         "away_sos": 0.5325176366843033,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.5972706848658262,
         "base_away_probability": 0.40272931513417376,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -4669,10 +4669,10 @@
         },
         "home_sos": 0.5179894179894179,
         "away_sos": 0.5575396825396826,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.6798762326263112,
         "base_away_probability": 0.32012376737368875,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -4718,10 +4718,10 @@
         },
         "home_sos": 0.5934744268077602,
         "away_sos": 0.5709876543209876,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.47099135334655096,
         "base_away_probability": 0.529008646653449,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -4767,10 +4767,10 @@
         },
         "home_sos": 0.6651234567901234,
         "away_sos": 0.46759259259259256,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.36618726357964276,
         "base_away_probability": 0.6338127364203572,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -4816,10 +4816,10 @@
         },
         "home_sos": 0.4748677248677248,
         "away_sos": 0.3604497354497354,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.2822210493235474,
         "base_away_probability": 0.7177789506764526,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -4865,10 +4865,10 @@
         },
         "home_sos": 0.3464506172839506,
         "away_sos": 0.45447530864197533,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.8606404591529243,
         "base_away_probability": 0.1393595408470757,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -4914,10 +4914,10 @@
         },
         "home_sos": 0.4729938271604938,
         "away_sos": 0.42361111111111116,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.6489432355429208,
         "base_away_probability": 0.35105676445707923,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -4963,10 +4963,10 @@
         },
         "home_sos": 0.34027777777777785,
         "away_sos": 0.6686507936507936,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.7390336444820699,
         "base_away_probability": 0.2609663555179301,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -5012,10 +5012,10 @@
         },
         "home_sos": 0.2896825396825397,
         "away_sos": 0.6118827160493827,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.7553123454965123,
         "base_away_probability": 0.24468765450348773,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -5061,10 +5061,10 @@
         },
         "home_sos": 0.37753527336860665,
         "away_sos": 0.6955467372134039,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.603973835103658,
         "base_away_probability": 0.396026164896342,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -5110,10 +5110,10 @@
         },
         "home_sos": 0.3479938271604938,
         "away_sos": 0.5277777777777778,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.7651732211728498,
         "base_away_probability": 0.2348267788271502,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "unavailable"
@@ -5159,10 +5159,10 @@
         },
         "home_sos": 0.625,
         "away_sos": 0.6917989417989419,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.6464944801269081,
         "base_away_probability": 0.35350551987309187,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -5208,10 +5208,10 @@
         },
         "home_sos": 0.39616402116402116,
         "away_sos": 0.5810185185185185,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.8768258106690489,
         "base_away_probability": 0.12317418933095114,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -5257,10 +5257,10 @@
         },
         "home_sos": 0.6261904761904762,
         "away_sos": 0.5318783068783068,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.6266127510020143,
         "base_away_probability": 0.3733872489979857,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -5306,10 +5306,10 @@
         },
         "home_sos": 0.427744708994709,
         "away_sos": 0.5569727891156463,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.5000531423453554,
         "base_away_probability": 0.49994685765464464,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -5355,10 +5355,10 @@
         },
         "home_sos": 0.4845679012345679,
         "away_sos": 0.34413580246913583,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.4846567608920185,
         "base_away_probability": 0.5153432391079815,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -5404,10 +5404,10 @@
         },
         "home_sos": 0.42515432098765427,
         "away_sos": 0.5908919123204838,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.6622624272545957,
         "base_away_probability": 0.3377375727454043,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -5453,10 +5453,10 @@
         },
         "home_sos": 0.6736111111111112,
         "away_sos": 0.674074074074074,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.6432126654726614,
         "base_away_probability": 0.3567873345273386,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -5502,10 +5502,10 @@
         },
         "home_sos": 0.4986111111111111,
         "away_sos": 0.4984126984126984,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.3363587478130523,
         "base_away_probability": 0.6636412521869477,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -5551,10 +5551,10 @@
         },
         "home_sos": 0.3306878306878307,
         "away_sos": 0.5883597883597883,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.8110109254044802,
         "base_away_probability": 0.18898907459551983,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -5600,10 +5600,10 @@
         },
         "home_sos": 0.4550925925925926,
         "away_sos": 0.31216931216931215,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.29959707351359594,
         "base_away_probability": 0.700402926486404,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -5649,10 +5649,10 @@
         },
         "home_sos": 0.3343915343915344,
         "away_sos": 0.4783068783068783,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.7602840377973888,
         "base_away_probability": 0.23971596220261115,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -5698,10 +5698,10 @@
         },
         "home_sos": 0.33749999999999997,
         "away_sos": 0.6462962962962963,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.7056358609193486,
         "base_away_probability": 0.2943641390806514,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -5747,10 +5747,10 @@
         },
         "home_sos": 0.37592592592592594,
         "away_sos": 0.4402116402116402,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.7004322582132838,
         "base_away_probability": 0.2995677417867162,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -5796,10 +5796,10 @@
         },
         "home_sos": 0.5402116402116403,
         "away_sos": 0.6151927437641723,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.6498305559488796,
         "base_away_probability": 0.3501694440511204,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -5845,10 +5845,10 @@
         },
         "home_sos": 0.5453703703703704,
         "away_sos": 0.7138888888888889,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.6378171167384806,
         "base_away_probability": 0.3621828832615194,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -5894,10 +5894,10 @@
         },
         "home_sos": 0.5116402116402117,
         "away_sos": 0.510626102292769,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.614916705361776,
         "base_away_probability": 0.385083294638224,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -5943,10 +5943,10 @@
         },
         "home_sos": 0.6504409171075838,
         "away_sos": 0.39825396825396825,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.4044543424754531,
         "base_away_probability": 0.5955456575245469,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -5992,10 +5992,10 @@
         },
         "home_sos": 0.5507936507936507,
         "away_sos": 0.601058201058201,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.758851723941041,
         "base_away_probability": 0.24114827605895905,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -6041,10 +6041,10 @@
         },
         "home_sos": 0.6127314814814815,
         "away_sos": 0.34788359788359785,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.2214840200512142,
         "base_away_probability": 0.7785159799487857,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -6090,10 +6090,10 @@
         },
         "home_sos": 0.4047619047619048,
         "away_sos": 0.34074074074074073,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.5203717349405319,
         "base_away_probability": 0.4796282650594681,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -6139,10 +6139,10 @@
         },
         "home_sos": 0.4070707070707071,
         "away_sos": 0.38950617283950617,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.48215241353259936,
         "base_away_probability": 0.5178475864674006,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -6188,10 +6188,10 @@
         },
         "home_sos": 0.4348484848484849,
         "away_sos": 0.5686026936026937,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.6729394479576655,
         "base_away_probability": 0.32706055204233453,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -6237,10 +6237,10 @@
         },
         "home_sos": 0.4571969696969697,
         "away_sos": 0.5245791245791246,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.7625680735824742,
         "base_away_probability": 0.23743192641752575,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -6286,10 +6286,10 @@
         },
         "home_sos": 0.5969696969696969,
         "away_sos": 0.41750841750841755,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.39176613287995726,
         "base_away_probability": 0.6082338671200427,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -6335,10 +6335,10 @@
         },
         "home_sos": 0.6946127946127946,
         "away_sos": 0.5166666666666667,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.46186749292983825,
         "base_away_probability": 0.5381325070701617,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -6384,10 +6384,10 @@
         },
         "home_sos": 0.3543771043771044,
         "away_sos": 0.5200757575757575,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.7258465857366083,
         "base_away_probability": 0.2741534142633917,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -6433,10 +6433,10 @@
         },
         "home_sos": 0.634006734006734,
         "away_sos": 0.5949074074074073,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.28834271364765246,
         "base_away_probability": 0.7116572863523476,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -6482,10 +6482,10 @@
         },
         "home_sos": 0.4757996632996633,
         "away_sos": 0.31856060606060604,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.3449555856173047,
         "base_away_probability": 0.6550444143826952,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -6531,10 +6531,10 @@
         },
         "home_sos": 0.5771043771043771,
         "away_sos": 0.47167508417508414,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.3315054679368517,
         "base_away_probability": 0.6684945320631484,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -6580,10 +6580,10 @@
         },
         "home_sos": 0.6637325637325637,
         "away_sos": 0.6224092779648335,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.5966337459968645,
         "base_away_probability": 0.4033662540031355,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -6629,10 +6629,10 @@
         },
         "home_sos": 0.6193181818181818,
         "away_sos": 0.33354377104377103,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.24984155400128988,
         "base_away_probability": 0.7501584459987101,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -6678,10 +6678,10 @@
         },
         "home_sos": 0.5537758537758538,
         "away_sos": 0.39483726150392817,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.2473022496423083,
         "base_away_probability": 0.7526977503576917,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -6727,10 +6727,10 @@
         },
         "home_sos": 0.3611111111111111,
         "away_sos": 0.5463636363636364,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.7115038698156176,
         "base_away_probability": 0.28849613018438236,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -6776,10 +6776,10 @@
         },
         "home_sos": 0.496969696969697,
         "away_sos": 0.554040404040404,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.46632363524568915,
         "base_away_probability": 0.5336763647543108,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -6825,10 +6825,10 @@
         },
         "home_sos": 0.4365881032547699,
         "away_sos": 0.6632248410026188,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.869427024391083,
         "base_away_probability": 0.130572975608917,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -6874,10 +6874,10 @@
         },
         "home_sos": 0.38150252525252526,
         "away_sos": 0.5942012719790498,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.6221510539433017,
         "base_away_probability": 0.3778489460566983,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -6923,10 +6923,10 @@
         },
         "home_sos": 0.6806958473625141,
         "away_sos": 0.42698412698412697,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.3422493765266117,
         "base_away_probability": 0.6577506234733883,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -6972,10 +6972,10 @@
         },
         "home_sos": 0.6307519640852974,
         "away_sos": 0.623611111111111,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.45278182587655513,
         "base_away_probability": 0.5472181741234449,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -7021,10 +7021,10 @@
         },
         "home_sos": 0.6513131313131313,
         "away_sos": 0.3183080808080808,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.3199242553363081,
         "base_away_probability": 0.6800757446636919,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -7070,10 +7070,10 @@
         },
         "home_sos": 0.6426262626262625,
         "away_sos": 0.6364898989898989,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.6821173115210547,
         "base_away_probability": 0.3178826884789453,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -7119,10 +7119,10 @@
         },
         "home_sos": 0.3291245791245791,
         "away_sos": 0.5978282828282828,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.8709419027888877,
         "base_away_probability": 0.12905809721111228,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -7168,10 +7168,10 @@
         },
         "home_sos": 0.3455754122420789,
         "away_sos": 0.5356341189674523,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.7607406285167005,
         "base_away_probability": 0.23925937148329945,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -7217,10 +7217,10 @@
         },
         "home_sos": 0.6097643097643098,
         "away_sos": 0.29921436588103256,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.23598211955059042,
         "base_away_probability": 0.7640178804494095,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -7266,10 +7266,10 @@
         },
         "home_sos": 0.45107485107485107,
         "away_sos": 0.32969599844599845,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.6724489833096652,
         "base_away_probability": 0.3275510166903348,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -7315,10 +7315,10 @@
         },
         "home_sos": 0.4189588189588189,
         "away_sos": 0.32040922040922043,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.331633788090501,
         "base_away_probability": 0.6683662119094991,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -7364,10 +7364,10 @@
         },
         "home_sos": 0.6668609168609169,
         "away_sos": 0.5523592569047114,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.5296915813626955,
         "base_away_probability": 0.47030841863730455,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -7413,10 +7413,10 @@
         },
         "home_sos": 0.5241647241647241,
         "away_sos": 0.3941336441336441,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.4871794976083632,
         "base_away_probability": 0.5128205023916368,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -7462,10 +7462,10 @@
         },
         "home_sos": 0.4215811965811966,
         "away_sos": 0.6070750237416904,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.8223585359357842,
         "base_away_probability": 0.17764146406421577,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -7511,10 +7511,10 @@
         },
         "home_sos": 0.5527497194163861,
         "away_sos": 0.4986316152982819,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.6786586508210117,
         "base_away_probability": 0.32134134917898827,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -7560,10 +7560,10 @@
         },
         "home_sos": 0.379032634032634,
         "away_sos": 0.5527777777777778,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.629863115749835,
         "base_away_probability": 0.370136884250165,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -7609,10 +7609,10 @@
         },
         "home_sos": 0.5735479797979798,
         "away_sos": 0.6413247863247863,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.5654909781846618,
         "base_away_probability": 0.43450902181533824,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -7658,10 +7658,10 @@
         },
         "home_sos": 0.6526223776223776,
         "away_sos": 0.47064393939393945,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.3604793283539884,
         "base_away_probability": 0.6395206716460116,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -7707,10 +7707,10 @@
         },
         "home_sos": 0.4194483294483295,
         "away_sos": 0.6187529137529137,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.7432900122840079,
         "base_away_probability": 0.25670998771599207,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -7756,10 +7756,10 @@
         },
         "home_sos": 0.29409479409479405,
         "away_sos": 0.5230078563411896,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.8285712276937859,
         "base_away_probability": 0.17142877230621412,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -7805,10 +7805,10 @@
         },
         "home_sos": 0.6169580419580419,
         "away_sos": 0.6513032422123332,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.4794928760811817,
         "base_away_probability": 0.5205071239188184,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -7854,10 +7854,10 @@
         },
         "home_sos": 0.3734475401142068,
         "away_sos": 0.4530562030562031,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.5369291084115516,
         "base_away_probability": 0.4630708915884484,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -7903,10 +7903,10 @@
         },
         "home_sos": 0.4496281496281496,
         "away_sos": 0.3234709734709735,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.28712615726131296,
         "base_away_probability": 0.712873842738687,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -7952,10 +7952,10 @@
         },
         "home_sos": 0.36699411699411694,
         "away_sos": 0.3105533355533356,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.3374726593057722,
         "base_away_probability": 0.6625273406942278,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -8001,10 +8001,10 @@
         },
         "home_sos": 0.6744366744366744,
         "away_sos": 0.5951085951085952,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.4521030899336217,
         "base_away_probability": 0.5478969100663783,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -8050,10 +8050,10 @@
         },
         "home_sos": 0.40494354130717775,
         "away_sos": 0.36357077266168175,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.5191638461890918,
         "base_away_probability": 0.48083615381090816,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -8099,10 +8099,10 @@
         },
         "home_sos": 0.48445998445998445,
         "away_sos": 0.5364496614496614,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.5144026007096945,
         "base_away_probability": 0.48559739929030554,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "not_submitted",
           "away": "submitted"
@@ -8148,10 +8148,10 @@
         },
         "home_sos": 0.6429984157256885,
         "away_sos": 0.4775696525696526,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.430342273472658,
         "base_away_probability": 0.5696577265273419,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "not_submitted"
@@ -8197,10 +8197,10 @@
         },
         "home_sos": 0.6645299145299145,
         "away_sos": 0.31277364610697944,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.21888840309059393,
         "base_away_probability": 0.781111596909406,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -8246,10 +8246,10 @@
         },
         "home_sos": 0.5390874557541224,
         "away_sos": 0.573076923076923,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.37107555090515465,
         "base_away_probability": 0.6289244490948454,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -8295,10 +8295,10 @@
         },
         "home_sos": 0.6828449328449328,
         "away_sos": 0.2860901724538088,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.16115858184039092,
         "base_away_probability": 0.8388414181596091,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -8344,10 +8344,10 @@
         },
         "home_sos": 0.33507326007326005,
         "away_sos": 0.3998299680117862,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.5790058684390247,
         "base_away_probability": 0.4209941315609753,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -8393,10 +8393,10 @@
         },
         "home_sos": 0.39768009768009766,
         "away_sos": 0.31052281052281056,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.3296799104770247,
         "base_away_probability": 0.6703200895229753,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -8442,10 +8442,10 @@
         },
         "home_sos": 0.6354377945287036,
         "away_sos": 0.6558618149527241,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.7003366039514567,
         "base_away_probability": 0.2996633960485433,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -8491,10 +8491,10 @@
         },
         "home_sos": 0.6412375503284594,
         "away_sos": 0.623981573981574,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.4705906696184738,
         "base_away_probability": 0.5294093303815262,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -8540,10 +8540,10 @@
         },
         "home_sos": 0.46413586413586416,
         "away_sos": 0.6265771265771266,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.6972668889581055,
         "base_away_probability": 0.3027331110418945,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -8589,10 +8589,10 @@
         },
         "home_sos": 0.626056166056166,
         "away_sos": 0.3834961334961335,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.13887772421642763,
         "base_away_probability": 0.8611222757835724,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "not_submitted",
           "away": "submitted"
@@ -8638,10 +8638,10 @@
         },
         "home_sos": 0.5745920745920746,
         "away_sos": 0.6083083583083583,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.7520944616227294,
         "base_away_probability": 0.24790553837727058,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -8687,10 +8687,10 @@
         },
         "home_sos": 0.42901542901542905,
         "away_sos": 0.47881562881562884,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.5597686799310703,
         "base_away_probability": 0.44023132006892973,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -8736,10 +8736,10 @@
         },
         "home_sos": 0.5139194139194139,
         "away_sos": 0.39244505494505494,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.29998091656948117,
         "base_away_probability": 0.7000190834305189,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "unavailable"
@@ -8785,10 +8785,10 @@
         },
         "home_sos": 0.2857244607244607,
         "away_sos": 0.414030414030414,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.7107594307268592,
         "base_away_probability": 0.2892405692731408,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "unavailable"
@@ -8834,10 +8834,10 @@
         },
         "home_sos": 0.5071123321123321,
         "away_sos": 0.4668831168831169,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.4417264324800149,
         "base_away_probability": 0.558273567519985,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -8883,10 +8883,10 @@
         },
         "home_sos": 0.5370777370777371,
         "away_sos": 0.30462759462759464,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.2485162931478674,
         "base_away_probability": 0.7514837068521326,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -8932,10 +8932,10 @@
         },
         "home_sos": 0.5404872904872905,
         "away_sos": 0.37879019129019126,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.4775927040645707,
         "base_away_probability": 0.5224072959354293,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -8981,10 +8981,10 @@
         },
         "home_sos": 0.2935897435897436,
         "away_sos": 0.6718813593813594,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.9033332776682682,
         "base_away_probability": 0.09666672233173179,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -9030,10 +9030,10 @@
         },
         "home_sos": 0.612006512006512,
         "away_sos": 0.6662596662596663,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.7087908256355107,
         "base_away_probability": 0.29120917436448934,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -9079,10 +9079,10 @@
         },
         "home_sos": 0.6460816960816961,
         "away_sos": 0.2940559440559441,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.2431255932067282,
         "base_away_probability": 0.7568744067932718,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -9128,10 +9128,10 @@
         },
         "home_sos": 0.6146723646723647,
         "away_sos": 0.34875457875457877,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.3406687366948991,
         "base_away_probability": 0.659331263305101,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -9177,10 +9177,10 @@
         },
         "home_sos": 0.5637973137973139,
         "away_sos": 0.36901474593782285,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.21287514030563034,
         "base_away_probability": 0.7871248596943696,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -9226,10 +9226,10 @@
         },
         "home_sos": 0.5549755799755799,
         "away_sos": 0.47895181741335585,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.6320245457754351,
         "base_away_probability": 0.3679754542245649,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -9275,10 +9275,10 @@
         },
         "home_sos": 0.6355089355089355,
         "away_sos": 0.49219576719576724,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.34114005286929877,
         "base_away_probability": 0.6588599471307013,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -9324,10 +9324,10 @@
         },
         "home_sos": 0.3686757686757687,
         "away_sos": 0.5548280423280424,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.5916457898736992,
         "base_away_probability": 0.4083542101263008,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -9373,10 +9373,10 @@
         },
         "home_sos": 0.34374514374514376,
         "away_sos": 0.6271978021978022,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.8647987910783136,
         "base_away_probability": 0.1352012089216864,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -9422,10 +9422,10 @@
         },
         "home_sos": 0.42049520991828687,
         "away_sos": 0.6417582417582417,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.8106265586039718,
         "base_away_probability": 0.18937344139602819,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -9471,10 +9471,10 @@
         },
         "home_sos": 0.6818352587583357,
         "away_sos": 0.5037740037740038,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.35670344919604396,
         "base_away_probability": 0.6432965508039561,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -9520,10 +9520,10 @@
         },
         "home_sos": 0.40673585673585677,
         "away_sos": 0.3852938727938728,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.4980755170299272,
         "base_away_probability": 0.5019244829700729,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -9569,10 +9569,10 @@
         },
         "home_sos": 0.6789893866816944,
         "away_sos": 0.2931929181929182,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.11578601082277416,
         "base_away_probability": 0.8842139891772258,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -9618,10 +9618,10 @@
         },
         "home_sos": 0.5268009768009768,
         "away_sos": 0.6617063492063492,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.8651420249031895,
         "base_away_probability": 0.13485797509681052,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -9667,10 +9667,10 @@
         },
         "home_sos": 0.49229497354497354,
         "away_sos": 0.4579822954822954,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.5185316732049774,
         "base_away_probability": 0.4814683267950226,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "unavailable"
@@ -9716,10 +9716,10 @@
         },
         "home_sos": 0.6665633511787358,
         "away_sos": 0.3713980463980464,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.23265720926507738,
         "base_away_probability": 0.7673427907349226,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -9765,10 +9765,10 @@
         },
         "home_sos": 0.5096916971916972,
         "away_sos": 0.2779304029304029,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.27266972838638565,
         "base_away_probability": 0.7273302716136143,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -9814,10 +9814,10 @@
         },
         "home_sos": 0.5842960458345073,
         "away_sos": 0.29738629426129426,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.1973578011619395,
         "base_away_probability": 0.8026421988380605,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -9863,10 +9863,10 @@
         },
         "home_sos": 0.42701719576719577,
         "away_sos": 0.6729548229548229,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.671051526028277,
         "base_away_probability": 0.328948473971723,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -9912,10 +9912,10 @@
         },
         "home_sos": 0.386193783068783,
         "away_sos": 0.5032312925170067,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.7588408176121477,
         "base_away_probability": 0.24115918238785228,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -9961,10 +9961,10 @@
         },
         "home_sos": 0.5664201183431953,
         "away_sos": 0.3646825396825397,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.3168419938371104,
         "base_away_probability": 0.6831580061628896,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -10010,10 +10010,10 @@
         },
         "home_sos": 0.650765306122449,
         "away_sos": 0.3553240740740741,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.26836986786475314,
         "base_away_probability": 0.7316301321352469,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -10059,10 +10059,10 @@
         },
         "home_sos": 0.6722767312053026,
         "away_sos": 0.5158424908424909,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.5007645774822375,
         "base_away_probability": 0.49923542251776254,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -10108,10 +10108,10 @@
         },
         "home_sos": 0.6489227207977208,
         "away_sos": 0.5913614163614164,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.5358075132569027,
         "base_away_probability": 0.4641924867430973,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -10157,10 +10157,10 @@
         },
         "home_sos": 0.5955104724335493,
         "away_sos": 0.3609486743415315,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.3219711375544573,
         "base_away_probability": 0.6780288624455427,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -10206,10 +10206,10 @@
         },
         "home_sos": 0.4902421652421653,
         "away_sos": 0.5768328893328893,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.6786552636118743,
         "base_away_probability": 0.32134473638812566,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "not_submitted"
@@ -10255,10 +10255,10 @@
         },
         "home_sos": 0.5131904043668749,
         "away_sos": 0.44059559721324426,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.44836660973806625,
         "base_away_probability": 0.5516333902619337,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "unavailable"
@@ -10304,10 +10304,10 @@
         },
         "home_sos": 0.6228785103785103,
         "away_sos": 0.6114970988395357,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.5591674379005331,
         "base_away_probability": 0.44083256209946686,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -10353,10 +10353,10 @@
         },
         "home_sos": 0.6027884765017119,
         "away_sos": 0.6755368814192343,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.6038726460116319,
         "base_away_probability": 0.39612735398836807,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -10402,10 +10402,10 @@
         },
         "home_sos": 0.29571661998132587,
         "away_sos": 0.41514453003423596,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.8078699982274148,
         "base_away_probability": 0.1921300017725852,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -10451,10 +10451,10 @@
         },
         "home_sos": 0.38633017309487894,
         "away_sos": 0.6890589569160998,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.7424817866456633,
         "base_away_probability": 0.25751821335433667,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -10500,10 +10500,10 @@
         },
         "home_sos": 0.5778619781245832,
         "away_sos": 0.5196132897603486,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.6474888977523231,
         "base_away_probability": 0.3525111022476769,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -10549,10 +10549,10 @@
         },
         "home_sos": 0.6423498288204171,
         "away_sos": 0.4114579164999333,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.26242639225875436,
         "base_away_probability": 0.7375736077412456,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -10598,10 +10598,10 @@
         },
         "home_sos": 0.27218720821661996,
         "away_sos": 0.5429446778711484,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.8087274032830546,
         "base_away_probability": 0.1912725967169454,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -10647,10 +10647,10 @@
         },
         "home_sos": 0.6571296296296296,
         "away_sos": 0.46082830568124683,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.4576835371588197,
         "base_away_probability": 0.5423164628411803,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -10696,10 +10696,10 @@
         },
         "home_sos": 0.3703682755153343,
         "away_sos": 0.35088612368024136,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.4722025776647254,
         "base_away_probability": 0.5277974223352746,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -10745,10 +10745,10 @@
         },
         "home_sos": 0.3569553376906318,
         "away_sos": 0.42572612378284647,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.6856352122133528,
         "base_away_probability": 0.3143647877866472,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -10794,10 +10794,10 @@
         },
         "home_sos": 0.6248303167420813,
         "away_sos": 0.389603952692188,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.31316307732420334,
         "base_away_probability": 0.6868369226757967,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -10843,10 +10843,10 @@
         },
         "home_sos": 0.5197829131652661,
         "away_sos": 0.5856934440442844,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.6359736926042775,
         "base_away_probability": 0.3640263073957225,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -10892,10 +10892,10 @@
         },
         "home_sos": 0.5674803254635187,
         "away_sos": 0.5104866946778711,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.4818324054131759,
         "base_away_probability": 0.518167594586824,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -10941,10 +10941,10 @@
         },
         "home_sos": 0.6397759103641457,
         "away_sos": 0.5461756924992219,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.49300584688189525,
         "base_away_probability": 0.5069941531181048,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -10990,10 +10990,10 @@
         },
         "home_sos": 0.3198202614379085,
         "away_sos": 0.6917374727668845,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.8919811373996127,
         "base_away_probability": 0.10801886260038729,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -11039,10 +11039,10 @@
         },
         "home_sos": 0.504687387775623,
         "away_sos": 0.289360231271996,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.3268763450575786,
         "base_away_probability": 0.6731236549424213,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -11088,10 +11088,10 @@
         },
         "home_sos": 0.5442610748002905,
         "away_sos": 0.5926543209876544,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.5339451330398839,
         "base_away_probability": 0.4660548669601161,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -11137,10 +11137,10 @@
         },
         "home_sos": 0.5996809835045129,
         "away_sos": 0.26562273057371094,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.1561524582263842,
         "base_away_probability": 0.8438475417736158,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -11186,10 +11186,10 @@
         },
         "home_sos": 0.5282835356364769,
         "away_sos": 0.6259985475671751,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.6276105431300169,
         "base_away_probability": 0.37238945686998315,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "unavailable"
@@ -11235,10 +11235,10 @@
         },
         "home_sos": 0.38636458857047096,
         "away_sos": 0.6574981844589688,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.8200354659870563,
         "base_away_probability": 0.17996453401294366,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -11284,10 +11284,10 @@
         },
         "home_sos": 0.3819541705571117,
         "away_sos": 0.5404956427015251,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.6654494858240693,
         "base_away_probability": 0.33455051417593074,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -11333,10 +11333,10 @@
         },
         "home_sos": 0.44714830376595077,
         "away_sos": 0.3351423902894491,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.30261006884354424,
         "base_away_probability": 0.6973899311564558,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -11382,10 +11382,10 @@
         },
         "home_sos": 0.4064342774146696,
         "away_sos": 0.5067231753812637,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.7759954381349891,
         "base_away_probability": 0.22400456186501094,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -11431,10 +11431,10 @@
         },
         "home_sos": 0.4065068990559187,
         "away_sos": 0.6358737939620293,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.748771303459998,
         "base_away_probability": 0.251228696540002,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -11480,10 +11480,10 @@
         },
         "home_sos": 0.3811614923747277,
         "away_sos": 0.3922346716464364,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.640598930942593,
         "base_away_probability": 0.359401069057407,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -11529,10 +11529,10 @@
         },
         "home_sos": 0.3820499727668845,
         "away_sos": 0.5658750907770516,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.796763040127673,
         "base_away_probability": 0.20323695987232704,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -11578,10 +11578,10 @@
         },
         "home_sos": 0.5130388266417678,
         "away_sos": 0.3544730392156863,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.2871156609482755,
         "base_away_probability": 0.7128843390517245,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -11627,10 +11627,10 @@
         },
         "home_sos": 0.651933551198257,
         "away_sos": 0.5690129043070219,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.5162040091992647,
         "base_away_probability": 0.4837959908007353,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -11676,10 +11676,10 @@
         },
         "home_sos": 0.2824074074074074,
         "away_sos": 0.6566244553376906,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.876290784430645,
         "base_away_probability": 0.12370921556935499,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -11725,10 +11725,10 @@
         },
         "home_sos": 0.2646198830409357,
         "away_sos": 0.6640186045178306,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.8722214736670414,
         "base_away_probability": 0.1277785263329586,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -11774,10 +11774,10 @@
         },
         "home_sos": 0.6062483277911555,
         "away_sos": 0.5513052784466613,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.5261934283749462,
         "base_away_probability": 0.4738065716250538,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -11823,10 +11823,10 @@
         },
         "home_sos": 0.37952929709895655,
         "away_sos": 0.5252149982800137,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.6090420842766787,
         "base_away_probability": 0.3909579157233213,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -11872,10 +11872,10 @@
         },
         "home_sos": 0.6069679150900126,
         "away_sos": 0.602485648864809,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.658584237533951,
         "base_away_probability": 0.341415762466049,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -11921,10 +11921,10 @@
         },
         "home_sos": 0.37278551771585827,
         "away_sos": 0.6605566842965257,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.8794334254615749,
         "base_away_probability": 0.12056657453842512,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -11970,10 +11970,10 @@
         },
         "home_sos": 0.6155133203378818,
         "away_sos": 0.28354498719565796,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.13152429732166648,
         "base_away_probability": 0.8684757026783335,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -12019,10 +12019,10 @@
         },
         "home_sos": 0.6060704047700952,
         "away_sos": 0.5521413828689371,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.4480135431609099,
         "base_away_probability": 0.5519864568390901,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -12068,10 +12068,10 @@
         },
         "home_sos": 0.5777646987157437,
         "away_sos": 0.54880174291939,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.5666247541219246,
         "base_away_probability": 0.4333752458780754,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -12117,10 +12117,10 @@
         },
         "home_sos": 0.46801590031724194,
         "away_sos": 0.39962699906243887,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.3064429442750105,
         "base_away_probability": 0.6935570557249895,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -12166,10 +12166,10 @@
         },
         "home_sos": 0.5862515766540534,
         "away_sos": 0.37901999006230175,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.3103445358064994,
         "base_away_probability": 0.6896554641935007,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -12215,10 +12215,10 @@
         },
         "home_sos": 0.5390616041738333,
         "away_sos": 0.3429632327647261,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.4410251761184186,
         "base_away_probability": 0.5589748238815814,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -12264,10 +12264,10 @@
         },
         "home_sos": 0.3948262455567022,
         "away_sos": 0.5681401215456944,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.7690106496916984,
         "base_away_probability": 0.2309893503083016,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -12313,10 +12313,10 @@
         },
         "home_sos": 0.5840562650498796,
         "away_sos": 0.5270329879027634,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.3856211750636793,
         "base_away_probability": 0.6143788249363207,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -12362,10 +12362,10 @@
         },
         "home_sos": 0.5889556648252696,
         "away_sos": 0.372244008714597,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.5175541023036696,
         "base_away_probability": 0.4824458976963304,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -12411,10 +12411,10 @@
         },
         "home_sos": 0.5856366815732141,
         "away_sos": 0.66219807496442,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.5523598058614728,
         "base_away_probability": 0.4476401941385272,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -12460,10 +12460,10 @@
         },
         "home_sos": 0.5601954713774054,
         "away_sos": 0.38817998475620036,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.23825015511238476,
         "base_away_probability": 0.7617498448876152,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -12509,10 +12509,10 @@
         },
         "home_sos": 0.26308909528723773,
         "away_sos": 0.4356409815388143,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.7801197788979679,
         "base_away_probability": 0.2198802211020321,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -12558,10 +12558,10 @@
         },
         "home_sos": 0.31968122921683295,
         "away_sos": 0.6181967799159568,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.8528259019898268,
         "base_away_probability": 0.14717409801017323,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -12607,10 +12607,10 @@
         },
         "home_sos": 0.5237850489352948,
         "away_sos": 0.370879916294003,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.26465285368843466,
         "base_away_probability": 0.7353471463115653,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -12656,10 +12656,10 @@
         },
         "home_sos": 0.5265061346175898,
         "away_sos": 0.3679521971231637,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.32642122228880793,
         "base_away_probability": 0.6735787777111921,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -12705,10 +12705,10 @@
         },
         "home_sos": 0.3695447769751175,
         "away_sos": 0.6343221567952947,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.7790556689424556,
         "base_away_probability": 0.2209443310575444,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -12754,10 +12754,10 @@
         },
         "home_sos": 0.33578335817757904,
         "away_sos": 0.6590198101944597,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.9148822302378128,
         "base_away_probability": 0.08511776976218721,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "not_submitted"
@@ -12803,10 +12803,10 @@
         },
         "home_sos": 0.6672656265808697,
         "away_sos": 0.3135506249283339,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.17730794567423316,
         "base_away_probability": 0.8226920543257669,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
@@ -12852,10 +12852,10 @@
         },
         "home_sos": 0.5834255778334726,
         "away_sos": 0.4487050960735171,
-        "model_version": "0.3.0",
+        "model_version": "1.0.0",
         "base_home_probability": 0.3834652968121129,
         "base_away_probability": 0.6165347031878872,
-        "forecast_model_sha256": "d3d8b51844c172b0210e1ae3db6519eac33c73bb262a8e9b65fbedecd805fa37",
+        "forecast_model_sha256": "1f18759d619759d5c28fe20dd1d034b6dcf82d521aab1e18f3d58c29ba62a14c",
         "injury_coverage": {
           "home": "submitted",
           "away": "submitted"
