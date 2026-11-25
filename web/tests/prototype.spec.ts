@@ -73,21 +73,39 @@ test('Home serves the walkthrough and English captions', async ({ page }) => {
   expect(await response.text()).toMatch(/^WEBVTT/);
 });
 
-test('archive filters games and accuracy scores saved forecasts only', async ({ page }) => {
+test('archive filters games and accuracy covers all seasons with labeled sources', async ({ page }) => {
   const date = '2025-11-01';
   await page.goto(root + 'archive/');
   await page.getByLabel('Season').selectOption('2025-26');
   await page.getByLabel('Date').fill(date);
   await expect(page.locator('#archive-results li')).toHaveCount(readSlate(date).length);
   await page.goto(root + 'accuracy/');
-  const count = JSON.parse(readFileSync(resolve(data, 'scored-games.json'), 'utf8'))
-    .filter(row => row.evidence === 'issued').length;
-  await expect(page.locator('#accuracy-metrics')).toContainText(String(count));
-  await expect(page.locator('#calibration-chart li').first()).toBeVisible();
-  await expect(page.getByLabel('Forecast record')).toHaveCount(0);
+  const issued = JSON.parse(readFileSync(resolve(data, 'scored-games.json'), 'utf8'));
+  const historical = JSON.parse(readFileSync(resolve(data, 'historical-accuracy.json'), 'utf8'));
+  const count = page.locator('#accuracy-metrics strong').first();
+  await expect(count).toHaveText(String(6150 + issued.length));
+  await expect(page.locator('#season-scores tr')).toHaveCount(6);
+  for (const season of manifest.seasons) {
+    await page.getByLabel('Season').selectOption(season);
+    const live = issued.filter(row => row.season === season).length;
+    const replay = historical.filter(row => row.season === season).length;
+    await expect(count).toHaveText(String(live + replay));
+    await expect(page.locator('#calibration-chart li').first()).toBeVisible();
+  }
   await page.getByLabel('Season').selectOption('2025-26');
-  await expect(page.locator('#calibration-chart li')).toHaveCount(0);
-  await expect(page.locator('#accuracy-metrics strong').first()).toHaveText('0');
+  await expect(count).toHaveText('1230');
+  await expect(page.locator('#accuracy-evidence')).toContainText('1230 historical training replays');
+  await page.locator('#accuracy-team').selectOption({ label: 'Los Angeles Lakers' });
+  await expect(count).toHaveText('82');
+  await page.locator('#accuracy-team').selectOption('');
+  await page.getByLabel('Sample').selectOption('established');
+  await expect(count).toHaveText(String(historical.filter(row => row.season === '2025-26' && row.eligible).length));
+  await page.getByLabel('Sample').selectOption('');
+  await page.getByLabel('Forecast source').selectOption('issued');
+  await expect(count).toHaveText('0');
+  await expect(page.getByText('No forecasts match these filters.')).toBeVisible();
+  await page.getByLabel('Season').selectOption('');
+  await expect(count).toHaveText(String(issued.length));
 });
 
 test('team history and methodology downloads open from navigation', async ({ page }) => {

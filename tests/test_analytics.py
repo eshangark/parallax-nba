@@ -1,3 +1,4 @@
+from collections import Counter
 import csv
 import hashlib
 import json
@@ -94,6 +95,14 @@ class AnalyticsTests(unittest.TestCase):
                 self.assertEqual(row['issued_model_version'], original['model_version'])
                 self.assertEqual(row['issued_model_sha256'], original['forecast_model_sha256'])
                 self.assertEqual(row['home_probability'], original['home_probability'])
+            historical = json.loads((first / 'site/historical-accuracy.json').read_text())
+            self.assertEqual(Counter(row['season'] for row in historical),
+                             {f'{year}-{str(year + 1)[-2:]}': 1230 for year in range(2021, 2026)})
+            self.assertEqual({row['evidence'] for row in historical}, {'training_replay'})
+            self.assertEqual({row['model_sha256'] for row in historical}, {manifest['model_sha256']})
+            ids = [row['game_id'] for row in scored + historical]
+            self.assertEqual(len(ids), len(set(ids)))
+            self.assertTrue(all(row['cutoff'] < row['captured_start'] <= row['completed_at'] for row in historical))
             self.assertEqual(len(scored), len({row['game_id'] for row in scored}))
             issued = json.loads((first / 'site/downloads/2026-27-saved-forecasts.json').read_text())
             self.assertEqual(len(issued), len({row['game_id'] for row in issued}))

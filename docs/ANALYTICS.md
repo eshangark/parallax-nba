@@ -21,6 +21,7 @@ Choose a new output directory for each build. The command stages the database an
 | `site/games/<game-id>.json` | Matchup, outcome, active model’s latest eligible pregame forecast, where available. |
 | `site/teams/<season>.json` | Season ranks and rating history. Every season uses the verified active-model replay. |
 | `site/downloads/` | One selected pregame forecast per game. |
+| `site/historical-accuracy.json` | Active-model training replays used by the Accuracy page. The page labels them separately from live issued forecasts. |
 | `site/evaluation.json` | Scorecards grouped by season, evidence and model, with issued coverage and calibration. |
 | `bi/calibration.csv` | Additive counts and probability sums by favorite band and report coverage. |
 | `bi/scores.csv` | Additive score totals by season, evidence, model, coverage and eligibility. |
@@ -29,7 +30,7 @@ Current-season game-history Elo changes measure the completed game’s update, i
 
 The production forecasting model is v1.0.0 (`models/nba-v1.0/bundle.json`). Its fitted specification is unchanged from the prerelease. The predecessor fingerprint is accepted only after recomputing and verifying that exact specification. Exports use the production version and fingerprint while retaining `issued_model_version` and `issued_model_sha256` for original issuance provenance. The immutable ledger is not relabeled, and compatible pre-release forecasts remain in accuracy scores.
 
-The SQL window in `latest_issued` applies the collector's issued-record selection. `evaluation_rows` joins evidence to outcomes and keeps training replays, post-fit replays, chronological backtests and original forecasts labeled. The canonical Python metrics determine calibration and scores. The website and BI exports use only the frozen bundle fingerprint. Active original forecasts are selected after filtering the immutable ledger to that fingerprint. The exported site and BI scores use the same selected issued records. Historical replays and forecast revisions remain in the local database for research and audit. Archive keeps the final score for games without a saved forecast.
+The SQL window in `latest_issued` applies the collector's issued-record selection. `evaluation_rows` joins evidence to outcomes and keeps training replays, post-fit replays, chronological backtests and original forecasts labeled. The canonical Python metrics determine calibration and scores. The website and BI exports use the active model fingerprint. Original forecasts are selected from the ledger by the active fingerprint or its verified equivalent predecessor. The exported site and BI scores use the same selected issued records. The Accuracy page also reads the separate training replay export. Issued scorecards, matchup evidence and BI keep their issued-only scope. Archive keeps the final score for games without a saved forecast.
 
 Export fields are explicit. Publish a reviewed subset of `site/` or BI data when hosting and source reuse are settled. Keep the generated database and development materials local.
 
