@@ -23,7 +23,13 @@ const upcoming = games().filter(g => g.status === 'scheduled' && g.forecast);
   <div class="metrics" id="accuracy-metrics" aria-live="polite"></div>
   <p id="accuracy-evidence" class="subtle" aria-live="polite"></p>
   <section class="detail">
-    <h2>Did teams win as often as forecast?</h2>
+    <div class="calibration-heading">
+      <h2>Did teams win as often as forecast?</h2>
+      <div class="calibration-match" aria-live="polite">
+        <strong id="calibration-match-value">—</strong>
+        <small>Calibration match</small>
+      </div>
+    </div>
     <p id="calibration-note" class="subtle"></p>
     <div class="chart-key"><span>● Actual win rate</span><span>◇ Mean forecast</span></div>
     <ul id="calibration-chart" class="step-chart" aria-label="Actual and forecast win rates by band"></ul>
@@ -37,6 +43,12 @@ const upcoming = games().filter(g => g.status === 'scheduled' && g.forecast);
     scored, names, cutoffs: Object.fromEntries(upcoming.map(g => [g.game_id, g.forecast!.cutoff]))
   }).replaceAll('<', '\\u003c')} />
 </Shell>
+<style>
+  .calibration-heading { display:flex; align-items:baseline; justify-content:space-between; flex-wrap:wrap; gap:8px 24px; }
+  .calibration-match { display:grid; gap:4px; }
+  .calibration-match strong { font:700 2.2rem var(--display); }
+  .calibration-match small { color:var(--muted); }
+</style>
 <script>
   import { bands, scores, type ScoredGame } from '../../lib/accuracy';
   const get = (id: string) => document.getElementById(id)!;
@@ -81,6 +93,9 @@ const upcoming = games().filter(g => g.status === 'scheduled' && g.forecast);
       ? `Uses ${names[team.value]}’s own win probability, including games as an underdog.`
       : 'Each game counts once, using the forecast and outcome of its favored team.';
     const calibration = bands(rows, team.value);
+    const gameCount = calibration.reduce((total, band) => total + band.n, 0);
+    const weightedError = calibration.reduce((total, band) => total + band.n * Math.abs(band.mean - band.rate), 0);
+    get('calibration-match-value').textContent = percent(gameCount ? 1 - weightedError / gameCount : null);
     get('calibration-chart').replaceChildren(...calibration.map(band => {
       const item = document.createElement('li');
       const label = document.createElement('span');

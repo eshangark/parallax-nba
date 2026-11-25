@@ -78,6 +78,11 @@ class AccuracyDataTests(unittest.TestCase):
             eligible = evidence_before(self.catalog[source], row, source)
             for team in [row['home'], row['away']]:
                 expected = team_calibration_evidence(row, self.catalog[source], team, row['issued_at'], exact_model=source == 'issued')
+                if not eligible:
+                    self.assertEqual(team_bands(eligible, team), [])
+                    self.assertEqual(expected['games'], 0)
+                    self.assertIsNone(expected['observed_win_rate'])
+                    continue
                 actual = next(b for b in team_bands(eligible, team) if b['Probability range'] == expected['band'])
                 self.assertEqual(actual['Games'], expected['games'])
                 self.assertEqual(actual['Mean forecast'], expected['mean_forecast'])

@@ -1,6 +1,7 @@
 import { expect, test } from '@playwright/test';
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
+import { bands, type ScoredGame } from '../src/lib/accuracy';
 
 const root = '/parallax-nba/';
 const data = resolve(process.env.PARALLAX_DATA_DIR || '../local/refresh/current/site');
@@ -83,6 +84,12 @@ test('archive filters games and accuracy covers all seasons with labeled sources
   const issued = JSON.parse(readFileSync(resolve(data, 'scored-games.json'), 'utf8'));
   const historical = JSON.parse(readFileSync(resolve(data, 'historical-accuracy.json'), 'utf8'));
   const count = page.locator('#accuracy-metrics strong').first();
+  const match = page.locator('#calibration-match-value');
+  const expectedMatch = (rows: ScoredGame[], team = '') => {
+    const agreement = bands(rows, team).reduce((sum, band) =>
+      sum + band.n * (1 - Math.abs(band.mean - band.rate)), 0);
+    return `${(100 * agreement / rows.length).toFixed(1)}%`;
+  };
   await expect(count).toHaveText(String(6150 + issued.length));
   await expect(page.locator('#season-scores tr')).toHaveCount(6);
   for (const season of manifest.seasons) {
@@ -97,15 +104,21 @@ test('archive filters games and accuracy covers all seasons with labeled sources
   await expect(page.locator('#accuracy-evidence')).toContainText('1230 historical training replays');
   await page.locator('#accuracy-team').selectOption({ label: 'Los Angeles Lakers' });
   await expect(count).toHaveText('82');
+  const team = await page.locator('#accuracy-team').inputValue();
+  const teamRows = historical.filter((row: ScoredGame) =>
+    row.season === '2025-26' && [row.home_id, row.away_id].includes(team));
+  await expect(match).toHaveText(expectedMatch(teamRows, team));
   await page.locator('#accuracy-team').selectOption('');
   await page.getByLabel('Sample').selectOption('established');
   await expect(count).toHaveText(String(historical.filter(row => row.season === '2025-26' && row.eligible).length));
   await page.getByLabel('Sample').selectOption('');
   await page.getByLabel('Forecast source').selectOption('issued');
   await expect(count).toHaveText('0');
+  await expect(match).toHaveText('—');
   await expect(page.getByText('No forecasts match these filters.')).toBeVisible();
   await page.getByLabel('Season').selectOption('');
   await expect(count).toHaveText(String(issued.length));
+  await expect(match).toHaveText(expectedMatch(issued));
 });
 
 test('team history and methodology downloads open from navigation', async ({ page }) => {
