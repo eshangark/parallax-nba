@@ -92,6 +92,18 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "") + "/";
     <summary>Injury report coverage</summary>
     <p>{coverage(forecast.injury_status)}. Reports describe participation status at the recorded cutoff.</p>
     {forecast.injury_details.map(row => <p><strong>{row.Team}</strong> · {row.Report} · {row['Unmatched names'] ?? 'Unknown'} unmatched · {row['Missing histories'] ?? 'Unknown'} missing histories.</p>)}
+    {forecast.injury_players.length > 0 && <>
+      <div class="table-wrap"><table aria-label="Players in the captured injury report">
+        <thead><tr><th>Team</th><th>Player</th><th>Status</th><th>Identity</th><th>Expected minutes</th><th>PPG</th></tr></thead>
+        <tbody>{forecast.injury_players.map(player => <tr>
+          <td>{player.team}</td><th scope="row">{player.name}</th><td>{player.status}</td>
+          <td>{player.matched ? 'Matched' : 'Unmatched'}</td>
+          <td>{player.expected_minutes?.toFixed(1) ?? '—'}</td>
+          <td>{player.points_per_game?.toFixed(1) ?? '—'}</td>
+        </tr>)}</tbody>
+      </table></div>
+      <p class="subtle">Estimates use saved box scores available at the forecast cutoff. PPG averages this season’s recorded appearances. A dash means the history is unavailable.</p>
+    </>}
   </details>}
   {forecast && <details class="detail">
     <summary>How similar forecasts performed</summary>

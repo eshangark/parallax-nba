@@ -30,7 +30,8 @@ def validated_players(rows, team):
     minutes = sum(r['minutes'] for r in rows)
     if min(abs(minutes-(240+25*ot)) for ot in range(7)) > 8:
         raise ValueError('Incomplete player minute total')
-    return [{'athlete': r['athlete'], 'minutes': r['minutes'], 'game_score': game_score(r)} for r in rows]
+    return [{'athlete': r['athlete'], 'minutes': r['minutes'], 'game_score': game_score(r),
+             'points': r['points']} for r in rows]
 
 
 def parse_player_summary(payload, game):
