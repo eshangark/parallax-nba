@@ -1,18 +1,17 @@
 ---
 import Shell from '../../layouts/Shell.astro';
 import PageIntro from '../../components/PageIntro.astro';
-import { games, manifest, read, scoredGames, teams } from '../../lib/data';
-import type { ScoredGame } from '../../lib/accuracy';
+import { games, historicalAccuracy, manifest, scoredGames, teams } from '../../lib/data';
 import { stamp } from '../../lib/slate';
 const issued = scoredGames();
 const issuedIds = new Set(issued.map(row => row.game_id));
-const scored = [...issued, ...read<ScoredGame[]>('historical-accuracy.json')
+const scored = [...issued, ...historicalAccuracy()
   .filter(row => !issuedIds.has(row.game_id))];
 const names = Object.fromEntries(manifest.seasons.flatMap(s => teams(s)).map(t => [t.team_id, t.name]));
 const upcoming = games().filter(g => g.status === 'scheduled' && g.forecast);
 ---
 <Shell title="Forecast accuracy">
-  <PageIntro title="Forecast accuracy" description="Compare historical training replays and live issued forecasts with completed results. Training replays use seasons included in model fitting. The combined view counts each game once and includes training results." />
+  <PageIntro title="Forecast accuracy" description="Live forecasts were saved before tipoff. Historical replays were reconstructed later for seasons used to fit the model. The combined view counts each game once and uses the live forecast when both are available." />
   <div class="filters">
     <label>Season <select id="accuracy-season"><option value="">All seasons</option>{[...manifest.seasons].reverse().map(s => <option>{s}</option>)}</select></label>
     <label>Forecast source <select id="accuracy-source"><option value="">All sources</option><option value="training_replay">Historical training replay</option><option value="issued">Live issued forecasts</option></select></label>

@@ -5,13 +5,15 @@ import { games, manifest } from '../../lib/data';
 import { stamp } from '../../lib/slate';
 const base = import.meta.env.BASE_URL;
 const records = games().map(g => ({ id: g.game_id, season: g.season, day: g.slate_date,
-  label: `${g.away} at ${g.home}`, date: stamp(g.start), score: g.status === 'final' ? `${g.away_score}–${g.home_score}` : null,
-  forecast: g.forecast ? 'Saved pregame forecast' : 'No saved pregame forecast' })).reverse();
+  label: `${g.away} at ${g.home}`, date: stamp(g.start), status: g.status,
+  score: g.status === 'final' ? `${g.away_score}–${g.home_score}` : null,
+  forecast: g.forecast ? 'Live pregame forecast' : 'No live pregame forecast on record' })).reverse();
 ---
 <Shell title="Game archive">
-  <PageIntro title="Game archive" description="Find a game by date or team. Open it to compare the result with the forecast record." />
+  <PageIntro title="Game archive" description="Browse completed games by season, date, or team. Open a game to see its result and forecast record." />
   <div class="filters">
     <label>Season <select id="season">{[...manifest.seasons].reverse().map(s => <option>{s}</option>)}</select></label>
+    <label>Game status <select id="archive-status"><option value="final">Completed games</option><option value="all">All games</option></select></label>
     <label>Date <input type="date" id="date" /></label>
     <label>Team <input type="search" id="team" placeholder="e.g. Knicks" /></label>
   </div>
@@ -23,6 +25,7 @@ const records = games().map(g => ({ id: g.game_id, season: g.season, day: g.slat
 </Shell>
 <script>
   const season = document.querySelector<HTMLSelectElement>('#season')!;
+  const status = document.querySelector<HTMLSelectElement>('#archive-status')!;
   const date = document.querySelector<HTMLInputElement>('#date')!;
   const team = document.querySelector<HTMLInputElement>('#team')!;
   const list = document.querySelector<HTMLUListElement>('#archive-results')!;
@@ -32,7 +35,8 @@ const records = games().map(g => ({ id: g.game_id, season: g.season, day: g.slat
   let limit = 24;
   function render() {
     const query = team.value.trim().toLowerCase();
-    const rows = records.filter(row => row.season === season.value && (!date.value || row.day === date.value) &&
+    const rows = records.filter(row => row.season === season.value && (status.value === 'all' || row.status === status.value) &&
+      (!date.value || row.day === date.value) &&
       row.label.toLowerCase().includes(query));
     count.textContent = rows.length ? `Showing ${Math.min(limit, rows.length)} of ${rows.length}` : 'No matching games';
     more.hidden = rows.length <= limit;
@@ -42,14 +46,14 @@ const records = games().map(g => ({ id: g.game_id, season: g.season, day: g.slat
       const meta = document.createElement('small');
       link.href = `${list.dataset.base}games/${row.id}/`;
       link.textContent = row.label;
-      meta.textContent = [row.date, row.score ? `Final ${row.score}` : null,
-        row.forecast].filter(Boolean).join(' · ');
+      meta.textContent = [row.date, row.status === 'final' ? `Final ${row.score}` : row.status === 'awaiting_final' ? 'Awaiting result' : 'Scheduled',
+        row.forecast].join(' · ');
       link.append(meta);
       item.append(link);
       return item;
     }));
   }
-  for (const filter of [season, date, team]) filter.addEventListener('input', () => { limit = 24; render(); });
+  for (const filter of [season, status, date, team]) filter.addEventListener('input', () => { limit = 24; render(); });
   more.addEventListener('click', () => { limit += 24; render(); });
   render();
 </script>

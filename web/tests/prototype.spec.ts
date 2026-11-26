@@ -33,10 +33,20 @@ test('mobile slate, stale status and shareable matchup', async ({ page }) => {
 });
 
 test('finished games preserve the outcome and flag missing pregame forecasts', async ({ page }) => {
-  const game = manifest.dates.flatMap(readSlate).find(game => game.status === 'final' && !game.forecast);
+  const historical: ScoredGame[] = JSON.parse(readFileSync(resolve(data, 'historical-accuracy.json'), 'utf8'));
+  const replayIds = new Set(historical.map(row => row.game_id));
+  const finished = manifest.dates.flatMap(readSlate).filter(game => game.status === 'final' && !game.forecast);
+  const game = finished.find(game => replayIds.has(game.game_id));
   await page.goto(root + 'games/' + game.game_id + '/');
   await expect(page.getByRole('heading', { name: 'Final score' })).toBeVisible();
-  await expect(page.getByText('No saved pregame forecast for this game.', { exact: true })).toBeVisible();
+  await expect(page.getByText('No live pregame forecast is on record for this game.', { exact: true })).toBeVisible();
+  await expect(page.getByText('includes a historical replay for this game.')).toBeVisible();
+  await page.getByRole('link', { name: 'Forecast Accuracy', exact: true }).click();
+  await expect(page.getByText('Live forecasts were saved before tipoff.', { exact: false })).toBeVisible();
+  const withoutReplay = finished.find(game => !replayIds.has(game.game_id));
+  await page.goto(root + 'games/' + withoutReplay.game_id + '/');
+  await expect(page.getByText('No live pregame forecast is on record for this game.', { exact: true })).toBeVisible();
+  await expect(page.getByText('includes a historical replay for this game.')).toHaveCount(0);
 });
 
 test('missing injury reports are explicit', async ({ page }) => {
@@ -74,7 +84,26 @@ test('Home serves the walkthrough and English captions', async ({ page }) => {
   expect(await response.text()).toMatch(/^WEBVTT/);
 });
 
-test('archive filters games and accuracy covers all seasons with labeled sources', async ({ page }) => {
+test('archive defaults to completed games and can show scheduled games', async ({ page }) => {
+  const upcoming = manifest.dates.flatMap(readSlate).find(game => game.status === 'scheduled');
+  await page.setViewportSize({ width: 320, height: 760 });
+  await page.goto(root + 'archive/');
+  const status = page.getByLabel('Game status');
+  const records = page.locator('#archive-results li');
+  await expect(status).toHaveValue('final');
+  await expect(records).toHaveCount(24);
+  await expect(records.filter({ hasText: / · Final \d+–\d+ · / })).toHaveCount(24);
+  await page.getByRole('button', { name: 'Show more games' }).click();
+  await expect(records.filter({ hasText: / · Final \d+–\d+ · / })).toHaveCount(48);
+  await page.getByLabel('Date').fill(upcoming.slate_date);
+  const scheduled = page.locator(`#archive-results a[href="${root}games/${upcoming.game_id}/"]`);
+  await expect(scheduled).toHaveCount(0);
+  await status.selectOption('all');
+  await expect(scheduled).toContainText('Scheduled');
+  expect(await page.locator('body').evaluate(body => body.scrollWidth)).toBeLessThanOrEqual(320);
+});
+
+test('archive filters historical games and accuracy covers all seasons with labeled sources', async ({ page }) => {
   const date = '2025-11-01';
   await page.goto(root + 'archive/');
   await page.getByLabel('Season').selectOption('2025-26');

@@ -1,15 +1,16 @@
 ---
-import { version } from '../../../package.json';
 import Shell from '../../layouts/Shell.astro';
 import Probability from '../../components/Probability.astro';
 import ContractPricing from '../../components/ContractPricing.astro';
 import Freshness from '../../components/Freshness.astro';
-import { games, matchup, scoredGames, teams, manifest } from '../../lib/data';
+import { games, historicalAccuracy, matchup, scoredGames, teams, manifest } from '../../lib/data';
 import { bands } from '../../lib/accuracy';
 import { coverage, pct, stamp, statusLabel } from '../../lib/slate';
 export function getStaticPaths() {
-  return games().map(game => ({ params: { id: game.game_id } }));
+  const replayIds = new Set(historicalAccuracy().map(row => row.game_id));
+  return games().map(game => ({ params: { id: game.game_id }, props: { hasReplay: replayIds.has(game.game_id) } }));
 }
+const { hasReplay } = Astro.props;
 const game = matchup(Astro.params.id);
 const forecast = game.forecast;
 const title = `${game.away} at ${game.home}`;
@@ -42,14 +43,17 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "") + "/";
     <dl class="result-values"><div><dt>{game.away}</dt><dd>{game.away_score}</dd></div><div><dt>{game.home}</dt><dd>{game.home_score}</dd></div></dl>
   </section>}
   <section class="detail" aria-labelledby="forecast-heading">
-    <div class="section-head"><h2 id="forecast-heading">Pregame forecast</h2>{forecast && <span>Parallax v{version}</span>}</div>
+    <div class="section-head"><h2 id="forecast-heading">Pregame forecast</h2>{forecast && <span>Parallax v{forecast.model_version}</span>}</div>
     {forecast ? <>
       <div class="game-teams detail-teams"><div><small>Away</small><strong>{game.away}</strong></div><div><small>Home</small><strong>{game.home}</strong></div></div>
       <Probability away={forecast.away_probability} home={forecast.home_probability} />
       <p><strong>{forecast.home_probability === .5 ? 'The model gives both teams an equal chance.' : favorite + ' is favored.'}</strong> {coverage(forecast.injury_status)}.</p>
       <p class="subtle">Issued <time datetime={forecast.issued_at}>{stamp(forecast.issued_at)}</time></p>
       {forecast.base_home_probability !== null && <p class="subtle">Base Elo for {game.home} · {pct(forecast.base_home_probability)}</p>}
-    </> : <p>No saved pregame forecast for this game.</p>}
+    </> : <>
+      <p>No live pregame forecast is on record for this game.</p>
+      {hasReplay && <p><a href={base + 'accuracy/'}>Forecast Accuracy</a> includes a historical replay for this game. The model reconstructed that forecast later using historical inputs.</p>}
+    </>}
   </section>
   {forecast && game.status === 'scheduled' && <ContractPricing game={game} forecast={forecast} />}
   {forecast && <details class="detail">

@@ -71,3 +71,4 @@ export const seasonLabel = (season: string) => season.replace('-', '–');
 
 let scored: ScoredGame[] | undefined;
 export const scoredGames = () => scored ??= read<ScoredGame[]>('scored-games.json').filter(row => row.evidence === 'issued');
+export const historicalAccuracy = () => read<ScoredGame[]>('historical-accuracy.json');
