@@ -226,8 +226,9 @@ def collect_players(client, previous, games, forecaster, started, full_refresh):
         identifier = g['game_id']
         prior = cached.get(identifier)
         recent = timestamp(g['start']).astimezone(EASTERN).date() >= started.astimezone(EASTERN).date()-timedelta(days=7)
-        if (prior and all(prior.values()) and not recent and not full_refresh
-                and identifier in old_games and digest(g) == digest(old_games[identifier])):
+        unchanged = identifier in old_games and digest(g) == digest(old_games[identifier])
+        if (prior and all(prior.values()) and not recent and not full_refresh and unchanged
+                and all('points' in player for team in prior.values() for player in team)):
             result[identifier] = copy.deepcopy(prior)
             continue
         try:
@@ -240,6 +241,10 @@ def collect_players(client, previous, games, forecaster, started, full_refresh):
             # Invalid player records never invalidate an otherwise valid team box.
             result[identifier] = {g[s]['id']: None for s in ['home', 'away']}
             failures.append({'game_id': identifier, 'error': f'{type(exc).__name__}: {exc}'})
+        if unchanged and prior:
+            for team, players in result[identifier].items():
+                if players is None and prior.get(team):
+                    result[identifier][team] = copy.deepcopy(prior[team])
     return result, {name: sorted(ids) for name, ids in aliases.items()}, failures
 
 

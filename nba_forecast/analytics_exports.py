@@ -11,6 +11,7 @@ from itertools import accumulate
 from . import __version__
 from .evaluation import favorite_bands
 from .forecasting import Forecaster
+from .model import timestamp
 from .replay import metrics
 from .reliability import injury_details
 from .dashboard_data import probability_steps
@@ -24,7 +25,49 @@ def _write(path, data):
                     encoding='utf-8')
 
 
-def _forecast(row, internal):
+def _player_observations(internal):
+    boxes = internal.get('player_games', {})
+    observed = internal.get('first_observed_at', {})
+    history = defaultdict(list)
+    for game in sorted(internal.get('games', ()), key=lambda g: (timestamp(g['last_play_at']), g['game_id'])):
+        game_id = game['game_id']
+        completed = timestamp(game['last_play_at'])
+        first_seen = timestamp(observed[game_id]) if game_id in observed else completed
+        for team in boxes.get(game_id, {}).values():
+            for player in team or ():
+                history[player['athlete']].append((completed, first_seen, player['minutes'], player.get('points')))
+    return history
+
+
+def _injury_players(record, internal, observations):
+    cutoff = timestamp(record['forecast_cutoff'])
+    seed = internal.get('initialization', {}).get('features', {}).get('player_history', {})
+    reports = record.get('injury_report') or {}
+    decay = 2**(-1/10)
+    rows = []
+    for side in ('away', 'home'):
+        report = reports.get(record[side + '_id'])
+        if not report or not report['submitted']:
+            continue
+        for player in report['players']:
+            athlete = player.get('athlete')
+            minutes, games, _ = seed.get(athlete, (0., 0., 0.))
+            points = []
+            for completed, first_seen, played, scored in observations.get(athlete, ()):
+                if completed < cutoff and first_seen <= cutoff:
+                    minutes, games = decay*minutes + played, decay*games + 1
+                    if scored is not None:
+                        points.append(scored)
+            rows.append({
+                'team': record[side], 'name': player['name'], 'status': player['status'],
+                'matched': athlete is not None,
+                'expected_minutes': minutes / games if games else None,
+                'points_per_game': sum(points) / len(points) if points else None,
+            })
+    return rows
+
+
+def _forecast(row, internal, observations):
     record = json.loads(row['record_json'])
     return {
         'evidence': 'issued',
@@ -50,6 +93,7 @@ def _forecast(row, internal):
             {key: detail[key] for key in ('Team', 'Report', 'Unmatched names', 'Missing histories')}
             for detail in injury_details(record)['teams']
         ],
+        'injury_players': _injury_players(record, internal, observations),
         'context': {side: {
             'elo': record.get(side + '_rating'),
             'rest_days': (record.get(side + '_context') or {}).get('rest'),
@@ -63,6 +107,7 @@ def export(db, root, target):
     db.row_factory = sqlite3.Row
     internals = {path.parent.name: json.loads(path.read_text())['_internal']
                  for path in (root / 'data/seasons').glob('*/live.json')}
+    observations = {season: _player_observations(internal) for season, internal in internals.items()}
     model = Forecaster(json.loads((root / 'models/nba-v1.0/bundle.json').read_text()))
     fingerprint = model.fingerprint
     selected = {}
@@ -142,7 +187,8 @@ def export(db, root, target):
         game = dict(row)
         game.pop('forecast_id')
         selected_row = selected.get(row['game_id'])
-        forecast = _forecast(selected_row, internals[row['season']]) if selected_row is not None else None
+        forecast = (_forecast(selected_row, internals[row['season']], observations[row['season']])
+                    if selected_row is not None else None)
         if row['status'] == 'final':
             finals[row['season']] += 1
         if forecast:

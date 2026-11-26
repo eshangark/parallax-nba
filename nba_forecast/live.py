@@ -164,8 +164,17 @@ def build_snapshot(previous, games, pending, params, roster, now, season, source
     if forecaster:
         registry[parameter_hash]['forecast_specification'] = {
             k: copy.deepcopy(forecaster.bundle[k]) for k in ['version', 'feature_schema', 'injury_head', 'boosted_head']}
+    # Display-only scoring data must not change issued forecast identity.
+    model_player_games = {
+        game_id: {
+            team: [{key: value for key, value in player.items() if key != 'points'}
+                   for player in players] if players is not None else None
+            for team, players in teams.items()
+        }
+        for game_id, teams in (player_games or {}).items()
+    }
     state_hash = digest({'configuration': configuration, 'games': sorted(games, key=lambda g: g['game_id']),
-                         'player_games': player_games or {}})
+                         'player_games': model_player_games})
     corrections = copy.deepcopy(old_internal.get('corrections', []))
     old_games = {g['game_id']: g for g in old_internal.get('games', [])}
     observations = copy.deepcopy(old_internal.get('first_observed_at', {}))

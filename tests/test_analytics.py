@@ -11,6 +11,7 @@ from tempfile import TemporaryDirectory
 from unittest.mock import patch
 
 from nba_forecast.analytics import populate, utc
+from nba_forecast.analytics_exports import _injury_players, _player_observations
 from nba_forecast.replay import metrics
 from nba_forecast.forecasting import Forecaster
 from scripts.build_analytics import build
@@ -20,6 +21,44 @@ LIVE = ROOT / 'data/seasons/2026-27/live.json'
 
 
 class AnalyticsTests(unittest.TestCase):
+    def test_injury_player_statistics_use_only_observed_pregame_boxes(self):
+        cutoff = '2026-11-25T20:00:00Z'
+        record = {
+            'forecast_cutoff': cutoff, 'home': 'Knicks', 'away': 'Cavs',
+            'home_id': '18', 'away_id': '5',
+            'injury_report': {'18': {'submitted': True, 'players': [
+                {'athlete': '1', 'name': 'Matched Player', 'status': 'Questionable'},
+                {'athlete': None, 'name': 'Unmatched Player', 'status': 'Out'},
+                {'athlete': '2', 'name': 'Player with Legacy History', 'status': 'Available'},
+            ]}, '5': {'submitted': False, 'players': []}},
+        }
+        internal = {
+            'games': [
+                {'game_id': '1', 'last_play_at': '2026-11-23T20:00:00Z'},
+                {'game_id': '2', 'last_play_at': '2026-11-24T20:00:00Z'},
+                {'game_id': '3', 'last_play_at': cutoff},
+            ],
+            'first_observed_at': {'1': cutoff, '2': '2026-11-25T21:00:00Z'},
+            'player_games': {
+                '1': {'18': [{'athlete': '1', 'minutes': 30, 'points': 0},
+                             {'athlete': '2', 'minutes': 12}]},
+                '2': {'18': [{'athlete': '1', 'minutes': 45, 'points': 40}]},
+                '3': {'18': [{'athlete': '1', 'minutes': 40, 'points': 35}]},
+            },
+            'initialization': {'features': {'player_history': {'1': [20, 1, 0]}}},
+        }
+        rows = _injury_players(record, internal, _player_observations(internal))
+        self.assertEqual(len(rows), 3)
+        decay = 2**(-1/10)
+        self.assertAlmostEqual(rows[0]['expected_minutes'], (20*decay + 30)/(decay + 1))
+        self.assertEqual(rows[0]['points_per_game'], 0)
+        self.assertEqual(rows[0]['status'], 'Questionable')
+        self.assertFalse(rows[1]['matched'])
+        self.assertIsNone(rows[1]['expected_minutes'])
+        self.assertIsNone(rows[1]['points_per_game'])
+        self.assertEqual(rows[2]['expected_minutes'], 12)
+        self.assertIsNone(rows[2]['points_per_game'])
+
     def test_sql_counts_forecast_identity_and_canonical_metrics(self):
         live = json.loads(LIVE.read_text())
         with closing(sqlite3.connect(':memory:')) as db:
@@ -65,6 +104,10 @@ class AnalyticsTests(unittest.TestCase):
                     if forecast:
                         self.assertNotIn('players', forecast)
                         self.assertNotIn('player_impact', forecast)
+                        for player in forecast['injury_players']:
+                            self.assertEqual(set(player), {
+                                'team', 'name', 'status', 'matched', 'expected_minutes', 'points_per_game',
+                            })
                         for team in forecast['injury_details']:
                             self.assertNotIn('Unresolved availability', team)
             live = json.loads(LIVE.read_text())

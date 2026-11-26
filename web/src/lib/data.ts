@@ -22,6 +22,8 @@ export type Matchup = Omit<Game, 'forecast'> & {
   injury_report_at: string | null; schedule_projected: boolean;
   probability_steps: { Stage: string; 'Home win %': number; 'Change (pp)': number | null }[];
   injury_details: { Team: string; Report: string; 'Unmatched names': number | null; 'Missing histories': number | null }[];
+  injury_players: { team: string; name: string; status: string; matched: boolean;
+    expected_minutes: number | null; points_per_game: number | null }[];
   context: Record<'home' | 'away', Context>;
 }) | null };
 

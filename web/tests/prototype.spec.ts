@@ -55,6 +55,24 @@ test('missing injury reports are explicit', async ({ page }) => {
   await expect(page.locator('[aria-labelledby=forecast-heading]').getByText('Elo only · report unavailable', { exact: false })).toBeVisible();
 });
 
+test('captured injury statuses and player history render on the matchup page', async ({ page }) => {
+  const game = manifest.dates.flatMap(readSlate).filter(game => game.forecast?.injury_status === 'complete')
+    .map(game => JSON.parse(readFileSync(resolve(data, 'games', game.game_id + '.json'), 'utf8')))
+    .find(game => game.forecast.injury_players.some(player => player.expected_minutes !== null));
+  const player = game.forecast.injury_players.find(player => player.expected_minutes !== null);
+  await page.setViewportSize({ width: 320, height: 760 });
+  await page.goto(root + 'games/' + game.game_id + '/');
+  await page.getByText('Injury report coverage', { exact: true }).click();
+  const table = page.getByRole('table', { name: 'Players in the captured injury report' });
+  await expect(table.getByRole('columnheader', { name: 'Expected minutes' })).toBeVisible();
+  await expect(table.getByRole('columnheader', { name: 'PPG' })).toBeVisible();
+  const row = table.getByRole('row').filter({ has: page.getByRole('rowheader', { name: player.name, exact: true }) });
+  await expect(row.getByRole('cell', { name: player.status, exact: true })).toBeVisible();
+  await expect(row.getByRole('cell').nth(3)).toHaveText(player.expected_minutes.toFixed(1));
+  await expect(row.getByRole('cell').nth(4)).toHaveText(player.points_per_game?.toFixed(1) ?? '—');
+  expect(await page.locator('body').evaluate(body => body.scrollWidth)).toBeLessThanOrEqual(320);
+});
+
 test('Today links and built assets resolve under the project path', async ({ page }) => {
   await page.setViewportSize({ width: 1280, height: 850 });
   const failures: string[] = [];

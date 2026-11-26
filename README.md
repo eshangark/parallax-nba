@@ -1,6 +1,6 @@
 # Parallax NBA
 
-**Application release: v1.0.2** · Static Astro dashboard powered by the Parallax analytics pipeline.
+**Application release: v1.0.3** · Static Astro dashboard powered by the Parallax analytics pipeline.
 
 Parallax NBA combines a mathematical model for NBA game predictions with a dashboard for understanding probabilities, evaluating historical performance and making informed betting decisions. This project is adapted from work developed for the Wharton Data Science Competition.
 
