@@ -41,7 +41,7 @@ def _player_observations(internal):
 
 def _injury_players(record, internal, observations):
     cutoff = timestamp(record['forecast_cutoff'])
-    seed = internal.get('initialization', {}).get('features', {}).get('player_history', {})
+    seed = (internal.get('initialization', {}).get('feature_seed') or {}).get('player_history', {})
     reports = record.get('injury_report') or {}
     decay = 2**(-1/10)
     rows = []
