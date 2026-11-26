@@ -45,7 +45,7 @@ class AnalyticsTests(unittest.TestCase):
                 '2': {'18': [{'athlete': '1', 'minutes': 45, 'points': 40}]},
                 '3': {'18': [{'athlete': '1', 'minutes': 40, 'points': 35}]},
             },
-            'initialization': {'features': {'player_history': {'1': [20, 1, 0]}}},
+            'initialization': {'feature_seed': {'player_history': {'1': [20, 1, 0]}}},
         }
         rows = _injury_players(record, internal, _player_observations(internal))
         self.assertEqual(len(rows), 3)
