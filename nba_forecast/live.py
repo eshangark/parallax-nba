@@ -54,6 +54,10 @@ def event_kind(event, year):
         return 'final'
     if status['state'] not in {'pre', 'in'}:
         raise ValueError(f"Unsupported event state: {event['id']}")
+    if status['state'] == 'pre':
+        team_ids = {str(c['team']['id']) for c in competition['competitors']}
+        if team_ids == {'-1', '-2'}:
+            return 'placeholder'
     return 'pending'
 
 

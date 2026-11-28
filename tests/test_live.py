@@ -134,6 +134,42 @@ class LiveTests(unittest.TestCase):
         self.assertEqual(coverage['dates_checked'][0], '2026-11-01')
         self.assertIn('2026-11-08', coverage['dates_checked'])
 
+    def test_collection_defers_placeholders_until_the_matchup_is_confirmed(self):
+        from scripts.update_live import collect
+
+        league = {'id': '46', 'season': {'year': 2027, 'startDate': '2026-11-27T16:00:00Z'},
+                  'calendarIsWhitelist': True, 'calendarType': 'day', 'calendar': ['2026-12-04T05:00:00Z']}
+        venue = {'id': '1', 'fullName': 'Arena', 'address': {'city': 'Boston', 'state': 'MA'}}
+        competition = {'type': {'abbreviation': 'STD'}, 'date': '2026-12-04T05:00:00Z',
+                       'status': {'type': {'state': 'pre', 'completed': False}},
+                       'competitors': [{'homeAway': 'home', 'team': {'id': '-1', 'displayName': 'TBD'}},
+                                       {'homeAway': 'away', 'team': {'id': '-2', 'displayName': 'TBD'}}]}
+        placeholder = {'id': '401909450', 'season': {'year': 2027, 'type': 2}, 'competitions': [competition]}
+        confirmed = copy.deepcopy(placeholder)
+        confirmed['id'] = '401909452'
+        confirmed_competition = confirmed['competitions'][0]
+        confirmed_competition['competitors'] = [
+            {'homeAway': 'home', 'team': {'id': '2', 'displayName': 'Boston Celtics'}},
+            {'homeAway': 'away', 'team': {'id': '18', 'displayName': 'New York Knicks'}},
+        ]
+        confirmed_competition['venue'] = venue
+        client, cities = Mock(), Mock()
+        client.get.side_effect = lambda endpoint, query, **kwargs: {
+            'leagues': [league], 'events': [placeholder, confirmed] if '20261204' in query else []}
+        now = datetime(2026, 11, 27, 20, tzinfo=timezone.utc)
+
+        _, pending, coverage = collect(client, cities, None, SEASON, now)
+        self.assertEqual([game['game_id'] for game in pending], [confirmed['id']])
+        self.assertEqual(coverage['exclusions'], [{'game_id': placeholder['id'], 'reason': 'placeholder'}])
+
+        competition['competitors'] = confirmed_competition['competitors']
+        with self.assertRaisesRegex(KeyError, 'venue'):
+            collect(client, cities, None, SEASON, now)
+        competition['venue'] = venue
+        _, pending, coverage = collect(client, cities, None, SEASON, now)
+        self.assertEqual([game['game_id'] for game in pending], [placeholder['id'], confirmed['id']])
+        self.assertEqual(coverage['exclusions'], [])
+
     def test_collector_failure_preserves_published_file(self):
         from scripts import update_live
         from datetime import datetime

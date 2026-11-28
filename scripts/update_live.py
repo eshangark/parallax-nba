@@ -65,7 +65,7 @@ def collect(client, cities, previous, season, run_started, horizon_days=7, full_
     pending, exclusions = [], []
     for identifier, event in sorted(events.items()):
         kind = event_kind(event, year)
-        if kind in {'excluded', 'inactive'}:
+        if kind in {'excluded', 'inactive', 'placeholder'}:
             if identifier in completed:
                 raise ValueError('Previously final game changed to an unsupported status')
             exclusions.append({'game_id': identifier, 'reason': kind})
