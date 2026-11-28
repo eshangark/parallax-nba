@@ -1,6 +1,6 @@
 {
-  "state": "failed",
-  "attempted_at": "2026-11-27T22:43:49.587149+00:00",
-  "last_successful_at": "2026-11-27T04:17:00.555010+00:00",
-  "error": "KeyError: 'venue'"
+  "state": "success",
+  "attempted_at": "2026-11-28T05:40:47.145648+00:00",
+  "finished_at": "2026-11-28T05:41:15.478839+00:00",
+  "last_successful_at": "2026-11-28T05:41:15.478839+00:00"
 }
